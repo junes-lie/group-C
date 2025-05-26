@@ -50,11 +50,11 @@ h4{ /* 작은제목 */
 }
 h5{ /* 헤더 */
   font-size: var(--font-sm);
-  color: var(--textColorSub);
+  /* color: var(--textColorSub); */
 }
 h6{ /* 본문 */
   font-size: var(--font-xs);
-  color: var(--textColorSub);
+  /* color: var(--textColorSub); */
 }
 
 .tag{
