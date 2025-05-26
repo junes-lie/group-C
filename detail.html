@@ -3,13 +3,223 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>상세페이지</title>
+  <title>전시 상세페이지</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
   <script src="script.js" defer></script>
 </head>
-<body>
-  
+<body id="detail">
+  <header></header>
+  <main>
+    <div class="rel">
+      <div class="main-image">
+        <div class="des">
+          <h2>CONNECTED_응축된 호흡</h2>
+          <h2>송미리내展</h2>
+          <div class="tags">
+            <h5 class="tag">#현재 전시</h5>
+            <h5 class="tag">#Painting</h5>
+          </div>
+          <h5>2025-05-07 ~ 2025-05-20</h5>
+          <h6>서울시 영등포구 국제금융로8길16 신영증권BD, B128호 아트 살롱 드 아씨 갤러리</h6>
+        </div>
+      </div>
+      <div class="tags">
+        <span class="tag"><i class="fa-solid fa-check"></i> 다녀간 전시</span>
+        <span class="tag"><i class="fa-solid fa-heart"></i> 찜한 전시</span>
+      </div>
+    </div>
+  </main>
+  <section id="overview">
+    <div class="rel">
+      <h2>전시 개요</h2>
+      <div class="container-wrap">
+        <div class="container info">
+          <h3>전시 정보</h3>
+          <div class="content">
+            <p><b>전시명</b><span>CONNECTED_응축된 호흡</span></p>
+            <p><b>작가</b><span>송미리내</span></p>
+            <p><b>전시 기간</b><span>2025-05-07 ~ 2025-05-20</span></p>
+            <p><b>장소</b><span>서울시 영등포구 국제금융로8길16 신영증권BD, B128호 아트 살롱 드 아씨 갤러리</span></p>
+            <p><b>공유하기</b><span><img src="image/facebook.png" alt=""><img src="image/twitter.png" alt=""></span></p>
+          </div>
+        </div>
+        <div class="container review">
+          <h3>평론</h3>
+          <h4>실과 천, 그리고 보이지 않는 감정의 결</h4>
+          <p>
+            송미리내 작가는 바느질을 업으로 삼은 부모 곁에서 자란 기억을 바탕으로, 일상의 재료인 실과 자투리 천, 그리고 자신만의 매체인 텍스트 드로잉을 통해 시간, 공간, 자연, 인간 사이의 섬세한 연결을 작업에 담아냅니다.<br>이번 전시는 작가가 오랜 시간 세상과 나눈 감각과 관계들을 응축한 결과로, 관람자와의 깊은 호흡을 시도합니다. 조용하지만 밀도 있는 조형 언어로 구성된 작품들은 보는 이의 감정과 기억을 조용히 흔들며, 내면의 감각을 환기시키는 예술적 공간을 형성합니다.<br>작품을 통해 우리는 단순한 시각적 경험을 넘어, ‘호흡’하고 ‘공감’하는 새로운 방식의 감상 여정을 만나게 됩니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  <section id="preview">
+    <div class="rel">
+      <h2>작품 미리보기</h2>
+      <div class="cards">
+        <div class="card card1">
+          <img src="image/preview-1.jpg" alt="">
+          <div class="container">
+            <h5 class="title">
+              앞으로 계속해서 이겨낼 수 있길.. 그게 무엇이든
+            </h5>
+            <div class="creation">
+              Acrylic & Mixed Media on Canvas
+            </div>
+            <div class="meta">
+              117 x 92cm, 2025
+            </div>
+          </div>
+        </div>
+        <div class="card card2">
+          <img src="image/preview-2.jpg" alt="">
+          <div class="container">
+            <h5 class="title">
+              행복해서 웃는 게 아니라 웃어서 행복한 것입니다
+            </h5>
+            <div class="creation">
+              Acrylic & Mixed Media on Canvas
+            </div>
+            <div class="meta">
+              92 x 117cm, 2025
+            </div>
+          </div>
+        </div>
+        <div class="card card3">
+          <img src="image/preview-3.jpg" alt="">
+          <div class="container">
+            <h5 class="title">
+              미안해, 받은 만큼 돌려 줄게
+            </h5>
+            <div class="creation">
+              Acrylic & Mixed Media on Canvas
+            </div>
+            <div class="meta">
+              46 x 46cm, 2025
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="comment">
+    <h2>감상평</h2>
+    <div class="container">
+      <div class="person person1">
+        <img src="image/person1.png" alt="">
+        <div class="right">
+          <h4 class="id">ah******</h4>
+          <p class="quote">
+            와... 조용한데 되게 깊이 와닿는 전시였어요. 실과 천으로 이렇게 감정을 표현할 수 있다니
+          </p>
+        </div>
+      </div>
+      <div class="person person2">
+        <img src="image/person2.png" alt="">
+        <div class="right">
+          <h4 class="id">ls******</h4>
+          <p class="quote">
+            그냥 작품을 ‘보는’ 게 아니라, 진짜 같이 숨 쉬는 느낌이었어요. 고요한 울림이 오래 남네요.
+          </p>
+        </div>
+      </div>
+      <div class="person person3">
+        <img src="image/person3.png" alt="">
+        <div class="right">
+          <h4 class="id">hj******</h4>
+          <p class="quote">
+            자투리 천 하나에도 이야기가 있더라고요. 말 없이 말 거는 느낌? 되게 신기했어요.
+          </p>
+        </div>
+      </div>
+      <div class="person person4">
+        <img src="image/person4.png" alt="">
+        <div class="right">
+          <h4 class="id">lj******</h4>
+          <p class="quote">
+            눈보다 마음으로 보는 전시… 작가님 호흡이랑 감정이 작품에 그대로 느껴졌어요.
+          </p>
+        </div>
+      </div>
+      <div class="person person5">
+        <img src="image/person5.png" alt="">
+        <div class="right">
+          <h4 class="id">kg******</h4>
+          <p class="quote">
+            텍스트 드로잉 처음 봤는데, 생각보다 감정이 확 전해져서 놀랐어요. 잔잔한 감동
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="artist">
+    <div class="rel">
+      <div class="title">
+        <div class="left">
+          <h2>작가</h2>
+          <h4>선호작가</h4>
+        </div>
+        <h3 class="right">
+          작가 포트폴리오 보러가기 <i class="fa-solid fa-arrow-right"></i>
+        </h3>
+      </div>
+      <div class="container-wrap">
+        <div class="container profile">
+          <h3>작가 프로필</h3>
+          <div class="content">
+            <p><b>작가</b><span>송미리내(Song Milinae)</span></p>
+            <p><b>연락처</b><span>02-786-9184</span></p>
+            <p><b>이메일</b><span>songmilinae@gmail.com</span></p>
+            <p><b>SNS</b><span><img src="image/instar.png" alt=""></span></p>
+          </div>
+        </div>
+        <div class="container career">
+          <h3>작가 약력</h3>
+          <div class="content">
+            <p><b>학력</b><span>홍익대학교 대학원 회화과 졸업</span></p>
+            <div class="win">
+              <b>수상 경력</b>
+              <ul>
+                <li>2024 인카네이션문화재단 예술상 수상</li>
+                <li>2024 소마미술관 등록작가 선정</li>
+                <li>2024 ㈜시크릿타운 주최 ‘코리아 아티스트 프라이즈’ 최우수상</li>
+              </ul>
+            </div>
+          </div>
+          <div class="btn">더보기</div>
+        </div>
+      </div>
+      <div class="another">
+        <h3>작가의 다른 전시</h3>
+        <div class="cards">
+          <div class="card">
+            <img src="image/another1.png" alt="">
+            <div class="container">
+              <h5>송미리내展</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="image/another2.png" alt="">
+            <div class="container">
+              <h5>CONNECTED 4<br> - 너와나 언젠가 다시 만난다</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="image/another3.png" alt="">
+            <div class="container">
+              <h5>CONNECTED 2<br> - 송미리내展</h5>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer></footer>
 </body>
 </html>
