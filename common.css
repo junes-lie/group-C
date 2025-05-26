@@ -83,17 +83,6 @@ h6{ /* 본문 */
   background-color: var(--secondaryColor);
 }
 
-/* p{
-  font-family: 'YUniverse-L';
-  font-weight: bold;
-  font-weight: normal;
-}
-span{
-  font-family: 'YUniverse-B';
-  font-weight: bold;
-  font-weight: normal;
-} */
-
 /* Tablet */
 @media screen and (max-width:1400px){
   body{
