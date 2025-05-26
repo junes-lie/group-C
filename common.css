@@ -16,8 +16,8 @@
   --font-xxs: 1.6rem;
   --font-xxxs: 1.3rem;
   --font-xxxxs: 1.0rem;
-  --radius: 30px;
-  --radiusInfinite: 99999px;
+  --radius: 3rem;
+  --radiusInfinite: 99999rem;
   --boxShadow: 0 0 1rem rgba(0, 0, 0, 0.3);
 }
 body{
@@ -35,9 +35,9 @@ section{
   position: relative;
   height: 100%;
 }
+
 h2{ /* 메인타이틀 */
   font-family: 'YUniverse-B';
-  font-weight: bold;
   font-size: var(--font-xxl);
 }
 h3{ /* 제목 */
@@ -50,18 +50,20 @@ h4{ /* 작은제목 */
 }
 h5{ /* 헤더 */
   font-size: var(--font-sm);
-  color: var(--textColorSub);
+  /* color: var(--textColorSub); */
 }
 h6{ /* 본문 */
   font-size: var(--font-xs);
-  color: var(--textColorSub);
+  /* color: var(--textColorSub); */
 }
 
 .tag{
   display: inline-block;
   color: var(--primaryColor);
+  /* background-color: var(--mainBg); */
+  background-color: #fff;
   padding: 0.5rem 1.5rem;
-  border: 1px solid var(--primaryColor);
+  border: 0.1rem solid var(--primaryColor);
   border-radius: var(--radius);
 }
 .btn{
@@ -80,7 +82,18 @@ h6{ /* 본문 */
 .btn:hover{
   background-color: var(--secondaryColor);
 }
-  
+
+/* p{
+  font-family: 'YUniverse-L';
+  font-weight: bold;
+  font-weight: normal;
+}
+span{
+  font-family: 'YUniverse-B';
+  font-weight: bold;
+  font-weight: normal;
+} */
+
 /* Tablet */
 @media screen and (max-width:1400px){
   body{
