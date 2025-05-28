@@ -275,6 +275,7 @@
   }
   #detail main .tags:last-child{
     width: 100%;
+    margin: 3rem ;
   }
 }
 
