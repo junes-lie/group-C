@@ -7,8 +7,7 @@
   --primaryColor: #7FA856;
   --secondaryColor: #43BF7B;
   --accentColor: #EF508B;
-  --font-xxl: 6.4rem;
-  --font-xl: 4.8rem;
+  --font-xl: 4.0rem;
   --font-lg: 3.2rem;
   --font-base: 2.4rem;
   --font-sm: 2.0rem;
@@ -16,21 +15,30 @@
   --font-xxs: 1.6rem;
   --font-xxxs: 1.3rem;
   --font-xxxxs: 1.0rem;
-  --radius: 3rem;
+  --radius-sm: 3rem;
+  --radius-lg: 5rem;
   --radiusInfinite: 99999rem;
   --boxShadow: 0 0 1rem rgba(0, 0, 0, 0.3);
 }
+
 body{
   font-size: var(--font-base);
 }
 section{
   position: relative;
   width: 140rem; /* 1400px */
-  /* width: 100%; */ /* 배경 전체로 넣을 경우 */
-  margin: auto;
+  margin: 0 auto;
   padding: 15rem 0;
   z-index: 0;
 }
+section.full{ /* 배경 전체로 넣을 경우 */
+  width: 100%; 
+}
+section.full.sample{
+  height: 50rem;
+  background-color: var(--mainBg);
+}
+
 .rel{
   position: relative;
   height: 100%;
@@ -38,7 +46,7 @@ section{
 
 h2{ /* 메인타이틀 */
   font-family: 'YUniverse-B';
-  font-size: var(--font-xxl);
+  font-size: var(--font-xl);
 }
 h3{ /* 제목 */
   font-weight: 600;
@@ -61,26 +69,35 @@ h6{ /* 본문 */
   display: inline-block;
   color: var(--primaryColor);
   /* background-color: var(--mainBg); */
-  background-color: #fff;
+  /* background-color: #fff; */
   padding: 0.5rem 1.5rem;
   border: 0.1rem solid var(--primaryColor);
-  border-radius: var(--radius);
+  border-radius: var(--radius-sm);
 }
 .btn{
   display: inline-block;
   width: 30rem;
-  height: 6rem;
+  height: 7rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--primaryColor);
   border-radius: var(--radiusInfinite);
   color: var(--mainBg);
-  box-shadow: var(--boxShadow);
+  /* box-shadow: var(--boxShadow); */
   transition: 0.3s;
 }
-.btn:hover{
-  background-color: var(--secondaryColor);
+.btn.primary{
+  background-color: var(--primaryColor);
+}
+.btn.accent{
+  background-color: var(--accentColor);
+}
+
+.btn.primary:hover{
+  background-color: rgb(127 168 86/ 80%);
+}
+.btn.accent:hover{
+  background-color: rgb(239 80 139/ 80%);
 }
 
 /* Tablet */
@@ -89,7 +106,7 @@ h6{ /* 본문 */
     font-size: var(--font-sm);
   }
   h2{ /* 메인타이틀 */
-  font-size: var(--font-xl);
+    font-size: var(--font-xl);
   }
   h3{ /* 제목 */
     font-size: var(--font-lg);
@@ -111,7 +128,7 @@ h6{ /* 본문 */
     font-size: var(--font-xs);
   }
   h2{ /* 메인타이틀 */
-  font-size: var(--font-lg);
+    font-size: var(--font-lg);
   }
   h3{ /* 제목 */
     font-size: var(--font-sm);
@@ -124,5 +141,8 @@ h6{ /* 본문 */
   }
   h6{ /* 본문 */
     font-size: var(--font-xxxs);
+  }
+  .btn{
+    height: 6rem;
   }
 }
