@@ -26,13 +26,14 @@ body{
 }
 section{
   position: relative;
-  width: 140rem; /* 1400px */
+  max-width: 140rem; /* 1400px */
   margin: 0 auto;
   padding: 15rem 0;
   z-index: 0;
 }
 section.full{ /* 배경 전체로 넣을 경우 */
   width: 100%; 
+  max-width: 0;
 }
 section.full.sample{
   height: 50rem;
@@ -76,8 +77,10 @@ h6{ /* 본문 */
 }
 .btn{
   display: inline-block;
-  width: 30rem;
+  width: 25rem;
   height: 6rem;
+  font-size: 2rem;
+  font-weight: 600;
   margin-top: 10rem;
   display: flex;
   justify-content: center;
@@ -106,6 +109,10 @@ h6{ /* 본문 */
   body{
     font-size: var(--font-sm);
   }
+  .rel{
+    max-width: 140rem;
+    margin: 0 auto;
+  }
   h2{ /* 메인타이틀 */
     font-size: var(--font-xl);
   }
@@ -121,12 +128,19 @@ h6{ /* 본문 */
   h6{ /* 본문 */
     font-size: var(--font-xxs);
   }
+  .btn{
+    height: 5rem;
+  }
 }
 
 /* Mobile */
 @media screen and (max-width:768px){
   body{
     font-size: var(--font-xs);
+  }
+  .rel{
+    max-width: 76.8rem;
+    margin: 0 auto;
   }
   h2{ /* 메인타이틀 */
     font-size: var(--font-lg);
@@ -142,5 +156,9 @@ h6{ /* 본문 */
   }
   h6{ /* 본문 */
     font-size: var(--font-xxxs);
+  }
+  .btn{
+    height: 5rem;
+    font-size: 1.5rem;
   }
 }
