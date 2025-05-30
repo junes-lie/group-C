@@ -18,11 +18,9 @@
   --font-xxxxs: 1.0rem;
   --radius: 30px;
   --radiusInfinite: 99999px;
-  --boxShadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  --boxShadow: 
 }
-body{
-  font-size: var(--font-base);
-}
+
 section{
   position: relative;
   width: 140rem; /* 1400px */
@@ -50,11 +48,11 @@ h4{ /* 작은제목 */
 }
 h5{ /* 헤더 */
   font-size: var(--font-sm);
-  /* color: var(--textColorSub); */
+  color: var(--textColorSub);
 }
 h6{ /* 본문 */
   font-size: var(--font-xs);
-  /* color: var(--textColorSub); */
+  color: var(--textColorSub);
 }
 
 .tag{
@@ -74,18 +72,33 @@ h6{ /* 본문 */
   background-color: var(--primaryColor);
   border-radius: var(--radiusInfinite);
   color: var(--mainBg);
-  box-shadow: var(--boxShadow);
   transition: 0.3s;
 }
 .btn:hover{
   background-color: var(--secondaryColor);
 }
+
+
+#recruit .icons { 
+  position: relative;
+  display:flex;
+  gap: 2rem;
+  bottom: 4rem;
+  left: 120rem;
+  transition: 0.3s ease;
+  color:#333
+}
+
+#recruit .icons:hover { 
+  color: var(--secondaryColor);
+  z-index: 100;
+}
+
+
+
   
 /* Tablet */
 @media screen and (max-width:1400px){
-  body{
-    font-size: var(--font-sm);
-  }
   h2{ /* 메인타이틀 */
   font-size: var(--font-xl);
   }
@@ -105,9 +118,6 @@ h6{ /* 본문 */
 
 /* Mobile */
 @media screen and (max-width:768px){
-  body{
-    font-size: var(--font-xs);
-  }
   h2{ /* 메인타이틀 */
   font-size: var(--font-lg);
   }
