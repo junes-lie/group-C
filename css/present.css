@@ -1,0 +1,73 @@
+#present{margin:auto;}
+
+
+/* 배너스와이퍼 */
+.banner{
+  background-color: #1C2026;
+  width: 100vw;
+  height: 700px;
+}
+.swiper {
+  width: 87.5rem;
+  height: 75rem;
+  margin-top: -200px;
+}
+.swiper-slide{
+  position: relative;
+  width: 53.6875rem;
+  height: 28rem;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.swiper-slide img {
+  width: 30rem;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.swiper .tag{
+  font-size: 1.6rem;
+  margin: 10px 0;
+}
+.swiper-txt{
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.swiper-slide h4{
+  font-weight: 600;
+  font-size: 2.25rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.swiper-slide h5, h6{
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.swiper-slide h6{
+  margin-top: 3.5rem;
+}
+
+
+/* 페이지네이션 */
+.swiper-pagination {
+  bottom: 20px !important;
+}
+.swiper-pagination-bullet{
+  width: 30px !important;
+  height: 7px !important;
+  border-radius: 0 !important;
+  background-color: white !important;
+  transition: 0.3s;
+}
+.swiper-pagination-bullet-active{
+  width: 85px !important;
+  background: #43BF7B!important;
+}
+
+
+
