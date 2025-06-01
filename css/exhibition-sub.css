@@ -1,0 +1,456 @@
+#present, #past, #expect {margin:auto;}
+
+/* 배너----------------- */
+#present .banner, #past .banner, #expect .banner{position: inherit;}
+
+#present .banner:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 40rem; 
+  background: url(../image/Exhibition/present/banner.png) no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+}
+#past .banner:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 40rem; 
+  background: url(../image/Exhibition/past/banner.png) no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+}
+#expect .banner:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 40rem; 
+  background: url(../image/Exhibition/expect/banner.png) no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+}
+
+
+#present .banner .title,
+#past .banner .title,
+#expect .banner .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  text-align: center;
+  color: white;
+  row-gap: 1.3rem;
+}
+
+
+
+/* 검색창----------------- */
+#present section:nth-child(2),
+#past section:nth-child(2),
+#expect section:nth-child(2){
+  padding: 15rem 0 0;
+}
+#present .search h5,
+#past .search h5, 
+#expect .search h5{
+  margin: -5rem 0 1rem;
+  font-weight: 500;
+}
+#present .search,
+#past .search,
+#expect .search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 1.5rem;
+}
+#present .search-box,
+#past .search-box,
+#expect .search-box{ 
+  position: relative;
+  display: flex;
+  width: 47rem;
+  height: 4rem;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  border-radius: 3.125rem;
+  border: 2px solid #7FA856;
+  overflow: hidden;
+}
+#present .search-box>input,
+#past .search-box > input,
+#expect .search-box > input{
+  position: absolute;
+  width: 22rem;
+  left: 190px;
+  background: transparent;
+  font-family: 'SUIT', sans-serif;
+  font-size: 1.5rem;
+}
+    /* 달력인풋 스타일 */
+#present .month-wrapper input[type="month"],
+#past .month-wrapper input[type="month"],
+#expect .month-wrapper input[type="month"] {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 18rem;
+  height: 4rem;
+  border: 2px solid #7FA856;
+  padding: 1rem 2rem;
+  border-radius: 3.125rem;
+  margin: 0;
+  font-family: 'SUIT', sans-serif;
+  font-size: 1.8rem;
+  background: transparent;
+  color: #7FA856;
+}
+    /* 달력 인풋 기본 아이콘 숨기기 */
+#present .month-wrapper input[type="month"]::-webkit-calendar-picker-indicator,
+#past .month-wrapper input[type="month"]::-webkit-calendar-picker-indicator,
+#expect .month-wrapper input[type="month"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+    /* 커스텀 아이콘 */
+#present .month-wrapper .custom-icon,
+#past .month-wrapper .custom-icon,
+#expect .month-wrapper .custom-icon {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #7FA856; 
+  pointer-events: none;
+}
+#present .search-box>i,
+#past .search-box > i,
+#expect .search-box > i{
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: #7FA856;
+}
+
+    /* 카테고리 */
+#present .cate,
+#past .cate,
+#expect .cate{
+  display: flex;
+}
+#present .cate li,
+#past .cate li,
+#expect .cate li{
+  height: 4.6rem;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 6.7rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: var(--radiusInfinite);
+  color: var(--primaryColor);
+  transition: 0.3s;
+  border: 2px solid var(--primaryColor);
+  margin: 6.7rem 0.5rem;
+}
+#present .cate li:first-child,
+#past .cate li:first-child,
+#expect .cate li:first-child{
+  background-color: var(--primaryColor);
+  color: white;
+}
+#present .search .cate li:hover,
+#past .search .cate li:hover,
+#expect .search .cate li:hover {
+  background-color: var(--primaryColor);
+  color: white;
+}
+
+
+/* 전시 포스터 목록 */
+#present section:nth-child(3),
+#past section:nth-child(3),
+#expect section:nth-child(3){
+  padding: 6.5rem 0 0 0;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+#present .poster-grid,
+#past .poster-grid,
+#expect .poster-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 6rem;
+  margin: 0 2rem;
+}
+#present .poster-grid .poster,
+#past .poster-grid .poster,
+#expect .poster-grid .poster{
+  cursor: pointer;
+}
+#present .poster-grid .poster .image-box img,
+#past .poster-grid .poster .image-box img,
+#expect .poster-grid .poster .image-box img {
+  width: 30rem;
+  transition: 0.3s ease;
+}
+#present .poster-grid .poster .image-box:hover img,
+#past .poster-grid .poster .image-box:hover img,
+#expect .poster-grid .poster .image-box:hover img{
+  filter: brightness(70%);
+}
+#present .poster-grid .txt-box,
+#past .poster-grid .txt-box,
+#expect .poster-grid .txt-box {
+  margin-bottom:5rem;
+  padding-left: 0.5rem;
+}
+#present .poster-grid .txt-box strong,
+#past .poster-grid .txt-box strong,
+#expect .poster-grid .txt-box strong{
+  color: #333;
+  font-size: 2.4rem;
+  font-weight: 600;
+  display: block; 
+  padding: 5rem 0 3rem;
+}
+#present .poster-grid .txt-box .artist,
+#past .poster-grid .txt-box .artist,
+#expect .poster-grid .txt-box .artist {
+  color: #666;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+#present .poster-grid .txt-box .date,
+#past .poster-grid .txt-box .date,
+#expect .poster-grid .txt-box .date{
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+
+/* 더보기 버튼 */
+#present .poster-wrap,
+#past .poster-wrap,
+#expect .poster-wrap{
+  display: flex;
+  flex-direction: column;
+}
+#present .poster-wrap .more,
+#past .poster-wrap .more,
+#expect .poster-wrap .more {
+  display: flex;
+  margin-top: -5rem;
+  padding-bottom: 10rem;
+}
+
+
+
+
+/* 미디어----------------- */
+/* Tablet */
+@media screen and (max-width:1400px){
+  /* 배너 */
+  #present section:nth-child(1),
+  #past section:nth-child(1),
+  #expect section:nth-child(1){
+  padding: 15rem 0;
+  }
+  #present .banner:before,
+  #past .banner:before,
+  #expect .banner:before {
+    height: 30rem; 
+  }
+  #present .banner,
+  #past .banner,
+  #expect .banner {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 30rem;
+    position: relative; 
+  }
+
+  #present section:nth-child(2),
+  #past section:nth-child(2),
+  #expect section:nth-child(2){
+  padding: 6rem 0;
+  }
+  #present .search h5,
+  #past .search h5,
+  #expect .search h5{
+    margin: 0 0 1rem;
+    font-weight: 500;
+  }
+  #present .cate li,
+  #past .cate li,
+  #expect .cate li{
+    font-size: 2rem;
+  }
+
+
+  #present section:nth-child(3),
+  #past section:nth-child(3),
+  #expect section:nth-child(3){
+    display: block;
+    padding: 0;
+  }
+  #present .poster-wrap,
+  #past .poster-wrap,
+  #expect .poster-wrap {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  #present .poster-grid,
+  #past .poster-grid,
+  #expect .poster-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 6rem;
+  }
+  #present .poster-grid .poster .image-box img,
+  #past .poster-grid .poster .image-box img,
+  #expect .poster-grid .poster .image-box img {
+    width: 28rem;
+  }
+  #present .poster-grid .txt-box,
+  #past .poster-grid .txt-box,
+  #expect .poster-grid .txt-box{
+    margin-bottom:5rem;
+    padding-left: 0.5rem;
+  }
+  #present .poster-grid .txt-box strong,
+  #past .poster-grid .txt-box strong,
+  #expect .poster-grid .txt-box strong {
+    font-weight: 600;
+    font-size: var(--font-xs);
+    padding: 2rem 0 0.5rem;
+  }
+  #present .poster-grid .txt-box .artist,
+  #past .poster-grid .txt-box .artist,
+  #expect .poster-grid .txt-box .artist {
+    color: #666;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  #present .poster-grid .txt-box .date,
+  #past .poster-grid .txt-box .date,
+  #expect .poster-grid .txt-box .date{
+    display: none;
+  }
+}
+
+
+/* Mobile */
+@media screen and (max-width:768px){
+
+  #present .banner:before,
+  #past .banner:before,
+  #expect .banner:before {
+    height: 15rem; 
+  }
+  #present .banner,
+  #past .banner,
+  #expect .banner{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 15rem;
+  }
+  #present .banner .title,
+  #past .banner .title,
+  #expect .banner .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    text-align: center;
+    color: white;
+    row-gap: 1.3rem;
+    position: inherit;
+    top: -75px;
+  }
+
+
+  #present .search,
+  #past .search,
+  #expect .search{
+    margin-top: -170px;
+  }
+  #present .cate,
+  #past .cate,
+  #expect .cate{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #present .cate li,
+  #past .cate li,
+  #expect .cate li{
+    margin: 2rem 1rem 0 0;
+  }
+
+
+  #present .search-box,
+  #past .search-box,
+  #expect .search-box{ 
+  position: relative;
+  display: flex;
+  max-width: 40rem;
+  min-width: 30rem;
+  }
+
+
+  #present .poster-grid,
+  #past .poster-grid,
+  #expect .poster-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3.1rem;
+  }
+  #present .poster-grid .poster,
+  #past .poster-grid .poster,
+  #expect .poster-grid .poster{
+    width: 20rem;
+    min-width: 14rem;
+  }
+  #present .poster-grid .txt-box strong,
+  #past .poster-grid .txt-box strong,
+  #expect .poster-grid .txt-box strong {
+    font-weight: 600;
+    font-size: var(--font-xxs);
+    padding: 2rem 0 0.5rem;
+  }
+  #present .poster-grid .txt-box .artist,
+  #past .poster-grid .txt-box .artist,
+  #expect .poster-grid .txt-box .artist {
+    color: #666;
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding-bottom: 1.5rem;
+    overflow: hidden;
+  }
+
+}

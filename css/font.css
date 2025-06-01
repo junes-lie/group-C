@@ -1,0 +1,25 @@
+@charset "utf-8"; 
+/* SUIT */
+@import url("https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css");
+/* font-family: 'SUIT', sans-serif; */
+
+/* Y 유니버스 */
+@font-face {
+    font-family: 'YUniverse-B';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_yuniverse@1.0/YUniverse-B.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* ICON FONT ______________________________*/
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+/* font-family: 'Material Symbols Outlined'; */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+/* font-family: fontawesome; */
+
+@import url('https://cdn.jsdelivr.net/npm/@xpressengine/xeicon@2.3.3/xeicon.min.css');
+/* font-family: xeicon; */
