@@ -26,10 +26,9 @@ body{
 }
 section{
   position: relative;
-  max-width: 140rem;
-   /* 1400px */
+  max-width: 140rem; /* 1400px */
   margin: 0 auto;
-  padding: 10rem 0;
+  padding: 15rem 0;
   z-index: 0;
 }
 section.full{ /* 배경 전체로 넣을 경우 */
