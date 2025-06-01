@@ -1,0 +1,329 @@
+#exhibit section{
+  width: 100%;
+  background-size: cover;
+}
+
+#exhibit .main-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#exhibit .section-tit{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+:root{
+  --bg-image:
+}
+
+
+/* 메인 비주얼______________________ */
+#exhibit .main-visual{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+#exhibit .visu-tit{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140rem;
+  height: 10%;
+  padding: 0 10rem;
+  margin-top: 9rem;
+}
+
+#exhibit .visual-slide{
+  background: url(../image/poster1.jpg) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* 글래스모피즘 필터 */
+#exhibit .glass-bg{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  backdrop-filter: blur(30px);
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+}
+
+/* 콘텐츠 영역 */
+#exhibit .visual-content {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+  width: 113rem;
+  height: 55rem;
+  /* border: 1px solid yellow; */
+}
+#exhibit .poster{
+  border-radius: 50rem 50rem 0 0;
+  width: 35rem;
+  height: 50rem;
+}
+#exhibit .visu-btn {
+  margin-top: 15rem;
+  background: #000;
+  font-size: 2rem;
+  color: #fff;
+  border-radius: 5rem;
+  width: 25rem;
+  height: 6rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#exhibit .visu-btn:hover{
+  background-color: var(--secondaryColor);
+}
+
+
+/* info */
+#exhibit .visu-right{
+  margin-left: 25rem;
+}
+#exhibit .visu-right .info h1{
+  font-size: 4.8rem;
+  color: #333;
+  font-weight: 600;
+}
+#exhibit .visu-right .info h3{
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+#exhibit .visu-right .info h4{
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+#exhibit .visu-right .info h5{
+  font-size: 1.6rem;
+  border: 1px solid #fff;
+  width: 4rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 50rem;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+
+
+
+/* 현재전시, 예정전시 */
+
+
+
+
+
+
+/* 오늘의 전시________________ */
+
+
+
+
+
+
+
+
+
+
+/* 작가 포트폴리오________________ */
+#exhibit .artist{
+  background: url(../image/bg.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15rem;
+}
+
+
+
+/* 슬라이드 */
+/* .artist-banner{
+  margin: auto;
+  overflow: hidden;
+  border: 1px solid #000;
+  width: 140rem;
+  overflow: hidden;
+}
+.artist-ban{
+  margin: auto;
+} */
+
+/*좌우버튼*/
+.ban_btn .bi{
+  font-size: 5rem;
+  color: #333;
+  transition: 0.3s;
+}
+.ban_btn .bi-arrow-left-circle-fill,
+.ban_btn .bi-arrow-right-circle-fill{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ban_btn .bi-arrow-left-circle-fill{left: 3rem;}
+.ban_btn .bi-arrow-right-circle-fill{right: 3rem;}
+.ban_btn .bi-arrow-left-circle-fill:hover,
+.ban_btn .bi-arrow-right-circle-fill:hover{opacity: 0.8;}
+#exhibit .artist .artist-btn{
+  display: block;
+  width: 25rem;
+  height: 6rem;
+  border-radius: 5rem;
+  background-color: var(--primaryColor);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 6rem;
+  margin-top: 5rem;
+  transition: 0.3s;
+}
+#exhibit .artist .artist-btn:hover{
+  opacity: 0.8;
+}
+
+
+#exhibit .arts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  gap: 2rem;
+}
+#exhibit .art{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  overflow: hidden;
+  transition: 0.3s;
+  width: 35rem !important; 
+  height: 50rem;
+  background-color: #fff;
+}
+#exhibit .art:hover{
+  box-shadow: 0 0 5rem rgba(0,0,0,0.3);
+}
+#exhibit .art-img{
+  width: 35rem;
+  height: 36rem;
+}
+#exhibit .art-img>img{
+  width: 35rem;
+  height: 36rem;
+  object-fit: cover;
+}
+
+#exhibit .art span{
+  width: 35rem;
+  height: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+#exhibit .art span p{
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  color: #666;
+}
+
+
+
+
+
+
+
+/* 아트허브 소식_______________ */
+#exhibit .news .news-tit{
+  border-bottom: 1px solid var(--primaryColor);
+  width: 126rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#exhibit .news .news-tit a{
+  width: 10rem;
+  position: relative;
+  color: var(--primaryColor);
+  text-align: right;
+}
+#exhibit .news .news-tit a:before{
+  content: '\F64D';
+  /* font-family: 'Bootstrap Icons'; */
+  font-family:"bootstrap-icons";
+  font-weight: normal;
+  font-style: normal;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--secondaryColor);
+}
+
+
+
+
+/* 태블릿______________________________ */
+@media screen and (max-width:1400px){
+  
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 모바일______________________________ */
+@media screen and (max-width:768px){
+  
+
+
+
+
+}

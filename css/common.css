@@ -33,7 +33,7 @@ section{
 }
 section.full{ /* 배경 전체로 넣을 경우 */
   width: 100%; 
-  max-width: 0;
+  max-width: none;
 }
 section.full.sample{
   height: 50rem;
