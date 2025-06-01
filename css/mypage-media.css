@@ -1,76 +1,131 @@
 /* 태블릿______________________________ */
-@media screen and (max-width:1400px){
-  body{
-    font-size: var(--font-sm);
-  }
-  h2{ /* 메인타이틀 */
-  font-size: var(--font-xl);
-  }
-  h3{ /* 제목 */
-    font-size: var(--font-lg);
-  }
-  h4{ /* 작은제목 */
-    font-size: var(--font-sm);
-  }
-  h5{ /* 헤더 */
-    font-size: var(--font-xs);
-  }
-  h6{ /* 본문 */
-    font-size: var(--font-xxs);
-  }
-
+@media screen and (max-width:1400px){ 
   main{
   max-width: 76.8rem;
+  border: 1px solid #000;
   }
   section{
     width: 76.8rem; 
   }
 
   /* 내 프로필 */
-  .pc-only{display: none;}
-
+  #mypage .my-title img{
+    width: 18rem;
+  }
+  #mypage .pc-only{display: none;}
   #mypage .profile-box{
+    max-width: 68rem;
+    height: 22rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  #mypage .profile-user img{
+    width: 10rem;
+    height: 10rem;
+  }
+  #mypage .profile-info{
+    width: max-content;
+  }
+  #mypage .profile-id,
+  #mypage .profile-email,
+  #mypage .profile-num{
+    margin: 2rem 0;
+  }
+
+  #mypage .btn-box{
+    max-width: 68rem;
+    height: 20rem;
+    border: 1px solid var(--primaryColor);
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    background-color: #fff;
+    margin: 2rem auto 0 auto;
+  }
+  #mypage .btn-box a{transition: 0.3s;}
+  #mypage .btn-box a p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #mypage .btn-box a p i{
+    font-size: 3.5rem;
+    color: #333;
+    padding: 1rem;
+    background-color: #F7F4F3;
+    border-radius: 50rem;
+    width: 8rem;
+    height: 8rem;
+    text-align: center;
+    line-height: 6rem;
+    margin-bottom: 2.5rem;
+  }
+  #mypage .btn-box a:hover,
+  #mypage .btn-box a:hover>p>i{
+    color: var(--primaryColor);
+  }
+  #mypage .sub-btn{
     width: 68rem;
+    padding-right: 0.1rem;
   }
 
 
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* 모바일______________________________ */
-@media screen and (max-width:768px){
-  body{
-    font-size: var(--font-xs);
+  /* 내 게시물 */
+  #mypage .coment-box{
+    max-width: 68rem;
+    padding: 2rem;
   }
-  h2{ /* 메인타이틀 */
-  font-size: var(--font-lg);
+  #mypage .coment-box .mypage-icon{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
   }
-  h3{ /* 제목 */
-    font-size: var(--font-sm);
+  #mypage .coment-box .coment-icon{
+    background-color:#333;
+    color: #fff;
+    width: 5rem;
+    height: 5rem;
   }
-  h4{ /* 작은제목 */
-    font-size: var(--font-xs);
+  #mypage .coment-box .coment-txt{
+    width: 36rem;
+    margin: 0 2rem;
   }
-  h5{ /* 헤더 */
-    font-size: var(--font-xxs);
+  #mypage .mypage-secTit{
+    max-width: 68rem;
+    height: 5.5rem;
   }
-  h6{ /* 본문 */
-    font-size: var(--font-xxxs);
+  #mypage .mypage-secTit h1{
+    font-size: 2rem;
+    width: 12rem;
   }
-
-
-
-
-
+  #mypage .mypage-secTit h3{font-size: 3.2rem;}
+  #mypage .mypage-secTit h4{
+    font-size: 1.6rem;
+    margin-left: 4rem;
+  }
+  #mypage .list .list-box{
+    max-width: 68rem;
+    height: 13.5rem;
+    border-radius: 2rem;
+  }
+  #mypage .list .list-box .list-txt .pc-none{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #mypage .list .list-box .list-txt .pc-none h6{
+    color: #666;
+  }
+  #mypage .list .list-box .list-txt .pc-none p{
+    display: inline-block;
+  }
+  #mypage .list .list-box .list-txt .pc-none:nth-child(2){
+    text-align: right;
+    flex-direction: column-reverse;
+  }
 }

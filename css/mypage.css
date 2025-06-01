@@ -1,7 +1,7 @@
 @charset "utf-8"; 
 
-main{
-  max-width: 100%;
+#mypage main{
+  max-width: 140rem;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -15,7 +15,12 @@ main{
 #mypage section{
   width: 100%;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+#mypage section:nth-child(1){margin-top: 9rem;}
 
 #mypage .my-title{
   display: flex;
@@ -36,6 +41,7 @@ main{
   border-radius: 3rem;
   background-color: #fff;
 }
+#mypage .btn-box{display: none;}
 
 #mypage .profile-user{
   display: flex;
@@ -327,3 +333,51 @@ main{
 
 
 
+/* 모바일______________________________ */
+@media screen and (max-width:768px){
+  #mypage{background-color: pink;}
+
+  main{
+  max-width: 37.5rem;
+  border: 1px solid #000;
+  }
+  section{
+    width: 37.5rem; 
+  }
+    #mypage .profile-box{
+    max-width: 32rem;
+    height: 40rem;
+    background-color: transparent;
+    border: none;
+    flex-direction: column;
+    border: 1px solid red;
+  }
+  #mypage .profile-user{
+    border: 1px solid #000;
+  }
+  #mypage .profile-user img{
+    width: 8rem;
+    height: 8rem;
+  }
+
+  #mypage .profile-info{
+    gap: 1rem;
+    height: 7.8rem;
+  }
+  #mypage .profile-info h4{
+    display: none;
+  }
+  #mypage .profile-info h5{
+    text-align: center;
+    font-weight: 300;
+    border: 1px solid #000;
+  }
+  #mypage .profile-id,
+  #mypage .profile-email,
+  #mypage .profile-num{
+    margin: 0;
+  }
+
+
+
+}
