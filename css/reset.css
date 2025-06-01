@@ -36,7 +36,7 @@ img{
 	max-width: 100%;
 	vertical-align: top;
 }
-input, button{
+input, button, textarea{
   outline: none;
   border: none;
 }

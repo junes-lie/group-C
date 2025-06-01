@@ -68,12 +68,18 @@ h6{ /* 본문 */
 
 .tag{
   display: inline-block;
-  color: var(--primaryColor);
   /* background-color: var(--mainBg); */
   /* background-color: #fff; */
   padding: 0.5rem 1.5rem;
-  border: 0.1rem solid var(--primaryColor);
   border-radius: var(--radius-sm);
+}
+.tag.primary{
+  color: var(--primaryColor);
+  border: 0.1rem solid var(--primaryColor);
+}
+.tag.accent{
+  color: var(--accentColor);
+  border: 0.1rem solid var(--accentColor);
 }
 .btn{
   display: inline-block;
@@ -88,6 +94,7 @@ h6{ /* 본문 */
   border-radius: var(--radiusInfinite);
   color: var(--mainBg);
   /* box-shadow: var(--boxShadow); */
+  cursor: pointer;
   transition: 0.3s;
 }
 .btn.primary{

@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>전시 상세페이지</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
-  <script src="script.js" defer></script>
+  <link rel="shortcut icon" href="image/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <script src="script.js" defer></script> -->
 </head>
 <body id="detail">
   <header></header>
@@ -17,17 +19,17 @@
         <div class="des">
           <h2>CONNECTED_응축된 호흡</h2>
           <h2>송미리내展</h2>
-          <div class="tags">
-            <h5 class="tag">#현재 전시</h5>
-            <h5 class="tag">#Painting</h5>
+          <div class="tags category">
+            <h5 class="tag primary">#현재 전시</h5>
+            <h5 class="tag accent">#Painting</h5>
           </div>
           <h5>2025-05-07 ~ 2025-05-20</h5>
           <h6>서울시 영등포구 국제금융로8길16 신영증권BD, B128호 아트 살롱 드 아씨 갤러리</h6>
         </div>
       </div>
-      <div class="tags">
-        <span class="tag"><i class="fa-solid fa-check"></i> 다녀간 전시</span>
-        <span class="tag"><i class="fa-solid fa-heart"></i> 찜한 전시</span>
+      <div class="tags state">
+        <span class="tag primary"><i class="fa-solid fa-check"></i> 다녀간 전시</span>
+        <span class="tag accent"><i class="fa-solid fa-heart"></i> 찜한 전시</span>
       </div>
     </div>
   </main>
@@ -59,57 +61,95 @@
   <section id="preview">
     <div class="rel">
       <h2>작품 미리보기</h2>
-      <div class="cards">
-        <div class="card card1">
-          <img src="image/preview-1.jpg" alt="">
-          <div class="container">
-            <h5 class="title">
-              앞으로 계속해서 이겨낼 수 있길.. 그게 무엇이든
-            </h5>
-            <div class="creation">
-              Acrylic & Mixed Media on Canvas
+      <div class="swiper-all">
+        <div class="swiper mySwiper1">
+          <div class="cards swiper-wrapper">
+            <div class="card card1 swiper-slide">
+              <img src="image/preview-1.jpg" alt="">
+              <div class="container">
+                <h5 class="title">
+                  앞으로 계속해서 이겨낼 수 있길.. 그게 무엇이든
+                </h5>
+                <div class="creation">
+                  Acrylic & Mixed Media on Canvas
+                </div>
+                <div class="meta">
+                  117 x 92cm, 2025
+                </div>
+              </div>
             </div>
-            <div class="meta">
-              117 x 92cm, 2025
+            <div class="card card2 swiper-slide">
+              <img src="image/preview-2.jpg" alt="">
+              <div class="container">
+                <h5 class="title">
+                  행복해서 웃는 게 아니라 웃어서 행복한 것입니다
+                </h5>
+                <div class="creation">
+                  Acrylic & Mixed Media on Canvas
+                </div>
+                <div class="meta">
+                  92 x 117cm, 2025
+                </div>
+              </div>
+            </div>
+            <div class="card card3 swiper-slide">
+              <img src="image/preview-3.jpg" alt="">
+              <div class="container">
+                <h5 class="title">
+                  미안해, 받은 만큼 돌려 줄게
+                </h5>
+                <div class="creation">
+                  Acrylic & Mixed Media on Canvas
+                </div>
+                <div class="meta">
+                  46 x 46cm, 2025
+                </div>
+              </div>
+            </div>
+            <div class="card card4 swiper-slide">
+              <img src="image/preview-4.jpg" alt="">
+              <div class="container">
+                <h5 class="title">
+                  앞으로 우리가 신경 쓰고, 지켜줄게
+                </h5>
+                <div class="creation">
+                  Acrylic & Mixed Media on Canvas
+                </div>
+                <div class="meta">
+                  46 x 46cm, 2024
+                </div>
+              </div>
+            </div>
+            <div class="card card4 swiper-slide">
+              <img src="image/preview-5.jpg" alt="">
+              <div class="container">
+                <h5 class="title">
+                  저도 두렵지만 결국에는 회복할 거예요
+                </h5>
+                <div class="creation">
+                  Acrylic & Mixed Media on Canvas
+                </div>
+                <div class="meta">
+                  46 x 46cm, 2024
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="card card2">
-          <img src="image/preview-2.jpg" alt="">
-          <div class="container">
-            <h5 class="title">
-              행복해서 웃는 게 아니라 웃어서 행복한 것입니다
-            </h5>
-            <div class="creation">
-              Acrylic & Mixed Media on Canvas
-            </div>
-            <div class="meta">
-              92 x 117cm, 2025
-            </div>
-          </div>
-        </div>
-        <div class="card card3">
-          <img src="image/preview-3.jpg" alt="">
-          <div class="container">
-            <h5 class="title">
-              미안해, 받은 만큼 돌려 줄게
-            </h5>
-            <div class="creation">
-              Acrylic & Mixed Media on Canvas
-            </div>
-            <div class="meta">
-              46 x 46cm, 2025
-            </div>
-          </div>
-        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </div>
   </section>
 
   <section id="comment">
     <h2>감상평</h2>
-    <div class="container">
-      <div class="person person1">
+    <div class="comment-wrap">
+      <div class="comment-input">
+        <textarea rows="3" cols="30"></textarea>
+        <div class="btn primary">감상평 남기기</div>
+      </div>
+      <div class="person person1 container">
         <img src="image/person1.png" alt="">
         <div class="right">
           <h4 class="id">ah******</h4>
@@ -118,7 +158,7 @@
           </p>
         </div>
       </div>
-      <div class="person person2">
+      <div class="person person2 container">
         <img src="image/person2.png" alt="">
         <div class="right">
           <h4 class="id">ls******</h4>
@@ -127,7 +167,7 @@
           </p>
         </div>
       </div>
-      <div class="person person3">
+      <div class="person person3 container">
         <img src="image/person3.png" alt="">
         <div class="right">
           <h4 class="id">hj******</h4>
@@ -136,7 +176,7 @@
           </p>
         </div>
       </div>
-      <div class="person person4">
+      <div class="person person4 container">
         <img src="image/person4.png" alt="">
         <div class="right">
           <h4 class="id">lj******</h4>
@@ -145,7 +185,7 @@
           </p>
         </div>
       </div>
-      <div class="person person5">
+      <div class="person person5 container">
         <img src="image/person5.png" alt="">
         <div class="right">
           <h4 class="id">kg******</h4>
@@ -190,36 +230,107 @@
               </ul>
             </div>
           </div>
-          <div class="btn">더보기</div>
+          <div class="btn primary">더보기</div>
         </div>
       </div>
       <div class="another">
         <h3>작가의 다른 전시</h3>
-        <div class="cards">
-          <div class="card">
-            <img src="image/another1.png" alt="">
-            <div class="container">
-              <h5>송미리내展</h5>
+        <div class="swiper-all">
+          <div class="swiper mySwiper2">
+            <div class="cards swiper-wrapper">
+              <div class="card card1 swiper-slide">
+                <img src="image/another1.jpg" alt="">
+                <div class="container">
+                  <h5>공원의 낮과 밤
+                    <br> - 만들어진 풍경, 재생되는 자연</h5>
+                </div>
+              </div>
+              <div class="card card2 swiper-slide">
+                <img src="image/another2.jpg" alt="">
+                <div class="container">
+                  <h5>2024 올해의 작가展 'Bouquet'</h5>
+                </div>
+              </div>
+              <div class="card card3 swiper-slide">
+                <img src="image/another3.jpg" alt="">
+                <div class="container">
+                  <h5>송미리내展</h5>
+                </div>
+              </div>
+              <div class="card card4 swiper-slide">
+                <img src="image/another4.jpg" alt="">
+                <div class="container">
+                  <h5>CONNECTED 4<br> - 너와나 언젠가 다시 만난다</h5>
+                </div>
+              </div>
+              <div class="card card5 swiper-slide">
+                <img src="image/another5.jpg" alt="">
+                <div class="container">
+                  <h5>송미리내展</h5>
+                </div>
+              </div>
+              <div class="card card6 swiper-slide">
+                <img src="image/another6.jpg" alt="">
+                <div class="container">
+                  <h5>페티쉬 PETISH</h5>
+                </div>
+              </div>
+              <div class="card card7 swiper-slide">
+                <img src="image/another7.jpg" alt="">
+                <div class="container">
+                  <h5>CONNECTED 2 <br>- 송미리내展</h5>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <img src="image/another2.png" alt="">
-            <div class="container">
-              <h5>CONNECTED 4<br> - 너와나 언젠가 다시 만난다</h5>
-            </div>
-          </div>
-          <div class="card">
-            <img src="image/another3.png" alt="">
-            <div class="container">
-              <h5>CONNECTED 2<br> - 송미리내展</h5>
-            </div>
-          </div>
-          
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </div>
     </div>
   </section>
 
   <footer></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper1 = new Swiper(".mySwiper1", {
+      // loop: true,
+      spaceBetween: 30,
+      // slidesOffsetBefore: 50,
+      // slidesOffsetAfter: 50,
+      slidesPerView:1,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints:{
+        768:{
+          slidesPerView:3
+        },
+        1400:{
+          slidesPerView:4
+        },
+      }
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      spaceBetween: 30,
+      slidesPerView:1,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints:{
+        768:{
+          slidesPerView:3
+        },
+        1400:{
+          slidesPerView:4
+        },
+      }
+    });
+    
+  </script>
+
 </body>
 </html>
