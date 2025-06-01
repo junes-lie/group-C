@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art hub</title>
+    <link rel="shortcut icon" href="image/favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- Script Source -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      defer
+    ></script>
+    <script src="js/more.js" defer></script>
+  </head>
+  <body id="past">
+    <section class="banner">
+      <div class="title">
+        <h2>지난 전시</h2>
+        <h4>사라지지 않는 전시의 순간들을 기록했습니다.</h4>
+      </div>
+    </section>
+
+    <!-- 검색창 -->
+    <section class="search">
+      <h5>그때 그 전시, 다시 만나볼까요?</h5>
+      <div class="search-box">
+        <div class="month-wrapper">
+          <input type="month" id="monthInput" />
+          <i class="fa-solid fa-calendar custom-icon"></i>
+        </div>
+        <input type="text" placeholder="전시 검색..." />
+        <i class="fa fa-search"></i>
+      </div>
+      <ul class="cate">
+        <li><a href="#none">전체 전시</a></li>
+        <li><a href="#none">온라인 전시</a></li>
+        <li><a href="#none">오프라인 전시</a></li>
+        <li><a href="#none">VR전시</a></li>
+      </ul>
+    </section>
+
+    <!-- 포스터목록 -->
+    <section class="poster-wrap">
+      <div class="poster-grid">
+        <div class="poster">
+            <div class="image-box">
+              <img src="image/Exhibition/past/img1.png" />
+            </div>
+            <div class="txt-box">
+              <strong> 권지현展 </strong>
+              <p class="artist">권지현</p>
+              <p class="date">2025-05-06 ~ 2025-06-02</p>
+            </div>
+        </div>
+        <div class="poster">
+          <div class="image-box">
+            <img src="image/Exhibition/past/img2.png" />
+          </div>
+          <div class="txt-box">
+            <strong> 정회윤展 </strong>
+            <p class="artist">정회윤</p>
+            <p class="date">2025-05-07 ~ 2025-05-16</p>
+          </div>
+        </div>
+        <div class="poster">
+          <div class="image-box">
+            <img src="image/Exhibition/past/img3.png" />
+          </div>
+          <div class="txt-box">
+            <strong> 압록강은 흐른다. :: 신영진展 </strong>
+            <p class="artist">신영진</p>
+            <p class="date">2025-05-03 ~ 2025-05-18</p>
+          </div>
+        </div>
+        <div class="poster">
+          <div class="image-box">
+            <img src="image/Exhibition/past/img4.png" />
+          </div>
+          <div class="txt-box">
+            <strong> SUMMER_TIME </strong>
+            <p class="artist">야나 코코노바, 세츠코 후쿠시마, 라이너 융한스</p>
+            <p class="date">2025-05-02 ~ 2025-05-17</p>
+          </div>
+        </div>
+
+        <div class="poster">
+          <div class="image-box">
+            <img src="image/Exhibition/past/img5.png" />
+          </div>
+          <div class="txt-box">
+            <strong> 40주년 기념 group MASS </strong>
+            <p class="artist">고경숙, 이종애, 서광옥, 백미현 ...</p>
+            <p class="date">2025-05-02 ~ 2025-06-29</p>
+          </div>
+        </div>
+        <div class="poster">
+          <div class="image-box">
+            <img src="image/Exhibition/past/img6.png" />
+          </div>
+          <div class="txt-box">
+            <strong> 남지형展 </strong>
+            <p class="artist">남지형</p>
+            <p class="date">2025-05-01 ~ 2025-05-18</p>
+          </div>
+        </div>
+        <div class="poster">
+          <div class="image-box">
+            <img src="image/Exhibition/past/img7.png" />
+          </div>
+          <div class="txt-box">
+            <strong> 경계공간 Liminoid </strong>
+            <p class="artist">이안진, 채민정</p>
+            <p class="date">이안진, 채민정</p>
+          </div>
+        </div>
+        <div class="poster">
+          <div class="image-box">
+            <img src="image/Exhibition/past/img8.png" />
+          </div>
+          <div class="txt-box">
+            <strong> Across The Universe </strong>
+            <p class="artist">권기수</p>
+            <p class="date">2025-05-01 ~ 2025-05-31</p>
+          </div>
+        </div>
+
+        <div class="poster">
+          <div class="image-box">
+            <img src="image/Exhibition/past/img9.png" />
+          </div>
+          <div class="txt-box">
+            <strong> 마죽거리(馬竹巨里) </strong>
+            <p class="artist">A project : 정지윤, 최성진</p>
+            <p class="date">2025-04-29 ~ 2025-05-25</p>
+          </div>
+        </div>
+        <div class="poster">
+          <div class="image-box">
+            <img src="image/Exhibition/past/img10.png" />
+          </div>
+          <div class="txt-box">
+            <strong> 겹, 틈, 결 </strong>
+            <p class="artist">공성훈, 박승범, 박은태, 서정민, 오상욱</p>
+            <p class="date">2025-04-30 ~ 2025-06-11</p>
+          </div>
+        </div>
+        <div class="poster">
+          <div class="image-box">
+            <img src="image/Exhibition/past/img11.png" />
+          </div>
+          <div class="txt-box">
+            <strong> 바람의 섬과 붓끝 사이 </strong>
+            <p class="artist">
+              호암 양창보(湖岩 梁昌普)
+            </p>
+            <p class="date">2025-05-23 ~ 2025-06-16</p>
+          </div>
+        </div>
+        <div class="poster">
+          <div class="image-box">
+            <img src="image/Exhibition/past/img12.png" />
+          </div>
+          <div class="txt-box">
+            <strong> MADE IN BUSAN </strong>
+            <p class="artist">故황성준</p>
+            <p class="date">2025-04-29 ~ 2025-08-31</p>
+          </div>
+        </div>
+
+        <div class="poster">
+          <div class="image-box">
+            <img src="image/Exhibition/past/img13.png" />
+          </div>
+          <div class="txt-box">
+            <strong> 소거의 흔적 </strong>
+            <p class="artist">심미나</p>
+            <p class="date">2025-04-29 ~ 2025-05-26</p>
+          </div>
+        </div>
+        <div class="poster">
+          <div class="image-box">
+            <img src="image/Exhibition/past/img14.png" />
+          </div>
+          <div class="txt-box">
+            <strong> 홀로무리 </strong>
+            <p class="artist">방기철</p>
+            <p class="date">2025-04-28 ~ 2025-05-12</p>
+          </div>
+        </div>
+        <div class="poster">
+          <div class="image-box">
+            <img src="image/Exhibition/past/img15.png" />
+          </div>
+          <div class="txt-box">
+            <strong> 꽃, 경계에 心다 </strong>
+            <p class="artist">장용림</p>
+            <p class="date">2025-04-30 ~ 2025-05-05</p>
+          </div>
+        </div>
+        <div class="poster">
+          <div class="image-box">
+            <img src="image/Exhibition/past/img16.png" />
+          </div>
+          <div class="txt-box">
+            <strong> 김경화展 </strong>
+            <p class="artist">김경화</p>
+            <p class="date">2025-04-25 ~ 2025-05-07</p>
+          </div>
+        </div>
+
+        <div class="poster">
+          <div class="image-box">
+            <img src="image/Exhibition/past/img17.png" />
+          </div>
+          <div class="txt-box">
+            <strong> 제행무상 제법무아 </strong>
+            <p class="artist">원병훈</p>
+            <p class="date">2025-04-24 ~ 2025-04-30</p>
+          </div>
+        </div>
+        <div class="poster">
+          <div class="image-box">
+            <img src="image/Exhibition/past/img18.png" />
+          </div>
+          <div class="txt-box">
+            <strong> Mirror - Your Particles </strong>
+            <p class="artist">구영웅</p>
+            <p class="date">2025-04-23 ~ 2025-04-29</p>
+          </div>
+        </div>
+        <div class="poster">
+          <div class="image-box">
+            <img src="image/Exhibition/past/img19.png" />
+          </div>
+          <div class="txt-box">
+            <strong> 생존의 방식: 온유하게 </strong>
+            <p class="artist">김다슬</p>
+            <p class="date">2025-04-23 ~ 2025-05-19</p>
+          </div>
+        </div>
+        <div class="poster">
+          <div class="image-box">
+            <img src="image/Exhibition/past/img20.png" />
+          </div>
+          <div class="txt-box">
+            <strong> 사물로부터 </strong>
+            <p class="artist">고근호, 김신일, 김유정, 이순종 ...</p>
+            <p class="date">2025-04-22 ~ 2025-06-29</p>
+          </div>
+        </div>
+      </div>
+      <!-- 더보기 버튼 -->
+      <div class="more">
+        <button class="btn primary">더보기</button>
+      </div>
+    </section>
+  </body>
+</html>
