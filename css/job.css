@@ -1,0 +1,277 @@
+#job {
+  position: relative;
+  width: 140rem; /* 1400px */
+  /* width: 100%; */ /* 배경 전체로 넣을 경우 */
+  margin: auto;
+  /* padding: 15rem 0; */
+  z-index: 0;
+  
+}
+
+/* 아트허브 로고 */
+#job #logo{
+  display: flex;
+  color: var(--primaryColor);
+  justify-content: flex;
+  position: relative;
+  left: 8rem;
+  top: 3rem;
+  
+}
+
+
+/* 제목 */
+#job .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--textColor);
+  position: relative;
+  bottom: 15rem;
+}
+
+#job #first_cards .title pre h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'YUniverse-B';
+  font-weight: bold;
+  font-size: var(--font-xxl);
+  color: var(--textColor);
+  
+}
+
+/* 탑 메뉴 */
+
+#job .topMenu {
+  display: flex;
+  position:relative;
+  left: 55rem;
+  gap: 10rem;
+
+}
+
+
+#job .topMenu h5{   
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+
+}
+
+#job .topMenu h5:hover {
+  color:var(--primaryColor);
+}
+
+#job .top-image{
+  filter: brightness(40%);
+  width: auto;
+  height: 40rem;
+}
+
+
+/* 검색박스 */
+
+#job header .header_class .search-box { 
+  position: relative;
+  width: 18rem;
+  height: 3rem;
+  border-radius: 2rem;
+  transition: 0.3s ease;
+  left: 100rem;
+  bottom: 5rem;
+}
+
+
+#job header .search-box i {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.8rem;
+  pointer-events: none;
+  transition: 0.2s ease;
+  
+}
+#job header .search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 0;
+  transition: 0.3s ease;
+  font-size: 1.4rem;
+  margin-left: 1rem;
+}
+
+
+#job .user_icon i{
+  position: relative;
+  left: 125rem;
+  bottom: 8rem;
+}
+
+/* 마우스오버 */
+
+#job header .search-box:hover,
+#job header .search-box input:focus {
+  width: 200px;
+  background: #f7f4f3;
+}
+#job header .search-box:hover input,
+#job header .search-box input:focus {
+  width: 80%;
+}
+
+#job header .search-box:hover {
+color: var(--primaryColor);
+}
+
+#job .user_icon i:hover {
+color: var(--primaryColor);
+}
+
+
+
+/* 첫번째 섹션 */
+
+
+#job .recruit_cards .pre-title h2{
+  position: relative;
+  color: var(--mainBg);
+  font-size: var(--font-xl);
+  bottom: 38rem;
+  text-align: center;
+}
+
+/* 중앙 검색창 */
+
+#job .search-box2 { 
+  position: relative;
+  width: 18rem;
+  height: 3rem;
+  border-radius: 2rem;
+  left: 55rem;
+  bottom: 5rem;
+  color: var(--primaryColor);
+}
+
+#job .search-box2 input {
+  position: relative;
+  bottom: 1rem;
+  border: solid 2px var(--primaryColor);
+  border-radius: 1rem;
+  background: transparent;
+  outline: none;
+  font-size: 2rem;
+}
+
+
+#job .search-box2 i {
+  position: relative;
+  left: 30rem;
+  bottom: 3rem;
+  transform: translateY(-50%);
+  font-size: 1.8rem;
+  pointer-events: none;
+  transition: 0.2s ease;
+  color: var(--primaryColor);
+  
+}
+
+
+/* 두번째 섹션 */
+
+#job #second_cardsbox { 
+  background-image: var(--F7F4F3);
+  padding: 5rem;
+  
+}
+
+#job .second_textbox {
+  border: solid 2px #333;
+
+}
+
+
+
+
+#job .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+#recruit_footer .footer-background {
+  background-color: var(--textColor);
+  width: auto;
+  height:30rem;
+  position:relative;
+  z-index: -100;
+}
+
+#recruit_footer ul li{
+  position:relative;
+  top: 25rem;
+  left: 10rem;
+  z-index: 100;
+}
+
+#recruit_footer ul li:nth-child(1) {
+  color:var(--primaryColor);
+  position:relative;
+}
+#recruit_footer ul li:nth-child(2) {
+  color:var(--primaryColor);
+  font-size: var(--font-xxxxs);
+  position: relative;
+  left: 28rem;
+}
+#recruit_footer ul li:nth-child(4) {
+  font-size: var(--font-xxs);
+  color: var(--mainBg);
+}
+
+#recruit_footer ul li:nth-child(6) {
+  font-size: var(--font-xxs);
+  font-weight:900;
+  color: var(--mainBg);
+}
+#recruit_footer ul li:nth-child(7) {
+  font-size:var(--font-xxs);
+  color: var(--mainBg);
+}
+#recruit_footer ul li:nth-child(8) {
+  font-size:var(--font-xxs);
+  color: var(--mainBg);
+}
+#recruit_footer ul li:nth-child(10) {
+  font-size:var(--font-xxs);
+  color: var(--mainBg);
+  position: relative;
+  left: 55rem;
+  bottom:30rem;
+
+}
+
+#recruit_footer .facebook { 
+  position:relative;
+  bottom: 25rem;
+  left: 123rem;
+  z-index: 110;
+  color:var(--mainBg);
+}
+#recruit_footer .insta { 
+  position:relative;
+  bottom: 25rem;
+  left: 123rem;
+  z-index: 110;
+  color:var(--mainBg);
+}
+#recruit_footer .blog { 
+  position:relative;
+  bottom: 25rem;
+  left: 123rem;
+  z-index: 110;
+  color:var(--mainBg);
+}

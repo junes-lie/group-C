@@ -7,7 +7,10 @@
 @import url(index.css);  /* 인트로 */
 @import url(exhibition-sub.css);  /* 전시 서브 전체 */
 
-@import url(mypage.css);
 @import url(exhibit.css);
+@import url(mypage.css);
 
 @import url(detail.css);
+
+@import url(recruit.css);
+@import url(job.css);

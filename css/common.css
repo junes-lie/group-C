@@ -18,7 +18,7 @@
   --radius-sm: 3rem;
   --radius-lg: 5rem;
   --radiusInfinite: 99999rem;
-  --boxShadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  --boxShadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 
 body{
@@ -93,23 +93,20 @@ h6{ /* 본문 */
   align-items: center;
   border-radius: var(--radiusInfinite);
   color: var(--mainBg);
+  background-color: var(--primaryColor);
   /* box-shadow: var(--boxShadow); */
   cursor: pointer;
   transition: 0.3s;
 }
-.btn.primary{
-  background-color: var(--primaryColor);
-}
-.btn.accent{
-  background-color: var(--accentColor);
-}
-
-.btn.primary:hover{
+.btn:hover{
   background-color: rgb(127 168 86/ 80%);
 }
+/* .btn.accent{
+  background-color: var(--accentColor);
+} 
 .btn.accent:hover{
   background-color: rgb(239 80 139/ 80%);
-}
+}*/
 
 /* Tablet */
 @media screen and (max-width:1400px){
