@@ -329,34 +329,34 @@
 
 /* 태블릿______________________________ */
 @media screen and (max-width:1400px){
-  body{
+  #mypage body{
     font-size: var(--font-sm);
   }
-  h2{ /* 메인타이틀 */
+  #mypage h2{ /* 메인타이틀 */
   font-size: var(--font-xl);
   }
-  h3{ /* 제목 */
+  #mypage h3{ /* 제목 */
     font-size: var(--font-lg);
   }
-  h4{ /* 작은제목 */
+  #mypage h4{ /* 작은제목 */
     font-size: var(--font-sm);
   }
-  h5{ /* 헤더 */
+  #mypage h5{ /* 헤더 */
     font-size: var(--font-xs);
   }
-  h6{ /* 본문 */
+  #mypage h6{ /* 본문 */
     font-size: var(--font-xxs);
   }
 
-  main{
+  #mypage main{
   max-width: 76.8rem;
   }
-  section{
+  #mypage section{
     width: 76.8rem; 
   }
 
   /* 내 프로필 */
-  .pc-only{display: none;}
+  #mypage .pc-only{display: none;}
 
   #mypage .profile-box{
     width: 68rem;
@@ -379,22 +379,22 @@
 
 /* 모바일______________________________ */
 @media screen and (max-width:768px){
-  body{
+  #mypage body{
     font-size: var(--font-xs);
   }
-  h2{ /* 메인타이틀 */
+  #mypage h2{ /* 메인타이틀 */
   font-size: var(--font-lg);
   }
-  h3{ /* 제목 */
+  #mypage h3{ /* 제목 */
     font-size: var(--font-sm);
   }
-  h4{ /* 작은제목 */
+  #mypage h4{ /* 작은제목 */
     font-size: var(--font-xs);
   }
-  h5{ /* 헤더 */
+  #mypage h5{ /* 헤더 */
     font-size: var(--font-xxs);
   }
-  h6{ /* 본문 */
+  #mypage h6{ /* 본문 */
     font-size: var(--font-xxxs);
   }
 

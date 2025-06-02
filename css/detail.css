@@ -1,20 +1,28 @@
 @charset "utf-8"; 
-#detail{
+#ex-detail,
+#con-detail{
   background: var(--mainBg);
 }
 
 /* 메인 */
-#detail main .main-image{
-  /* border: 1px solid #000; */
+#ex-detail main .main-image,
+#con-detail main .main-image{
+  /* border: 1px solid red; */
   width: 100%;
   height: 60.0rem;
-  background: url(../image/detail_main.jpg) no-repeat center/120%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   position: relative;
 }
-#detail main .main-image::before{
+#ex-detail main .main-image{
+  background: url(../image/detail_main.jpg) no-repeat center/120%;
+}
+#con-detail main .main-image{
+  background: url(../image/contest1.jpg) no-repeat center/100%;
+}
+#ex-detail main .main-image::before,
+#con-detail main .main-image::before{
   content: '';
   /* border: 1px solid #000; */
   position: absolute;
@@ -25,7 +33,8 @@
   background: rgba(0, 0, 0, 0.7);
 }
 
-#detail main .des{
+#ex-detail main .des,
+#con-detail main .des{
   /* border: 1px solid red; */
   width: 140rem;
   margin: 5rem auto;
@@ -33,38 +42,49 @@
   color: #fff;
   position: relative;
 }
-#detail main .tags{
+#ex-detail main .tags,
+#con-detail main .tags{
   margin: 2rem 0;
   /* font-size: var(--font-sm); */
 }
-#detail main .tag.accent{
+#ex-detail main .tag.accent,
+#con-detail main .tag.accent{
   margin-left: 2rem;
 }
 
-#detail main .des h6{
+#ex-detail main .des h6,
+#con-detail main .des h6{
   margin-top: 1rem;
 }
-#detail main .tags.state{
+#ex-detail main .tags.state,
+#con-detail main .tags.state{
   width: 140rem;
   margin: 3rem auto;
   text-align: right;
 }
-#detail main .tags.state .tag{
+#ex-detail main .tags.state .tag,
+#con-detail main .tags.state .tag{
   border-width: 0.2rem;
   font-weight: 500;
 }
 
 /* 페이지 공통 */
-#detail section h2{
+#ex-detail section h2,
+#con-detail section h2{
   padding-bottom: 0.5rem;
   border-bottom: 0.1rem solid var(--textColorSub);
   margin-bottom: 8rem;
 }
-#detail section p,
-#detail section li{
+#ex-detail section p,
+#ex-detail section li,
+#con-detail section dl{
   font-size: var(--font-xs);
 }
-#detail section .container{
+#con-detail section dt{
+  font-weight: bold;
+}
+#ex-detail section .container,
+#con-detail section .container{
   background-color: #fff;
   border-radius: var(--radius-sm);
   box-shadow: var(--boxShadow);
@@ -72,107 +92,137 @@
 }
 
 /* 전시 개요 & 작가 */
-#detail #overview .container-wrap,
-#detail #artist .container-wrap{
+#ex-detail #overview .container-wrap,
+#ex-detail #artist .container-wrap{
   display: flex;
   gap: 3rem;
 }
-#detail #overview .info,
-#detail #artist .profile{
+#ex-detail #overview .info,
+#ex-detail #artist .profile{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#detail #overview .info h3,
-#detail #artist .profile h3{
+#ex-detail #overview .info h3,
+#ex-detail #artist .profile h3,
+#con-detail #overview .info h3{
   margin-bottom: 3rem;
 }
-#detail #overview .content,
-#detail #artist .content{
+#ex-detail #overview .content,
+#ex-detail #artist .content{
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+#con-detail #overview .content{
+  /* border: 1px solid #000; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#con-detail #overview .left dl,
+#con-detail #overview .right dl{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#con-detail #overview .left dl div,
+#con-detail #overview .right dl div{
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: 10rem auto;
+}
+#con-detail #overview .left dd{
+  display: grid;
+  grid-template-columns: 25rem auto;
+  align-items: center;
+  justify-self: start;
+}
 
-#detail #overview .info p{
+#con-detail #overview .btn{
+  margin: 10rem auto 0;
+}
+
+
+#ex-detail #overview .info p{
   /* border: 1px solid #000; */
   display: flex;
   width: 45rem;
 }
-#detail #artist .profile p{
+#ex-detail #artist .profile p{
   /* border: 1px solid #000; */
   display: flex;
   width: 30rem;
 }
 
-#detail #overview .info p b,
-#detail #artist .profile p b,
-#detail #artist .career b{
+#ex-detail #overview .info p b,
+#ex-detail #artist .profile p b,
+#ex-detail #artist .career b{
   /* border: 1px solid red; */
   display: inline-block;
   width: 10rem;
   font-size: var(--font-xs);
 }
-#detail #overview .info .content p span{
+#ex-detail #overview .info .content p span{
   flex: 1;
 }
-#detail #overview .info p:last-of-type,
-#detail #artist .profile p:last-of-type{
+#ex-detail #overview .info p:last-of-type,
+#ex-detail #artist .profile p:last-of-type{
   margin-top: 2rem;
 }
-#detail #overview .info p:last-of-type img{
+#ex-detail #overview .info p:last-of-type img,
+#con-detail #overview .info .right div:last-of-type img{
   margin-right: 2rem;
 }
-#detail #overview .review,
-#detail #artist .career{
+#ex-detail #overview .review,
+#ex-detail #artist .career{
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
-#detail #artist .career .win{
+#ex-detail #artist .career .win{
   display: flex;
   margin-top: 1rem;
 }
-#detail #artist .career .win li{
+#ex-detail #artist .career .win li{
   margin-bottom: 0.5rem;
 }
-#detail #artist .career .btn{
+/* #ex-detail #artist .career .btn{
   align-self: center;
   margin-top: 2rem;
-}
+} */
 
 
 /* 미리보기 & 작가의 다른 전시 */
-#detail #artist .another h3{
+#ex-detail #artist .another h3{
   margin: 8rem 0;
 }
 
 /* 스와이퍼 버튼 */
-#detail #preview .swiper-all,
-#detail #artist .swiper-all{
+#ex-detail #preview .swiper-all,
+#ex-detail #artist .swiper-all{
   position: relative;
 }
-#detail #preview .swiper-button-lock,
-#detail #artist .swiper-button-lock{
+#ex-detail #preview .swiper-button-lock,
+#ex-detail #artist .swiper-button-lock{
   display: block;
 }
-#detail #preview .swiper-button-prev:after,
-#detail #preview .swiper-button-next:after,
-#detail #artist .swiper-button-prev:after,
-#detail #artist .swiper-button-next:after{
+#ex-detail #preview .swiper-button-prev:after,
+#ex-detail #preview .swiper-button-next:after,
+#ex-detail #artist .swiper-button-prev:after,
+#ex-detail #artist .swiper-button-next:after{
   /* border: 1px solid #000; */
   position: absolute;
   top: 0;
   color: var(--textColor);
 }
 
-/* #detail #preview .cards::before,
-#detail #preview .cards::after,
-#detail #artist .cards::before,
-#detail #artist .cards::after{
+/* #ex-detail #preview .cards::before,
+#ex-detail #preview .cards::after,
+#ex-detail #artist .cards::before,
+#ex-detail #artist .cards::after{
   position: absolute;
   font-family: fontawesome;
   font-size: 8rem;
@@ -180,42 +230,42 @@
   transform: translateY(-50%);
   cursor: pointer;
 }
-#detail #preview .cards::before,
-#detail #artist .cards::before{
+#ex-detail #preview .cards::before,
+#ex-detail #artist .cards::before{
   content: '\f053';
   left: 0;
 }
-#detail #preview .cards::after,
-#detail #artist .cards::after{
+#ex-detail #preview .cards::after,
+#ex-detail #artist .cards::after{
   content: '\f054';
   right: 0;
 } */
 
-#detail #preview .swiper.mySwiper1,
-#detail #artist .swiper.mySwiper2{
+#ex-detail #preview .swiper.mySwiper1,
+#ex-detail #artist .swiper.mySwiper2{
   /* border: 1px solid #000; */
   padding: 1rem;
   width: 90%;
 }
-#detail #preview .card,
-#detail #artist .card{
+#ex-detail #preview .card,
+#ex-detail #artist .card{
   /* border: 1px solid #000; */
   display: flex;
   flex-direction: column;
   height: auto;
 }
-#detail #preview .cards img,
-#detail #artist .cards img{
+#ex-detail #preview .cards img,
+#ex-detail #artist .cards img{
   object-fit: cover;
   aspect-ratio: 3/4;
   border-radius: var(--radiusInfinite) var(--radiusInfinite) 0 0;
   box-shadow: var(--boxShadow);
 }
-#detail #artist .cards img:first-child{
+#ex-detail #artist .cards img:first-child{
   object-position: bottom;
 }
-#detail #preview .cards .container,
-#detail #artist .cards .container{
+#ex-detail #preview .cards .container,
+#ex-detail #artist .cards .container{
   flex: 1;
   padding: 3rem;
   display: flex;
@@ -225,25 +275,25 @@
   /* box-shadow: none; */
 }
   
-#detail #preview .cards .container h5,
-#detail #artist .cards .container h5{
+#ex-detail #preview .cards .container h5,
+#ex-detail #artist .cards .container h5{
   flex: 1;
   font-weight: 500;
 }
-#detail #preview .cards .container .creation,
-#detail #preview .cards .container .meta{
+#ex-detail #preview .cards .container .creation,
+#ex-detail #preview .cards .container .meta{
   font-size: var(--font-xxs);
   color: var(--textColorSub);
 }
 
 
 /* 감상평 */
-#detail #comment .comment-wrap{
+#ex-detail #comment .comment-wrap{
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
-#detail #comment .comment-input{
+#ex-detail #comment .comment-input{
   /* border: 1px solid #000; */
   display: flex;
   justify-content: space-between;
@@ -253,31 +303,31 @@
   padding-bottom: 3rem;
   /* position: relative; */
 }
-#detail #comment .comment-input textarea{
+#ex-detail #comment .comment-input textarea{
   display: inline-block;
   flex: 1;
   border: 0.1rem solid var(--primaryColor);
   border-radius: 1rem;
   padding: 3rem;
 }
-#detail #comment .comment-input textarea:focus{
+#ex-detail #comment .comment-input textarea:focus{
   border: 0.2rem solid var(--primaryColor);
 }
-#detail #comment .comment-input .btn{
+#ex-detail #comment .comment-input .btn{
   height: 100%;
   margin-top: 0;
   border-radius: 1rem;
 }
-#detail #comment .person{
+#ex-detail #comment .person{
   display: flex;
   gap: 10rem;
   align-items: center;
   padding: 3rem;
 }
-#detail #comment .person img{
+#ex-detail #comment .person img{
   width: 10rem;
 }
-#detail #comment .person .right{
+#ex-detail #comment .person .right{
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -285,7 +335,7 @@
 
 /* 작가 */
   
-#detail #artist .title{
+#ex-detail #artist .title{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -293,22 +343,24 @@
   border-bottom: 0.1rem solid var(--textColorSub);
   margin-bottom: 8rem;
 }
-#detail #artist .left{
+#ex-detail #artist .left{
   /* border: 1px solid #000; */
   display: flex;
   align-items: center;
 }
-#detail #artist .left h2{
+#ex-detail #artist .left h2{
   padding: 0;
   margin: 0;
   border: none;
   display: inline-block;
 }
-#detail #artist .left h4{
+#ex-detail #artist .left h4{
   color: var(--accentColor);
   margin-left: 3rem;
 }
-#detail #artist .left h4::before{
+
+#ex-detail #artist .left h4::before,
+#con-detail #overview .badge::before{
   content: '\f004';
   font-family: fontawesome;
   border: 0.2rem solid var(--accentColor);
@@ -318,106 +370,134 @@
   margin-right: 1rem;
 }
 
+#con-detail #overview .badge{
+  color: var(--accentColor);
+  font-weight: 600;
+}
+#con-detail #overview .badge::before{
+  font-size: var(--font-xxs);
+  /* margin-left: 10rem; */
+}
+
+/* 공모 상세페이지의 상세내용 */
+#con-detail #info img{
+  width: 140rem;
+  margin: auto;
+}
+#con-detail #info .btn{
+  margin: 10rem auto;
+}
+
+
+
+
 
 
 /* Tablet */
 @media screen and (max-width:1400px){
-  #detail main .des{
+  /* #ex-detail main .main-image{
+    width: 100%;
+  } */
+  #ex-detail main .des{
     margin: 5rem;
   }
-  #detail main .tags.state{
+  #ex-detail main .tags.state{
     width: 100%;
-    margin: 5rem 0;
+    margin: 3rem 0;
   }
-  #detail main .tags.state .tag.accent{
+  #ex-detail main .tags.state .tag.accent{
     margin-right: 5rem;
   }
-  #detail section{
+  #ex-detail section{
     width: 100%;
     /* margin: 0 3rem; */
     padding: 10rem 5rem;
   }
 
-  #detail #overview .container-wrap,
-  #detail #artist .container-wrap{
+  #ex-detail #overview .container-wrap,
+  #ex-detail #artist .container-wrap{
     display: flex;
     flex-direction: column;
     gap: 3rem;
+  }
+
+  #ex-detail #comment .person{
+    gap: 5rem;
   }
 
 }
 
 /* Mobile */
 @media screen and (max-width:768px){
-  #detail main .main-image{
+  #ex-detail main .main-image{
     height: 40rem;
   }
-  #detail main .des{
+  #ex-detail main .des{
     margin: 3rem;
   }
-  #detail section{
+  #ex-detail section{
     width: 100%;
     padding: 5rem 3rem;
   }
-  #detail section h2{
+  #ex-detail section h2{
     margin-bottom: 5rem;
   }
-  #detail section .container{
+  #ex-detail section .container{
     padding: 3rem;
   }
 
-  #detail #preview .swiper.mySwiper1,
-  #detail #artist .swiper.mySwiper2{
+  #ex-detail #preview .swiper.mySwiper1,
+  #ex-detail #artist .swiper.mySwiper2{
     width: 80%;
   }
-  #detail #preview .card .creation,
-  #detail #preview .card .meta{
+  #ex-detail #preview .card .creation,
+  #ex-detail #preview .card .meta{
     display: none;
   }
 
-  #detail #overview .info p,
-  #detail #artist .profile p,
-  #detail #artist .career p,
-  #detail #artist .career .win{
+  #ex-detail #overview .info p,
+  #ex-detail #artist .profile p,
+  #ex-detail #artist .career p,
+  #ex-detail #artist .career .win{
     /* border: 1px solid #000; */
     display: flex;
     flex-direction: column;
     width: auto;
     margin: 0.5rem 0;
   }
-  #detail #overview .info p span,
-  #detail #artist .profile p span,
-  #detail #artist .career p span,
-  #detail #artist .career .win ul{
+  #ex-detail #overview .info p span,
+  #ex-detail #artist .profile p span,
+  #ex-detail #artist .career p span,
+  #ex-detail #artist .career .win ul{
     margin: 0.5rem 0;
   }
 
-  #detail #artist .title{
+  #ex-detail #artist .title{
     flex-wrap: wrap;
     margin-bottom: 5rem;
   }
-  #detail #artist .title .right{
+  #ex-detail #artist .title .right{
     /* border: 1px solid #000; */
     width: 100%;
     text-align: right;
     margin-top: 0.5rem;
   }
-  #detail #comment .comment-input{
+  #ex-detail #comment .comment-input{
     gap: 1rem;
     height: 10rem;
     padding-bottom: 2rem;
   }
-  #detail #comment .comment-input textarea{
+  #ex-detail #comment .comment-input textarea{
     padding: 1rem;
   }
-  #detail #comment .comment-input .btn{
+  #ex-detail #comment .comment-input .btn{
     width: 8rem;
     padding: 2rem;
   }
-  #detail #comment .comment-wrap{
+  #ex-detail #comment .comment-wrap{
     gap: 2rem;
   }
-  #detail #comment .person img{
+  #ex-detail #comment .person img{
     /* flex-direction: column; */
     /* gap: 3rem; */
     display: none;
