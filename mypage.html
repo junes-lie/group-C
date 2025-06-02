@@ -10,41 +10,12 @@
   <body id="mypage">
 
 
-
-    <!-- <header>
-      <div class="header-inner">
-        <nav>
-          <a href="#"><img src="image/logo1.png" alt="아트허브"></a>
-          <ul class="gnb">
-            <li><a href="#">최신</a></li>
-            <li><a href="#">현재</a></li>
-            <li><a href="#">예정</a></li>
-          </ul>
-        </nav>
-        <ul class="util-menu">
-          <li><a href="">검색</a></li>
-          <li>
-            <ul>
-              <li><a href="">로그인</a></li>
-              <li><a href="">회원가입</a></li>
-              <li><a href="">마이페이지</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </header> -->
-
-      <header></header>
-
-
     <main>
       <!-- 내 프로필 -->
       <section>
         <div class="rel">
           <div class="my-title">
-            <img src="image/flower.png" alt="꽃장식">
             <h2>마이페이지</h2>
-            <img src="image/flower.png" alt="꽃장식">
           </div>
           <div class="profile-box">
             <div class="profile-user">
@@ -65,7 +36,7 @@
                 <h5>010-1234-5678</h5>
               </div>
             </div>
-            <div class="profile-btn">
+            <div class="profile-btn pc-only">
               <a href="#none">
                 <p><i class="bi bi-person-lines-fill"></i> 정보수정</p>
               </a>
@@ -77,7 +48,18 @@
               </a>
             </div>
           </div>
-          <div class="pc-only sub-btn">
+          <div class="btn-box">
+            <a href="#none">
+              <i class="bi bi-person-lines-fill"></i> <p>정보수정</p>
+              </a>
+              <a href="#none">
+                <i class="bi bi-heart-fill"></i> <p>관심목록</p>
+              </a>
+              <a href="#none">
+                <i class="bi bi-chat-right-quote"></i> <p>문의</p>
+              </a>
+          </div>
+          <div class="sub-btn">
             <button class="logout">
               <i class="bi bi-arrow-bar-right"></i> 로그아웃
             </button>
@@ -85,13 +67,12 @@
               <i class="bi bi-arrow-bar-right"></i> 회원탈퇴
             </button>
           </div>
-          
         </div>
       </section>
 
     <!-- 내 게시물 -->
       <section>
-        <dic class="rel">
+        <div class="rel">
           <div class="mypage-secTit">
             <h1>내 게시물</h1>
             <h3>0</h3>
@@ -99,7 +80,7 @@
           <div class="coment-box">
             <h6>아직 작성한 글이 없습니다.</h6>
           </div>
-        </dic>
+        </div>
       </section>
 
       <!-- 내 코멘트 -->
@@ -111,7 +92,7 @@
           </div>
           <div class="coment">
             <div class="coment-box">
-              <div class="coment-img">
+              <div class="coment-img non-mob">
                 <img src="image/my1.png" alt="포스터">
               </div>
               <div class="coment-txt">
@@ -119,15 +100,17 @@
                 <h6>섬 프로젝트: Linking Island</h6>
                 <p>2025.05.15</p>
               </div>
-              <a class="coment-icon" href="#none">
-                  <i class="bi bi-arrow-bar-right"></i>
+              <div class="mypage-icon">
+                <a class="coment-icon" href="detail.html">
+                    <i class="bi bi-arrow-bar-right"></i>
                 </a>
                 <a class="coment-icon" href="#none">
                   <i class="bi bi-trash3"></i>
                 </a>
+              </div>
             </div>
             <div class="coment-box">
-              <div class="coment-img">
+              <div class="coment-img non-mob">
                 <img src="image/my2.png" alt="포스터">
               </div>
               <div class="coment-txt">
@@ -135,15 +118,17 @@
                 <h6>파도는 기슭에 도달할 수 있을까 Can Waves Ever Reach the Shore</h6>
                 <p>2024.02.09</p>
               </div>
-              <a class="coment-icon" href="#none">
-                  <i class="bi bi-arrow-bar-right"></i>
+              <div class="mypage-icon">
+                <a class="coment-icon" href="detail.html">
+                    <i class="bi bi-arrow-bar-right"></i>
+                  </a>
+                <a class="coment-icon" href="#none">
+                  <i class="bi bi-trash3"></i>
                 </a>
-              <a class="coment-icon" href="#none">
-                <i class="bi bi-trash3"></i>
-              </a>
+              </div>
             </div>
             <div class="coment-box">
-              <div class="coment-img">
+              <div class="coment-img non-mob">
                 <img src="image/my3.png" alt="포스터">
               </div>
               <div class="coment-txt">
@@ -151,12 +136,14 @@
                 <h6>연대하는 돌림노래 Cantabile : bravo! brava! bravi!</h6>
                 <p>2022.09.30</p>
               </div>
-              <a class="coment-icon" href="#none">
-                  <i class="bi bi-arrow-bar-right"></i>
+              <div class="mypage-icon">
+                <a class="coment-icon" href="detail.html">
+                    <i class="bi bi-arrow-bar-right"></i>
+                  </a>
+                <a class="coment-icon" href="#none">
+                  <i class="bi bi-trash3"></i>
                 </a>
-              <a class="coment-icon" href="#none">
-                <i class="bi bi-trash3"></i>
-              </a>
+              </div>
             </div>
           </div>
         </div>
@@ -173,18 +160,26 @@
           <div class="list">
             <div class="list-box">
               <div class="list-txt">
-                <h5>2025.05.15</h5>
-                <h6>전시 게재 + 롤링배너 5일</h6>
-                <h6>신용카드</h6>
-                <p>132,000</p>
+                <span class="pc-none">
+                  <h5>2025.05.15</h5>
+                  <h6>전시 게재 + 롤링배너 5일</h6>
+                </span>
+                <span class="pc-none">
+                  <h6 class="mob-none">신용카드</h6>
+                  <p>132,000</p>
+                </span>
               </div>
             </div>
             <div class="list-box">
               <div class="list-txt">
-                <h5>2025.07.20</h5>
-                <h6>프라임배너(균등노출방식) 3일</h6>
-                <h6>신용카드</h6>
-                <p>99,000</p>
+                <span class="pc-none">
+                  <h5>2025.07.20</h5>
+                  <h6>프라임배너(균등노출방식) 3일</h6>
+                </span>
+                <span class="pc-none">
+                  <h6 class="mob-none">신용카드</h6>
+                  <p>99,000</p>
+                </span>
               </div>
             </div>
           </div>
@@ -198,7 +193,7 @@
             <h1>다녀간 전시</h1>
             <h3>5</h3>
           </div>
-            <div class="coment">
+            <div class="coment visited">
               <div class="coment-box">
                 <div class="coment-img">
                   <img src="image/my1.png" alt="포스터">
@@ -208,12 +203,14 @@
                   <h6>권혜성, 윤지영, 이영욱, 임소담, 정찬민 KL</h6>
                   <p>2025.05.15</p>
                 </div>
-                <a class="coment-icon" href="#none">
-                  <i class="bi bi-arrow-bar-right"></i>
-                </a>
-                <a class="coment-icon" href="#none">
-                <i class="bi bi-trash3"></i>
-              </a>
+                <div class="mypage-icon">
+                  <a class="coment-icon" href="detail.html">
+                    <i class="bi bi-arrow-bar-right"></i>
+                  </a>
+                  <a class="coment-icon" href="#none">
+                  <i class="bi bi-trash3"></i>
+                  </a>
+                </div>
               </div>
               <div class="coment-box">
                 <div class="coment-img">
@@ -221,15 +218,17 @@
                 </div>
                 <div class="coment-txt">
                   <h5>파도는 기슭에 도달할 수 있을까: Can Waves Ever Reach the Shore</h5>
-                  <h6>권혜성, 윤지영, 이영욱, 임소담, 정찬민 KL</h6>
-                  <p>2024.02.09</p>
+                  <h6>방기철, 양희연, 오민수, 김수정, 플로리안 바렌네스(프랑스), 황신(대만), 김선열, 옴블린 레이(프랑스)</h6>
+                  <p>2025.05.09</p>
                 </div>
-                <a class="coment-icon" href="#none">
-                  <i class="bi bi-arrow-bar-right"></i>
-                </a>
-                <a class="coment-icon" href="#none">
-                <i class="bi bi-trash3"></i>
-              </a>
+                <div class="mypage-icon">
+                  <a class="coment-icon" href="detail.html">
+                    <i class="bi bi-arrow-bar-right"></i>
+                  </a>
+                  <a class="coment-icon" href="#none">
+                  <i class="bi bi-trash3"></i>
+                  </a>
+                </div>
               </div>
               <div class="coment-box">
                 <div class="coment-img">
@@ -240,12 +239,14 @@
                   <h6>권혜성, 윤지영, 이영욱, 임소담, 정찬민 KL</h6>
                   <p>2022.09.30</p>
                 </div>
-                <a class="coment-icon" href="#none">
-                  <i class="bi bi-arrow-bar-right"></i>
-                </a>
-                <a class="coment-icon" href="#none">
-                <i class="bi bi-trash3"></i>
-              </a>
+                <div class="mypage-icon">
+                  <a class="coment-icon" href="detail.html">
+                    <i class="bi bi-arrow-bar-right"></i>
+                  </a>
+                  <a class="coment-icon" href="#none">
+                  <i class="bi bi-trash3"></i>
+                  </a>
+                </div>
               </div>
               <div class="coment-box">
                 <div class="coment-img">
@@ -256,12 +257,14 @@
                   <h6>장예지, 최은지</h6>
                   <p>2021.04.08</p>
                 </div>
-                <a class="coment-icon" href="#none">
-                  <i class="bi bi-arrow-bar-right"></i>
-                </a>
-                <a class="coment-icon" href="#none">
-                <i class="bi bi-trash3"></i>
-              </a>
+                <div class="mypage-icon">
+                  <a class="coment-icon" href="detail.html">
+                    <i class="bi bi-arrow-bar-right"></i>
+                  </a>
+                  <a class="coment-icon" href="#none">
+                  <i class="bi bi-trash3"></i>
+                  </a>
+                </div>
               </div>
               <div class="coment-box">
                 <div class="coment-img">
@@ -272,20 +275,22 @@
                   <h6>권진규</h6>
                   <p>2020.11.22</p>
                 </div>
-                <a class="coment-icon" href="#none">
-                  <i class="bi bi-arrow-bar-right"></i>
-                </a>
-                <a class="coment-icon" href="#none">
-                <i class="bi bi-trash3"></i>
-              </a>
+                <div class="mypage-icon">
+                  <a class="coment-icon" href="detail.html">
+                    <i class="bi bi-arrow-bar-right"></i>
+                  </a>
+                  <a class="coment-icon" href="#none">
+                  <i class="bi bi-trash3"></i>
+                  </a>
+                </div>
               </div>
           </div>
         </div>
       </section>
+
     </main>
 
 
-    <footer></footer>
 
 
 
