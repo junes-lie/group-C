@@ -1,3 +1,85 @@
+/* 헤더 */
+
+/* 아트허브 로고 */
+header #logo{
+  display: flex;
+  color: var(--primaryColor);
+  justify-content: flex;
+  position: relative;
+  left: 8rem;
+  top: 3rem;
+}
+
+/* 탑 메뉴 */
+header .topMenu{
+  display: flex;
+  position:relative;
+  left: 55rem;
+  gap: 10rem;
+}
+header .topMenu h5{   
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+header .topMenu h5:hover {
+  color:var(--primaryColor);
+}
+
+/* 검색박스 */
+header .search-box { 
+  position: relative;
+  width: 18rem;
+  height: 3rem;
+  border-radius: 2rem;
+  transition: 0.3s ease;
+  left: 100rem;
+  bottom: 5rem;
+}
+header .search-box i {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.8rem;
+  pointer-events: none;
+  transition: 0.2s ease;
+}
+header .search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 0;
+  transition: 0.3s ease;
+  font-size: 1.4rem;
+  margin-left: 1rem;
+}
+header .user_icon i{
+  position: relative;
+  left: 125rem;
+  bottom: 8rem;
+}
+
+/* 마우스오버 */
+header .search-box:hover,
+header .search-box input:focus {
+  width: 200px;
+  background: #f7f4f3;
+}
+header .search-box:hover input,
+header .search-box input:focus {
+  width: 80%;
+}
+
+header .search-box:hover {
+color: var(--primaryColor);
+}
+header .user_icon i:hover {
+color: var(--primaryColor);
+}
+
+
+
 #recruit {
   position: relative;
   width: 140rem; /* 1400px */
@@ -5,17 +87,6 @@
   margin: auto;
   /* padding: 15rem 0; */
   z-index: 0;
-  
-}
-
-/* 아트허브 로고 */
-#recruit #logo{
-  display: flex;
-  color: var(--primaryColor);
-  justify-content: flex;
-  position: relative;
-  left: 8rem;
-  top: 3rem;
   
 }
 
@@ -41,27 +112,7 @@
   
 }
 
-/* 탑 메뉴 */
 
-#recruit .topMenu {
-  display: flex;
-  position:relative;
-  left: 55rem;
-  gap: 10rem;
-
-}
-
-
-#recruit .topMenu h5{   
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 2rem;
-
-}
-
-#recruit .topMenu h5:hover {
-  color:var(--primaryColor);
-}
 
 #recruit .top-image{
   filter: brightness(40%);
@@ -70,65 +121,6 @@
 }
 
 
-/* 검색박스 */
-
-#recruit header .header_class .search-box { 
-  position: relative;
-  width: 18rem;
-  height: 3rem;
-  border-radius: 2rem;
-  transition: 0.3s ease;
-  left: 100rem;
-  bottom: 5rem;
-}
-
-
-#recruit header .search-box i {
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.8rem;
-  pointer-events: none;
-  transition: 0.2s ease;
-  
-}
-#recruit header .search-box input {
-  border: none;
-  background: transparent;
-  outline: none;
-  width: 0;
-  transition: 0.3s ease;
-  font-size: 1.4rem;
-  margin-left: 1rem;
-}
-
-
-#recruit .user_icon i{
-  position: relative;
-  left: 125rem;
-  bottom: 8rem;
-}
-
-/* 마우스오버 */
-
-#recruit header .search-box:hover,
-#recruit header .search-box input:focus {
-  width: 200px;
-  background: #f7f4f3;
-}
-#recruit header .search-box:hover input,
-#recruit header .search-box input:focus {
-  width: 80%;
-}
-
-#recruit header .search-box:hover {
-color: var(--primaryColor);
-}
-
-#recruit .user_icon i:hover {
-color: var(--primaryColor);
-}
 
 
 
@@ -158,7 +150,7 @@ color: var(--primaryColor);
 /* 슬라이더 끝*/
 
 
-.recruit_cards .pre-title h2{
+#recruit .recruit_cards .pre-title h2{
   position: relative;
   color: var(--mainBg);
   font-size: var(--font-xl);
@@ -166,7 +158,7 @@ color: var(--primaryColor);
   text-align: center;
 }
 
-.buttons{
+#recruit .buttons{
   display:flex;
   flex-direction: row;
   gap: 3rem;
@@ -177,7 +169,7 @@ color: var(--primaryColor);
 }
 
 
-.button1{
+#recruit .button1{
   display: inline-block;
   width: 18rem;
   height: 3rem;
@@ -188,14 +180,14 @@ color: var(--primaryColor);
   color: var(--primaryColor);
   border-radius: 2rem;
   transition: 0.3s;
- 
+
 }
-.button1:hover{
+#recruit .button1:hover{
   color: var(--secondaryColor);
   border: 0.1rem solid var(--secondaryColor);
 }
 
-.button2{
+#recruit .button2{
   display: inline-block;
   width: 18rem;
   height: 3rem;
@@ -208,12 +200,12 @@ color: var(--primaryColor);
   transition: 0.3s;
   
 }
-.button2:hover{
+#recruit .button2:hover{
   color: var(--secondaryColor);
   border: 0.1rem solid var(--secondaryColor);
 }
 
-.button3{
+#recruit .button3{
   display: inline-block;
   width: 18rem;
   height: 3rem;
@@ -226,7 +218,7 @@ color: var(--primaryColor);
   transition: 0.3s;
 
 }
-.button3:hover{
+#recruit .button3:hover{
   color: var(--secondaryColor);
   border: 0.1rem solid var(--secondaryColor);
 }
@@ -429,6 +421,8 @@ flex-direction: column;
   margin-top: 10rem;
 }
 
+
+/* 푸터 */
 #recruit_footer .footer-background {
   background-color: var(--textColor);
   width: auto;

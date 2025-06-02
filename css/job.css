@@ -1,4 +1,4 @@
-#recruit {
+#job {
   position: relative;
   width: 140rem; /* 1400px */
   /* width: 100%; */ /* 배경 전체로 넣을 경우 */
@@ -9,7 +9,7 @@
 }
 
 /* 아트허브 로고 */
-#recruit #logo{
+#job #logo{
   display: flex;
   color: var(--primaryColor);
   justify-content: flex;
@@ -21,7 +21,7 @@
 
 
 /* 제목 */
-#recruit .title{
+#job .title{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,7 @@
   bottom: 15rem;
 }
 
-#recruit #first_cards .title pre h1{
+#job #first_cards .title pre h1{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +43,7 @@
 
 /* 탑 메뉴 */
 
-#recruit .topMenu {
+#job .topMenu {
   display: flex;
   position:relative;
   left: 55rem;
@@ -52,18 +52,18 @@
 }
 
 
-#recruit .topMenu h5{   
+#job .topMenu h5{   
   justify-content: center;
   align-items: center;
   padding-bottom: 2rem;
 
 }
 
-#recruit .topMenu h5:hover {
+#job .topMenu h5:hover {
   color:var(--primaryColor);
 }
 
-#recruit .top-image{
+#job .top-image{
   filter: brightness(40%);
   width: auto;
   height: 40rem;
@@ -72,7 +72,7 @@
 
 /* 검색박스 */
 
-#recruit header .header_class .search-box { 
+#job header .header_class .search-box { 
   position: relative;
   width: 18rem;
   height: 3rem;
@@ -83,7 +83,7 @@
 }
 
 
-#recruit header .search-box i {
+#job header .search-box i {
   position: absolute;
   right: 1rem;
   top: 50%;
@@ -93,7 +93,7 @@
   transition: 0.2s ease;
   
 }
-#recruit header .search-box input {
+#job header .search-box input {
   border: none;
   background: transparent;
   outline: none;
@@ -104,7 +104,7 @@
 }
 
 
-#recruit .user_icon i{
+#job .user_icon i{
   position: relative;
   left: 125rem;
   bottom: 8rem;
@@ -112,21 +112,21 @@
 
 /* 마우스오버 */
 
-#recruit header .search-box:hover,
-#recruit header .search-box input:focus {
+#job header .search-box:hover,
+#job header .search-box input:focus {
   width: 200px;
   background: #f7f4f3;
 }
-#recruit header .search-box:hover input,
-#recruit header .search-box input:focus {
+#job header .search-box:hover input,
+#job header .search-box input:focus {
   width: 80%;
 }
 
-#recruit header .search-box:hover {
+#job header .search-box:hover {
 color: var(--primaryColor);
 }
 
-#recruit .user_icon i:hover {
+#job .user_icon i:hover {
 color: var(--primaryColor);
 }
 
@@ -135,7 +135,7 @@ color: var(--primaryColor);
 /* 첫번째 섹션 */
 
 
-.recruit_cards .pre-title h2{
+#job .recruit_cards .pre-title h2{
   position: relative;
   color: var(--mainBg);
   font-size: var(--font-xl);
@@ -145,7 +145,7 @@ color: var(--primaryColor);
 
 /* 중앙 검색창 */
 
-#recruit .search-box2 { 
+#job .search-box2 { 
   position: relative;
   width: 18rem;
   height: 3rem;
@@ -155,7 +155,7 @@ color: var(--primaryColor);
   color: var(--primaryColor);
 }
 
-#recruit .search-box2 input {
+#job .search-box2 input {
   position: relative;
   bottom: 1rem;
   border: solid 2px var(--primaryColor);
@@ -166,7 +166,7 @@ color: var(--primaryColor);
 }
 
 
-#recruit .search-box2 i {
+#job .search-box2 i {
   position: relative;
   left: 30rem;
   bottom: 3rem;
@@ -181,13 +181,13 @@ color: var(--primaryColor);
 
 /* 두번째 섹션 */
 
-#recruit #second_cardsbox { 
+#job #second_cardsbox { 
   background-image: var(--F7F4F3);
   padding: 5rem;
   
 }
 
-#recruit .second_textbox {
+#job .second_textbox {
   border: solid 2px #333;
 
 }
@@ -195,7 +195,7 @@ color: var(--primaryColor);
 
 
 
-#recruit .button {
+#job .button {
   display: flex;
   justify-content: center;
   align-items: center;
