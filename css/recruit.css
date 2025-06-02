@@ -117,8 +117,10 @@ color: var(--primaryColor);
 
 #recruit .top-image{
   filter: brightness(40%);
-  width: auto;
-  height: 40rem;
+  width: 100%;
+  margin: 0 auto;
+
+
 }
 
 
@@ -133,6 +135,7 @@ color: var(--primaryColor);
   background-position: center;
   background-size: cover;
   padding: 17.6rem 0;
+  
 }
 #recruit .recruit_cards .pre-title {
   max-width: 140rem;
@@ -245,6 +248,9 @@ color: var(--primaryColor);
 #recruit #second_cardsbox { 
   background-image: var(--F7F4F3);
   padding: 5rem;
+  width: 100%;
+  max-width: 115rem;
+  margin: 0 auto;
   
 }
 
@@ -379,12 +385,7 @@ flex-direction: column;
   gap:3rem;
   display:flex;
   flex-direction: row;
-
 }
-
-
-
-
 
 #recruit .button {
   display: flex;
@@ -395,20 +396,28 @@ flex-direction: column;
 
 
 /* 푸터 */
+
+#recruit_footer .rel{
+  width: 100%;
+  max-width: auto;
+  margin: 0 auto;
+}
+
 #recruit_footer .footer-background {
   background-color: var(--textColor);
-  width: auto;
-  z-index: -100;
+}
+
+#recruit_footer ul{
+  width: 100%;
+  margin: 0 auto;
 }
 
 #recruit_footer ul li{
-  
-  z-index: 100;
+
 }
 
 #recruit_footer ul li:nth-child(1) {
   color:var(--primaryColor);
-  
 }
 #recruit_footer ul li:nth-child(2) {
   color:var(--primaryColor);
@@ -435,7 +444,7 @@ flex-direction: column;
 #recruit_footer ul li:nth-child(10) {
   font-size:var(--font-xxs);
   color: var(--mainBg);
-  padding-left: 
+  padding-left: 0 5.5rem;
 
 }
 
@@ -448,7 +457,6 @@ flex-direction: column;
   color:var(--mainBg);
 }
 #recruit_footer .blog { 
-  
-  
+
   color:var(--mainBg);
 }
