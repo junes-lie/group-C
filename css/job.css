@@ -1,6 +1,6 @@
 #job {
   position: relative;
-  width: 140rem; /* 1400px */
+  width: 100%; /* 1400px */
   /* width: 100%; */ /* 배경 전체로 넣을 경우 */
   margin: auto;
   /* padding: 15rem 0; */
@@ -8,15 +8,99 @@
   
 }
 
+/* 헤더 */
+
 /* 아트허브 로고 */
-#job #logo{
+#job header .rel{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  min-height: 9rem;
+}
+#job header #logo{
   display: flex;
   color: var(--primaryColor);
-  justify-content: flex;
-  position: relative;
-  left: 8rem;
-  top: 3rem;
+  justify-content: space-between;
   
+}
+
+/* 탑 메뉴 */
+#job header .topMenu{
+  display: flex;
+  
+}
+#job header .topMenu h5{   
+  justify-content: center;
+  align-items: center;
+  padding: 0 2.5rem;
+}
+#job header .topMenu h5:hover {
+  color:var(--primaryColor);
+}
+
+/* 검색박스 */
+#job header .search-box { 
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  border-radius: 2rem;
+  transition: 0.3s ease;
+  gap: 0 1.5rem;
+  
+}
+#job header .search-box i {
+  font-size: 1.8rem;
+  pointer-events: none;
+  transition: 0.2s ease;
+  position: relative;
+  z-index: 9;
+}
+#job header .search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  transition: 0.3s ease;
+  font-size: 1.4rem;
+  margin-left: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  position: relative;
+  left: 4.2rem;
+  z-index: 0;
+}
+
+
+/* 마우스오버 */
+#job header .search-box input:hover,
+#job header .search-box input:focus {
+  background: var(--primaryColor);
+}
+
+
+#job header .magifyingglass:hover {
+color: var(--textColor);
+}
+#job header .user_icon:hover {
+color: var(--primaryColor);
+cursor: pointer;
+}
+
+#job .user_icon {
+  position: relative;
+  bottom:0.1rem;
+}
+
+/* 헤더끝 */
+
+
+#recruit {
+  /* width: 100%; */ /* 배경 전체로 넣을 경우 */
+  margin: auto;
+  /* padding: 15rem 0; */
+  z-index: 0;
 }
 
 
@@ -26,8 +110,7 @@
   justify-content: center;
   align-items: center;
   color: var(--textColor);
-  position: relative;
-  bottom: 15rem;
+  
 }
 
 #job #first_cards .title pre h1{
@@ -38,97 +121,33 @@
   font-weight: bold;
   font-size: var(--font-xxl);
   color: var(--textColor);
-  
-}
-
-/* 탑 메뉴 */
-
-#job .topMenu {
-  display: flex;
-  position:relative;
-  left: 55rem;
-  gap: 10rem;
-
+  font-size: 10rem;
 }
 
 
-#job .topMenu h5{   
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 2rem;
-
-}
-
-#job .topMenu h5:hover {
-  color:var(--primaryColor);
-}
 
 #job .top-image{
   filter: brightness(40%);
-  width: auto;
-  height: 40rem;
+  width: 100%;
+  margin: 0 auto;
+
+
 }
 
 
-/* 검색박스 */
-
-#job header .header_class .search-box { 
-  position: relative;
-  width: 18rem;
-  height: 3rem;
-  border-radius: 2rem;
-  transition: 0.3s ease;
-  left: 100rem;
-  bottom: 5rem;
-}
 
 
-#job header .search-box i {
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.8rem;
-  pointer-events: none;
-  transition: 0.2s ease;
-  
-}
-#job header .search-box input {
-  border: none;
-  background: transparent;
-  outline: none;
-  width: 0;
-  transition: 0.3s ease;
-  font-size: 1.4rem;
-  margin-left: 1rem;
-}
 
 
-#job .user_icon i{
-  position: relative;
-  left: 125rem;
-  bottom: 8rem;
-}
 
-/* 마우스오버 */
 
-#job header .search-box:hover,
-#job header .search-box input:focus {
-  width: 200px;
-  background: #f7f4f3;
-}
-#job header .search-box:hover input,
-#job header .search-box input:focus {
-  width: 80%;
-}
 
-#job header .search-box:hover {
-color: var(--primaryColor);
-}
 
-#job .user_icon i:hover {
-color: var(--primaryColor);
-}
+
+
+
+
+
 
 
 
@@ -146,38 +165,36 @@ color: var(--primaryColor);
 /* 중앙 검색창 */
 
 #job .search-box2 { 
-  position: relative;
-  width: 18rem;
-  height: 3rem;
+  width:100%;
+  height: auto;
   border-radius: 2rem;
-  left: 55rem;
-  bottom: 5rem;
   color: var(--primaryColor);
+  margin: 0 auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 #job .search-box2 input {
-  position: relative;
-  bottom: 1rem;
+
+  margin: 3rem;
   border: solid 2px var(--primaryColor);
   border-radius: 1rem;
   background: transparent;
   outline: none;
   font-size: 2rem;
+
 }
 
 
-#job .search-box2 i {
-  position: relative;
-  left: 30rem;
-  bottom: 3rem;
-  transform: translateY(-50%);
+#job .search-box2 .searchimage i{
+  
   font-size: 1.8rem;
   pointer-events: none;
-  transition: 0.2s ease;
   color: var(--primaryColor);
   
 }
-
 
 /* 두번째 섹션 */
 
@@ -202,76 +219,156 @@ color: var(--primaryColor);
   margin-top: 10rem;
 }
 
-#recruit_footer .footer-background {
-  background-color: var(--textColor);
-  width: auto;
-  height:30rem;
-  position:relative;
-  z-index: -100;
+/* 푸터 */
+
+#recruit_footer{
+  width: 100%;
+  height: auto;
+}
+#recruit_footer .footer_background {
+ background-color: var(--textColor);
+ z-index: -10;
 }
 
-#recruit_footer ul li{
-  position:relative;
-  top: 25rem;
-  left: 10rem;
-  z-index: 100;
+#recruit_footer .rel .footer_texts {
+    margin-left: 5%;
+    
+}
+#recruit_footer p:nth-child(2) {
+  color:var(--mainBg);
 }
 
-#recruit_footer ul li:nth-child(1) {
-  color:var(--primaryColor);
-  position:relative;
-}
-#recruit_footer ul li:nth-child(2) {
-  color:var(--primaryColor);
+#recruit_footer p:nth-child(3) {
+  color:var(--mainBg);
   font-size: var(--font-xxxxs);
-  position: relative;
-  left: 28rem;
 }
-#recruit_footer ul li:nth-child(4) {
+#recruit_footer p:nth-child(5) {
+  color:var(--mainBg);
+  font-size: var(--font-xxs);
+
+}
+#recruit_footer p:nth-child(7) {
   font-size: var(--font-xxs);
   color: var(--mainBg);
 }
 
-#recruit_footer ul li:nth-child(6) {
+#recruit_footer p:nth-child(8) {
   font-size: var(--font-xxs);
   font-weight:900;
   color: var(--mainBg);
 }
-#recruit_footer ul li:nth-child(7) {
+#recruit_footer p:nth-child(9) {
   font-size:var(--font-xxs);
   color: var(--mainBg);
 }
-#recruit_footer ul li:nth-child(8) {
+#recruit_footer p:nth-child(11) {
   font-size:var(--font-xxs);
   color: var(--mainBg);
 }
-#recruit_footer ul li:nth-child(10) {
+#recruit_footer p:nth-child(12) {
   font-size:var(--font-xxs);
   color: var(--mainBg);
+
+}
+
+#recruit_footer .footer_background .rel .footer_icons{
+  color:var(--mainBg);
+  margin-left: 85%;
   position: relative;
-  left: 55rem;
-  bottom:30rem;
+  bottom: 18rem;
+}
+
+
+@media (max-width:1400px)  {
+
+    .second_cardsbox {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #recruit_footer .rel .footer_texts{
+    text-align: center;
+    
+  }
+  
+    /* #recruit_footer .footer_background .rel .footer_icons{
+      margin-left: 48.5%;
+  } */
+
+  #recruit_footer p:nth-child(5) {
+    opacity:0;
+  }
 
 }
 
-#recruit_footer .facebook { 
-  position:relative;
-  bottom: 25rem;
-  left: 123rem;
-  z-index: 110;
-  color:var(--mainBg);
-}
-#recruit_footer .insta { 
-  position:relative;
-  bottom: 25rem;
-  left: 123rem;
-  z-index: 110;
-  color:var(--mainBg);
-}
-#recruit_footer .blog { 
-  position:relative;
-  bottom: 25rem;
-  left: 123rem;
-  z-index: 110;
-  color:var(--mainBg);
-}
+
+@media (max-width:768px){
+
+    #recruit{ width:auto; height: auto;}
+     
+    #recruit #second_cardsbox { padding:0rem;}
+
+    #recruit .topMenu {display:none;}
+
+    #recruit .search-box {display:none;}
+
+    #recruit .user_icon {display:none;}
+
+    #recruit_footer .footer_texts{
+    text-align:center;
+    color: var(--mainBg);
+  }
+    
+    #recruit .logo {
+      scale: 120%;
+    }
+
+    #recruit .rel .footer_texts{
+      margin: 0 0 0 0;
+    }
+  
+    #recruit_footer .footer_icons img{
+    margin: 0 auto;
+  }
+
+
+    #recruit_footer .footer_background .rel .footer_icons{
+      opacity:0;
+    }
+    
+    #recruit_footer p:nth-child(2) {
+      opacity:0;
+    }
+    
+    #recruit_footer p:nth-child(3) {
+      opacity:0;
+    }
+    #recruit_footer p:nth-child(5) {
+      opacity:0;
+    
+    }
+    #recruit_footer p:nth-child(7) {
+      opacity:0;
+    }
+    
+    #recruit_footer p:nth-child(8) {
+      opacity:0;
+    }
+    #recruit_footer p:nth-child(9) {
+      opacity:0;
+    }
+
+    #recruit_footer p:nth-child(11) {
+      font-size: 3rem;
+      
+    }
+
+    #recruit_footer p:nth-child(12) {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+
+
+
+  }
+
