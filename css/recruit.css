@@ -447,16 +447,23 @@ input[id="hamburger"]:checked + label + div {
   
   display:flex;
   flex-direction: row;
-  width: 0 auto;
+  margin: 0 auto;
 }
-
+#second_cardsbox #recruit_box1 .recruit_wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
 #recruit .card1{display: flex;
 flex-direction: column;
 }
+#recruit .second_cards{
+  width: 23%;
+}
 
-#recruit .second_cards .card1 a img{
-  width:30rem;
-  height:40rem;
+#recruit .second_cards img{
+  width: 100%;
 }
 
 #recruit .second_cards .card1 p:nth-child(2) {
@@ -476,8 +483,7 @@ flex-direction: column;
 }
 
 #recruit .second_cards .card2 a img{
-  width:30rem;
-  height:40rem;
+  width: 100%;
 
 }
 
@@ -497,11 +503,6 @@ flex-direction: column;
   font-size: var(--font-xxs);
 }
 
-#recruit .second_cards .card3 a img{
-  width:30rem;
-  height:40rem;
-
-}
 
 #recruit .second_cards .card3 p:nth-child(2) {
   font-size: var(--font-sm);
@@ -519,11 +520,6 @@ flex-direction: column;
   font-size: var(--font-xxs);
 }
 
-#recruit .second_cards .card4 a img{
-  width:30rem;
-  height:40rem;
-
-}
 
 #recruit .second_cards .card4 p:nth-child(2) {
   font-size: var(--font-sm);
@@ -592,46 +588,65 @@ flex-direction: column;
 
 #recruit_footer p:nth-child(2) {
   color:var(--mainBg);
+  
 }
 
 #recruit_footer p:nth-child(3) {
   color:var(--mainBg);
   font-size: var(--font-xxxxs);
+
 }
 #recruit_footer p:nth-child(5) {
   color:var(--mainBg);
   font-size: var(--font-xxs);
 
+
 }
 #recruit_footer p:nth-child(7) {
   font-size: var(--font-xxs);
   color: var(--mainBg);
+  
 }
 
 #recruit_footer p:nth-child(8) {
   font-size: var(--font-xxs);
   font-weight:900;
   color: var(--mainBg);
+ 
 }
 #recruit_footer p:nth-child(9) {
   font-size:var(--font-xxs);
   color: var(--mainBg);
+ 
+}
+
+#recruit_footer p:nth-child(10) {
+  font-size:var(--font-xxs);
+  color: var(--mainBg);
+  
 }
 #recruit_footer p:nth-child(11) {
   font-size:var(--font-xxs);
   color: var(--mainBg);
+
 }
 #recruit_footer p:nth-child(12) {
   font-size:var(--font-xxs);
   color: var(--mainBg);
 
 }
+#recruit_footer p:nth-child(13) {
+  font-size:var(--font-xxs);
+  color: var(--mainBg);
+}
+
+
+
 
 #recruit_footer .footer_background .rel .footer_icons{
   color:var(--mainBg);
-  margin-left: 85%;
-  position: relative;
-  bottom: 18rem;
+  text-align: right;
+
 }
 
 
@@ -640,37 +655,94 @@ flex-direction: column;
    /* 카드들 */
 
     #recruit .second_cards {
-      width:33%;
-      gap: 5rem;
+      width:32%;
+      
     }
 
     #recruit .second_cards .card1 {
       width:100%;
-      margin-left: 18rem;
+      
     }
     #recruit .second_cards .card2 {
       width:100%;
-      margin-left: 18rem;
+      
     }
     #recruit .second_cards .card3 {
       width:100%;
-      margin-left: 18rem;
+      
     }
 
     #recruit .second_cards .card4 {
-      display:none;
-      margin-left: 18rem;
+      width:100%;
     }
-  
+    
+    #recruit_footer p:nth-child(2) {
+  color:var(--mainBg);
+  text-align: center;
+}
+
+#recruit_footer p:nth-child(3) {
+  color:var(--mainBg);
+  font-size: var(--font-xxxxs);
+  text-align: center;
+}
+#recruit_footer p:nth-child(5) {
+  color:var(--mainBg);
+  font-size: var(--font-xxs);
+  text-align: center;
+
+}
+#recruit_footer p:nth-child(7) {
+  font-size: var(--font-xxs);
+  color: var(--mainBg);
+  text-align: center;
+}
+
+#recruit_footer p:nth-child(8) {
+  font-size: var(--font-xxs);
+  font-weight:900;
+  color: var(--mainBg);
+  text-align: center;
+}
+#recruit_footer p:nth-child(9) {
+  font-size:var(--font-xxs);
+  color: var(--mainBg);
+  text-align: center;
+}
+
+#recruit_footer p:nth-child(10) {
+  font-size:var(--font-xxs);
+  color: var(--mainBg);
+  text-align: center;
+}
+#recruit_footer p:nth-child(11) {
+  font-size:var(--font-xxs);
+  color: var(--mainBg);
+  text-align: center;
+}
+#recruit_footer p:nth-child(12) {
+  font-size:var(--font-xxs);
+  color: var(--mainBg);
+  text-align: center;
+}
+
+#recruit_footer p:nth-child(13) {
+  display: none;
+}
+
+#recruit_footer .footer-logo {
+  display: none;
+}
+    
+    #recruit_footer .footer_background .rel .footer_icons{
+      text-align:center;
+}
   
     /* #recruit_footer .footer_background .rel .footer_icons{
       margin-left: 48.5%;
   } */
 
-  #recruit_footer p:nth-child(5) {
-    opacity:0;
-  }
-
+  
 }
 
 
@@ -695,24 +767,21 @@ flex-direction: column;
 
     #recruit .second_cards {
       width:50%;
-      gap: 5rem;
+      
     }
 
     #recruit .second_cards .card1 {
       width:100%;
-      margin-left: 100%;
     }
     #recruit .second_cards .card2 {
-    
       width:100%;
-      margin-left: 100%;
     }
     #recruit .second_cards .card3 {
-    display:none;
+      width:100%;
     }
 
     #recruit .second_cards .card4 {
-    display:none;
+      width:100%;
     }
 
 
@@ -721,51 +790,56 @@ flex-direction: column;
     text-align:center;
     color: var(--mainBg);
   }
-    
-    #recruit .logo {
-      min-width: 15rem;
-    }
 
-    #recruit .rel .footer_texts{
+    #recruit_footer .rel .footer_texts{
       margin: 0 0 0 0;
+      position: relative;
+      bottom: 7rem;
     }
 
     #recruit_footer .footer_background .rel .footer_icons{
-      opacity:0;
+      display:none;
     }
-    
+
     #recruit_footer p:nth-child(2) {
-      opacity:0;
+        display:none;
     }
     
     #recruit_footer p:nth-child(3) {
-      opacity:0;
+        display:none;
     }
     #recruit_footer p:nth-child(5) {
-      opacity:0;
+        display:none;
     
     }
     #recruit_footer p:nth-child(7) {
-      opacity:0;
+        display:none;
     }
     
     #recruit_footer p:nth-child(8) {
-      opacity:0;
+        display:none;
     }
     #recruit_footer p:nth-child(9) {
-      opacity:0;
+        display:none;
     }
-
+    
+    #recruit_footer p:nth-child(10) {
+        display:none;
+    }
     #recruit_footer p:nth-child(11) {
-      font-size: 3rem;
-      
+        display:none;
     }
-
     #recruit_footer p:nth-child(12) {
-      font-size: 2rem;
-      margin-top: 1rem;
+        display:none;
     }
+        #recruit_footer p:nth-child(13) {
+        display: block;
+        }
 
-
+    #recruit_footer .footer-logo {
+   display: block;
+    }
+    
+    
 
   }

@@ -324,8 +324,7 @@ cursor: pointer;
     color: var(--mainBg);
   }
     
-    #recruit .logo {
-      scale: 120%;
+    /* #recruit .logo {
     }
 
     #recruit .rel .footer_texts{
@@ -366,7 +365,7 @@ cursor: pointer;
     #recruit_footer p:nth-child(12) {
       font-size: 2rem;
       margin-top: 1rem;
-    }
+    } */
 
 
 
