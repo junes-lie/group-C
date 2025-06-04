@@ -6,6 +6,7 @@
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="short icon" href="image/favicon.png">
+  
   <link rel="stylesheet" href="css/style.css">
   <title>메인페이지-전시</title>
 </head>
@@ -14,72 +15,179 @@
   <header></header>
 
   
-
-
   <main>
-    <div class="main-visual">
+    <section class="main-visual full">
       <div class="visu-tit">
-        <h2>금주의 전시</h2>
-        <h4>이런 전시는 어떤가요?</h4>
+          <h2>금주의 전시</h2>
+          <h4>이런 전시는 어떤가요?</h4>
       </div>
-
-        <!-- slide1 -->
-        <!-- <div class="visual-slide">
-          <div class="glass-bg"></div>
-          <div class="visual-content">
-            <img class="poster" src="image/poster1.jpg" alt="포스터 이미지">
-            <div class="visu-right">
-              <div class="info">
-                <h1>성광성냥</h1>
-                <h3>박정일</h3>
-                <h4>	2025-06-13 ~ 2025-08-31</h4>
-                <h5>경북</h5>
-              </div>
-              <button class="visu-btn">자세히</button>
+      <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="visual-bg">
+              <img src="/image/poster1.jpg" alt="비주얼 포스터">
             </div>
-          </div>
-        </div> -->
-
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              Slide 1
-              <div class="visual-slide">
-                <div class="glass-bg"></div>
-                <div class="visual-content">
-                  <img class="poster" src="image/poster1.jpg" alt="포스터 이미지">
-                  <div class="visu-right">
-                      <div class="info">
-                        <h1>성광성냥</h1>
-                        <h3>박정일</h3>
-                        <h4>	2025-06-13 ~ 2025-08-31</h4>
-                        <h5>경북</h5>
-                      </div>
-                      <button class="visu-btn">자세히</button>
-                  </div>
+            <div class="glass-bg"></div>
+            <div class="visual-item">
+              <img class="poster" src="/image/poster1.jpg" alt="전시 포스터">
+              <div class="visual-info">
+                <div class="visual-text">
+                  <h1>성광사냥</h1>
+                  <h3>박정일</h3>
+                  <h4>2025.06.13 ~ 2025.08.31</h4>
+                  <h5>경북</h5>
                 </div>
+                <button class="visual-btn">자세히</button>
               </div>
             </div>
-
-
-            <div class="swiper-slide">
-              Slide 2
+          </div>
+          <div class="swiper-slide">
+            <div class="visual-bg">
+              <img src="/image/poster1.jpg" alt="비주얼 포스터">
+            </div>
+            <div class="glass-bg"></div>
+            <div class="visual-item">
+              <img class="poster" src="/image/poster1.jpg" alt="전시 포스터">
+              <div class="visual-info">
+                <div class="visual-text">
+                  <h1>성광사냥</h1>
+                  <h3>박정일</h3>
+                  <h4>2025.06.13 ~ 2025.08.31</h4>
+                  <h5>경북</h5>
+                </div>
+                <button class="visual-btn">자세히</button>
+              </div>
             </div>
           </div>
-
-          <div class="swiper-pagination"></div>
+          <div class="swiper-slide">
+            <div class="visual-bg">
+              <img src="/image/poster1.jpg" alt="비주얼 포스터">
+            </div>
+            <div class="glass-bg"></div>
+            <div class="visual-item">
+              <img class="poster" src="/image/poster1.jpg" alt="전시 포스터">
+              <div class="visual-info">
+                <div class="visual-text">
+                  <h1>성광사냥</h1>
+                  <h3>박정일</h3>
+                  <h4>2025.06.13 ~ 2025.08.31</h4>
+                  <h5>경북</h5>
+                </div>
+                <button class="visual-btn">자세히</button>
+              </div>
+            </div>
           </div>
-
-    </div>
-  
-  
-  
-    <!-- <section class="nowpost">
-      <div class="rel">
-        
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
-  -->
+  
+  
+  
+    <section class="nowpost">
+      <div class="rel">
+        <div class="tab-header">
+          <ul class="tab">
+            <li data-alt="tab1">현재전시</li>
+            <li data-alt="tab2">예정전시</li>
+          </ul>
+          <!-- <span class="tab-highlight"></span> -->
+        </div>
+        <div class="tab-contents">
+          <div id="tab1" class="active">
+            <ul class="now-list">
+              <li class="post-list">
+                <a href="detail.html">
+                  <img class="post-img" src="/image/now1.jpg" alt="전시포스터">
+                  <div class="post-text">
+                    <h3>미래에게 말을 걸다</h3>
+                    <h5>조혜은</h5>
+                    <h6>2025-06-03 ~ 2025-06-30</h6>
+                  </div>
+              </a>
+              </li>
+              <li class="post-list">
+                <a href="detail.html">
+                  <img class="post-img" src="/image/now2.jpg" alt="전시포스터">
+                  <div class="post-text">
+                    <h3>실로 어마어마한 일이다</h3>
+                    <h5>송성진, 야마우치 테루에, 이노우에 리에, <br>이연숙, 제럴딘 하비에르, 하차연, 해미 클레멘세비츠</h5>
+                    <h6>2025-03-14 ~ 2025-06-150</h6>
+                  </div>
+                </a>
+              </li>
+              <li class="post-list">
+                <a href="detail.html">
+                  <img class="post-img" src="/image/now3.png" alt="전시포스터">
+                  <div class="post-text">
+                    <h3>POWER OF PAPERMAN</h3>
+                    <h5>애니 이주연</h5>
+                    <h6>2025-06-03 ~ 2025-06-17</h6>
+                  </div>
+                </a>
+              </li>
+              <li class="post-list">
+                <a href="detail.html">
+                  <img class="post-img" src="/image/now4.jpg.crdownload" alt="전시포스터">
+                  <div class="post-text">
+                    <h3>오예진展</h3>
+                    <h5>오예진</h5>
+                    <h6>2025-06-03 ~ 2025-06-30</h6>
+                  </div>
+                </a>
+                
+              </li>
+            </ul>
+            </div>
+          <div id="tab2">
+            <ul class="now-list">
+              <li class="post-list">
+                <a href="detail.html">
+                  <img class="post-img" src="/image/now5.jpg" alt="전시포스터">
+                  <div class="post-text">
+                    <h3>항상 기억</h3>
+                    <h5>강주형, 김보경, 이채민</h5>
+                    <h6>2025-06-11 ~ 2025-07-06</h6>
+                  </div>
+              </a>
+              </li>
+              <li class="post-list">
+                <a href="detail.html">
+                  <img class="post-img" src="/image/now6.jpg" alt="전시포스터">
+                  <div class="post-text">
+                    <h3>하늘이 품은 세상 - 感謝</h3>
+                    <h5>김종기</h5>
+                    <h6>2025-06-19 ~ 2025-06-24</h6>
+                  </div>
+                </a>
+              </li>
+              <li class="post-list">
+                <a href="detail.html">
+                  <img class="post-img" src="/image/now7.jpg.crdownload" alt="전시포스터">
+                  <div class="post-text">
+                    <h3>오래된 기억의 소리 Old - Sound of memory</h3>
+                    <h5>폴 정(Paul Jeong) / 정수모</h5>
+                    <h6>2025-06-10 ~ 2025-06-22</h6>
+                  </div>
+                </a>
+              </li>
+              <li class="post-list">
+                <a href="detail.html">
+                  <img class="post-img" src="/image/now-8.jpg" alt="전시포스터">
+                  <div class="post-text">
+                    <h3>박정인展</h3>
+                    <h5>박정인</h5>
+                    <h6>2025-07-01 ~ 2025-07-28</h6>
+                  </div>
+                </a>
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <section class="today">
       <div class="rel">
@@ -361,8 +469,6 @@
 
 
 
-  <footer></footer>
-
 
 
   <!-- JQury -->
@@ -377,14 +483,15 @@
   <script>
     const swiper1 = new Swiper(".mySwiper", {
       spaceBetween: 30,
+      loop: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
-    //   autoplay: {
-    //   delay: 5000,    
-    //   disableOnInteraction: false
-    // },
+      autoplay: {
+        delay: 5000,    
+        disableOnInteraction: false
+      },
     });
   </script>
 
