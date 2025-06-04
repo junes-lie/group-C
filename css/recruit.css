@@ -20,6 +20,7 @@
 /* 탑 메뉴 */
 #recruit header .topMenu{
   display: flex;
+  margin: 0 auto;
   
 }
 #recruit header .topMenu h5{   
@@ -83,6 +84,129 @@ cursor: pointer;
   bottom:0.1rem;
 }
 
+
+/* 햄버거 버튼 시작 */
+
+a {text-decoration: none;
+    color: black;}
+
+   #recruit .mobile_btn{
+      display: none;
+      position: relative;
+      left: 1.5rem;
+    }
+
+input[id="hamburger"] {
+  display: none;
+}
+input[id="hamburger"] + label {
+  display: block;
+  width: 6rem;
+  height: 2rem;
+  position: relative;
+  cursor: pointer;
+}
+input[id="hamburger"] + label span {
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 0.1rem;
+  border-radius: 30px;
+  background: #000;
+  transition: all 0.35s;
+}
+input[id="hamburger"] + label span:nth-child(1) {
+  top: 0;
+}
+input[id="hamburger"] + label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+input[id="hamburger"] + label span:nth-child(3) {
+  bottom: 0;
+}
+input[id="hamburger"]:checked + label {
+  z-index: 99;
+}
+input[id="hamburger"]:checked + label span {
+  background: black;
+}
+input[id="hamburger"]:checked + label span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+input[id="hamburger"]:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+input[id="hamburger"]:checked + label span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+div[class="sidebar"] {
+  width: 100%;
+  height: 100%;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 98;
+  transition: all 0.35s;
+}
+
+input[id="hamburger"]:checked + label + div {
+  left: 0;
+}
+
+.nav_mobile {
+    position: absolute;
+    top:119px;
+    width: 50%;
+    }
+
+.sidebar .nav_mobile li {
+	color:black;
+    position:relative;
+    float:left; 
+    width:100%; 
+    list-style:none; 
+    font-size:20px;
+    border-bottom:1px solid #ccc;
+    font-family: 'Noto Sans KR';
+    font-weight:bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    }
+    
+.sidebar a {
+    padding: 0;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar li a{
+    display:block;
+    font-weight:bold;
+    line-height:40px;
+    margin:0px;
+    padding:0;
+    text-align:center;
+    text-decoration:none;
+    transition: all 0.4s;
+    }
+
+.sidebar li a:hover, .sidebar ul li:hover a {
+
+    text-decoration: none;
+    color: #eee;
+    padding: 0;
+    margin: 0;
+    border: 0px;
+}
+
+/* 햄버거 버튼 끝 */
+
+
 /* 헤더끝 */
 
 
@@ -121,11 +245,60 @@ cursor: pointer;
   filter: brightness(40%);
   width: 100%;
   margin: 0 auto;
+}
 
+/* 햄버거메뉴 관련 시작 */
+.mobile_btn {
+  display:none;
+}
+
+.mobile_btn .search-box-ham {
+  position: relative;
+  left: 5rem;
+  top: 2rem;
+}
+
+#recruit .search-box-ham { 
+  width:100%;
+  height: auto;
+  border-radius: 2rem;
+  color: var(--primaryColor);
+  margin: 0 auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#recruit .search-box-ham input {
+
+  margin: 3rem;
+  border: solid 2px var(--primaryColor);
+  border-radius: 1rem;
+  background: transparent;
+  outline: none;
+  font-size: 2rem;
 
 }
 
 
+#recruit .search-box-ham .searchimage i{
+  
+  font-size: 1.8rem;
+  pointer-events: none;
+  color: var(--textColor);
+  
+}
+
+#recruit .search-box-ham .searchimage i:hover{
+  
+  font-size: 1.8rem;
+  pointer-events: none;
+  color: var(--primaryColor);
+  
+}
+
+/* 햄버거메뉴 관련 끝 */
 
 
 
@@ -271,9 +444,10 @@ cursor: pointer;
 /* 첫번째줄 */
 
 #recruit .cardrow1{
-  gap:3rem;
+  
   display:flex;
   flex-direction: row;
+  width: 0 auto;
 }
 
 #recruit .card1{display: flex;
@@ -370,7 +544,7 @@ flex-direction: column;
 /* 두번째 줄 */
 
 #recruit .cardrow2{
-  gap:3rem;
+ 
   display:flex;
   flex-direction: row;
   
@@ -381,7 +555,7 @@ flex-direction: column;
 /* 세번째 줄 */
 
 #recruit .cardrow3{
-  gap:3rem;
+ 
   display:flex;
   flex-direction: row;
   
@@ -391,7 +565,7 @@ flex-direction: column;
 /* 네번째 줄 */
 
 #recruit .cardrow4{
-  gap:3rem;
+  
   display:flex;
   flex-direction: row;
 }
@@ -415,10 +589,7 @@ flex-direction: column;
  z-index: -10;
 }
 
-#recruit_footer .rel .footer_texts {
-    /* margin-left: 5%; */
-    
-}
+
 #recruit_footer p:nth-child(2) {
   color:var(--mainBg);
 }
@@ -466,11 +637,14 @@ flex-direction: column;
 
 @media (max-width:1400px)  {
 
-    .second_cardsbox {
-      display: flex;
-      flex-wrap: wrap;
+   /* 카드들 */
+
+    #recruit .second_cards {
+      width:33%;
+      gap: 5rem;
     }
 
+<<<<<<< Updated upstream
     
     #recruit_footer .footer_icons img{
     margin: 0 auto;
@@ -480,6 +654,26 @@ flex-direction: column;
     text-align: center;
     
   }
+=======
+    #recruit .second_cards .card1 {
+      width:100%;
+      margin-left: 18rem;
+    }
+    #recruit .second_cards .card2 {
+      width:100%;
+      margin-left: 18rem;
+    }
+    #recruit .second_cards .card3 {
+     width:100%;
+     margin-left: 18rem;
+    }
+
+    #recruit .second_cards .card4 {
+     display:none;
+     margin-left: 18rem;
+    }
+  
+>>>>>>> Stashed changes
   
     /* #recruit_footer .footer_background .rel .footer_icons{
       margin-left: 48.5%;
@@ -494,23 +688,62 @@ flex-direction: column;
 
 @media (max-width:768px){
 
+    #recruit .mobile_btn{
+      display:block;
+    }
+    
+
     #recruit{ width:auto; height: auto;}
 
     #recruit #second_cardsbox { padding:0rem;}
 
+<<<<<<< Updated upstream
     #recruit .topMenu {opacity:0;}
 
     #recruit .search-box {opacity:0;}
 
     #recruit .user_icon {opacity:0;}
+=======
+    #recruit header .topMenu {display:none;}
 
+    #recruit header .search-box {display:none;}
+
+    #recruit header .user_icon {display:none;}
+>>>>>>> Stashed changes
+
+    /* 카드들 */
+
+    #recruit .second_cards {
+      width:50%;
+      gap: 5rem;
+    }
+
+    #recruit .second_cards .card1 {
+      width:100%;
+      margin-left: 100%;
+    }
+    #recruit .second_cards .card2 {
+    
+      width:100%;
+      margin-left: 100%;
+    }
+    #recruit .second_cards .card3 {
+    display:none;
+    }
+
+    #recruit .second_cards .card4 {
+    display:none;
+    }
+
+
+    
     #recruit_footer .footer_texts{
     text-align:center;
     color: var(--mainBg);
   }
     
     #recruit .logo {
-      scale: 120%;
+      min-width: 15rem;
     }
 
     #recruit .rel .footer_texts{
