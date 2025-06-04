@@ -471,6 +471,11 @@ flex-direction: column;
       flex-wrap: wrap;
     }
 
+    
+    #recruit_footer .footer_icons img{
+    margin: 0 auto;
+  }
+
     #recruit_footer .rel .footer_texts{
     text-align: center;
     
@@ -490,14 +495,14 @@ flex-direction: column;
 @media (max-width:768px){
 
     #recruit{ width:auto; height: auto;}
-     
+
     #recruit #second_cardsbox { padding:0rem;}
 
-    #recruit .topMenu {display:none;}
+    #recruit .topMenu {opacity:0;}
 
-    #recruit .search-box {display:none;}
+    #recruit .search-box {opacity:0;}
 
-    #recruit .user_icon {display:none;}
+    #recruit .user_icon {opacity:0;}
 
     #recruit_footer .footer_texts{
     text-align:center;
@@ -511,11 +516,6 @@ flex-direction: column;
     #recruit .rel .footer_texts{
       margin: 0 0 0 0;
     }
-  
-    #recruit_footer .footer_icons img{
-    margin: 0 auto;
-  }
-
 
     #recruit_footer .footer_background .rel .footer_icons{
       opacity:0;
