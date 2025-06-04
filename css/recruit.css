@@ -1,4 +1,4 @@
-/* 헤더 */
+/* 헤더 시작 */
 
 /* 아트허브 로고 */
 #recruit header .rel{
@@ -644,17 +644,6 @@ flex-direction: column;
       gap: 5rem;
     }
 
-<<<<<<< Updated upstream
-    
-    #recruit_footer .footer_icons img{
-    margin: 0 auto;
-  }
-
-    #recruit_footer .rel .footer_texts{
-    text-align: center;
-    
-  }
-=======
     #recruit .second_cards .card1 {
       width:100%;
       margin-left: 18rem;
@@ -664,16 +653,15 @@ flex-direction: column;
       margin-left: 18rem;
     }
     #recruit .second_cards .card3 {
-     width:100%;
-     margin-left: 18rem;
+      width:100%;
+      margin-left: 18rem;
     }
 
     #recruit .second_cards .card4 {
-     display:none;
-     margin-left: 18rem;
+      display:none;
+      margin-left: 18rem;
     }
   
->>>>>>> Stashed changes
   
     /* #recruit_footer .footer_background .rel .footer_icons{
       margin-left: 48.5%;
@@ -697,19 +685,11 @@ flex-direction: column;
 
     #recruit #second_cardsbox { padding:0rem;}
 
-<<<<<<< Updated upstream
-    #recruit .topMenu {opacity:0;}
-
-    #recruit .search-box {opacity:0;}
-
-    #recruit .user_icon {opacity:0;}
-=======
     #recruit header .topMenu {display:none;}
 
     #recruit header .search-box {display:none;}
 
     #recruit header .user_icon {display:none;}
->>>>>>> Stashed changes
 
     /* 카드들 */
 
