@@ -120,23 +120,21 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-#con-detail #overview .left dl,
-#con-detail #overview .right dl{
+#con-detail #overview dl{
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-#con-detail #overview .left dl div,
-#con-detail #overview .right dl div{
+#con-detail #overview dl div{
   /* border: 1px solid red; */
   display: grid;
   grid-template-columns: 10rem auto;
 }
-#con-detail #overview .left dd{
+#con-detail #overview dl.left dd{
   display: grid;
   grid-template-columns: 25rem auto;
   align-items: center;
-  justify-self: start;
+  width: fit-content;
 }
 
 #con-detail #overview .btn{
@@ -398,17 +396,21 @@
   /* #ex-detail main .main-image{
     width: 100%;
   } */
-  #ex-detail main .des{
+  #ex-detail main .des,
+  #con-detail main .des{
     margin: 5rem;
   }
-  #ex-detail main .tags.state{
+  #ex-detail main .tags.state,
+  #con-detail main .tags.state{
     width: 100%;
     margin: 3rem 0;
   }
-  #ex-detail main .tags.state .tag.accent{
+  #ex-detail main .tags.state .tag.accent,
+  #con-detail main .tags.state .tag.accent{
     margin-right: 5rem;
   }
-  #ex-detail section{
+  #ex-detail section,
+  #con-detail section{
     width: 100%;
     /* margin: 0 3rem; */
     padding: 10rem 5rem;
@@ -420,6 +422,15 @@
     flex-direction: column;
     gap: 3rem;
   }
+  #ex-detail #overview .content,
+  #ex-detail #artist .content{
+    gap: 2rem;
+  }
+  #con-detail #overview .content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 
   #ex-detail #comment .person{
     gap: 5rem;
@@ -429,21 +440,41 @@
 
 /* Mobile */
 @media screen and (max-width:768px){
-  #ex-detail main .main-image{
+  #ex-detail main .main-image,
+  #con-detail main .main-image{
     height: 40rem;
   }
-  #ex-detail main .des{
+  #ex-detail main .des,
+  #con-detail main .des{
     margin: 3rem;
   }
-  #ex-detail section{
+
+  #ex-detail main .tags.state .tag.accent,
+  #con-detail main .tags.state .tag.accent{
+    margin-right: 3rem;
+  }
+
+  #ex-detail section,
+  #con-detail section{
     width: 100%;
     padding: 5rem 3rem;
   }
-  #ex-detail section h2{
+  #ex-detail section h2,
+  #con-detail section h2{
     margin-bottom: 5rem;
   }
-  #ex-detail section .container{
+  #ex-detail section .container,
+  #con-detail section .container{
     padding: 3rem;
+  }
+
+  #con-detail #overview dd{
+    position: relative;
+  }
+  #con-detail #overview dd span{
+    position: absolute;
+    top: -3.2rem;
+    left: 10rem;
   }
 
   #ex-detail #preview .swiper.mySwiper1,
@@ -455,20 +486,23 @@
     display: none;
   }
 
+
   #ex-detail #overview .info p,
   #ex-detail #artist .profile p,
   #ex-detail #artist .career p,
-  #ex-detail #artist .career .win{
+  #ex-detail #artist .career .win,
+  #con-detail #overview .info dl div{
     /* border: 1px solid #000; */
     display: flex;
     flex-direction: column;
     width: auto;
-    margin: 0.5rem 0;
+    /* margin: 0.5rem 0; */
   }
   #ex-detail #overview .info p span,
   #ex-detail #artist .profile p span,
   #ex-detail #artist .career p span,
-  #ex-detail #artist .career .win ul{
+  #ex-detail #artist .career .win ul,
+  #con-detail #overview .info dd{
     margin: 0.5rem 0;
   }
 
