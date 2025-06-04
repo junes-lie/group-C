@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+  <link rel="shortcut icon" href="image/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="join">
+  <section class="full">
+    <div class="container">
+      <h2>회원가입</h2>
+      <form>
+        <dl class="enter">
+          <div>
+            <dt>이름</dt>
+            <dd><input type="text"></dd>
+          </div>
+          <div>
+            <dt>아이디</dt>
+            <dd><input type="text"></dd>
+          </div>
+          <div>
+            <dt>비밀번호</dt>
+            <dd><input type="password"></dd>
+          </div>
+          <div>
+            <dt>비밀번호 확인</dt>
+            <dd><input type="password"></dd>
+          </div>
+          <div>
+            <dt>구분 선택</dt>
+            <dd>
+              <label><input type="radio" value="artist" name="user" checked> 아티스트</label>
+              <label><input type="radio" value="gallerist" name="user"> 갤러리스트</label>
+              <label><input type="radio" value="curator" name="user"> 큐레이터</label>
+              <label><input type="radio" value="collector" name="user"> 컬렉터 / 애호가</label>
+            </dd>
+          </div>
+        </dl>
+        <button type="submit" class="btn">회원가입하기</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
