@@ -447,7 +447,6 @@ input[id="hamburger"]:checked + label + div {
   
   display:flex;
   flex-direction: row;
-<<<<<<< Updated upstream
   margin: 0 auto;
 }
 #second_cardsbox #recruit_box1 .recruit_wrap{
@@ -455,9 +454,6 @@ input[id="hamburger"]:checked + label + div {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-=======
-  width: 0 auto;
->>>>>>> Stashed changes
 }
 #recruit .card1{display: flex;
 flex-direction: column;
@@ -544,7 +540,7 @@ flex-direction: column;
 /* 두번째 줄 */
 
 #recruit .cardrow2{
- 
+
   display:flex;
   flex-direction: row;
   
@@ -585,8 +581,8 @@ flex-direction: column;
   height: auto;
 }
 #recruit_footer .footer_background {
- background-color: var(--textColor);
- z-index: -10;
+  background-color: var(--textColor);
+  z-index: -10;
 }
 
 
@@ -659,18 +655,12 @@ flex-direction: column;
    /* 카드들 */
 
     #recruit .second_cards {
-<<<<<<< Updated upstream
       width:32%;
       
-=======
-      width:33%;
-      gap: 5rem;
->>>>>>> Stashed changes
     }
 
     #recruit .second_cards .card1 {
       width:100%;
-<<<<<<< Updated upstream
       
     }
     #recruit .second_cards .card2 {
@@ -747,24 +737,6 @@ flex-direction: column;
     #recruit_footer .footer_background .rel .footer_icons{
       text-align:center;
 }
-=======
-      margin-left: 18rem;
-    }
-    #recruit .second_cards .card2 {
-      width:100%;
-      margin-left: 18rem;
-    }
-    #recruit .second_cards .card3 {
-     width:100%;
-     margin-left: 18rem;
-    }
-
-    #recruit .second_cards .card4 {
-     display:none;
-     margin-left: 18rem;
-    }
-  
->>>>>>> Stashed changes
   
     /* #recruit_footer .footer_background .rel .footer_icons{
       margin-left: 48.5%;
@@ -795,16 +767,11 @@ flex-direction: column;
 
     #recruit .second_cards {
       width:50%;
-<<<<<<< Updated upstream
       
-=======
-      gap: 5rem;
->>>>>>> Stashed changes
     }
 
     #recruit .second_cards .card1 {
       width:100%;
-<<<<<<< Updated upstream
     }
     #recruit .second_cards .card2 {
       width:100%;
@@ -815,21 +782,6 @@ flex-direction: column;
 
     #recruit .second_cards .card4 {
       width:100%;
-=======
-      margin-left: 100%;
-    }
-    #recruit .second_cards .card2 {
-    
-      width:100%;
-      margin-left: 100%;
-    }
-    #recruit .second_cards .card3 {
-    display:none;
-    }
-
-    #recruit .second_cards .card4 {
-    display:none;
->>>>>>> Stashed changes
     }
 
 
@@ -838,13 +790,6 @@ flex-direction: column;
     text-align:center;
     color: var(--mainBg);
   }
-<<<<<<< Updated upstream
-=======
-    
-    #recruit .logo {
-      min-width: 15rem;
-    }
->>>>>>> Stashed changes
 
     #recruit_footer .rel .footer_texts{
       margin: 0 0 0 0;
@@ -892,7 +837,7 @@ flex-direction: column;
         }
 
     #recruit_footer .footer-logo {
-   display: block;
+    display: block;
     }
     
     

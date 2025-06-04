@@ -8,8 +8,6 @@
   
 }
 
-/* 헤더 */
-
 /* 아트허브 로고 */
 #job header .rel{
   display: flex;
@@ -30,6 +28,7 @@
 /* 탑 메뉴 */
 #job header .topMenu{
   display: flex;
+  margin: 0 auto;
   
 }
 #job header .topMenu h5{   
@@ -93,10 +92,132 @@ cursor: pointer;
   bottom:0.1rem;
 }
 
+
+/* 햄버거 버튼 시작 */
+
+a {text-decoration: none;
+    color: black;}
+
+   #job .mobile_btn{
+      display: none;
+      position: relative;
+      left: 1.5rem;
+    }
+
+input[id="hamburger"] {
+  display: none;
+}
+input[id="hamburger"] + label {
+  display: block;
+  width: 6rem;
+  height: 2rem;
+  position: relative;
+  cursor: pointer;
+}
+input[id="hamburger"] + label span {
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 0.1rem;
+  border-radius: 30px;
+  background: #000;
+  transition: all 0.35s;
+}
+input[id="hamburger"] + label span:nth-child(1) {
+  top: 0;
+}
+input[id="hamburger"] + label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+input[id="hamburger"] + label span:nth-child(3) {
+  bottom: 0;
+}
+input[id="hamburger"]:checked + label {
+  z-index: 99;
+}
+input[id="hamburger"]:checked + label span {
+  background: black;
+}
+input[id="hamburger"]:checked + label span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+input[id="hamburger"]:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+input[id="hamburger"]:checked + label span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+div[class="sidebar"] {
+  width: 100%;
+  height: 100%;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 98;
+  transition: all 0.35s;
+}
+
+input[id="hamburger"]:checked + label + div {
+  left: 0;
+}
+
+.nav_mobile {
+    position: absolute;
+    top:119px;
+    width: 50%;
+    }
+
+.sidebar .nav_mobile li {
+	color:black;
+    position:relative;
+    float:left; 
+    width:100%; 
+    list-style:none; 
+    font-size:20px;
+    border-bottom:1px solid #ccc;
+    font-family: 'Noto Sans KR';
+    font-weight:bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    }
+    
+.sidebar a {
+    padding: 0;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar li a{
+    display:block;
+    font-weight:bold;
+    line-height:40px;
+    margin:0px;
+    padding:0;
+    text-align:center;
+    text-decoration:none;
+    transition: all 0.4s;
+    }
+
+.sidebar li a:hover, .sidebar ul li:hover a {
+
+    text-decoration: none;
+    color: #eee;
+    padding: 0;
+    margin: 0;
+    border: 0px;
+}
+
+/* 햄버거 버튼 끝 */
+
+
 /* 헤더끝 */
 
-
-#recruit {
+#job {
   /* width: 100%; */ /* 배경 전체로 넣을 경우 */
   margin: auto;
   /* padding: 15rem 0; */
@@ -130,35 +251,25 @@ cursor: pointer;
   filter: brightness(40%);
   width: 100%;
   margin: 0 auto;
+}
 
+#job .recruit_cards .pre-title{
+
+  width: 100%;
+  background: url(/image/top-image2.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 17.6rem 0;
 
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 첫번째 섹션 */
 
-
 #job .recruit_cards .pre-title h2{
-  position: relative;
   color: var(--mainBg);
   font-size: var(--font-xl);
-  bottom: 38rem;
   text-align: center;
 }
 
@@ -206,7 +317,11 @@ cursor: pointer;
 
 #job .second_textbox {
   border: solid 2px #333;
+}
 
+#job .second_textbox h1{
+  display:flex;
+  flex-direction: row;
 }
 
 
@@ -226,147 +341,223 @@ cursor: pointer;
   height: auto;
 }
 #recruit_footer .footer_background {
- background-color: var(--textColor);
- z-index: -10;
+  background-color: var(--textColor);
+  z-index: -10;
 }
 
-#recruit_footer .rel .footer_texts {
-    margin-left: 5%;
-    
-}
+
 #recruit_footer p:nth-child(2) {
   color:var(--mainBg);
+  
 }
 
 #recruit_footer p:nth-child(3) {
   color:var(--mainBg);
   font-size: var(--font-xxxxs);
+
 }
 #recruit_footer p:nth-child(5) {
   color:var(--mainBg);
   font-size: var(--font-xxs);
 
+
 }
 #recruit_footer p:nth-child(7) {
   font-size: var(--font-xxs);
   color: var(--mainBg);
+  
 }
 
 #recruit_footer p:nth-child(8) {
   font-size: var(--font-xxs);
   font-weight:900;
   color: var(--mainBg);
+ 
 }
 #recruit_footer p:nth-child(9) {
   font-size:var(--font-xxs);
   color: var(--mainBg);
+ 
+}
+
+#recruit_footer p:nth-child(10) {
+  font-size:var(--font-xxs);
+  color: var(--mainBg);
+  
 }
 #recruit_footer p:nth-child(11) {
   font-size:var(--font-xxs);
   color: var(--mainBg);
+
 }
 #recruit_footer p:nth-child(12) {
   font-size:var(--font-xxs);
   color: var(--mainBg);
 
 }
+#recruit_footer p:nth-child(13) {
+  font-size:var(--font-xxs);
+  color: var(--mainBg);
+}
+
+
+
 
 #recruit_footer .footer_background .rel .footer_icons{
   color:var(--mainBg);
-  margin-left: 85%;
-  position: relative;
-  bottom: 18rem;
+  text-align: right;
+
 }
 
 
 @media (max-width:1400px)  {
 
-    .second_cardsbox {
-      display: flex;
-      flex-wrap: wrap;
+  #job .mobile_btn{
+      display:block;
     }
-
     
-    #recruit_footer .footer_icons img{
-    margin: 0 auto;
-  }
+    #recruit_footer p:nth-child(2) {
+  color:var(--mainBg);
+  text-align: center;
+}
 
-    #recruit_footer .rel .footer_texts{
-    text-align: center;
+#recruit_footer p:nth-child(3) {
+  color:var(--mainBg);
+  font-size: var(--font-xxxxs);
+  text-align: center;
+}
+#recruit_footer p:nth-child(5) {
+  color:var(--mainBg);
+  font-size: var(--font-xxs);
+  text-align: center;
+
+}
+#recruit_footer p:nth-child(7) {
+  font-size: var(--font-xxs);
+  color: var(--mainBg);
+  text-align: center;
+}
+
+#recruit_footer p:nth-child(8) {
+  font-size: var(--font-xxs);
+  font-weight:900;
+  color: var(--mainBg);
+  text-align: center;
+}
+#recruit_footer p:nth-child(9) {
+  font-size:var(--font-xxs);
+  color: var(--mainBg);
+  text-align: center;
+}
+
+#recruit_footer p:nth-child(10) {
+  font-size:var(--font-xxs);
+  color: var(--mainBg);
+  text-align: center;
+}
+#recruit_footer p:nth-child(11) {
+  font-size:var(--font-xxs);
+  color: var(--mainBg);
+  text-align: center;
+}
+#recruit_footer p:nth-child(12) {
+  font-size:var(--font-xxs);
+  color: var(--mainBg);
+  text-align: center;
+}
+
+#recruit_footer p:nth-child(13) {
+  display: none;
+}
+
+#recruit_footer .footer-logo {
+  display: none;
+}
     
-  }
+    #recruit_footer .footer_background .rel .footer_icons{
+      text-align:center;
+}
   
     /* #recruit_footer .footer_background .rel .footer_icons{
       margin-left: 48.5%;
   } */
 
-  #recruit_footer p:nth-child(5) {
-    opacity:0;
-  }
-
+  
 }
 
 
 @media (max-width:768px){
 
-    #recruit{ width:auto; height: auto;}
+    #job .mobile_btn{
+      display:block;
+    }
+    
 
-    #recruit #second_cardsbox { padding:0rem;}
+    #job{ width:auto; height: auto;}
 
-    #recruit .topMenu {opacity:0;}
+    #job #second_cardsbox { padding:0rem;}
 
-    #recruit .search-box {opacity:0;}
+    #job header .topMenu {display:none;}
 
-    #recruit .user_icon {opacity:0;}
+    #job header .search-box {display:none;}
 
+    #job header .user_icon {display:none;}
+
+  
     #recruit_footer .footer_texts{
     text-align:center;
     color: var(--mainBg);
   }
-    
-    /* #recruit .logo {
-    }
 
-    #recruit .rel .footer_texts{
+    #recruit_footer .rel .footer_texts{
       margin: 0 0 0 0;
+      position: relative;
+      bottom: 7rem;
     }
 
     #recruit_footer .footer_background .rel .footer_icons{
-      opacity:0;
+      display:none;
     }
-    
+
     #recruit_footer p:nth-child(2) {
-      opacity:0;
+        display:none;
     }
     
     #recruit_footer p:nth-child(3) {
-      opacity:0;
+        display:none;
     }
     #recruit_footer p:nth-child(5) {
-      opacity:0;
+        display:none;
     
     }
     #recruit_footer p:nth-child(7) {
-      opacity:0;
+        display:none;
     }
     
     #recruit_footer p:nth-child(8) {
-      opacity:0;
+        display:none;
     }
     #recruit_footer p:nth-child(9) {
-      opacity:0;
+        display:none;
     }
-
+    
+    #recruit_footer p:nth-child(10) {
+        display:none;
+    }
     #recruit_footer p:nth-child(11) {
-      font-size: 3rem;
-      
+        display:none;
     }
-
     #recruit_footer p:nth-child(12) {
-      font-size: 2rem;
-      margin-top: 1rem;
-    } */
+        display:none;
+    }
+        #recruit_footer p:nth-child(13) {
+        display: block;
+        }
 
-
+    #recruit_footer .footer-logo {
+    display: block;
+    }
+    
+    
 
   }
