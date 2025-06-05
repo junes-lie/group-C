@@ -5,6 +5,9 @@
 }
 
 /* 메인 */
+#ex-detail main{
+  margin-top: 9rem;
+}
 #ex-detail main .main-image,
 #con-detail main .main-image{
   /* border: 1px solid red; */
@@ -440,6 +443,11 @@
 
 /* Mobile */
 @media screen and (max-width:768px){
+
+  #ex-detail main{
+    margin-top: 4.6rem;
+  }
+
   #ex-detail main .main-image,
   #con-detail main .main-image{
     height: 40rem;

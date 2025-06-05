@@ -5,15 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>전시 상세페이지</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script> -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
   <link rel="shortcut icon" href="image/favicon.png">
   <link rel="stylesheet" href="css/style.css">
-  <!-- <script src="script.js" defer></script> -->
+  <script src="js/header.js" defer></script>
 </head>
 <body id="ex-detail">
   
-  <header></header>
+  <header>
+    <div class="rel">
+      <div class="header-logo">
+        <a href="exhibit.html">
+          <img src="image/logo-exhibit.png" alt="logo">
+        </a>
+      </div>
+      <ul class="site-group">  
+        <li><a href="present.html" class="site_name" style="color: var(--primaryColor);">현재전시</a></li>
+        <li><a href="expect.html" class="site_name">예정전시</a></li>
+        <li><a href="past.html" class="site_name">지난전시</a></li>
+        <li><a href="artist.html" class="site_name">작가 포트폴리오</a></li>
+      </ul>
+      <div class="header-right">
+        <div class="search-box">
+          <input type="text" id="search" placeholder="검색어를입력하세요">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="user-icon">
+          <i class="fa-solid fa-user"></i>
+        </div>
+
+        <!-- PC에서는 안보이게 함 -->
+        <a href="#" class="mob_btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <div class="subNav">
+        <div class="inner">
+          <div class="search-box">
+            <input type="text" placeholder="검색어를입력하세요">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <ul class="site-group">  
+            <li><a href="present.html" class="site_name">현재전시</a></li>
+            <li><a href="expect.html" class="site_name">예정전시</a></li>
+            <li><a href="past.html" class="site_name">지난전시</a></li>
+            <li><a href="artist.html" class="site_name">작가 포트폴리오</a></li>
+            <li><a href="mypage.html" class="site_name">마이페이지</a></li>
+            <li><a href="contest.html" class="site_name">공모페이지 바로가기</a></li>
+            <li>
+              <div class="sns">
+                <img src="image/facebook-white.png" class="facebook"alt="facebook">
+                <img src="image/insta-white.png" class="insta"alt="insta">
+                <img src="image/blog-white.png" class="blog"alt="blog">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="allMenuWrapBg"></div>
+  </header>
 
   <main>
     <div class="rel">
