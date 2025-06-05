@@ -15,11 +15,15 @@
 #mypage section{
   width: 100%;
   background-size: cover;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 0;
+}
+#mypage section.control{
+  display: block;
 }
 #mypage section:nth-child(1){margin-top: 9rem;}
 
