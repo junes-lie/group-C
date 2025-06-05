@@ -43,3 +43,12 @@
   text-align: center;
   line-height: 4.5rem;
 }
+
+
+@media screen and (max-width:768px){
+  .control-main{display: none;}
+  .control{
+    top: 95%;
+    right: 1rem;
+  }
+}
