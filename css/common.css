@@ -26,6 +26,7 @@ html{scroll-behavior: smooth;}
 
 body{
   font-size: var(--font-base);
+  word-break: keep-all;
 }
 section{
   position: relative;
@@ -52,8 +53,8 @@ section.full.sample{
 /* 리모컨 */
 .control{
   position: fixed;
-  left: 2rem;
-  bottom: 10rem;
+  left: 3rem;
+  bottom: 2rem;
   z-index: 50;
   padding: 0;
   width: 15rem;
@@ -250,7 +251,8 @@ h6{ /* 본문 */
     height: 5rem;
     font-size: 1.5rem;
   }
-  .control{
+  .control .recruit-btn,
+  .control .exhibit-btn{
     display: none;
   }
 }
