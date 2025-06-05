@@ -33,12 +33,27 @@ footer .footer-item{
   flex-direction: column;
   gap: 3rem;
 }
-footer .footer-tit a{
+footer .footer-item span{
+  font-size: 1.6rem;
+}
+footer .footer-tit a:nth-child(1){
+  font-size: 2em;
+  transition: 0.3s;
+}
+footer .footer-info a{
+  color: #fff;
   font-size: 1.6rem;
   transition: 0.3s;
 }
-footer .footer-tit a:hover{
+footer .footer-tit:hover,
+footer .footer-info a:hover{
   color: var(--primaryColor);
+}
+
+footer .footer-info{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 footer .footer-sns{
@@ -47,10 +62,11 @@ footer .footer-sns{
   width: max-content;
 }
 
-footer .footer-contact h4{
+footer .footer-contact span{
   margin-bottom: 1.5rem;
   font-size: 2rem;
   font-weight: bold;
+  color: var(--primaryColor);
 } 
 footer .footer-contact p{
   font-size: 1.6rem;
@@ -60,6 +76,7 @@ footer .footer-contact p{
 footer .footer-sns a:hover{
   transform: translateY(0.2rem);
 }
+
 
 /* 타블렛 */
 @media screen and (max-width: 1400px) {
@@ -72,7 +89,7 @@ footer .footer-sns a:hover{
     margin: 5rem 0 2rem 0;
   }
 
-  footer .footer-item h5,
+  footer .footer-item span,
   footer .footer-tit,
   footer .footer-contact {display: none;}
 
