@@ -497,8 +497,9 @@
 #exhibit .art .art-img{
   overflow: hidden;
   height: 36rem;
+  transition: ease-in-out .3s;
 }
-#exhibit .art:hover .art-img > img{
+#exhibit .art:hover .art-img{
   transform: scale(1.1);
 }
 #exhibit .art-img > img {
