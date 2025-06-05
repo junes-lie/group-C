@@ -97,8 +97,8 @@ cursor: pointer;
 
 /* 햄버거 버튼 시작 */
 
-#job a {text-decoration: none;
-    color: black;}
+#job .nav_mobile li a {text-decoration: none;
+    color: var(--textColor);}
 
 #job .mobile_btn{
   display: none;
@@ -387,7 +387,8 @@ input[id="hamburger"]:checked + label + div {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10rem;
+  margin-bottom: 5rem;
+  color:var(--mainBg)
 }
 
 /* 푸터 */
@@ -637,5 +638,14 @@ input[id="hamburger"]:checked + label + div {
     #job .second_textbox .second_title{
   display:none;
 }
+
+#job .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rem;
+  color:var(--mainBg)
+}
+
     
   }

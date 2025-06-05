@@ -90,8 +90,8 @@ cursor: pointer;
 
 /* 햄버거 버튼 시작 */
 
-a {text-decoration: none;
-    color: black;}
+#job .nav_mobile li a {text-decoration: none;
+    color: var(--textColor);}
 
    #recruit .mobile_btn{
       display: none;
