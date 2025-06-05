@@ -21,6 +21,9 @@
   --boxShadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 
+/* 탑버튼추가 */
+html{scroll-behavior: smooth;}
+
 body{
   font-size: var(--font-base);
   word-break: keep-all;
@@ -45,6 +48,79 @@ section.full.sample{
   position: relative;
   height: 100%;
 }
+
+
+/* 리모컨 */
+.control{
+  position: fixed;
+  left: 3rem;
+  bottom: 2rem;
+  z-index: 50;
+  padding: 0;
+  width: 15rem;
+  height: 17.2rem;
+}
+.control .recruit-btn img,
+.control .exhibit-btn img,
+.control .topbtn img{
+  display: flex;
+  flex-direction: column;
+}
+.control .recruit-btn{
+  position:relative;
+}
+.control .recruit-btn img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+}
+.control .recruit-btn img:nth-child(2){
+  opacity: 0;
+}
+.control .recruit-btn:hover img:nth-child(1){
+  opacity: 0;
+}
+.control .recruit-btn:hover img:nth-child(2){
+  opacity: 1;
+}
+.control .exhibit-btn{
+  position:relative;
+}
+.control .exhibit-btn img{
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  transition: 0.3s;
+}
+.control .exhibit-btn img:nth-child(2){
+  opacity: 0;
+}
+.control .exhibit-btn:hover img:nth-child(1){
+  opacity: 0;
+}
+.control .exhibit-btn:hover img:nth-child(2){
+  opacity: 1;
+}
+.control .topbtn{
+  position:relative;
+}
+.control .topbtn img{
+  position: absolute;
+  top: 12rem;
+  left: 0;
+  transition: 0.3s;
+}
+.control .topbtn img:nth-child(2){
+  opacity: 0;
+}
+.control .topbtn:hover img:nth-child(1){
+  opacity: 0;
+}
+.control .topbtn:hover img:nth-child(2){
+  opacity: 1;
+}
+
 
 h2{ /* 메인타이틀 */
   font-family: 'YUniverse-B';
@@ -136,6 +212,15 @@ h6{ /* 본문 */
   .btn{
     height: 5rem;
   }
+  .control .recruit-btn img{
+    width: 14rem;
+  }
+  .control .exhibit-btn img{
+    width: 14rem;
+  }
+  .control .topbtn img{
+    width: 4.5rem;
+  }
 }
 
 /* Mobile */
@@ -166,4 +251,10 @@ h6{ /* 본문 */
     height: 5rem;
     font-size: 1.5rem;
   }
+  .control .recruit-btn,
+  .control .exhibit-btn{
+    display: none;
+  }
 }
+
+

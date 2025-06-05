@@ -214,6 +214,8 @@ input[id="hamburger"]:checked + label + div {
 
 
 
+
+
 #recruit {
   /* width: 100%; */ /* 배경 전체로 넣을 경우 */
   margin: auto;
