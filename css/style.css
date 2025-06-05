@@ -7,8 +7,9 @@
 @import url(index.css);  /* 인트로 */
 @import url(exhibition-sub.css);  /* 전시 서브 전체 */
 
-@import url(exhibit.css);
-@import url(mypage.css);
+@import url(exhibit.css); /* 전시-메인 */
+@import url(contest.css); /* 전시-공모 */
+@import url(mypage.css); /* 마이페이지 */
 
 @import url(detail.css);
 

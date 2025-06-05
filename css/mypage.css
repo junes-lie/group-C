@@ -1,5 +1,5 @@
 @charset "utf-8"; 
-#mypage{background-color: #F7F4F3;}
+
 #mypage main{
   max-width: 140rem;
   margin: auto;
@@ -8,6 +8,10 @@
   align-items: center;
   justify-content: center;
 }
+
+#mypage{
+  background-color: #F7F4F3;
+}
 #mypage section{
   width: 100%;
   background-size: cover;
@@ -15,6 +19,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 0;
 }
 #mypage section:nth-child(1){margin-top: 9rem;}
 
@@ -272,7 +277,6 @@
   color: #fff;
   background-color: #333;
 }
-#mypage .coment-box .coment-icon:nth-child(1){margin-bottom: 1rem;}
 
 
 /* 결제이력 */
@@ -319,13 +323,8 @@
   justify-content: center;
   align-items: center;
 }
-#mypage .list .list-box .list-txt .mob-none{
-  color: #666;
-  text-align: right;
-}
-#mypage .list .list-box .list-txt .pc-none{
+#mypage .list .list-box .pc-none{
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -432,9 +431,8 @@
   #mypage .coment-box .coment-icon{
     background-color:#333;
     color: #fff;
-    width: 4.5rem;
-    height: 4.5rem;
-    font-size: 2.5rem;
+    width: 5rem;
+    height: 5rem;
   }
   #mypage .coment-box .coment-txt{
     width: 36rem;
@@ -458,20 +456,29 @@
     height: 13.5rem;
     border-radius: 2rem;
   }
+  #mypage .list .list-box .list-txt .pc-none{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+    #mypage .list .list-box .list-txt .pc-none h5{
+      width: 20rem;
+    }
   #mypage .list .list-box .list-txt .pc-none h6{
     color: #666;
   }
-
   #mypage .list .list-box .list-txt .pc-none p{
     display: inline-block;
   }
   #mypage .list .list-box .list-txt .pc-none:nth-child(1){
-    flex-direction: column;
+    display: flex;
+    justify-content: baseline;
     align-items: baseline;
   }
   #mypage .list .list-box .list-txt .pc-none:nth-child(2){
-    align-items: end;
+    display: flex;
     flex-direction: column-reverse;
+    align-items:end
   }
 }
 
@@ -480,6 +487,10 @@
 
 /* 모바일______________________________ */
 @media screen and (max-width:768px){
+  #mypage main{
+  max-width: 37.5rem;
+  margin: auto;
+  }
   #mypage main > section{
     width: 37.5rem; 
     padding: 2rem 0 5rem 0;
@@ -600,7 +611,7 @@
   }
   #mypage .mypage-secTit h4{
     font-size: 1.0rem;
-    width: 23rem;
+    width: 20rem;
     margin-left: 2rem;
   }
 
@@ -614,20 +625,20 @@
     max-width: 36.2rem;
     height: 10rem;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 0;
   }
 
   #mypage .coment-box .coment-txt{
     margin: 0;
     gap: 0;
     height: 8rem;
-    width: 28rem;
+    width: 25rem;
   }
   #mypage .coment-box .coment-txt h5{
     font-size: 1.6rem;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    display: -webkit-box;            
+  -webkit-box-orient: vertical;  
+  -webkit-line-clamp: 2; 
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -651,15 +662,20 @@
   }
 
   #mypage .coment-box .coment-img{
+    width: 1rem;
+    height: 1.2rem;
+  }
+
+  #mypage .visited .coment-box{
+    height: 16.5rem;
+  }
+  #mypage .visited .coment-box .coment-txt{
+    width: 19rem;
+  }
+  #mypage .visited .coment-box .coment-img{
     width: 10rem;
     height: 12rem;
     border-radius: 1rem;
-  }
-  #mypage .visited .coment-box{
-    height: 15rem;
-  }
-  #mypage .visited .coment-txt{
-    width: 19rem;
   }
 
 
@@ -667,20 +683,17 @@
   /* 결제이력 */
   #mypage .list{
     margin: 0;
+    background-color: #fff;
     border-radius: 1rem;
-    overflow: hidden;
   }
     #mypage .list .list-box{
       margin: 0;
       border-bottom: 1px solid #eee;
-      border-radius: 0;
-      padding: 1rem;
     }
   #mypage .list .list-box .list-txt{
-    width: 32rem;
-    height: max-content;
+    width: max-content;
   }
-  #mypage .list .list-box .list-txt .pc-none{
+    #mypage .list .list-box .list-txt .pc-none{
     display: flex;
     flex-direction: column-reverse;
     gap: 0.3rem;
@@ -699,17 +712,10 @@
   #mypage .list .list-box .list-txt .pc-none p{
     font-size: 1.6rem;
     font-weight: 800;
-    width: 12rem;
+    width: 10rem;
   }
   #mypage .list .list-box .list-txt .pc-none h6:nth-child(2){
     text-align: left;
-  }
-    #mypage .list .list-box .list-txt .pc-none:nth-child(1){
-    align-items: baseline;
-  }
-  #mypage .list .list-box .list-txt .pc-none:nth-child(2){
-    text-align: right;
-    flex-direction: column-reverse;
   }
 
 }

@@ -22,7 +22,7 @@
 }
 
 body{
-  font-size: var(--font-base);
+  font-size: var(--font-base)word-break: keep-all;
 }
 section{
   position: relative;
