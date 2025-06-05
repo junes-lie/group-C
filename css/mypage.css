@@ -15,11 +15,15 @@
 #mypage section{
   width: 100%;
   background-size: cover;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 0;
+}
+#mypage section.control{
+  display: block;
 }
 #mypage section:nth-child(1){margin-top: 9rem;}
 
@@ -273,6 +277,9 @@
   transition: 0.3s;
   cursor: pointer;
 }
+  #mypage .coment-box .coment-icon:nth-child(1){
+    margin-bottom: 1rem;
+  }
 #mypage .coment-box .coment-icon:hover{
   color: #fff;
   background-color: #333;
@@ -426,13 +433,15 @@
   #mypage .coment-box .mypage-icon{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
   }
   #mypage .coment-box .coment-icon{
     background-color:#333;
     color: #fff;
     width: 5rem;
     height: 5rem;
+  }
+  #mypage .coment-box .coment-icon:nth-child(1){
+    margin-bottom: 1rem;
   }
   #mypage .coment-box .coment-txt{
     width: 36rem;
