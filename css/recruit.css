@@ -252,11 +252,6 @@ input[id="hamburger"]:checked + label + div {
   display:none;
 }
 
-.mobile_btn .search-box-ham {
-  position: relative;
-  left: 5rem;
-  top: 2rem;
-}
 
 #recruit .search-box-ham { 
   width:100%;
@@ -455,6 +450,21 @@ input[id="hamburger"]:checked + label + div {
   justify-content: center;
   gap: 2rem;
 }
+
+#second_cardsbox #recruit_box2 .recruit_wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#second_cardsbox #recruit_box3 .recruit_wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
 #recruit .card1{display: flex;
 flex-direction: column;
 }
