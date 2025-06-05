@@ -17,7 +17,9 @@
   max-width: 120rem;
   margin: 0 auto;
   min-height: 9rem;
+  padding: 0 3rem;
 }
+
 #job header #logo{
   display: flex;
   color: var(--primaryColor);
@@ -95,14 +97,14 @@ cursor: pointer;
 
 /* 햄버거 버튼 시작 */
 
-a {text-decoration: none;
+#job a {text-decoration: none;
     color: black;}
 
-   #job .mobile_btn{
-      display: none;
-      position: relative;
-      left: 1.5rem;
-    }
+#job .mobile_btn{
+  display: none;
+  position: relative;
+  left: 1.5rem;
+}
 
 input[id="hamburger"] {
   display: none;
@@ -165,13 +167,13 @@ input[id="hamburger"]:checked + label + div {
   left: 0;
 }
 
-.nav_mobile {
+#job .nav_mobile {
     position: absolute;
     top:119px;
     width: 50%;
     }
 
-.sidebar .nav_mobile li {
+#job .sidebar .nav_mobile li {
 	color:black;
     position:relative;
     float:left; 
@@ -186,13 +188,13 @@ input[id="hamburger"]:checked + label + div {
     text-align: center;
     }
     
-.sidebar a {
+#job .sidebar a {
     padding: 0;
     text-decoration: none;
     display: block;
 }
 
-.sidebar li a{
+#job .sidebar li a{
     display:block;
     font-weight:bold;
     line-height:40px;
@@ -203,7 +205,7 @@ input[id="hamburger"]:checked + label + div {
     transition: all 0.4s;
     }
 
-.sidebar li a:hover, .sidebar ul li:hover a {
+#job .sidebar li a:hover, .sidebar ul li:hover a {
 
     text-decoration: none;
     color: #eee;
@@ -212,7 +214,52 @@ input[id="hamburger"]:checked + label + div {
     border: 0px;
 }
 
-/* 햄버거 버튼 끝 */
+#job .mobile_btn {
+  display:none;
+}
+
+
+#job .search-box-ham { 
+  width:100%;
+  height: auto;
+  border-radius: 2rem;
+  color: var(--primaryColor);
+  margin: 0 auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#job .search-box-ham input {
+
+  margin: 3rem;
+  border: solid 2px var(--primaryColor);
+  border-radius: 1rem;
+  background: transparent;
+  outline: none;
+  font-size: 2rem;
+
+}
+
+
+#job .search-box-ham .searchimage i{
+  
+  font-size: 1.8rem;
+  pointer-events: none;
+  color: var(--textColor);
+  
+}
+
+#job .search-box-ham .searchimage i:hover{
+  
+  font-size: 1.8rem;
+  pointer-events: none;
+  color: var(--primaryColor);
+  
+}
+
+/* 햄버거메뉴 관련 끝 */
 
 
 /* 헤더끝 */
@@ -256,7 +303,7 @@ input[id="hamburger"]:checked + label + div {
 #job .recruit_cards .pre-title{
 
   width: 100%;
-  background: url(/image/top-image2.png) no-repeat;
+  background: url(../image/top-image2.png) no-repeat;
   background-position: center;
   background-size: cover;
   padding: 17.6rem 0;
@@ -315,17 +362,26 @@ input[id="hamburger"]:checked + label + div {
   
 }
 
-#job .second_textbox {
-  border: solid 2px #333;
-}
 
-#job .second_textbox h1{
+#job .second_textbox .second_title {
   display:flex;
-  flex-direction: row;
 }
 
+#job .second_textbox .second_title h1:nth-child(2){
+  margin-left: 20rem;
+}
+#job .second_textbox .second_title h1:nth-child(3){
+  margin-left: 30rem;
+}
+#job .second_textbox .second_title h1:nth-child(4){
+  margin-left: 30rem;
+}
 
+#job .second_textbox .card ul a{
+  display:flex;
+  gap:2rem;
 
+}
 
 #job .button {
   display: flex;
@@ -410,6 +466,8 @@ input[id="hamburger"]:checked + label + div {
 }
 
 
+
+
 @media (max-width:1400px)  {
 
   #job .mobile_btn{
@@ -474,16 +532,25 @@ input[id="hamburger"]:checked + label + div {
   display: none;
 }
     
-    #recruit_footer .footer_background .rel .footer_icons{
-      text-align:center;
+#recruit_footer .footer_background .rel .footer_icons{
+  text-align:center;
 }
   
     /* #recruit_footer .footer_background .rel .footer_icons{
       margin-left: 48.5%;
   } */
 
+#job .second_textbox .card ul a{
+  display:flex;
+  flex-direction: column;
+}
+
+#job .second_textbox .second_title{
+  display:none;
+}
   
 }
+
 
 
 @media (max-width:768px){
@@ -550,14 +617,20 @@ input[id="hamburger"]:checked + label + div {
     #recruit_footer p:nth-child(12) {
         display:none;
     }
-        #recruit_footer p:nth-child(13) {
-        display: block;
+    #recruit_footer p:nth-child(13) {
+    display: block;
         }
 
     #recruit_footer .footer-logo {
     display: block;
     }
     
+    #job .second_textbox .card ul a{
+    display:flex;
+    flex-direction: column;
+}
+    #job .second_textbox .second_title{
+  display:none;
+}
     
-
   }
