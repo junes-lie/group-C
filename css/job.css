@@ -466,6 +466,11 @@ input[id="hamburger"]:checked + label + div {
 }
 
 
+/* #recruit_footer .rel{
+    width: 140rem;
+    margin: 5rem auto;
+    }
+     */
 
 
 @media (max-width:1400px)  {
