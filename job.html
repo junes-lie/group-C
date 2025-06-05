@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>job</title>
+  <title>공모페이지-아트잡</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
   <script src="https://kit.fontawesome.com/d7f60ae480.js" crossorigin="anonymous"></script>
+  <script src="js/header.js" defer></script> 
   <link rel="shortcut icon" href="image/favicon.png">
   <link rel="stylesheet" href="css/style.css">
   
@@ -14,52 +15,58 @@
 
 <body id="job">
   <header>
-    <nav>
-      <div class="rel">
-        <div id="logo">
-          <a href="recruit.html"><img src="image/logo-recruit.png" class="logo"alt="logo"></a>
-        </div>
-        <div class="topMenu">
-          <h5><a href="recruit.html">종합공모</a></h5>
-          <h5><a href="job.html">아트잡</a></h5>
-        </div>
-
-        <div class="search-box"><input type="text" placeholder="검색어를입력하세요">
-          <div class="magifyingglass">
+    <div class="rel">
+      <div class="header-logo">
+        <a href="exhibit.html">
+          <img src="image/logo-exhibit.png" alt="logo">
+        </a>
+      </div>
+      <ul class="site-group">  
+        <li><a href="recruit.html" class="site_name">종합공모</a></li>
+        <li><a href="job.html" class="site_name" style="color: var(--primaryColor);">아트잡</a></li>        
+      </ul>
+      <div class="header-right">
+        <div class="search-box">
+          <input type="text" id="search" placeholder="검색어를입력하세요">
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
-        <div class="user_icon">
+        <div class="user-icon">
           <i class="fa-solid fa-user"></i>
         </div>
-        </div>
-          
-          <!-- 햄버거메뉴 -->
-          <div class="mobile_btn">
-          	  <input type="checkbox" id="hamburger" />
-          	    <label for="hamburger">
-          	      <span></span>
-          	      <span></span>
-          	      <span></span>
-          	    </label>
-          	  <div class="sidebar">
-              <div class="search-box-ham">
-                <input type="text" placeholder="검색어를입력하세요">
-              <div class="magifyingglass">
-                <i class="fa-solid fa-magnifying-glass"></i>
+
+        <!-- PC에서는 안보이게 함 -->
+        <a href="#" class="mob_btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <div class="subNav">
+        <div class="inner">
+          <div class="search-box">
+            <input type="text" placeholder="검색어를입력하세요">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <ul class="site-group">  
+            <li><a href="recruit.html" class="site_name">종합공모</a></li>
+            <li><a href="job.html" class="site_name">아트잡</a></li>
+            <li><a href="#" class="site_name"></a></li>
+            <li><a href="#" class="site_name"></a></li>
+            <li><a href="mypage.html" class="site_name">마이페이지</a></li>
+            <li><a href="exhibit.html" class="site_name">전시페이지 바로가기</a></li>
+            <li>
+              <div class="sns">
+                <img src="image/facebook-white.png" class="facebook"alt="facebook">
+                <img src="image/insta-white.png" class="insta"alt="insta">
+                <img src="image/blog-white.png" class="blog"alt="blog">
               </div>
-              <br>
-              <ul class="nav_mobile">
-                <li><a href="index.html">인트로 돌아가기</a></li>
-                <li><a href="mypage.html">마이페이지 바로가기</a></li>
-                <li><a href="exhibit.html">전시페이지 바로가기</a></li>
-              </ul>
-          </div> 
-          <!-- 햄버거메뉴 끝 -->
+            </li>
+          </ul>
         </div>
       </div>
-    </nav>
+    </div>
+    <div class="allMenuWrapBg"></div>
   </header>
-
   <!-- 헤더 끝 -->
 
   <!-- 리모컨 -->
@@ -89,8 +96,8 @@
     <div class="pre-title"><h2>현재 구인중인 포지션을 확인해보세요</h2></div> 
     <section id="first_cards">
       <div class="title">
-            <pre><h1>아트잡</h1>
-            <h3>작가님들의 힘이 필요해요</h3></pre>
+            <h2>아트잡</h2>
+            <h3>작가님들의 힘이 필요해요</h3>
     </div>
     </section>
 
@@ -246,32 +253,38 @@
 
 
   
-  <footer id ="recruit_footer">
-    <div class="footer_background">
-      <div class="rel">
-        <div class="footer_texts">
-        <br>
-        <p>예술과아카이브</p> 
-        <p>개인정보취급방침</p>
-        <br>
-          <div class="footer_icons">
-            <img src="image/facebook-white.png" class="facebook"alt="facebook">
-            <img src="image/insta-white.png" class="insta"alt="insta">
-            <img src="image/blog-white.png" class="blog"alt="blog">
-          </div>
-        <br>
-        <p>사업자등록번호 314-20-75752</p>
-        <p>Contact</p>
-        <p>02-2654-7138</p>
-        <p>arthub@naver.com</p>
-        <br>
-        <div class="footer-logo"><p><img src="image/footer-logo.png" alt="footer-logo"></p>
+  <footer>
+    <div class="footer-inner">
+      <a class="footer-no-pc" href="index.html">
+        <img src="/image/logo-white.png" alt="아트허브 로고">
+      </a>
+      <div class="footer-item">
+        <div class="footer-tit">
+          <a href="index.html"><h3>예술과 아카이브</h3></a>
+          <a href="#">개인정보취급방침</a>
         </div>
-        <p>Copyright ARTHUB All Right Reserved</p>
-      </div>       
+        <h5>사업자 등록번호 : 314-20-75752 </h5>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>02-2654-7138</p>
+          <p>arthub2@naver.com</p>
+        </div>
+      </div>
+      <div class="footer-sns">
+        <a href="instagram.com/arthub_vap/">
+          <img src="/image/icon-sns1.png" alt="인스타그램">
+        </a>
+        <a href="https://blog.naver.com/venice87">
+          <img src="/image/icon-sns2.png" alt="블로그">
+        </a>
+        <a href="https://www.facebook.com/arthub02">
+          <img src="/image/icon-sns3.png" alt="페이스북">
+        </a>
+      </div>
     </div>
-  </div>
-
+    <address>
+      Copyright ARTHUB. All Rights Reserved
+    </address>
   </footer>
 
 
