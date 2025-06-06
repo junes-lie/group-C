@@ -9,7 +9,6 @@
 
 #contest main > section {
   width: 100%;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -162,6 +161,7 @@
 #contest .visual-btn:hover {
   background-color: var(--secondaryColor);
 }
+#contest .visual-item .mob-btn{display: none;}
 
 /* info */
 #contest .visual-info {
@@ -417,6 +417,7 @@
   #contest #contest .visual-item {
     gap: 5rem;
   }
+  #contest .visual-item .mob-btn{display: none;}
 
   /* 현재전시, 예정전시 ______________*/
   #contest #contest .nowpost {
@@ -475,7 +476,7 @@
   #contest .main-visual .swiper,
   #contest .main-visual .swiper-slide .visual-bg,
   #contest .main-visual .swiper-slide .glass-bg {
-    height: 55rem;
+    height: 70rem;
   }
   /* 타이틀 */
   #contest .visu-tit {
@@ -491,17 +492,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0rem;
-    position: absolute;
-    bottom: 0;
+    gap: 0;
   }
   #contest .visual-item .poster {
-    width: 26rem;
-    height: 30rem;
+    width: 28rem;
+    height: 35rem;
   }
   /* 네비게이터 */
   #contest .swiper-pagination {
-    top: 1rem;
+    top: 2rem;
+  }
+
+  #contest .visual-item .mob-btn{
+    display: block;
+    background-color: var(--primaryColor);
+    border-radius: 5rem;
+    width: 28rem;
+    height: 5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    line-height: 5rem;
+    margin-top: 2rem;
   }
 
   /* info */
@@ -514,15 +527,14 @@
     height: 15rem;
     align-items: center;
   }
-  #contest .visual-info .visual-btn {
+  #contest .visual-info .visual-btn{
     display: none;
   }
-  #contest .visual-text {
+  #contest .visual-text{
     display: flex;
     flex-direction: column;
-    min-width: 26rem;
-    height: inherit;
-    padding: 2rem;
+    min-width: 28rem;
+    padding: 1.5rem;
     align-items: center;
     background-color: #fff;
     border-radius: 0 0 1rem 1rem;
@@ -531,7 +543,6 @@
     font-size: 1.6rem;
     color: #333;
     font-weight: 600;
-    text-align: center;
   }
   #contest .visual-text h3,
   #contest .visual-text h4 {
