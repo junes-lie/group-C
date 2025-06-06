@@ -15,3 +15,24 @@ $(".tab li").on("click", function () {
     left: tabIndex * tabWidth + "px"
   }, 300);
 });
+
+
+
+// 스크롤 애니메이션
+document.addEventListener('DOMContentLoaded', function () {
+    const elements = document.querySelectorAll('.fade-up');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        } else {
+          entry.target.classList.remove("active");
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    elements.forEach(el => observer.observe(el));
+  });

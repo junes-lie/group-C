@@ -1,15 +1,21 @@
 #exhibit main {
   width: 100%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #exhibit main > section {
   width: 100%;
-  margin-top: 9rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+#contest section:nth-child(1) {
+  margin-top: 9rem;
 }
 
 #exhibit .rel {
@@ -21,11 +27,31 @@
   max-width: 140rem;
 }
 
+#exhibit .main-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 #exhibit .section-tit {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+
+/* 스크롤애니메이션 */
+#exhibit .fade-up {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: all 0.8s ease;
+}
+
+#exhibit .fade-up.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 

@@ -41,6 +41,18 @@
   align-items: center;
 }
 
+/* 스크롤애니메이션 */
+#contest .fade-up {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: all 0.8s ease;
+}
+
+#contest .fade-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* 메인 비주얼______________________ */
 #contest section.main-visual {
   /* border: 2px solid blue; */
