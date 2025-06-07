@@ -6,7 +6,8 @@
 }
 
 /* 메인 */
-#ex-detail main{
+#ex-detail main,
+#con-detail main{
   margin-top: 9rem; /* 헤더높이 */
 }
 #ex-detail main .main-image,
@@ -445,7 +446,8 @@
 /* Mobile */
 @media screen and (max-width:768px){
 
-  #ex-detail main{
+  #ex-detail main,
+  #con-detail main{
     margin-top: 4.6rem; /* 헤더높이 */
   }
 
