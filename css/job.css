@@ -33,7 +33,6 @@
 
 
 #job .top-image{
-  filter: brightness(40%);
   width: 100%;
   margin: 0 auto;
 }
@@ -45,7 +44,6 @@
   background-position: center;
   background-size: cover;
   padding: 17.6rem 0;
-
 }
 
 
@@ -56,6 +54,7 @@
   color: var(--mainBg);
   font-size: var(--font-xl);
   text-align: center;
+  margin-top: 10rem;
 }
 
 /* 중앙 검색창 */

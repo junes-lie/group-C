@@ -88,25 +88,23 @@
 
 /* 첫번째 섹션 */
 
-#recruit .recruit_cards{
+#recruit .recruit_cards .pre-title{
   width: 100%;
   background: url(../image/top-image.png) no-repeat;
   background-position: center;
   background-size: cover;
   padding: 17.6rem 0;
-  
-}
-#recruit .recruit_cards .pre-title {
-  max-width: 140rem;
   margin: 0 auto;
   text-align: center;
 }
+
+
 #recruit .recruit_cards .pre-title h2{
 
   color: var(--mainBg);
   font-size: var(--font-xl);
-
   text-align: center;
+  margin-top: 10rem;
 }
 
 #recruit .buttons{
