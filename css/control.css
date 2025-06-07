@@ -1,3 +1,5 @@
+@charset "utf-8"; 
+
 .control{
   position: fixed;
   right: 2rem;
@@ -53,5 +55,3 @@
     right: 1rem;
   }
 }
-
-

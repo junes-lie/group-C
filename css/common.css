@@ -50,76 +50,7 @@ section.full.sample{
 }
 
 
-/* 리모컨 */
-.control{
-  position: fixed;
-  left: 3rem;
-  bottom: 2rem;
-  z-index: 50;
-  padding: 0;
-  width: 15rem;
-  height: 17.2rem;
-}
-.control .recruit-btn img,
-.control .exhibit-btn img,
-.control .topbtn img{
-  display: flex;
-  flex-direction: column;
-}
-.control .recruit-btn{
-  position:relative;
-}
-.control .recruit-btn img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: 0.3s;
-}
-.control .recruit-btn img:nth-child(2){
-  opacity: 0;
-}
-.control .recruit-btn:hover img:nth-child(1){
-  opacity: 0;
-}
-.control .recruit-btn:hover img:nth-child(2){
-  opacity: 1;
-}
-.control .exhibit-btn{
-  position:relative;
-}
-.control .exhibit-btn img{
-  position: absolute;
-  top: 6rem;
-  left: 0;
-  transition: 0.3s;
-}
-.control .exhibit-btn img:nth-child(2){
-  opacity: 0;
-}
-.control .exhibit-btn:hover img:nth-child(1){
-  opacity: 0;
-}
-.control .exhibit-btn:hover img:nth-child(2){
-  opacity: 1;
-}
-.control .topbtn{
-  position:relative;
-}
-.control .topbtn img{
-  position: absolute;
-  top: 12rem;
-  left: 0;
-  transition: 0.3s;
-}
-.control .topbtn img:nth-child(2){
-  opacity: 0;
-}
-.control .topbtn:hover img:nth-child(1){
-  opacity: 0;
-}
-.control .topbtn:hover img:nth-child(2){
-  opacity: 1;
-}
+
 
 
 h2{ /* 메인타이틀 */
