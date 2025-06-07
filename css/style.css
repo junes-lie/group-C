@@ -3,7 +3,9 @@
 @import url(reset.css);
 @import url(font.css);
 @import url(common.css);
+@import url(control.css);
 @import url(header.css);
+@import url(footer.css);
 
 @import url(index.css);  /* 인트로 */
 @import url(exhibition-sub.css);  /* 전시 서브 전체 */

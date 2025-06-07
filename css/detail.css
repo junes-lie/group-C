@@ -2,11 +2,12 @@
 #ex-detail,
 #con-detail{
   background: var(--mainBg);
+  position: relative;
 }
 
 /* 메인 */
 #ex-detail main{
-  margin-top: 9rem;
+  margin-top: 9rem; /* 헤더높이 */
 }
 #ex-detail main .main-image,
 #con-detail main .main-image{
@@ -445,7 +446,7 @@
 @media screen and (max-width:768px){
 
   #ex-detail main{
-    margin-top: 4.6rem;
+    margin-top: 4.6rem; /* 헤더높이 */
   }
 
   #ex-detail main .main-image,
