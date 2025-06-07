@@ -267,6 +267,10 @@ body.mOpen .control{
   header .header-rel{
     padding: 1rem 5rem;
   }
+  
+  header .header-logo img{
+    width: 13rem;
+  }
 
   header .header-right .search-box,
   header .header-right .user-icon,
