@@ -15,61 +15,65 @@
     <script src="js/more.js" defer></script>
   </head>
   <body id="past">
-    <header>
-      <div class="rel">
-        <div class="header-logo">
-          <a href="exhibit.html">
-            <img src="image/logo-exhibit.png" alt="logo">
-          </a>
+
+    <header id="ver-exhibit">
+    <div class="header-rel">
+      <div class="header-logo">
+        <a href="exhibit.html">
+          <img src="image/logo-exhibit.png" alt="logo">
+        </a>
+      </div>
+      <ul class="site-group">  
+        <li><a href="present.html" class="site_name">현재전시</a></li>
+        <li><a href="expect.html" class="site_name">예정전시</a></li>
+        <li><a href="past.html" class="site_name" style="color: var(--primaryColor);">지난전시</a></li>
+        <li><a href="artist.html" class="site_name">작가 포트폴리오</a></li>
+      </ul>
+      <div class="header-right">
+        <div class="search-box">
+          <input type="text" id="search" placeholder="검색어를입력하세요">
+          <i class="fa-solid fa-magnifying-glass"></i>
         </div>
-        <ul class="site-group">  
-          <a href="present.html" class="site_name">현재전시</a></li>
-          <li><a href="expect.html"   class="site_name">예정전시</a></li>
-          <li><a href="past.html" class="site_name" style="color: var(--primaryColor);">지난전시</a></li>
-          <li><a href="artist.html" class="site_name">작가  포트폴리오</a></li>
-        </ul>
-        <div class="header-right">
+        <div class="user-icon">
+          <a href="mypage.html"><i class="fa-solid fa-user"></i></a>
+        </div>
+        <div class="login-icon">
+          <a href="login.html?from=ver-exhibit"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+        </div>
+
+        <!-- PC에서는 안보이게 함 -->
+        <a href="#" class="mob_btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <div class="subNav">
+        <div class="inner">
           <div class="search-box">
-            <input type="text" id="search"  placeholder="검색어를입력하세요">
+            <input type="text" placeholder="검색어를입력하세요">
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
-          <div class="user-icon">
-            <i class="fa-solid fa-user"></i>
-          </div>
-        
-          <!-- PC에서는 안보이게 함 -->
-          <a href="#" class="mob_btn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
-        </div>
-        <div class="subNav">
-          <div class="inner">
-            <div class="search-box">
-              <input type="text"  placeholder="검색어를입력하세요">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <ul class="site-group">  
-              <li><a href="present.html"  class="site_name">현재전시</a></li>
-              <li><a href="expect.html"   class="site_name">예정전시</a></li>
-              <li><a href="past.html"   class="site_name">지난전시</a></li>
-              <li><a href="artist.html"   class="site_name">작가 포트폴리오</a></li>
-              <li><a href="mypage.html"   class="site_name">마이페이지</a></li>
-              <li><a href="contest.html"  class="site_name">공모페이지 바로가기</a></li>
-              <li>
-                <div class="sns">
-                  <img src="image/facebook-white.png"   class="facebook"alt="facebook">
-                  <img src="image/insta-white.png"  class="insta"alt="insta">
-                  <img src="image/blog-white.png"   class="blog"alt="blog">
-                </div>
-              </li>
-            </ul>
-          </div>
+          <ul class="site-group">  
+            <li><a href="present.html" class="site_name">현재전시</a></li>
+            <li><a href="expect.html" class="site_name">예정전시</a></li>
+            <li><a href="past.html" class="site_name">지난전시</a></li>
+            <li><a href="artist.html" class="site_name">작가 포트폴리오</a></li>
+            <li><a href="mypage.html" class="site_name">마이페이지</a></li>
+            <li><a href="contest.html" class="site_name">공모페이지 바로가기</a></li>
+            <li>
+              <div class="sns">
+                <a href="https://www.facebook.com/arthub02"><img src="image/facebook-white.png" class="facebook"alt="facebook"></a>
+                <a href="instagram.com/arthub_vap/"><img src="image/insta-white.png" class="insta"alt="insta"></a>
+                <a href="https://blog.naver.com/venice87"><img src="image/blog-white.png" class="blog"alt="blog"></a>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="allMenuWrapBg"></div>
-    </header>
+    </div>
+    <div class="allMenuWrapBg"></div>
+  </header>
 
     <!-- 리모콘 -->
     <div class="control">
