@@ -3,7 +3,7 @@ $(document).ready(function(){
   const mobBtn = $("header .mob_btn");
 
   mobBtn.on("click", function (e) {
-    e.preventDefault();
+    // e.preventDefault();
     BODY.toggleClass("mOpen");
   });
   
@@ -20,41 +20,32 @@ $(document).ready(function(){
 
 
   //헤더 변경
-  const urlParams = new URLSearchParams(window.location.search);
-  const from = urlParams.get('from');
-  let headerType;
+  const exceptionPages = ["login.html", "join.html"];
+  const currentPage = window.location.pathname.split("/").pop();
 
-  // URL 파라미터 우선 적용 및 로컬스토리지에 저장
-  if (from === 'ver-exhibit' || from === 'ver-contest') {
-    headerType = from;
-    localStorage.setItem("headerType", headerType);
+  if (exceptionPages.includes(currentPage)) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const from = urlParams.get('from');
+    let headerType;
+
+    if (from === 'ver-exhibit' || from === 'ver-contest') {
+      headerType = from;
+      localStorage.setItem("headerType", headerType);
+    } else {
+      headerType = localStorage.getItem("headerType") || 'ver-exhibit';
+    }
+
+    if (headerType === "ver-exhibit") {
+      $("#ver-exhibit").css("display", "block");
+      $("#ver-contest").css("display", "none");
+    } else {
+      $("#ver-exhibit").css("display", "none");
+      $("#ver-contest").css("display", "block");
+    }
+
   } else {
-    // URL 파라미터가 없을 때 로컬스토리지 값 사용
-    headerType = localStorage.getItem("headerType") || 'ver-exhibit';
+    return;
   }
-
-  // 헤더 표시 설정
-  if (headerType === "ver-exhibit") {
-    $("#ver-exhibit").show();
-    $("#ver-contest").hide();
-  } else if (headerType === "ver-contest") {
-    $("#ver-contest").show();
-    $("#ver-exhibit").hide();
-  }
-
-  // 클릭 이벤트로 헤더 변경 가능하도록 추가
-  $("#ver-exhibit").click(function(){
-    localStorage.setItem("headerType", "ver-exhibit");
-    $("#ver-exhibit").show();
-    $("#ver-contest").hide();
-  });
-
-  $("#ver-contest").click(function(){
-    localStorage.setItem("headerType", "ver-contest");
-    $("#ver-contest").show();
-    $("#ver-exhibit").hide();
-  });
-
 
 
 

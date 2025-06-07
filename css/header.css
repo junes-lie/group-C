@@ -7,7 +7,7 @@ header{
   z-index: 5;
   box-shadow: var(--boxShadow);
 }
-header .rel{
+header .header-rel{
   /* border: 1px solid #000; */
   width: 140rem;
   margin: 0 auto;
@@ -18,7 +18,7 @@ header .rel{
   position: relative;
 }
 
-header .rel > .site-group{
+header .header-rel > .site-group{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -27,7 +27,7 @@ header .rel > .site-group{
   gap: 5rem;
   font-size: var(--font-sm);
 }
-header .rel > .site-group li:hover{
+header .header-rel > .site-group li:hover{
   color: var(--primaryColor);
 }
 header#ver-contest .rel > .site-group li:hover{
@@ -246,12 +246,12 @@ body.mOpen .control{
 
 /* Tablet */
 @media screen and (max-width:1400px){
-  header .rel{
+  header .header-rel{
     width: 100%;
     padding: 3rem 5rem;
   }
 
-  header .rel > .site-group{
+  header .header-rel > .site-group{
     display: none;
   }
 
@@ -264,7 +264,7 @@ body.mOpen .control{
 /* Mobile */
 @media screen and (max-width:768px){
 
-  header .rel{
+  header .header-rel{
     padding: 1rem 5rem;
   }
 
