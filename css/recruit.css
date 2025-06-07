@@ -1,7 +1,4 @@
-/* 헤더 */
-
-/* 아트허브 로고 */
-header #logo{
+/* header #logo{
   display: flex;
   color: var(--primaryColor);
   justify-content: flex;
@@ -10,7 +7,6 @@ header #logo{
   top: 3rem;
 }
 
-/* 탑 메뉴 */
 header .topMenu{
   display: flex;
   position:relative;
@@ -26,7 +22,6 @@ header .topMenu h5:hover {
   color:var(--primaryColor);
 }
 
-/* 검색박스 */
 header .search-box { 
   position: relative;
   width: 18rem;
@@ -60,7 +55,6 @@ header .user_icon i{
   bottom: 8rem;
 }
 
-/* 마우스오버 */
 header .search-box:hover,
 header .search-box input:focus {
   width: 200px;
@@ -76,7 +70,7 @@ color: var(--primaryColor);
 }
 header .user_icon i:hover {
 color: var(--primaryColor);
-}
+} */
 
 
 
@@ -423,7 +417,7 @@ flex-direction: column;
 
 
 /* 푸터 */
-#recruit_footer .footer-background {
+/* #recruit_footer .footer-background {
   background-color: var(--textColor);
   width: auto;
   height:30rem;
@@ -495,4 +489,4 @@ flex-direction: column;
   left: 123rem;
   z-index: 110;
   color:var(--mainBg);
-}
+} */
