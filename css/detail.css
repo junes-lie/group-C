@@ -120,6 +120,13 @@
   flex-direction: column;
   justify-content: space-between;
 }
+#ex-detail img.sns{
+  transition: 0.2s ease;
+}
+#ex-detail img.sns:hover{
+  transform: translateY(0.2rem);
+}
+
 #con-detail #overview .content{
   /* border: 1px solid #000; */
   display: grid;
@@ -389,6 +396,13 @@
 }
 #con-detail #info .btn{
   margin: 10rem auto;
+}
+#con-detail #info .hidden{
+  display: none;
+  transition: 0.3s ease;
+}
+#con-detail #info .hidden.active{
+  display: block;
 }
 
 

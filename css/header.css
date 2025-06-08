@@ -30,7 +30,7 @@ header .header-rel > .site-group{
 header .header-rel > .site-group li:hover{
   color: var(--primaryColor);
 }
-header#ver-contest .rel > .site-group li:hover{
+header#ver-contest .header-rel > .site-group li:hover{
   color: var(--secondaryColor);
 }
 

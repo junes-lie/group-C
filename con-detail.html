@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>공모 상세페이지</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+  <script src="fslightbox/fslightbox.js" defer></script>
   <link rel="shortcut icon" href="image/favicon.png">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/header.js" defer></script>
+  <script src="js/open.js" defer></script>
 </head>
 <body id="con-detail">
 
@@ -152,7 +154,12 @@
   <section id="info">
     <div class="rel">
       <h2>상세내용</h2>
-      <img src="image/detail-info.jpg" alt="">
+      <a data-fslightbox="gallery" href="image/detail-info1.jpg"><img src="image/detail-info1.jpg" alt=""></a>
+      <div class="hidden">
+        <a data-fslightbox="gallery" href="image/detail-info2.jpg"><img src="image/detail-info2.jpg" alt=""></a>
+        <a data-fslightbox="gallery" href="image/detail-info3.jpg"><img src="image/detail-info3.jpg" alt=""></a>
+        <a data-fslightbox="gallery" href="image/detail-info4.jpg"><img src="image/detail-info4.jpg" alt=""></a>
+      </div>
       <div class="btn">펼쳐서 자세히 보기</div>
     </div>
 

@@ -138,6 +138,13 @@
   padding: 2rem 2rem 0;
 }
 
+#login .right .sns img{
+  transition: 0.2s ease;
+}
+#login .right .sns img:hover{
+  transform: translateY(0.2rem);
+}
+
 
 
 /* 회원가입 */
