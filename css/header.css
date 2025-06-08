@@ -185,11 +185,11 @@ header .subNav .site-group{
 header .subNav .site-group li{
   padding: 1rem;
 }
-header .subNav .site-group li:nth-of-type(5){
+header .subNav .site-group li.mypage{
   margin-top: 5rem;
   background-color: var(--mainBg);
 }
-header .subNav .site-group li:nth-of-type(6){
+header .subNav .site-group li.direct{
   background-color: var(--textColor);
   color: var(--mainBg);
 }
