@@ -90,7 +90,7 @@
 
 #recruit .recruit_cards .pre-title{
   width: 100%;
-  background: url(../image/top-image.png) no-repeat;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../image/top-image.png");
   background-position: center;
   background-size: cover;
   padding: 17.6rem 0;
