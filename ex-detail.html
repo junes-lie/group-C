@@ -5,14 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>전시 상세페이지</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
+  <script src="fslightbox/fslightbox.js" defer></script>
   <link rel="shortcut icon" href="image/favicon.png">
   <link rel="stylesheet" href="css/style.css">
-  <!-- <script src="script.js" defer></script> -->
+  <script src="js/header.js" defer></script>
 </head>
-<body id="detail">
+<body id="ex-detail">
   
+  <header id="ver-exhibit">
+    <div class="header-rel">
+      <div class="header-logo">
+        <a href="exhibit.html">
+          <img src="image/logo-exhibit.png" alt="logo">
+        </a>
+      </div>
+      <ul class="site-group">  
+        <li><a href="present.html" class="site_name" style="color: var(--primaryColor);">현재전시</a></li>
+        <li><a href="expect.html" class="site_name">예정전시</a></li>
+        <li><a href="past.html" class="site_name">지난전시</a></li>
+        <li><a href="artist.html" class="site_name">작가 포트폴리오</a></li>
+      </ul>
+      <div class="header-right">
+        <div class="search-box">
+          <input type="text" id="search" placeholder="검색어를입력하세요">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="user-icon">
+          <a href="mypage.html?from=ver-exhibit"><i class="fa-solid fa-user"></i></a>
+        </div>
+        <div class="login-icon">
+          <a href="login.html?from=ver-exhibit"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+        </div>
+
+        <!-- PC에서는 안보이게 함 -->
+        <a href="#" class="mob_btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <div class="subNav">
+        <div class="inner">
+          <div class="search-box">
+            <input type="text" placeholder="검색어를입력하세요">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <ul class="site-group">  
+            <li><a href="present.html" class="site_name">현재전시</a></li>
+            <li><a href="expect.html" class="site_name">예정전시</a></li>
+            <li><a href="past.html" class="site_name">지난전시</a></li>
+            <li><a href="artist.html" class="site_name">작가 포트폴리오</a></li>
+            <li><a href="mypage.html?from=ver-exhibit" class="site_name">마이페이지</a></li>
+            <li><a href="contest.html" class="site_name">공모페이지 바로가기</a></li>
+            <li>
+              <div class="sns">
+                <a href="https://www.facebook.com/arthub02"><img src="image/facebook-white.png" class="facebook"alt="facebook"></a>
+                <a href="instagram.com/arthub_vap/"><img src="image/insta-white.png" class="insta"alt="insta"></a>
+                <a href="https://blog.naver.com/venice87"><img src="image/blog-white.png" class="blog"alt="blog"></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="allMenuWrapBg"></div>
+  </header>
+
+  <!-- 리모콘 -->
+  <div class="control">
+    <a class="control-main" href="exhibit.html">
+      <i class="bi bi-arrow-bar-right"></i>전시 페이지
+    </a>
+    <a class="control-main" href="contest.html">
+      <i class="bi bi-arrow-bar-right"></i>공모 페이지
+    </a>
+    <a class="control-top" href="#">
+      <i class="bi bi-chevron-double-up"></i>
+    </a>
+  </div>
+
   <main>
     <div class="rel">
       <div class="main-image">
@@ -44,7 +117,7 @@
             <p><b>작가</b><span>송미리내</span></p>
             <p><b>전시 기간</b><span>2025-05-07 ~ 2025-05-20</span></p>
             <p><b>장소</b><span>서울시 영등포구 국제금융로8길16 신영증권BD, B128호 아트 살롱 드 아씨 갤러리</span></p>
-            <p><b>공유하기</b><span><img src="image/facebook.png" alt=""><img src="image/twitter.png" alt=""></span></p>
+            <p><b>공유하기</b><span><img src="image/facebook.png" alt="" class="sns"><img src="image/twitter.png" alt="" class="sns"></span></p>
           </div>
         </div>
         <div class="container review">
@@ -64,7 +137,7 @@
       <div class="swiper-all">
         <div class="swiper mySwiper1">
           <div class="cards swiper-wrapper">
-            <div class="card card1 swiper-slide">
+            <a data-fslightbox="gallery" href="image/preview-1.jpg" class="card card1 swiper-slide">
               <img src="image/preview-1.jpg" alt="">
               <div class="container">
                 <h5 class="title">
@@ -77,8 +150,8 @@
                   117 x 92cm, 2025
                 </div>
               </div>
-            </div>
-            <div class="card card2 swiper-slide">
+            </a>
+            <a data-fslightbox="gallery" href="image/preview-2.jpg" class="card card2 swiper-slide">
               <img src="image/preview-2.jpg" alt="">
               <div class="container">
                 <h5 class="title">
@@ -91,8 +164,8 @@
                   92 x 117cm, 2025
                 </div>
               </div>
-            </div>
-            <div class="card card3 swiper-slide">
+            </a>
+            <a data-fslightbox="gallery" href="image/preview-3.jpg"  class="card card3 swiper-slide">
               <img src="image/preview-3.jpg" alt="">
               <div class="container">
                 <h5 class="title">
@@ -105,8 +178,8 @@
                   46 x 46cm, 2025
                 </div>
               </div>
-            </div>
-            <div class="card card4 swiper-slide">
+            </a>
+            <a data-fslightbox="gallery" href="image/preview-4.jpg"  class="card card4 swiper-slide">
               <img src="image/preview-4.jpg" alt="">
               <div class="container">
                 <h5 class="title">
@@ -119,8 +192,8 @@
                   46 x 46cm, 2024
                 </div>
               </div>
-            </div>
-            <div class="card card4 swiper-slide">
+            </a>
+            <a data-fslightbox="gallery" href="image/preview-5.jpg" class="card card4 swiper-slide">
               <img src="image/preview-5.jpg" alt="">
               <div class="container">
                 <h5 class="title">
@@ -133,7 +206,7 @@
                   46 x 46cm, 2024
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         <div class="swiper-button-next"></div>
@@ -204,7 +277,7 @@
           <h4>선호작가</h4>
         </div>
         <h3 class="right">
-          작가 포트폴리오 보러가기 <i class="fa-solid fa-arrow-right"></i>
+          <a href="artist.html">작가 포트폴리오 보러가기 <i class="fa-solid fa-arrow-right"></i></a>
         </h3>
       </div>
       <div class="container-wrap">
@@ -214,7 +287,7 @@
             <p><b>작가</b><span>송미리내(Song Milinae)</span></p>
             <p><b>연락처</b><span>02-786-9184</span></p>
             <p><b>이메일</b><span>songmilinae@gmail.com</span></p>
-            <p><b>SNS</b><span><img src="image/instar.png" alt=""></span></p>
+            <p><b>SNS</b><span><img src="image/instar.png" alt="" class="sns"></span></p>
           </div>
         </div>
         <div class="container career">
@@ -227,10 +300,11 @@
                 <li>2024 인카네이션문화재단 예술상 수상</li>
                 <li>2024 소마미술관 등록작가 선정</li>
                 <li>2024 ㈜시크릿타운 주최 ‘코리아 아티스트 프라이즈’ 최우수상</li>
+                <li>2023 서울문화재단 신진예술가 선정</li>
               </ul>
             </div>
           </div>
-          <div class="btn primary">더보기</div>
+          <!-- <div class="btn primary">더보기</div> -->
         </div>
       </div>
       <div class="another">
@@ -290,7 +364,41 @@
     </div>
   </section>
 
-  <footer></footer>
+  <footer>
+    <div class="footer-inner">
+      <a class="footer-no-pc" href="index.html">
+        <img src="image/logo-white.png" alt="아트허브 로고">
+      </a>
+      <div class="footer-item">
+        <div class="footer-tit">
+          <a href="index.html">예술과 아카이브</a>
+        </div>
+        <div class="footer-info">
+          <a href="#"><span>개인정보취급방침</span></a>
+          <span>사업자 등록번호 : 314-20-75752 </span>
+        </div>
+        <div class="footer-contact">
+          <span>Contact</span>
+          <p>02-2654-7138</p>
+          <p>arthub2@naver.com</p>
+        </div>
+      </div>
+      <div class="footer-sns">
+        <a href="instagram.com/arthub_vap/">
+          <img src="image/icon-sns1.png" alt="인스타그램">
+        </a>
+        <a href="https://blog.naver.com/venice87">
+          <img src="image/icon-sns2.png" alt="블로그">
+        </a>
+        <a href="https://www.facebook.com/arthub02">
+          <img src="image/icon-sns3.png" alt="페이스북">
+        </a>
+      </div>
+    </div>
+    <address>
+      Copyright ARTHUB. All Rights Reserved
+    </address>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>

@@ -1,0 +1,87 @@
+@charset "utf-8"; 
+
+#artist{
+  background: var(--mainBg);
+}
+
+/* 메인 */
+#artist main{
+  margin-top: 9rem; /* 헤더높이 */
+}
+#artist main .main-image{
+  width: 100%;
+  height: 40rem;
+  background: url(../image/artist-main.jpg) no-repeat center 45%/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#artist main .main-image::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+#artist main .main-image .title{
+  position: relative;
+  text-align: center;
+  color: var(--mainBg);
+}
+
+#artist .card-wrap{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5rem;
+  row-gap: 5rem;
+}
+#artist .card{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+#artist .card img{
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+}
+#artist .card .name{
+  background-color: #fff;
+  padding: 3rem;
+  text-align: center;
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+}
+
+#artist .btn{
+  margin: 10rem auto;
+
+}
+
+/* Tablet */
+@media screen and (max-width:1400px){
+  #artist .card-wrap{
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 5rem;
+  }
+}
+
+
+/* Mobile */
+@media screen and (max-width:768px){
+  #artist main{
+    margin-top: 4.6rem; /* 헤더높이 */
+  }
+  #artist main .main-image .title{
+    margin: 0 3rem;
+  }
+  #artist .card-wrap{
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 3rem;
+  }
+
+}

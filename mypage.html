@@ -9,29 +9,134 @@
   </head>
   <body id="mypage">
 
-    <header></header>
-
-    <!-- 리모컨 -->
-    <section class="control">
-      <div class="recruit-btn">
-        <a href="contest.html">
-          <img src="image/control/goto-recruit.png" alt="공모페이지이동">
-          <img src="image/control/goto-recruit-hover.png" alt="공모페이지이동">
-        </a>
-      </div>
-      <div class="exhibit-btn">
+  <header id="ver-exhibit" style="display:none;">
+    <div class="header-rel">
+      <div class="header-logo">
         <a href="exhibit.html">
-          <img src="image/control/goto-exhibit.png" alt="전시페이지이동">
-          <img src="image/control/goto-exhibit-hover.png" alt="전시페이지이동">
+          <img src="image/logo-exhibit.png" alt="logo">
         </a>
       </div>
-      <div class="topbtn">
-        <a href="#">
-          <img src="image/control/topbtn.png" alt="탑버튼">
-          <img src="image/control/topbtn-hover.png" alt="탑버튼">
+      <ul class="site-group">  
+        <li><a href="present.html" class="site_name" style="color: var(--primaryColor);">현재전시</a></li>
+        <li><a href="expect.html" class="site_name">예정전시</a></li>
+        <li><a href="past.html" class="site_name">지난전시</a></li>
+        <li><a href="artist.html" class="site_name">작가 포트폴리오</a></li>
+      </ul>
+      <div class="header-right">
+        <div class="search-box">
+          <input type="text" id="search" placeholder="검색어를입력하세요">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="user-icon">
+          <a href="mypage.html?from=ver-exhibit"><i class="fa-solid fa-user"></i></a>
+        </div>
+        <div class="login-icon">
+          <a href="login.html?from=ver-exhibit"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+        </div>
+
+        <!-- PC에서는 안보이게 함 -->
+        <a href="#" class="mob_btn">
+          <span></span>
+          <span></span>
+          <span></span>
         </a>
       </div>
-    </section>
+      <div class="subNav">
+        <div class="inner">
+          <div class="search-box">
+            <input type="text" placeholder="검색어를입력하세요">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <ul class="site-group">  
+            <li><a href="present.html" class="site_name">현재전시</a></li>
+            <li><a href="expect.html" class="site_name">예정전시</a></li>
+            <li><a href="past.html" class="site_name">지난전시</a></li>
+            <li><a href="artist.html" class="site_name">작가 포트폴리오</a></li>
+            <li><a href="mypage.html?from=ver-exhibit" class="site_name">마이페이지</a></li>
+            <li><a href="contest.html" class="site_name">공모페이지 바로가기</a></li>
+            <li>
+              <div class="sns">
+                <a href="https://www.facebook.com/arthub02"><img src="image/facebook-white.png" class="facebook"alt="facebook"></a>
+                <a href="instagram.com/arthub_vap/"><img src="image/insta-white.png" class="insta"alt="insta"></a>
+                <a href="https://blog.naver.com/venice87"><img src="image/blog-white.png" class="blog"alt="blog"></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="allMenuWrapBg"></div>
+  </header>
+
+  <header id="ver-contest" style="display:none;">
+    <div class="header-rel">
+      <div class="header-logo">
+        <a href="exhibit.html">
+          <img src="image/logo-recruit.png" alt="logo">
+        </a>
+      </div>
+      <ul class="site-group">  
+        <li><a href="recruit.html" class="site_name" style="color: var(--secondaryColor);">종합공모</a></li>
+        <li><a href="job.html" class="site_name">아트잡</a></li>
+      </ul>
+      <div class="header-right">
+        <div class="search-box">
+          <input type="text" id="search" placeholder="검색어를입력하세요">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="user-icon">
+          <a href="mypage.html?from=ver-contest"><i class="fa-solid fa-user"></i></a>
+        </div>
+        <div class="login-icon">
+          <a href="login.html?from=ver-contest"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+        </div>
+
+        <!-- PC에서는 안보이게 함 -->
+        <a href="#" class="mob_btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <div class="subNav">
+        <div class="inner">
+          <div class="search-box">
+            <input type="text" placeholder="검색어를입력하세요">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <ul class="site-group">  
+            <li><a href="present.html" class="site_name">현재전시</a></li>
+            <li><a href="expect.html" class="site_name">예정전시</a></li>
+            <li><a href="past.html" class="site_name">지난전시</a></li>
+            <li><a href="artist.html" class="site_name">작가 포트폴리오</a></li>
+            <li><a href="mypage.html?from=ver-contest" class="site_name">마이페이지</a></li>
+            <li><a href="contest.html" class="site_name">공모페이지 바로가기</a></li>
+            <li>
+              <div class="sns">
+                <a href="https://www.facebook.com/arthub02"><img src="image/facebook-white.png" class="facebook"alt="facebook"></a>
+                <a href="instagram.com/arthub_vap/"><img src="image/insta-white.png" class="insta"alt="insta"></a>
+                <a href="https://blog.naver.com/venice87"><img src="image/blog-white.png" class="blog"alt="blog"></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="allMenuWrapBg"></div>
+  </header>
+
+    <!-- 리모콘 -->
+    <div class="control">
+        <a class="control-main" href="exhibit.html">
+          <i class="bi bi-arrow-bar-right"></i>전시 페이지
+        </a>
+        <a class="control-main" href="contest.html">
+          <i class="bi bi-arrow-bar-right"></i>공모 페이지
+        </a>
+        <a class="control-top" href="#">
+          <i class="bi bi-chevron-double-up"></i>
+        </a>
+    </div>
 
     <main>
       <!-- 내 프로필 -->
@@ -96,11 +201,11 @@
       <!-- 내 게시물 -->
       <section>
         <div class="rel">
-          <div class="mypage-secTit">
+          <div class="mypage-secTit fade-up">
             <h1>내 게시물</h1>
             <h3>0</h3>
           </div>
-          <div class="coment-box">
+          <div class="coment-box fade-up">
             <h6>아직 작성한 글이 없습니다.</h6>
           </div>
         </div>
@@ -109,12 +214,12 @@
       <!-- 내 코멘트 -->
       <section>
         <div class="rel">
-          <div class="mypage-secTit">
+          <div class="mypage-secTit fade-up">
             <h1>내 코멘트</h1>
             <h3>3</h3>
           </div>
           <div class="coment">
-            <div class="coment-box">
+            <div class="coment-box fade-up">
               <div class="coment-img non-mob">
                 <img src="image/my1.png" alt="포스터">
               </div>
@@ -132,7 +237,7 @@
                 </a>
               </div>
             </div>
-            <div class="coment-box">
+            <div class="coment-box fade-up">
               <div class="coment-img non-mob">
                 <img src="image/my2.png" alt="포스터">
               </div>
@@ -150,7 +255,7 @@
                 </a>
               </div>
             </div>
-            <div class="coment-box">
+            <div class="coment-box fade-up">
               <div class="coment-img non-mob">
                 <img src="image/my3.png" alt="포스터">
               </div>
@@ -175,34 +280,34 @@
       <!-- 결제이력 -->
       <section>
         <div class="rel">
-          <div class="mypage-secTit">
+          <div class="mypage-secTit fade-up">
             <h1>결제 이력</h1>
             <h3>2</h3>
             <h4>결제이력은 로그인 후 직접 결제한 건만(2019년 이후부터) 표시 됩니다.</h4>
           </div>
           <div class="list">
-            <div class="list-box">
+            <div class="list-box fade-up">
               <div class="list-txt">
-                <span class="pc-none">
+                <div class="pc-none">
                   <h5>2025.05.15</h5>
                   <h6>전시 게재 + 롤링배너 5일</h6>
-                </span>
-                <span class="pc-none">
+                </div>
+                <div class="pc-none">
                   <h6 class="mob-none">신용카드</h6>
                   <p>132,000</p>
-                </span>
+                </div>
               </div>
             </div>
-            <div class="list-box">
+            <div class="list-box fade-up">
               <div class="list-txt">
-                <span class="pc-none">
+                <div class="pc-none">
                   <h5>2025.07.20</h5>
                   <h6>프라임배너(균등노출방식) 3일</h6>
-                </span>
-                <span class="pc-none">
+                </div>
+                <div class="pc-none">
                   <h6 class="mob-none">신용카드</h6>
                   <p>99,000</p>
-                </span>
+                </div>
               </div>
             </div>
           </div>
@@ -212,12 +317,12 @@
       <!-- 다녀간 전시 -->
       <section>
         <div class="rel">
-          <div class="mypage-secTit">
+          <div class="mypage-secTit fade-up">
             <h1>다녀간 전시</h1>
             <h3>5</h3>
           </div>
             <div class="coment visited">
-              <div class="coment-box">
+              <div class="coment-box fade-up">
                 <div class="coment-img">
                   <img src="image/my1.png" alt="포스터">
                 </div>
@@ -235,7 +340,7 @@
                   </a>
                 </div>
               </div>
-              <div class="coment-box">
+              <div class="coment-box fade-up">
                 <div class="coment-img">
                   <img src="image/my2.png" alt="포스터">
                 </div>
@@ -253,7 +358,7 @@
                   </a>
                 </div>
               </div>
-              <div class="coment-box">
+              <div class="coment-box fade-up">
                 <div class="coment-img">
                   <img src="image/my3.png" alt="포스터">
                 </div>
@@ -271,7 +376,7 @@
                   </a>
                 </div>
               </div>
-              <div class="coment-box">
+              <div class="coment-box fade-up">
                 <div class="coment-img">
                   <img src="image/my4.png" alt="포스터">
                 </div>
@@ -289,7 +394,7 @@
                   </a>
                 </div>
               </div>
-              <div class="coment-box">
+              <div class="coment-box fade-up">
                 <div class="coment-img">
                   <img src="image/my5.png" alt="포스터">
                 </div>
@@ -317,7 +422,7 @@
   <footer>
     <div class="footer-inner">
       <a class="footer-no-pc" href="index.html">
-        <img src="/image/logo-white.png" alt="아트허브 로고">
+        <img src="image/logo-white.png" alt="아트허브 로고">
       </a>
       <div class="footer-item">
         <div class="footer-tit">
@@ -335,13 +440,13 @@
       </div>
       <div class="footer-sns">
         <a href="instagram.com/arthub_vap/">
-          <img src="/image/icon-sns1.png" alt="인스타그램">
+          <img src="image/icon-sns1.png" alt="인스타그램">
         </a>
         <a href="https://blog.naver.com/venice87">
-          <img src="/image/icon-sns2.png" alt="블로그">
+          <img src="image/icon-sns2.png" alt="블로그">
         </a>
         <a href="https://www.facebook.com/arthub02">
-          <img src="/image/icon-sns3.png" alt="페이스북">
+          <img src="image/icon-sns3.png" alt="페이스북">
         </a>
       </div>
     </div>
@@ -350,7 +455,10 @@
     </address>
   </footer>
 
-
+  <!-- JQury -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/mypage.js"></script>
 
   </body>
 </html>

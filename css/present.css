@@ -1,73 +1,317 @@
 #present{margin:auto;}
 
 
-/* 배너스와이퍼 */
-.banner{
-  background-color: #1C2026;
-  width: 100vw;
-  height: 700px;
+/* 배너----------------- */
+#present .banner{
+  margin-top: 9rem; /* 헤더높이 */
+  width: 100%;
+  height: 40rem; 
+  background: url(../image/Exhibition/present/banner.png) no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
 }
-.swiper {
-  width: 87.5rem;
-  height: 75rem;
-  margin-top: -200px;
+#present .banner .title{
+  margin: auto;
+  flex-direction: column; 
+  text-align: center;
+  color: white;
 }
-.swiper-slide{
+
+
+
+/* 검색창----------------- */
+#present .search h5{
+  margin: 0rem 0 1rem;
+  font-weight: 500;
+}
+#present .search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 1.5rem;
+}
+#present .ex-search-box{ 
   position: relative;
-  width: 53.6875rem;
-  height: 28rem;
+  display: flex;
+  width: 47rem;
+  height: 4rem;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  border-radius: 3.125rem;
+  border: 2px solid #7FA856;
+  overflow: hidden;
+}
+#present .ex-search-box>input{
+  position: absolute;
+  width: 22rem;
+  left: 190px;
+  background: transparent;
+  font-family: 'SUIT', sans-serif;
+  font-size: 1.5rem;
+}
+    /* 달력인풋 스타일 */
+#present .month-wrapper input[type="month"]{
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 18rem;
+  height: 4rem;
+  border: 2px solid #7FA856;
+  padding: 1rem 2rem;
+  border-radius: 3.125rem;
+  margin: 0;
+  font-family: 'SUIT', sans-serif;
+  font-size: 1.8rem;
+  background: transparent;
+  color: #7FA856;
+}
+    /* 달력 인풋 기본 아이콘 숨기기 */
+#present .month-wrapper input[type="month"]::-webkit-calendar-picker-indicator{
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+    /* 커스텀 아이콘 */
+#present .month-wrapper .custom-icon{
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #7FA856; 
+  pointer-events: none;
+}
+#present .ex-search-box>i{
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: #7FA856;
+}
+
+    /* 카테고리 */
+#present .cate{
+  display: flex;
+}
+#present .cate li{
+  height: 4.6rem;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 6.7rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: var(--radiusInfinite);
+  color: var(--primaryColor);
+  transition: 0.3s;
+  border: 2px solid var(--primaryColor);
+  margin: 6.7rem 0.5rem;
+}
+#present .cate li:first-child{
+  background-color: var(--primaryColor);
+  color: white;
+}
+#present .search .cate li:hover{
+  background-color: var(--primaryColor);
+  color: white;
+}
+
+
+/* 전시 포스터 목록 */
+#present section:nth-child(4){
+  padding: 6.5rem 0 0 0;
   display: flex;
   justify-items: center;
   align-items: center;
 }
-.swiper-slide img {
+#present .poster-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 6rem;
+  margin: 0 2rem;
+}
+#present .poster-grid .poster{
+  cursor: pointer;
+}
+#present .poster-grid .poster .image-box img{
   width: 30rem;
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  transform: translateX(-50%) translateY(-50%);
+  transition: 0.3s ease;
 }
-.swiper .tag{
-  font-size: 1.6rem;
-  margin: 10px 0;
+#present .poster-grid .poster .image-box:hover img{
+  filter: brightness(70%);
 }
-.swiper-txt{
-  position: absolute;
-  top: 50%;
-  left: 70%;
-  transform: translateX(-50%) translateY(-50%);
+#present .poster-grid .txt-box{
+  margin-bottom:5rem;
+  padding-left: 0.5rem;
 }
-.swiper-slide h4{
+#present .poster-grid .txt-box strong{
+  color: #333;
+  font-size: 2.4rem;
   font-weight: 600;
-  font-size: 2.25rem;
-  color: #fff;
-  margin-bottom: 1rem;
+  display: block; 
+  padding: 5rem 0 3rem;
 }
-.swiper-slide h5, h6{
+#present .poster-grid .txt-box .artist{
+  color: #666;
   font-weight: 500;
   font-size: 1.5rem;
-  color: #fff;
+  padding-bottom: 0.5rem;
 }
-.swiper-slide h6{
-  margin-top: 3.5rem;
+#present .poster-grid .txt-box .date{
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 
-/* 페이지네이션 */
-.swiper-pagination {
-  bottom: 20px !important;
+/* 더보기 버튼 */
+#present .poster-wrap{
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
 }
-.swiper-pagination-bullet{
-  width: 30px !important;
-  height: 7px !important;
-  border-radius: 0 !important;
-  background-color: white !important;
-  transition: 0.3s;
-}
-.swiper-pagination-bullet-active{
-  width: 85px !important;
-  background: #43BF7B!important;
+#present .poster-wrap .more{
+  display: flex;
+  padding-bottom: 10rem;
+  margin: -8rem auto 1rem;
 }
 
 
 
+
+/* 미디어----------------- */
+/* Tablet */
+@media screen and (max-width:1400px){
+  /* 배너 */
+  #present .banner{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 20rem;
+    position: relative; 
+  }
+  #present .banner .title{
+    margin-top: -2rem;
+  }
+
+
+  #present section:nth-child(3){
+    height: 20rem;
+  }
+  #present .search h5{
+    margin:0;
+    font-weight: 500;
+  }
+  #present .cate li{
+    font-size: 2rem;
+  }
+  
+
+
+  #present .poster-wrap{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 0 5rem;
+  }
+  #present .poster-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4rem;
+  }
+  #present .poster-grid .poster .image-box img{
+    width: 28rem;
+  }
+  #present .poster-grid .txt-box{
+    margin-bottom:5rem;
+    padding-left: 0.5rem;
+  }
+  #present .poster-grid .txt-box strong{
+    font-weight: 600;
+    font-size: var(--font-xs);
+    padding: 2rem 0 0.5rem;
+  }
+  #present .poster-grid .txt-box .artist{
+    color: #666;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  #present .poster-grid .txt-box .date{
+    display: none;
+  }
+}
+
+
+/* Mobile */
+@media screen and (max-width:768px){
+
+  #present .banner{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 20rem;
+    position: relative; 
+    margin-top: 4.6rem; 
+    padding: 0;
+  }
+  #present .banner .title{
+    margin: 0;
+  }
+
+
+
+  #present .search{
+    margin-bottom: 3rem;
+  }
+  #present .cate{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #present .cate li{
+    margin: 2rem 1rem 0 0;
+  }
+
+
+  #present .ex-search-box{ 
+    position: relative;
+    display: flex;
+    max-width: 40rem;
+    min-width: 30rem;
+  }
+
+
+  #present .poster-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3.1rem;
+  }
+  #present .poster-grid .poster{
+    width: 20rem;
+    min-width: 14rem;
+  }
+  #present .poster-grid .txt-box strong{
+    font-weight: 600;
+    font-size: var(--font-xxs);
+    padding: 2rem 0 0.5rem;
+  }
+  #present .poster-grid .txt-box .artist{
+    color: #666;
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding-bottom: 1.5rem;
+    overflow: hidden;
+  }
+
+  #present .control{
+    align-items: start;
+  }
+
+}

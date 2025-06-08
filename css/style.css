@@ -3,17 +3,22 @@
 @import url(reset.css);
 @import url(font.css);
 @import url(common.css);
+@import url(control.css);
+@import url(header.css);
+@import url(footer.css);
 
 @import url(index.css);  /* 인트로 */
-@import url(exhibition-sub.css);  /* 전시 서브 전체 */
+@import url(present.css);  /* 현재 전시 */
+@import url(past.css);  /* 지난 전시 */
+@import url(expect.css);  /* 예정 전시 */
 
 @import url(exhibit.css); /* 전시-메인 */
 @import url(contest.css); /* 전시-공모 */
 @import url(mypage.css); /* 마이페이지 */
 
 @import url(detail.css);
+@import url(artist.css);
+@import url(login.css);
 
 @import url(recruit.css);
 @import url(job.css);
-
-@import url(footer.css);

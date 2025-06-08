@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>recruit</title>
+  <title>공모페이지-상세</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
   <script src="https://kit.fontawesome.com/d7f60ae480.js" crossorigin="anonymous"></script>
@@ -11,41 +11,97 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- <link rel="stylesheet" href="css/recruit.css"> -->
   <script src="js/card.js"></script>
-
+  <script src="js/header.js" defer></script> 
 </head>
-<body id="recruit">
-  <header>
-    <nav>
-      <div class="rel">
-        <div id="logo">
-          <a href="recruit.html"><img src="/image/logo-recruit.png" class="logo"alt="logo"></a>
-        </div>
-        <div class="topMenu">
-          <h5><a href="recruit.html">종합공모</a></h5>
-          <h5><a href="job.html">아트잡</a></h5>
-        </div>
 
+<body id="recruit">
+
+  <!-- 헤더 시작 -->
+  <header id="ver-contest">
+    <div class="header-rel">
+      <div class="header-logo">
+        <a href="exhibit.html">
+          <img src="image/logo-recruit.png" alt="logo">
+        </a>
+      </div>
+      <ul class="site-group">  
+        <li><a href="recruit.html" class="site_name" style="color: var(--secondaryColor);">종합공모</a></li>
+        <li><a href="job.html" class="site_name">아트잡</a></li>
+      </ul>
+      <div class="header-right">
         <div class="search-box">
-          <input type="text" placeholder="검색어를입력하세요">
+          <input type="text" id="search" placeholder="검색어를입력하세요">
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
-        <div class="user_icon">
-          <i class="fa-solid fa-user"></i>  
+        <div class="user-icon">
+          <a href="mypage.html?from=ver-contest"><i class="fa-solid fa-user"></i></a>
+        </div>
+        <div class="login-icon">
+          <a href="login.html?from=ver-contest"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+        </div>
+
+        <!-- PC에서는 안보이게 함 -->
+        <a href="#" class="mob_btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <div class="subNav">
+        <div class="inner">
+          <div class="search-box">
+            <input type="text" placeholder="검색어를입력하세요">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <ul class="site-group">  
+            <li><a href="present.html" class="site_name">현재전시</a></li>
+            <li><a href="expect.html" class="site_name">예정전시</a></li>
+            <li><a href="past.html" class="site_name">지난전시</a></li>
+            <li><a href="artist.html" class="site_name">작가 포트폴리오</a></li>
+            <li><a href="mypage.html?from=ver-contest" class="site_name">마이페이지</a></li>
+            <li><a href="contest.html" class="site_name">공모페이지 바로가기</a></li>
+            <li>
+              <div class="sns">
+                <a href="https://www.facebook.com/arthub02"><img src="image/facebook-white.png" class="facebook"alt="facebook"></a>
+                <a href="instagram.com/arthub_vap/"><img src="image/insta-white.png" class="insta"alt="insta"></a>
+                <a href="https://blog.naver.com/venice87"><img src="image/blog-white.png" class="blog"alt="blog"></a>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-    </nav>
-  </header>
-  
-  <main class="recruit_cards">
-    <img src="image/top-image.png" class="top-image"alt="top-image"></div>
-    <div class="pre-title"><h2>현재 공모중인 작품을 확인해보세요</h2></div>
-  </main>
-  <section id="first_cards">
-    <div class="title">
-      <pre><h1>종합공모</h1>
-      <br><h3>모든 공고들을 모아놓았어요</h3></pre>
     </div>
-  </section>
+    <div class="allMenuWrapBg"></div>
+  </header>
+
+   
+
+
+
+  <!-- 헤더 끝 -->
+  
+ <!-- 리모콘 -->
+  <div class="control">
+      <a class="control-main" href="exhibit.html">
+        <i class="bi bi-arrow-bar-right"></i>전시 페이지
+      </a>
+      <a class="control-main" href="contest.html">
+        <i class="bi bi-arrow-bar-right"></i>공모 페이지
+      </a>
+      <a class="control-top" href="#">
+        <i class="bi bi-chevron-double-up"></i>
+      </a>
+  </div>
+
+  <main class="recruit_cards">
+    
+  <div class="pre-title"><h2>현재 공모중인 작품을 확인해보세요</h2></div> 
+    <section id="first_cards">
+      <div class="title">
+            <h2>종합공모</h2>
+            <h3>모든 공고들을 모아놓았어요</h3>
+    </div>
+    </section>
 
     <div class="buttons">
       <div class="button1" onclick="showContent('recruit_box1')">
@@ -61,110 +117,114 @@
 
 
 <div class="search-box2">
-  <input type="text" placeholder="검색어를입력하세요">
-  <i class="fa-solid fa-magnifying-glass"></i> 
+  <div class="search2">
+    <input type="text" placeholder="검색어를입력하세요">
+  </div>
+  <div class="searchimage">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </div>
 </div> 
     
 <div id="second_cardsbox">
-  <div id="recruit_box1">
-    <div class="cardrow1">
-      <div class="second_cards">   
-        <div class="card1">  
-            <a><img src="image/1.png" alt="card1"></a>
-            <p>제 4회 아트코리아<br>국제미술대전</p>
-            <p>공모부분 : 평면작품,입체작품,<br>사진, 디지털아트 등</p>
-            <p>참가자격 : 국내외 누구나(자격제한 없음)</p>
-            <p>2025/05/19 - 05/25</p>
-            <p>아트코리아</p>
+    <div id="recruit_box1">
+      <div class="recruit_wrap">
+        <div class="second_cards">   
+          <div class="card1">  
+              <a><img src="image/1.png" alt="card1"></a>
+              <p>제 4회 아트코리아<br>국제미술대전</p>
+              <p>공모부분 : 평면작품,입체작품,<br>사진, 디지털아트 등</p>
+              <p>참가자격 : 국내외 누구나(자격제한 없음)</p>
+              <p>2025/05/19 - 05/25</p>
+              <p>아트코리아</p>
+          </div>
         </div>
-      </div>
-      <div class="second_cards">   
-        <div class="card2">  
-            <a><img src="image/2.png" alt="card2"></a>
+        <div class="second_cards">   
+          <div class="card2">  
+              <a><img src="image/2.png" alt="card2"></a>
             <p>이지갤러리 작가모집</p>
-            <p>지원자격 : 기술,색,행동,시선,감정 등을 <br> 주제로 활동하는 작가들 전원</p>
-            <p>참가비: 40,000원</p>
-            <p>2025/05/19 - 05/25</p>
-            <p>이지갤러리</p>
+              <p>지원자격 : 기술,색,행동,시선,감정 등을 <br> 주제로 활동하는 작가들 전원</p>
+              <p>참가비: 40,000원</p>
+              <p>2025/05/19 - 05/25</p>
+              <p>이지갤러리</p>
+          </div>
         </div>
-      </div>
-      <div class="second_cards">   
-        <div class="card3">  
-            <a><img src="image/3.png" alt="card3"></a>
-            <p>제 33회 대한기독미술대전</p>
-            <p>모집분야: 전 분야</p>
-            <p>지원자격: 20세 이상 국내 ,국외 거주자</p>
-            <p>2025/04/20 - 05/25</p>
-            <p>한국 미술인 신교회</p>
+        <div class="second_cards">   
+          <div class="card3">  
+              <a><img src="image/3.png" alt="card3"></a>
+              <p>제 33회 대한기독미술대전</p>
+              <p>모집분야: 전 분야</p>
+              <p>지원자격: 20세 이상 국내 ,국외 거주자</p>
+              <p>2025/04/20 - 05/25</p>
+              <p>한국 미술인 신교회</p>
+          </div>
         </div>
-      </div>
-      <div class="second_cards">   
-        <div class="card4">  
-            <a><img src="image/4.png" alt="card4"></a>
-            <p>더 스퀘어즈 뉴스 2025하반기 작가공모</p>
-            <p>모집분야: 회화, 사진, 미디어아트 등</p>
-            <p>참가비용: 학생 90만원,<br>개인전: 108만원,<br> 단체전 :126만원</p>
-            <p>2025/04/20 - 05/25</p>
-            <p>더스퀘어즈 갤러리</p>
+        <div class="second_cards">   
+          <div class="card4">  
+              <a><img src="image/4.png" alt="card4"></a>
+              <p>더 스퀘어즈 뉴스 2025하반기 작가공모</p>
+              <p>모집분야: 회화, 사진, 미디어아트 등</p>
+              <p>참가비용: 학생 90만원,<br>개인전: 108만원,<br> 단체전 :126만원</p>
+              <p>2025/04/20 - 05/25</p>
+              <p>더스퀘어즈 갤러리</p>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="cardrow2">
-      <div class="second_cards">   
-        <div class="card1">  
-          <a><img src="image/5.png" alt="card5"></a>
-          <p>2025 사진가 인큐베이팅 프로그램</p>
-          <p>모집분야: 사진 (순수예술/다큐멘터리)</p>
-          <p>지원대상: 첫 개인전을 준비중이거나<br> 개인전 1회후 꾸준히    활동하는 사진가</p>
-          <p>2025/04/20 - 05/25</p>
-          <p>H.art bridge</p>
-        </div>
-      </div>
-      <div class="second_cards">   
-        <div class="card2">  
-          <a><img src="image/6.png" alt="card6"></a>
-          <p>N’s갤러리 카페 단체전 작가모집 공고</p>
-          <p>모집분야: 회화,일러스트 등 모든 예술</p>
-          <p>응모자격: 모든 예술가</p>
-          <p>2025/04/20 - 05/25</p>
-          <p>N’s gallery</p>
-        </div>
-      </div>
-      <div class="second_cards">   
-        <div class="card3">  
-          <a><img src="image/7.png" alt="card7"></a>
-          <p>강남 장애인복지관 기획전시 신진작가 <br> 공모전</p>
-          <p>모집분야: 시각예술 회화분야</p>
-          <p>응모자격: 최근 2년내 개인/단체전 1회이상 참여한 <br> 신진 장애 예술가</p>
-          <p>2025/05/09 - 05/25</p>
-          <p>강남장애인 복지관</p>
-        </div>
-      </div>
-      <div class="second_cards">   
-        <div class="card4">  
-          <a><img src="image/8.png" alt="card8"></a>
-          <p>술술랩 - 예술, 기술 
-              플레이어 모집</p>
-          <p>공모주제: 시처럼 음악처럼 기술로 도시읽기</p>
-          <p>지원대상: 예술기술융합복합 분야 창작자 15인</p>
-          <p>2025/04/20 - 05/25</p>
-          <p>술술랩</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="cardrow3">
-      <div class="second_cards">   
-        <div class="card1">  
-          <a><img src="image/9.png" alt="card9"></a>
-          <p>마포문화재단 지역예술가 <br>전시공간 지원</p>
-          <p>모집분야: 시각예술 전 분야</p>
-          <p>공모대상: 지역예술가 개인 또는 단체</p>
-          <p>2025/04/20 - 05/25</p>
-          <p>마포문화재단</p>
+
+        <div class="second_cards">   
+          <div class="card1">  
+              <a><img src="image/5.png" alt="card5"></a>
+              <p>2025 사진가 인큐베이팅 프로그램</p>
+              <p>모집분야: 사진 (순수예술/다큐멘터리)</p>
+              <p>지원대상: 첫 개인전을 준비중이거나<br> 개인전 1회후 꾸준히    활동하는 사진가</p>
+              <p>2025/04/20 - 05/25</p>
+              <p>H.art bridge</p>
+          </div>
         </div>
-      </div>
+        <div class="second_cards">   
+          <div class="card2">  
+              <a><img src="image/6.png" alt="card6"></a>
+              <p>N’s갤러리 카페 단체전 작가모집 공고</p>
+              <p>모집분야: 회화,일러스트 등 모든 예술</p>
+              <p>응모자격: 모든 예술가</p>
+              <p>2025/04/20 - 05/25</p>
+              <p>N’s gallery</p>
+          </div>
+        </div>
+        <div class="second_cards">   
+          <div class="card3">  
+              <a><img src="image/7.png" alt="card7"></a>
+              <p>강남 장애인복지관 기획전시 신진작가 <br> 공모전</p>
+              <p>모집분야: 시각예술 회화분야</p>
+              <p>응모자격: 최근 2년내 개인/단체전 1회이상 참여한 <br> 신진 장애 예술가</p>
+              <p>2025/05/09 - 05/25</p>
+              <p>강남장애인 복지관</p>
+          </div>
+        </div>
+        <div class="second_cards">   
+          <div class="card4">  
+              <a><img src="image/8.png" alt="card8"></a>
+              <p>술술랩 - 예술, 기술 
+                  플레이어 모집</p>
+              <p>공모주제: 시처럼 음악처럼 기술로 도시읽기</p>
+              <p>지원대상: 예술기술융합복합 분야 창작자 15인</p>
+              <p>2025/04/20 - 05/25</p>
+              <p>술술랩</p>
+          </div>
+        </div>
+
+
+
+        <div class="second_cards">   
+          <div class="card1">  
+              <a><img src="image/9.png" alt="card9"></a>
+              <p>마포문화재단 지역예술가 <br>전시공간 지원</p>
+              <p>모집분야: 시각예술 전 분야</p>
+              <p>공모대상: 지역예술가 개인 또는 단체</p>
+              <p>2025/04/20 - 05/25</p>
+              <p>마포문화재단</p>
+          </div>
+        </div>
         <div class="second_cards">   
           <div class="card2">  
               <a><img src="image/10.png" alt="card10"></a>
@@ -196,315 +256,314 @@
               <p>Seattle Art Fair</p>
           </div>
         </div>
-    </div>
-  </div>  
-      
-  <div id="recruit_box2">
-      <div class="cardrow1">
-          <div class="second_cards">   
-            <div class="card1">  
-                <a><img src="image/13.png" alt="card13"></a>
-                <p>2025 Orbit International <br> Art Fair in Yokohama</p>
-                <p>공모대상 : 갤러리 사업자를 소유하고 있는<br> 갤러리 또는 미술관련 협회</p>
-                <p>참가비용 : A-class 6,000,000원 <br> B-class 7,800,000원 <br>
-                C-class 12,000,000원</p>
-                <p>2025/05/13 - 06/13</p>
-                <p>Art Orbit</p>
-            </div>
-          </div>
-          <div class="second_cards">   
-            <div class="card2">  
-                <a><img src="image/14.png" alt="card14"></a>
-                <p>Hyundai Blue Prize+</p>
-                <p>지원자격 : 아시아지역에 거주중이거나<br>아시아 지역을 기반으로 활동하는 큐레이터</p>
-                <p>수상자 혜택: 1:1멘토쉽<br>
-                중국 리서치 투어<br>전시 기획안 지원금 4,000 USD</p>
-                <p>2025/03/20 - 06/08</p>
-                <p>현대 모터스튜디오</p>
-            </div>
-          </div>
-          <div class="second_cards">   
-            <div class="card3">  
-                <a><img src="image/15.png" alt="card15"></a>
-                <p>광주 비엔날레 <br> 아카데미 전시기획자 양성과정 <br> 참여자모집</p>
-                <p>모집인원: 17명 내외</p>
-                <p>참가자격 : 공고일 기준 만35세 이하 / <br> 현대미술 및 관련분야 종사자등</p>
-                <p>2025/05/21 - 06/15</p>
-                <p>광주 비엔날레 아카데미</p>
-            </div>
-          </div>
-          <div class="second_cards">   
-            <div class="card4">  
-                <a><img src="image/16.png" alt="card16"></a>
-                <p>2026 LA ART SHOW 작가공모</p>
-                <p>공모부분 : 시각 예술 전 분야
-                <p>참가비 : 한점당 650,000원</p>
-                <p>2025/04/01 - 07/01</p>
-                <p>LA ART SHOW</p>
-            </div>
-          </div>
-      </div>
 
-      <div class="cardrow2">
-          <div class="second_cards">   
-            <div class="card1">  
-                <a><img src="image/17.png" alt="card17"></a>
-                <p>알파색채X라트 6월 기획전 작가 공모</p>
-                <p>공모부분 : 모든 평면 및 입체 작품</p>
-                <p>출품료 : 80,000원</p>
-                <p>2025/05/02 - 06/01</p>
-                <p>인사1010 갤러리</p>
-            </div>
-          </div>
-          <div class="second_cards">   
-            <div class="card2">  
-                <a><img src="image/18.png" alt="card18"></a>
-                <p>갤러리M 신진작가 공모: 너의<br> 잠재력을 보여줘!</p>
-                <p>전시비용 : 약 250만원
-                <p>참가자격 : 열정을 가진 20세 이상 신진작가</p>
-                <p>2025/05/19 - 05/25</p>
-                <p>갤러리M</p>
-            </div>
-          </div>
-          <div class="second_cards">   
-            <div class="card3">  
-                <a><img src="image/19.png" alt="card19"></a>
-                <p>노마드 프로젝트 2025 프랑스 레지던시<br>작가 모집 공고</p>
-                <p>참가비 2000 EURO </p>
-                <p>참가자격 : 서류심사를 통과한 전업 작가</p>
-                <p>2024/12/16 - 2025/12/31</p>
-                <p>Nomade Galerie</p>
-            </div>
-          </div>
-          <div class="second_cards">   
-            <div class="card4">  
-                <a><img src="image/20.png" alt="card20"></a>
-                <p>새벽세시 갤러리<br> 정기 기획전<br> 작가모집 공고</p>
-                <p>대관료 : 25만원</p>
-                <p>참가자격 : 미술대학 또는 관련학과 졸업자 <br>(1975년 이전 출생 우대)</p>
-                <p>2025/05/11 - 06/11</p>
-                <p>새벽세시 갤러리</p>
-            </div>
-          </div>
       </div>
-
-      <div class="cardrow3">
-          <div class="second_cards">   
-            <div class="card1">  
-                <a><img src="image/recruitposter6.png" alt="card21"></a>
-                <p>제 4회 아트코리아<br>국제미술대전</p>
-                <p>공모부분 : 평면작품,입체작품,<br>사진, 디지털아트 등</p>
-                <p>참가자격 : 국내외 누구나(자격제한 없음)</p>
-                <p>2025/05/19 - 05/25</p>
-                <p>아트코리아</p>
-            </div>
-          </div>
-          <div class="second_cards">   
-            <div class="card2">  
-                <a><img src="image/recruitposter6.png" alt="card22"></a>
-                <p>제 4회 아트코리아<br>국제미술대전</p>
-                <p>공모부분 : 평면작품,입체작품,<br>사진, 디지털아트 등</p>
-                <p>참가자격 : 국내외 누구나(자격제한 없음)</p>
-                <p>2025/05/19 - 05/25</p>
-                <p>아트코리아</p>
-            </div>
-          </div>
-          <div class="second_cards">   
-            <div class="card3">  
-                <a><img src="image/recruitposter6.png" alt="card23"></a>
-                <p>제 4회 아트코리아<br>국제미술대전</p>
-                <p>공모부분 : 평면작품,입체작품,<br>사진, 디지털아트 등</p>
-                <p>참가자격 : 국내외 누구나(자격제한 없음)</p>
-                <p>2025/05/19 - 05/25</p>
-                <p>아트코리아</p>
-            </div>
-          </div>
-          <div class="second_cards">   
-            <div class="card4">  
-                <a><img src="image/recruitposter6.png" alt="card24"></a>
-                <p>제 4회 아트코리아<br>국제미술대전</p>
-                <p>공모부분 : 평면작품,입체작품,<br>사진, 디지털아트 등</p>
-                <p>참가자격 : 국내외 누구나(자격제한 없음)</p>
-                <p>2025/05/19 - 05/25</p>
-                <p>아트코리아</p>
-            </div>
-          </div>
-      </div>
+        </div>
 
         
-  </div>
-  <div id="recruit_box3">
-      <div class="cardrow1">
-          <div class="second_cards">   
-            <div class="card1">  
-                <a><img src="image/recruitposter19.png" alt="card29"></a>
-                <p>제 4회 아트코리아<br>국</p>
-                <p>공모부분 : 평면작품,입체작품,<br>사진, 디지털아트 등</p>
-                <p>참가자격 : 국내외 누구나(자격제한 없음)</p>
-                <p>2025/05/19 - 05/25</p>
-                <p>아트코리아</p>
+    <div id="recruit_box2">
+      <div class="recruit_wrap">
+            <div class="second_cards">   
+              <div class="card1">  
+                  <a><img src="image/13.png" alt="card13"></a>
+                  <p>2025 Orbit International <br> Art Fair in Yokohama</p>
+                  <p>공모대상 : 갤러리 사업자를 소유하고 있는<br> 갤러리 또는 미술관련 협회</p>
+                  <p>참가비용 : A-class 6,000,000원 <br> B-class 7,800,000원 <br>
+                  C-class 12,000,000원</p>
+                  <p>2025/05/13 - 06/13</p>
+                  <p>Art Orbit</p>
+              </div>
             </div>
-          </div>
-          <div class="second_cards">   
-            <div class="card2">  
-                <a><img src="image/recruitposter6.png" alt="card30"></a>
-                <p>제 4회 아트코리아<br>국제미술대전</p>
-                <p>공모부분 : 평면작품,입체작품,<br>사진, 디지털아트 등</p>
-                <p>참가자격 : 국내외 누구나(자격제한 없음)</p>
-                <p>2025/05/19 - 05/25</p>
-                <p>아트코리아</p>
+            <div class="second_cards">   
+              <div class="card2">  
+                  <a><img src="image/14.png" alt="card14"></a>
+                  <p>Hyundai Blue Prize+</p>
+                  <p>지원자격 : 아시아지역에 거주중이거나<br>아시아 지역을 기반으로 활동하는 큐레이터</p>
+                  <p>수상자 혜택: 1:1멘토쉽<br>
+                  중국 리서치 투어<br>전시 기획안 지원금 4,000 USD</p>
+                  <p>2025/03/20 - 06/08</p>
+                  <p>현대 모터스튜디오</p>
+              </div>
             </div>
-          </div>
-          <div class="second_cards">   
-            <div class="card3">  
-                <a><img src="image/recruitposter6.png" alt="card31"></a>
-                <p>제 4회 아트코리아<br>국제미술대전</p>
-                <p>공모부분 : 평면작품,입체작품,<br>사진, 디지털아트 등</p>
-                <p>참가자격 : 국내외 누구나(자격제한 없음)</p>
-                <p>2025/05/19 - 05/25</p>
-                <p>아트코리아</p>
+            <div class="second_cards">   
+              <div class="card3">  
+                  <a><img src="image/15.png" alt="card15"></a>
+                  <p>광주 비엔날레 <br> 아카데미 전시기획자 양성과정 <br> 참여자모집</p>
+                  <p>모집인원: 17명 내외</p>
+                  <p>참가자격 : 공고일 기준 만35세 이하 / <br> 현대미술 및 관련분야 종사자등</p>
+                  <p>2025/05/21 - 06/15</p>
+                  <p>광주 비엔날레 아카데미</p>
+              </div>
             </div>
-          </div>
-          <div class="second_cards">   
-            <div class="card4">  
-                <a><img src="image/recruitposter6.png" alt="card32"></a>
-                <p>제 4회 아트코리아<br>국제미술대전</p>
-                <p>공모부분 : 평면작품,입체작품,<br>사진, 디지털아트 등</p>
-                <p>참가자격 : 국내외 누구나(자격제한 없음)</p>
-                <p>2025/05/19 - 05/25</p>
-                <p>아트코리아</p>
+            <div class="second_cards">   
+              <div class="card4">  
+                  <a><img src="image/16.png" alt="card16"></a>
+                  <p>2026 LA ART SHOW 작가공모</p>
+                  <p>공모부분 : 시각 예술 전 분야
+                  <p>참가비 : 한점당 650,000원</p>
+                  <p>2025/04/01 - 07/01</p>
+                  <p>LA ART SHOW</p>
+              </div>
             </div>
-          </div>
+       
+       
+            <div class="second_cards">   
+              <div class="card1">  
+                  <a><img src="image/17.png" alt="card17"></a>
+                  <p>알파색채X라트 6월 기획전 작가 공모</p>
+                  <p>공모부분 : 모든 평면 및 입체 작품</p>
+                  <p>출품료 : 80,000원</p>
+                  <p>2025/05/02 - 06/01</p>
+                  <p>인사1010 갤러리</p>
+              </div>
+            </div>
+            <div class="second_cards">   
+              <div class="card2">  
+                  <a><img src="image/18.png" alt="card18"></a>
+                  <p>갤러리M 신진작가 공모: 너의<br> 잠재력을 보여줘!</p>
+                  <p>전시비용 : 약 250만원
+                  <p>참가자격 : 열정을 가진 20세 이상 신진작가</p>
+                  <p>2025/05/19 - 05/25</p>
+                  <p>갤러리M</p>
+              </div>
+            </div>
+            <div class="second_cards">   
+              <div class="card3">  
+                  <a><img src="image/19.png" alt="card19"></a>
+                  <p>노마드 프로젝트 2025 프랑스 레지던시<br>작가 모집 공고</p>
+                  <p>참가비 2000 EURO </p>
+                  <p>참가자격 : 서류심사를 통과한 전업 작가</p>
+                  <p>2024/12/16 - 2025/12/31</p>
+                  <p>Nomade Galerie</p>
+              </div>
+            </div>
+            <div class="second_cards">   
+              <div class="card4">  
+                  <a><img src="image/20.png" alt="card20"></a>
+                  <p>새벽세시 갤러리<br> 정기 기획전<br> 작가모집 공고</p>
+                  <p>대관료 : 25만원</p>
+                  <p>참가자격 : 미술대학 또는 관련학과 졸업자 <br>(1975년 이전 출생 우대)</p>
+                  <p>2025/05/11 - 06/11</p>
+                  <p>새벽세시 갤러리</p>
+              </div>
+            </div>
+      
+            <div class="second_cards">   
+              <div class="card1">  
+                  <a><img src="image/21.png" alt="card21"></a>
+                  <p>초대전시<br>평문프로그램<br> 작가공모</p>
+                  <p>공모부분 : 회화,사진,영상 설치등<br>현대미술 전 장르 및<br>관련경계 장르</p>
+                  <p>참가자격 : 2025년 6월-2026년 5월 기간내<br>개인전 발표에정 작가</p>
+                  <p>2025/05/21 - 06/02</p>
+                  <p>사이아트센터</p>
+              </div>
+            </div>
+            <div class="second_cards">   
+              <div class="card2">  
+                  <a><img src="image/22.png" alt="card22"></a>
+                  <p>디자인 아트페어 참여작가 1차모집</p>
+                  <p>공모부분 : 회화,조각,도자,일러스트,캘리그라피 등</p>
+                  <p>참가비 : 부스크기에 따라 다름 </p>
+                  <p>2025/05/08 - 06/10</p>
+                  <p>예술의전당</p>
+              </div>
+            </div>
+            <div class="second_cards">   
+              <div class="card3">  
+                  <a><img src="image/23.png" alt="card23"></a>
+                  <p>CICA Art<br>Residency/internship Program 2026</p>
+                  <p>참여기간: 6개월~12개월</p>
+                  <p>참여조건: 인턴으로서 근무/ 주 14시간</p>
+                  <p>2026</p>
+                  <p>CICA Art Residency</p>
+              </div>
+            </div>
+            <div class="second_cards">   
+              <div class="card4">  
+                  <a><img src="image/24.png" alt="card24"></a>
+                  <p>2025년 제2회<br>
+                    모나밸리 국제 아트 페어</p>
+                  <p>장소: 모나밸리</p>
+                  <p>부스가격: 250만원</p>
+                  <p>2025/03/03 - 06/27</p>
+                  <p>주식회사 모나밸리</p>
+              </div>
+            </div>
+        
       </div>
+        
 
-      <div class="cardrow2">
-          <div class="second_cards">   
-            <div class="card1">  
-                <a><img src="image/recruitposter6.png" alt="card33"></a>
-                <p>제 4회 아트코리아<br>국제미술대전</p>
-                <p>공모부분 : 평면작품,입체작품,<br>사진, 디지털아트 등</p>
-                <p>참가자격 : 국내외 누구나(자격제한 없음)</p>
-                <p>2025/05/19 - 05/25</p>
-                <p>아트코리아</p>
-            </div>
-          </div>
-          <div class="second_cards">   
-            <div class="card2">  
-                <a><img src="image/recruitposter6.png" alt="card34"></a>
-                <p>제 4회 아트코리아<br>국제미술대전</p>
-                <p>공모부분 : 평면작품,입체작품,<br>사진, 디지털아트 등</p>
-                <p>참가자격 : 국내외 누구나(자격제한 없음)</p>
-                <p>2025/05/19 - 05/25</p>
-                <p>아트코리아</p>
-            </div>
-          </div>
-          <div class="second_cards">   
-            <div class="card3">  
-                <a><img src="image/recruitposter6.png" alt="card35"></a>
-                <p>제 4회 아트코리아<br>국제미술대전</p>
-                <p>공모부분 : 평면작품,입체작품,<br>사진, 디지털아트 등</p>
-                <p>참가자격 : 국내외 누구나(자격제한 없음)</p>
-                <p>2025/05/19 - 05/25</p>
-                <p>아트코리아</p>
-            </div>
-          </div>
-          <div class="second_cards">   
-            <div class="card4">  
-                <a><img src="image/recruitposter6.png" alt="card36"></a>
-                <p>제 4회 아트코리아<br>국제미술대전</p>
-                <p>공모부분 : 평면작품,입체작품,<br>사진, 디지털아트 등</p>
-                <p>참가자격 : 국내외 누구나(자격제한 없음)</p>
-                <p>2025/05/19 - 05/25</p>
-                <p>아트코리아</p>
-            </div>
-          </div>
-      </div>
 
-      <div class="cardrow3">
-          <div class="second_cards">   
-            <div class="card1">  
-                <a><img src="image/recruitposter6.png" alt="card37"></a>
-                <p>제 4회 아트코리아<br>국제미술대전</p>
-                <p>공모부분 : 평면작품,입체작품,<br>사진, 디지털아트 등</p>
-                <p>참가자격 : 국내외 누구나(자격제한 없음)</p>
-                <p>2025/05/19 - 05/25</p>
-                <p>아트코리아</p>
+        </div>
+    <div id="recruit_box3">
+        <div class="recruit_wrap">
+            <div class="second_cards">   
+              <div class="card1">  
+                  <a><img src="image/25.png" alt="card25"></a>
+                  <p>2025/2026 현대미술제 공모</p>
+                  <p>모집부분 : 40호이상 60호 이내의 회화 및 사진</p>
+                  <p>참가자격 : 국내외 활동작가 누구나(자격제한 없음)</p>
+                  <p>2025/05/07 - 05/31</p>
+                  <p>아트 스페이스 X</p>
+              </div>
             </div>
-          </div>
-          <div class="second_cards">   
-            <div class="card2">  
-                <a><img src="image/recruitposter6.png" alt="card38"></a>
-                <p>제 4회 아트코리아<br>국제미술대전</p>
-                <p>공모부분 : 평면작품,입체작품,<br>사진, 디지털아트 등</p>
-                <p>참가자격 : 국내외 누구나(자격제한 없음)</p>
-                <p>2025/05/19 - 05/25</p>
-                <p>아트코리아</p>
+            <div class="second_cards">   
+              <div class="card2">  
+                  <a><img src="image/26.png" alt="card26"></a>
+                  <p>지역공예가 창작연구<br> 지원사업 참여자 모집공고</p>
+                  <p>공모부분 : 도자공예
+                  <p>참가자격 : 경남,부산 도자공예 관련자</p>
+                  <p>2025/04/16 - 05/25</p>
+                  <p>김해공예 창작지원센터</p>
+              </div>
             </div>
-          </div>
-          <div class="second_cards">   
-            <div class="card3">  
-                <a><img src="image/recruitposter6.png" alt="card39"></a>
-                <p>제 4회 아트코리아<br>국제미술대전</p>
-                <p>공모부분 : 평면작품,입체작품,<br>사진, 디지털아트 등</p>
-                <p>참가자격 : 국내외 누구나(자격제한 없음)</p>
-                <p>2025/05/19 - 05/25</p>
-                <p>아트코리아</p>
+            <div class="second_cards">   
+              <div class="card3">  
+                  <a><img src="image/27.png" alt="card27"></a>
+                  <p>천안시립미술관 신진작가<br>공모전 작가 모집 공고</p>
+                  <p>공모부분 : 시각예술 전 분야</p>
+                  <p>참가자격 : 만 39세이하 대한민국 국적 국내외 작가</p>
+                  <p>2025/05/12 - 05/25</p>
+                  <p>디아스포라</p>
+              </div>
             </div>
-          </div>
-          <div class="second_cards">   
-            <div class="card4">  
-                <a><img src="image/recruitposter6.png" alt="card40"></a>
-                <p>제 4회 아트코리아<br>국제미술대전</p>
-                <p>공모부분 : 평면작품,입체작품,<br>사진, 디지털아트 등</p>
-                <p>참가자격 : 국내외 누구나(자격제한 없음)</p>
-                <p>2025/05/19 - 05/25</p>
-                <p>아트코리아</p>
+            <div class="second_cards">   
+              <div class="card4">  
+                  <a><img src="image/28.png" alt="card28"></a>
+                  <p>목계나루 문화공간 2025년<br> 무료대관 신청</p>
+                  <p>대관비용: 무료</p>
+                  <p>참가자격 : 국내거주중인 예술인, 문화기획자 및<br> 문화예술교욱분야등의 경력자</p>
+                  <p>2025/02/27 - 03/13</p>
+                  <p>목계나루</p>
+              </div>
             </div>
-          </div>
-      </div>
+
+                        <div class="second_cards">   
+              <div class="card1">  
+                  <a><img src="image/29.png" alt="card29"></a>
+                  <p>2025 메탈하우스 갤러리<br> 신진작가 공모전</p>
+                  <p>공모부분 : 시각예술 전 분야</p>
+                  <p>참가자격 : 단체전 1회이상자</p>
+                  <p>2025/04/12 - 05/11</p>
+                  <p>메탈하우스</p>
+              </div>
+            </div>
+            <div class="second_cards">   
+              <div class="card2">  
+                  <a><img src="image/30.png" alt="card30"></a>
+                  <p>2025 비엔날레 미디어 파사드<br> 신진작가 공모</p>
+                  <p>공모주제 : 감각의 확장</p>
+                  <p>참가자격 : 시각예술분야 전업작가</p>
+                  <p>2025/04/18 - 05/09</p>
+                  <p>미디어 파사드</p>
+              </div>
+            </div>
+            <div class="second_cards">   
+              <div class="card3">  
+                  <a><img src="image/31.png" alt="card31"></a>
+                  <p>NS갤러리카페 4회 단체전 작가 모집</p>
+                  <p>유의사항: 선착순 30점 마감 </p>
+                  <p>참가비 : 작품 1점당 99,000원</p>
+                  <p>2025/05/19 - 05/25</p>
+                  <p>아트코리아</p>
+              </div>
+            </div>
+            <div class="second_cards">   
+              <div class="card4">  
+                  <a><img src="image/32.png" alt="card32"></a>
+                  <p>제 4회 아트코리아<br>국제미술대전</p>
+                  <p>공모부분 : 평면작품,입체작품,<br>사진, 디지털아트 등</p>
+                  <p>참가자격 : 국내외 누구나(자격제한 없음)</p>
+                  <p>2025/05/19 - 05/25</p>
+                  <p>아트코리아</p>
+              </div>
+            </div>
+
+                        <div class="second_cards">   
+              <div class="card1">  
+                  <a><img src="image/33.png" alt="card33"></a>
+                  <p>제 4회 아트코리아<br>국제미술대전</p>
+                  <p>공모부분 : 평면작품,입체작품,<br>사진, 디지털아트 등</p>
+                  <p>참가자격 : 국내외 누구나(자격제한 없음)</p>
+                  <p>2025/05/19 - 05/25</p>
+                  <p>아트코리아</p>
+              </div>
+            </div>
+            <div class="second_cards">   
+              <div class="card2">  
+                  <a><img src="image/34.png" alt="card34"></a>
+                  <p>제 4회 아트코리아<br>국제미술대전</p>
+                  <p>공모부분 : 평면작품,입체작품,<br>사진, 디지털아트 등</p>
+                  <p>참가자격 : 국내외 누구나(자격제한 없음)</p>
+                  <p>2025/05/19 - 05/25</p>
+                  <p>아트코리아</p>
+              </div>
+            </div>
+            <div class="second_cards">   
+              <div class="card3">  
+                  <a><img src="image/35.png" alt="card35"></a>
+                  <p>제 4회 아트코리아<br>국제미술대전</p>
+                  <p>공모부분 : 평면작품,입체작품,<br>사진, 디지털아트 등</p>
+                  <p>참가자격 : 국내외 누구나(자격제한 없음)</p>
+                  <p>2025/05/19 - 05/25</p>
+                  <p>아트코리아</p>
+              </div>
+            </div>
+            <div class="second_cards">   
+              <div class="card4">  
+                  <a><img src="image/36.png" alt="card36"></a>
+                  <p>제 4회 아트코리아<br>국제미술대전</p>
+                  <p>공모부분 : 평면작품,입체작품,<br>사진, 디지털아트 등</p>
+                  <p>참가자격 : 국내외 누구나(자격제한 없음)</p>
+                  <p>2025/05/19 - 05/25</p>
+                  <p>아트코리아</p>
+              </div>
+            </div>
+        </div>
+
+    </div>
   </div>
-</div>
   
   <div class="button">
     <a href="#none" class="btn">더보기</a>
   </div>
+</main>
 
-  
-
-
-    
-
-    
-  
-
-
-  
-  <footer id = "recruit_footer">
-
-    <div class="rel">
-      <ul>
-        <li>예술과아카이브</li> 
-        <li>개인정보취급방침</li>
-        <br>
-        <li>사업자등록번호 314-20-75752</li>
-        <br>
-        <li>Contact</li>
-        <li>02-2654-7138</li>
-        <li>arthub@naver.com</li>
-        <br>
-        <li>Copyright ARTHUB All Right Reserved</li>
-        <div class="footer-background"></div>
-      </ul>
-  
-      <img src="image/facebook-white.png" class="facebook"alt="facebook">
-      <img src="image/insta-white.png" class="insta"alt="insta">
-      <img src="image/blog-white.png" class="blog"alt="blog">
+<footer>
+  <div class="footer-inner">
+    <a class="footer-no-pc" href="index.html">
+      <img src="image/logo-white.png" alt="아트허브 로고">
+    </a>
+    <div class="footer-item">
+      <div class="footer-tit">
+        <a href="index.html">예술과 아카이브</a>
+      </div>
+      <div class="footer-info">
+        <a href="#"><span>개인정보취급방침</span></a>
+        <span>사업자 등록번호 : 314-20-75752 </span>
+      </div>
+      <div class="footer-contact">
+        <span>Contact</span>
+        <p>02-2654-7138</p>
+        <p>arthub2@naver.com</p>
+      </div>
     </div>
-
-  </footer>
-
-
-
+    <div class="footer-sns">
+      <a href="instagram.com/arthub_vap/">
+        <img src="image/icon-sns1.png" alt="인스타그램">
+      </a>
+      <a href="https://blog.naver.com/venice87">
+        <img src="image/icon-sns2.png" alt="블로그">
+      </a>
+      <a href="https://www.facebook.com/arthub02">
+        <img src="image/icon-sns3.png" alt="페이스북">
+      </a>
+    </div>
+  </div>
+  <address>
+    Copyright ARTHUB. All Rights Reserved
+  </address>
+</footer>
 
 </body>
 </html>
