@@ -3,46 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>recruit</title>
+  <title>공모페이지-아트잡</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
   <script src="https://kit.fontawesome.com/d7f60ae480.js" crossorigin="anonymous"></script>
+  <script src="js/header.js" defer></script> 
   <link rel="shortcut icon" href="image/favicon.png">
   <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel="stylesheet" href="css/job.css"> -->
-
-
+  
 </head>
-<body id="job">
-  <header>
-    <nav>
-      <div class="rel">
-        <div id="logo">
-          <a href="recruit.html"><img src="/image/logo-recruit.png" class="logo"alt="logo"></a>
-        </div>
-        <div class="topMenu">
-          <h5><a href="recruit.html">종합공모</a></h5>
-          <h5><a href="job.html">아트잡</a></h5>
-        </div>
 
+<body id="job">
+  <header id="ver-contest">
+    <div class="header-rel">
+      <div class="header-logo">
+        <a href="contest.html">
+          <img src="image/logo-recruit.png" alt="logo">
+        </a>
+      </div>
+      <ul class="site-group">  
+        <li><a href="recruit.html" class="site_name">종합공모</a></li>
+        <li><a href="job.html" class="site_name" style="color: var(--secondaryColor);">아트잡</a></li>
+      </ul>
+      <div class="header-right">
         <div class="search-box">
-          <input type="text" placeholder="검색어를입력하세요">
+          <input type="text" id="search" placeholder="검색어를입력하세요">
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
-        <div class="user_icon">
-          <i class="fa-solid fa-user"></i>  
+        <div class="user-icon">
+          <a href="mypage.html?from=ver-contest"><i class="fa-solid fa-user"></i></a>
+        </div>
+        <div class="login-icon">
+          <a href="login.html?from=ver-contest"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+        </div>
+
+        <!-- PC에서는 안보이게 함 -->
+        <a href="#" class="mob_btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <div class="subNav">
+        <div class="inner">
+          <div class="search-box">
+            <input type="text" placeholder="검색어를입력하세요">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <ul class="site-group">  
+            <li><a href="present.html" class="site_name">현재전시</a></li>
+            <li><a href="expect.html" class="site_name">예정전시</a></li>
+            <li><a href="past.html" class="site_name">지난전시</a></li>
+            <li><a href="artist.html" class="site_name">작가 포트폴리오</a></li>
+            <li><a href="mypage.html?from=ver-contest" class="site_name">마이페이지</a></li>
+            <li><a href="contest.html" class="site_name">공모페이지 바로가기</a></li>
+            <li>
+              <div class="sns">
+                <a href="https://www.facebook.com/arthub02"><img src="image/facebook-white.png" class="facebook"alt="facebook"></a>
+                <a href="instagram.com/arthub_vap/"><img src="image/insta-white.png" class="insta"alt="insta"></a>
+                <a href="https://blog.naver.com/venice87"><img src="image/blog-white.png" class="blog"alt="blog"></a>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-    </nav>
+    </div>
+    <div class="allMenuWrapBg"></div>
   </header>
-  
+  <!-- 헤더 끝 -->
+
+  <!-- 리모콘 -->
+  <div class="control">
+      <a class="control-main" href="exhibit.html">
+        <i class="bi bi-arrow-bar-right"></i>전시 페이지
+      </a>
+      <a class="control-main" href="contest.html">
+        <i class="bi bi-arrow-bar-right"></i>공모 페이지
+      </a>
+      <a class="control-top" href="#">
+        <i class="bi bi-chevron-double-up"></i>
+      </a>
+  </div>
+
+    
   <main class="recruit_cards">
-  <img src="image/top-image2.png" class="top-image"alt="top-image2"></div>
+    <div class="pre-title"><h2>현재 구인중인 포지션을 확인해보세요</h2></div> 
     <section id="first_cards">
-    <div class="pre-title"><h2>현재 구인중인 포지션을 확인해보세요</h2></div>
       <div class="title">
-            <pre><h1>아트잡</h1>
-            <h3>작가님들의 힘이 필요해요</h3></pre>
+            <h2>아트잡</h2>
+            <h3>작가님들의 힘이 필요해요</h3>
     </div>
     </section>
 
@@ -55,139 +104,142 @@
   
     <section id="second_cardsbox">
     
-      <div class="second_textbox">
-          <div class="second_title">
+      <div class="second_textbox">     
+        <!-- <div class="second_title">
             <h1>번호</h1>
             <h1>아트잡 타이틀</h1>
             <h1>기간</h1>
             <h1>작성일</h1>
-          </div>
+          </div> -->
           <hr> 
           <div class="second_cards">    
-            <div class="card6">  
+            <div class="card">  
               <div class="card6_text">
                 <ul>
-                  <a href="#"><li>01&nbsp;&nbsp;&nbsp;&nbsp;2025년 제5회 제주문화예술재단 기간제 직원 공개 채용 2명 &nbsp;&nbsp;   25.05.14 ~ 25.05.23  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   25.05.17</li></a>
+                  <a href="#"><li>01</li> <li>2025년 제5회 제주문화예술재단 기간제 직원 공개 채용 2명</li>  <li>25.05.14 ~ 25.05.23</li>     <li>25.05.17</li></a>
                 </ul>
               </div>
             </div>  
               <hr>
-              <div class="card7">
+              <div class="card">
               <div class="card7_text">
                 <ul>
-                  <a href = "#"><li>02&nbsp;&nbsp;&nbsp; 압구정 리타스에서 포트폴리오 전담 강사를 구인합니다&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25.05.16 ~ 25.06.30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25.05.16</li></a>
+                  <a href = "#"><li>02</li> <li>압구정 리타스에서 포트폴리오 전담 강사를 구인합니다</li><li>25.05.16 ~ 25.06.30</li><li>25.05.16</li></a>
                 </ul>
               </div>
             </div>
             <hr>
-            <div class="card8">
+            <div class="card">
               <div class="card8_text">
                 <ul>
-                  <a href = "#"><li>03&nbsp;&nbsp; 갤러리 루안앤코 경력직 채용  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25.05.16 ~ 25.06.16  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25.05.16</li></a>
+                  <a href = "#"><li>03</li> 갤러리 루안앤코 경력직 채용  <li>25.05.16 ~ 25.06.16</li> <li>25.05.16</li></a>
                 </ul>
               </div>
             </div>
             <hr>
-            <div class="card9">
+            <div class="card">
               <div class="card9_text">
                 <ul>
-                  <a href = "#"><li>04 &nbsp;&nbsp;대한민국역사박물관 전시운영과 공무직 근로자 전시디자인 채용 &nbsp;&nbsp;&nbsp;&nbsp;25.05.15 ~ 25.06.11  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25.05.16</li></a>
+                  <a href = "#"><li>04</li> <li>대한민국역사박물관 전시운영과 공무직 근로자 전시디자인 채용</li> <li>25.05.15 ~ 25.06.11</li> <li>25.05.16</li></a>
                 </ul>
               </div>
             </div>
               <hr>
-            <div class="card10">
+            <div class="card">
               <div class="card10_text">
                 <ul>
-                  <a href = "#"><li>05 &nbsp;&nbsp;2025년 한국박물관협회 사무국 직원 채용 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25.05.15 ~ 25.05.25 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25.05.16</li></a>
+                  <a href = "#"><li>05</li> <li>2025년 한국박물관협회 사무국 직원 채용</li> <li>25.05.15 ~ 25.05.25</li> <li>25.05.16</li></a>
                 </ul>
               </div>
             </div>
               <hr>
-              <div class="card11">
+              <div class="card">
               <div class="card11_text">
                 <ul>
-                  <a href = "#"><li>06 &nbsp;&nbsp;2025년 제5회 수원시 지방임기제공무원 채용시험_박물관사업소 수원박물관 외 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;25.05.26 ~ 25.05.28   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 25.05.16</li>
+                  <a href = "#"><li>06</li> <li>2025년 제5회 수원시 지방임기제공무원 채용시험_박물관사업소 수원박물관 외</li> <li>25.05.26 ~ 25.05.28 </li> <li>25.05.16</li>
                 </ul>
               </div></a>
             </div>
               <hr>
-              <div class="card12">
+              <div class="card">
               <div class="card12_text">
                 <ul>
-                  <a href = "#"><li>07 &nbsp;&nbsp;2025년 3분기 한국콘텐츠진흥원 문화체육관광기술진흥센터 계약직원 채용 5명 25.05.14 ~ 25.05.29   25.05.15</li></a>
+                  <a href = "#"><li>07</li> <li>2025년 3분기 한국콘텐츠진흥원 문화체육관광기술진흥센터 계약직원 채용 5명</li> <li>25.05.14 ~ 25.05.29</li> <li>25.05.15</li> </a>
                 </ul>
               </div>
             </div>
               <hr>
-              <div class="card13">
+              <div class="card">
               <div class="card13_text">
                 <ul>
-                  <a href = "#"><li>08 &nbsp;&nbsp;2025년도 국회사무처 문화소통기획관실 전문임기제공무원 라급 채용시험 25.05.14 ~ 25.05.29  25.05.15</li></a>
+                  <a href = "#"><li>08</li> <li>2025년도 국회사무처 문화소통기획관실 전문임기제공무원 라급 채용시험</li> <li>25.05.14 ~ 25.05.29</li> <li>25.05.15</li></a>
                 </ul>
               </div>
             </div>
               <hr>
-              <div class="card14">
+              <div class="card">
               <div class="card14_text">
                 <ul>
-                  <a href = "#"><li>09 &nbsp;&nbsp;세종시문화관광재단 2025년 제4차 직원 채용 12명 25.05.14 ~ 25.05.24   25.05.15 </li></a>
+                  <a href = "#"><li>09</li> <li>세종시문화관광재단 2025년 제4차 직원 채용 12명</li> <li>25.05.14 ~ 25.05.24</li> <li>25.05.15</li> </a>
                 </ul>
               </div>
             </div>
               <hr>
-              <div class="card15">
+              <div class="card">
               <div class="card15_text">
                 <ul>
-                  <a href = "#"><li>10 &nbsp;&nbsp; 제주국제자유도시개발센터 2025년 상반기 기간제근로자 및 체험형청년인턴 채용 25명 25.05.14 ~ 25.05.23  25.05.15 </li></a>
+                  <a href = "#"><li>10</li> <li>제주국제자유도시개발센터 2025년 상반기 기간제근로자 및 체험형청년인턴 채용 25명</li> <li>25.05.14 ~ 25.05.23</li>  <li>25.05.15</li></a>
                 </ul>
               </div>
             </div>
               <hr>
-              <div class="card16">
+              <div class="card">
               <div class="card16_text">
                 <ul>
-                  <a href = "#"><li>11 &nbsp;&nbsp;리움미술관 전시장 가이드 채용  25.05.14 ~ 25.05.19  25.05.15</li></a>
+                  <a href = "#"><li>11</li> <li>리움미술관 전시장 가이드 채용</li> <li>25.05.14 ~ 25.05.19</li> <li>25.05.15</li></a>
                 </ul>
               </div>
             </div>
               <hr>
-              <div class="card17">
+              <div class="card">
               <div class="card17_text">
                 <ul>
-                  <a href = "#"><li>12 &nbsp;&nbsp;사단법인 캔 파운데이션 큐레이터 및 홍보마케팅 직원 모집 공고  25.05.14 ~ 25.05.30  25.05.14</li></a>
+                  <a href = "#"><li>12</li><li>사단법인 캔 파운데이션 큐레이터 및 홍보마케팅 직원 모집 공고</li><li>25.05.14 ~ 25.05.30</li><li>25.05.14</li></a>
                 </ul>
               </div>
             </div>
               <hr>
-              <div class="card18">
+              <div class="card">
               <div class="card18_text">
                 <ul>
-                  <a href = "#"><li>13 &nbsp;&nbsp;대구간송미술관 신규직원 기간제 채용계획 제한경쟁  25.05.14 ~ 25.05.23  25.05.14</li></a>
+                  <a href = "#"><li>13</li> <li>신규직원 기간제 채용계획 제한경쟁</li>  <li>25.05.14 ~ 25.05.23</li>  <li>25.05.14</li></a>
                 </ul>
               </div>
             </div>
               <hr>
-              <div class="card19">
+              <div class="card">
               <div class="card19_text">
                 <ul>
-                  <a href = "#"><li>14 &nbsp;&nbsp;서울옥션 고객관리팀팀 신규직원 모집  25.05.14 ~ 25.06.01  25.05.14</li></a>
+                  <a href = "#"><li>14</li> <li>서울옥션 고객관리팀팀 신규직원 모집</li>  <li>25.05.14 ~ 25.06.01</li>  <li>25.05.14</li></a>
                 </ul>
               </div>
             </div>
               <hr>
-              <div class="card20">
+              <div class="card">
               <div class="card20_text">
                 <ul>
-                  <a href = "#"><li>15 &nbsp;&nbsp;한국문화예술위원 아르코예술기록원 신규 채용 디지털 아카이브  25.05.14 ~ 25.05.23   25.05.14</li></a>
+                  <a href = "#"><li>15</li> <li>한국문화예술위원 아르코예술기록원 신규 채용 디지털 아카이브</li> <li>25.05.14 ~ 25.05.23</li> <li>25.05.14</li></a>
                 </ul>
               </div>
             </div>
               <hr>
-
           </div>
+          <div class="button">
+            <a href="#none" class="btn">더보기</a>
+          </div>
+      </div>
+          
+      
 
     </section>
   </main>
@@ -195,32 +247,42 @@
 
 
   
-  <footer id = "recruit_footer">
-
-    <div class="button">
-      <a href="#none" class="btn">더보기</a>
+  <footer>
+    <div class="footer-inner">
+      <a class="footer-no-pc" href="index.html">
+        <img src="image/logo-white.png" alt="아트허브 로고">
+      </a>
+      <div class="footer-item">
+        <div class="footer-tit">
+          <a href="index.html">예술과 아카이브</a>
+        </div>
+        <div class="footer-info">
+          <a href="#"><span>개인정보취급방침</span></a>
+          <span>사업자 등록번호 : 314-20-75752 </span>
+        </div>
+        <div class="footer-contact">
+          <span>Contact</span>
+          <p>02-2654-7138</p>
+          <p>arthub2@naver.com</p>
+        </div>
+      </div>
+      <div class="footer-sns">
+        <a href="instagram.com/arthub_vap/">
+          <img src="image/icon-sns1.png" alt="인스타그램">
+        </a>
+        <a href="https://blog.naver.com/venice87">
+          <img src="image/icon-sns2.png" alt="블로그">
+        </a>
+        <a href="https://www.facebook.com/arthub02">
+          <img src="image/icon-sns3.png" alt="페이스북">
+        </a>
+      </div>
     </div>
-
-    <ul>
-      <li>예술과아카이브</li> 
-      <li>개인정보취급방침</li>
-      <br>
-      <li>사업자등록번호 314-20-75752</li>
-      <br>
-      <li>Contact</li>
-      <li>02-2654-7138</li>
-      <li>arthub@naver.com</li>
-      <br>
-      <li>Copyright ARTHUB All Right Reserved</li>
-      <div class="footer-background"></div>
-      
-    </ul>
-
-    <img src="image/facebook-white.png" class="facebook"alt="facebook">
-    <img src="image/insta-white.png" class="insta"alt="insta">
-    <img src="image/blog-white.png" class="blog"alt="blog">
-
+    <address>
+      Copyright ARTHUB. All Rights Reserved
+    </address>
   </footer>
+
 
 
 

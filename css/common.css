@@ -49,6 +49,7 @@ section.full.sample{
   height: 100%;
 }
 
+
 h2{ /* 메인타이틀 */
   font-family: 'YUniverse-B';
   font-size: var(--font-xl);
@@ -105,12 +106,7 @@ h6{ /* 본문 */
 .btn:hover{
   background-color: rgb(127 168 86/ 80%);
 }
-/* .btn.accent{
-  background-color: var(--accentColor);
-} 
-.btn.accent:hover{
-  background-color: rgb(239 80 139/ 80%);
-}*/
+
 
 /* Tablet */
 @media screen and (max-width:1400px){
@@ -139,6 +135,7 @@ h6{ /* 본문 */
   .btn{
     height: 5rem;
   }
+
 }
 
 /* Mobile */
@@ -169,4 +166,5 @@ h6{ /* 본문 */
     height: 5rem;
     font-size: 1.5rem;
   }
+
 }

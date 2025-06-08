@@ -3,170 +3,701 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="short icon" href="image/favicon.png">
+  
+  <link rel="stylesheet" href="css/style.css">
   <title>메인페이지-전시</title>
 </head>
 <body id="exhibit">
   
-  <header></header>
+  <header id="ver-exhibit">
+    <div class="header-rel">
+      <div class="header-logo">
+        <a href="exhibit.html">
+          <img src="image/logo-exhibit.png" alt="logo">
+        </a>
+      </div>
+      <ul class="site-group">  
+        <li><a href="present.html" class="site_name" style="color: var(--primaryColor);">현재전시</a></li>
+        <li><a href="expect.html" class="site_name">예정전시</a></li>
+        <li><a href="past.html" class="site_name">지난전시</a></li>
+        <li><a href="artist.html" class="site_name">작가 포트폴리오</a></li>
+      </ul>
+      <div class="header-right">
+        <div class="search-box">
+          <input type="text" id="search" placeholder="검색어를입력하세요">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="user-icon">
+          <a href="mypage.html?from=ver-exhibit"><i class="fa-solid fa-user"></i></a>
+        </div>
+        <div class="login-icon">
+          <a href="login.html?from=ver-exhibit"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+        </div>
 
+        <!-- PC에서는 안보이게 함 -->
+        <a href="#" class="mob_btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <div class="subNav">
+        <div class="inner">
+          <div class="search-box">
+            <input type="text" placeholder="검색어를입력하세요">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <ul class="site-group">  
+            <li><a href="present.html" class="site_name">현재전시</a></li>
+            <li><a href="expect.html" class="site_name">예정전시</a></li>
+            <li><a href="past.html" class="site_name">지난전시</a></li>
+            <li><a href="artist.html" class="site_name">작가 포트폴리오</a></li>
+            <li><a href="mypage.html?from=ver-exhibit" class="site_name">마이페이지</a></li>
+            <li><a href="contest.html" class="site_name">공모페이지 바로가기</a></li>
+            <li>
+              <div class="sns">
+                <a href="https://www.facebook.com/arthub02"><img src="image/facebook-white.png" class="facebook"alt="facebook"></a>
+                <a href="instagram.com/arthub_vap/"><img src="image/insta-white.png" class="insta"alt="insta"></a>
+                <a href="https://blog.naver.com/venice87"><img src="image/blog-white.png" class="blog"alt="blog"></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="allMenuWrapBg"></div>
+  </header>
+
+
+  <!-- 리모콘 -->
+  <div class="control">
+      <a class="control-main" href="exhibit.html">
+        <i class="bi bi-arrow-bar-right"></i>전시 페이지
+      </a>
+      <a class="control-main" href="contest.html">
+        <i class="bi bi-arrow-bar-right"></i>공모 페이지
+      </a>
+      <a class="control-top" href="#">
+        <i class="bi bi-chevron-double-up"></i>
+      </a>
+  </div>
   
-
-
-  <div class="main-visual">
-    </div>
-    <div class="visu-tit">
-      <h2>금주의 전시</h2>
-      <h4>이런 전시는 어떤가요?</h4>
-    </div>
-    <div class="visual-swiper">
-      <div class="swiper-wrapper">
-        <!-- slide1 -->
-        <div class="visual-slide">
-          <div class="glass-bg"></div>
-          <div class="visual-content">
-            <img class="poster" src="image/poster1.jpg" alt="포스터 이미지">
-            <div class="visu-right">
-              <div class="info">
-                <h1>성광성냥</h1>
+  <main>
+    <!-- 비주얼 -->
+    <section class="main-visual full">
+      <div class="visu-tit">
+          <h2>금주의 전시</h2>
+          <h4>이런 전시는 어떤가요?</h4>
+      </div>
+      <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="visual-bg"></div>
+            <div class="glass-bg"></div>
+            <div class="visual-item">
+            <img class="poster" src="image/visual1.jpg" alt="전시 포스터">
+            <div class="visual-info">
+              <div class="visual-text">
+                <h1>성광사냥</h1>
                 <h3>박정일</h3>
-                <h4>	2025-06-13 ~ 2025-08-31</h4>
+                <h4>2025-06-13 ~ 2025-08-31</h4>
                 <h5>경북</h5>
               </div>
-              <button class="visu-btn">자세히</button>
+              <a class="visual-btn">자세히</a>
+            </div>
+            <a href="detail.html" class="mob-btn">자세히</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="visual-bg"></div>
+            <div class="glass-bg"></div>
+            <div class="visual-item">
+              <img class="poster" src="image/visual2.jpg" alt="전시 포스터">
+              <div class="visual-info">
+                <div class="visual-text">
+                  <h1>침잠 沈潛</h1>
+                  <h3>정연경</h3>
+                  <h4>2025-06-10 ~ 2025-06-24</h4>
+                  <h5>서울</h5>
+                </div>
+                <a class="visual-btn" href="detail.html">자세히</a>
+              </div>
+              <a href="detail.html" class="mob-btn">자세히</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="visual-bg"></div>
+            <div class="glass-bg"></div>
+            <div class="visual-item">
+              <img class="poster" src="image/visual3.jpg" alt="전시 포스터">
+              <div class="visual-info">
+                <div class="visual-text">
+                  <h1>소나기 shower</h1>
+                  <h3>가인 이은미</h3>
+                  <h4>2025-06-11 ~ 2025-06-16</h4>
+                  <h5>서울</h5>
+                </div>
+                <a class="visual-btn" href="detail.html">자세히</a>
+              </div>
+              <a href="detail.html" class="mob-btn">자세히</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="visual-bg"></div>
+            <div class="glass-bg"></div>
+            <div class="visual-item">
+              <img class="poster" src="image/visual4.jpg" alt="전시 포스터">
+              <div class="visual-info">
+                <div class="visual-text">
+                  <h1>함께 살아 "봄"</h1>
+                  <h3>소정희</h3>
+                  <h4>2025-05-31 ~ 2025-06-07</h4>
+                  <h5>대전</h5>
+                </div>
+                <a class="visual-btn" href="detail.html">자세히</a>
+              </div>
+              <a href="detail.html" class="mob-btn">자세히</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="visual-bg"></div>
+            <div class="glass-bg"></div>
+            <div class="visual-item">
+              <img class="poster" src="image/visual5.jpg" alt="전시 포스터">
+              <div class="visual-info">
+                <div class="visual-text">
+                  <h1>광음(光陰): 존재의 시간과 결</h1>
+                  <h3>구인성</h3>
+                  <h4>2025-05-31 ~ 2025-06-27</h4>
+                  <h5>충북</h5>
+                </div>
+                <a class="visual-btn" href="detail.html">자세히</a>
+              </div>
+              <a href="detail.html" class="mob-btn">자세히</a>
             </div>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
-    </div>
-  </div>
-
-
-
-  <section class="nowpost">
-    <div class="rel">
-      
-    </div>
-  </section>
-
-<!-- https://codesandbox.io/p/sandbox/r7t38y?file=%2Findex.html -->
-  <section class="today">
-    <div class="rel">
-      <div class="main-wrap">
-        <div class="section-tit">
-          <h2>오늘의 전시</h2>
-          <h4>2025년 5월 11일</h4>
+    </section>
+  
+    <!-- 현재전시 / 예정전시 -->
+    <section class="nowpost fade-up">
+      <div class="rel">
+        <div class="tab-header">
+          <ul class="tab">
+            <li data-alt="tab1">현재전시</li>
+            <li data-alt="tab2">예정전시</li>
+          </ul>
+        </div>
+        <div class="tab-contents">
+          <div id="tab1" class="active">
+            <ul class="now-list">
+              <li class="post-list">
+                <a href="detail.html">
+                  <img class="post-img" src="image/now/now1.jpg" alt="전시포스터">
+                  <div class="post-text">
+                    <h3>미래에게 말을 걸다</h3>
+                    <h5>조혜은</h5>
+                    <h6>2025-06-03 ~ 2025-06-30</h6>
+                  </div>
+              </a>
+              </li>
+              <li class="post-list">
+                <a href="detail.html">
+                  <img class="post-img" src="image/now/now2.jpg" alt="전시포스터">
+                  <div class="post-text">
+                    <h3>실로 어마어마한 일이다</h3>
+                    <h5>송성진, 야마우치 테루에, 이노우에 리에, <br>이연숙, 제럴딘 하비에르, 하차연, 해미 클레멘세비츠</h5>
+                    <h6>2025-03-14 ~ 2025-06-150</h6>
+                  </div>
+                </a>
+              </li>
+              <li class="post-list">
+                <a href="detail.html">
+                  <img class="post-img" src="image/now/now3.png" alt="전시포스터">
+                  <div class="post-text">
+                    <h3>POWER OF PAPERMAN</h3>
+                    <h5>애니 이주연</h5>
+                    <h6>2025-06-03 ~ 2025-06-17</h6>
+                  </div>
+                </a>
+              </li>
+              <li class="post-list">
+                <a href="detail.html">
+                  <img class="post-img" src="image/now/now4.jpg" alt="전시포스터">
+                  <div class="post-text">
+                    <h3>오예진展</h3>
+                    <h5>오예진</h5>
+                    <h6>2025-06-03 ~ 2025-06-30</h6>
+                  </div>
+                </a>
+                
+              </li>
+            </ul>
+            </div>
+          <div id="tab2">
+            <ul class="now-list">
+              <li class="post-list">
+                <a href="detail.html">
+                  <img class="post-img" src="image/now/now5.jpg" alt="전시포스터">
+                  <div class="post-text">
+                    <h3>항상 기억</h3>
+                    <h5>강주형, 김보경, 이채민</h5>
+                    <h6>2025-06-11 ~ 2025-07-06</h6>
+                  </div>
+              </a>
+              </li>
+              <li class="post-list">
+                <a href="detail.html">
+                  <img class="post-img" src="image/now/now6.jpg" alt="전시포스터">
+                  <div class="post-text">
+                    <h3>하늘이 품은 세상 - 感謝</h3>
+                    <h5>김종기</h5>
+                    <h6>2025-06-19 ~ 2025-06-24</h6>
+                  </div>
+                </a>
+              </li>
+              <li class="post-list">
+                <a href="detail.html">
+                  <img class="post-img" src="image/now/now7.jpg" alt="전시포스터">
+                  <div class="post-text">
+                    <h3>오래된 기억의 소리 Old - Sound of memory</h3>
+                    <h5>폴 정(Paul Jeong) / 정수모</h5>
+                    <h6>2025-06-10 ~ 2025-06-22</h6>
+                  </div>
+                </a>
+              </li>
+              <li class="post-list">
+                <a href="detail.html">
+                  <img class="post-img" src="image/now/now8.jpg" alt="전시포스터">
+                  <div class="post-text">
+                    <h3>박정인展</h3>
+                    <h5>박정인</h5>
+                    <h6>2025-07-01 ~ 2025-07-28</h6>
+                  </div>
+                </a>
+                
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- 오늘의 전시 -->
+    <section class="today fade-up">
+      <div class="rel">
+        <div class="main-wrap">
+          <div class="section-tit">
+            <h2>오늘의 전시</h2>
+            <h4>오늘 방문할 수 있는 전시는?</h4>
+          </div>
+          <div class="today-wrap">
+            <div class="calendar">
+              <div class="calender-nav">
+                <button class="material-icons"> <i class="bi bi-caret-left-fill"></i> </button>
+                <p class="current-date">2025년 5월</p>
+                <button class="material-icons"> <i class="bi bi-caret-right-fill"></i> </button>
+              </div>
+              <ul class="weeks">
+                <li>일</li>
+                <li>월</li>
+                <li>화</li>
+                <li>수</li>
+                <li>목</li>
+                <li>금</li>
+                <li>토</li>
+              </ul>
+              <ul class="days">
+                <li class="inactive">27</li>
+                <li class="inactive">28</li>
+                <li class="inactive">29</li>
+                <li class="inactive">30</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+                <li>31</li>
+              </ul>
+            </div>
+            <div class="today-list">
+              <a href="detail.html" class="today-item">
+                <div class="today-info">
+                  <h4>
+                    움직이다, 상상하다, 다르게 보다!
+                  </h4>
+                  <h6>
+                    2025-05-03 ~ 2025-06-29
+                  </h6>
+                </div>
+                <div class="today-info">
+                  <h4>
+                    엄정순, 백인교, 김동현
+                  </h4>
+                  <h6>
+                    <em>서울</em> 서울아트책보고갤러리
+                  </h6>
+                </div>
+              </a>
+              <a href="detail.html" class="today-item">
+                <div class="today-info">
+                  <h4>
+                    방문 Visit : 강명희展
+                  </h4>
+                  <h6>
+                    2025-03-04 ~ 2025-06-08
+                  </h6>
+                </div>
+                <div class="today-info">
+                  <h4>
+                    강명희
+                  </h4>
+                  <h6>
+                    <em>서울</em> 서울시립미술관
+                  </h6>
+                </div>
+              </a>
+              <a href="detail.html" class="today-item">
+                <div class="today-info">
+                  <h4>
+                    속삭임 :: 현유정展
+                  </h4>
+                  <h6>
+                    2025-03-18 ~ 2025-09-14
+                  </h6>
+                </div>
+                <div class="today-info">
+                  <h4>
+                    현유정
+                  </h4>
+                  <h6>
+                    <em>제주</em> 제주현대미술관
+                  </h6>
+                </div>
+              </a>
+              <a href="detail.html" class="today-item">
+                <div class="today-info">
+                  <h4>
+                    접촉 가능 구역 : 스킨십 서클 Touchable zone
+                  </h4>
+                  <h6>
+                    2025-05-21 ~ 2025-06-04
+                  </h6>
+                </div>
+                <div class="today-info">
+                  <h4>
+                    양희연
+                  </h4>
+                  <h6>
+                    <em>부산</em> 홍티아트센터
+                  </h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="present.html" class="artist-btn">더보기</a>
+      </div>
+    </section>
 
-  <section class="artist full">
-    <div class="rel">
-      <div class="main-wrap">
+    <!-- 작가 포트폴리오 -->
+    <section class="artist full fade-up">
+      <div class="rel">
         <div class="section-tit">
           <h2>작가 포트폴리오</h2>
           <h4>아트허브에 전시된 모든 포트폴리오를 감상할 수 있습니다.</h4>
         </div>
-        <ul class="arts">
-          <li class="art">
-            <a href="https://online.flipbuilder.com/arthub/hwav/">
-              <div class="art-img">
-              <img src="image/artist1.png" alt="">
+        <!-- Swiper -->
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a class="art" href="https://online.flipbuilder.com/arthub/bsgl/">
+                  <div class="art-img">
+                    <img src="image/artist3.png" alt="작가 포트폴리오">
+                  </div>
+                  <span>작가 김연홍 <em>56 페이지</em></span>
+                </a>
             </div>
-            <span>작가 홍차 <p>42 페이지</p></span>
-            </a>
-          </li>
-          <li class="art">
-            <a href="https://online.flipbuilder.com/arthub/ylnp/">
-              <div class="art-img">
-              <img src="image/artist2.png" alt="">
+            <div class="swiper-slide">
+              <a class="art" href="https://online.flipbuilder.com/arthub/hwav/">
+                  <div class="art-img">
+                  <img src="image/artist1.png" alt="작가 포트폴리오">
+                </div>
+                <span>작가 홍차 <em>42 페이지</em></span>
+                </a>
             </div>
-            <span>작가 나비킴 <p>28 페이지</p></span>
-            </a>
-          </li>
-          <li class="art">
-            <a href="https://online.flipbuilder.com/arthub/bsgl/">
-              <div class="art-img">
-              <img src="image/artist3.png" alt="">
+            <div class="swiper-slide">
+              <a class="art" href="https://online.flipbuilder.com/arthub/lyex/">
+                  <div class="art-img">
+                  <img src="image/artist4.PNG" alt="작가 포트폴리오">
+                </div>
+                <span>작가 정분홍 <em>26 페이지</em></span>
+                </a>
             </div>
-            <span>작가 김연홍 <p>56 페이지</p></span>
-            </a>
-          </li>
-          <li class="art">
-            <a href="https://online.flipbuilder.com/arthub/lyex/">
-              <div class="art-img">
-              <img src="image/artist4.PNG" alt="">
+            <div class="swiper-slide">
+              <a class="art" href="https://online.flipbuilder.com/arthub/xiaw/">
+                  <div class="art-img">
+                  <img src="image/artist5.PNG" alt="작가 포트폴리오">
+                </div>
+                <span>작가 이민주 <em>46 페이지</em></span>
+                </a>
             </div>
-            <span>작가 정분홍 <p>26 페이지</p></span>
-            </a>
-          </li>
-          <li class="art">
-            <a href="https://online.flipbuilder.com/arthub/xiaw/">
-              <div class="art-img">
-              <img src="image/artist5.PNG" alt="">
+            <div class="swiper-slide">
+              <a class="art" href="https://online.flipbuilder.com/arthub/negv/">
+                  <div class="art-img">
+                  <img src="image/artist6.PNG" alt="작가 포트폴리오">
+                </div>
+                <span>작가 김호 <em>50 페이지</em></span>
+                </a>
             </div>
-            <span>작가 이민주 <p>46 페이지</p></span>
-            </a>
-          </li>
-          <li class="art">
-            <a href="https://online.flipbuilder.com/arthub/negv/">
-              <div class="art-img">
-              <img src="image/artist6.PNG" alt="">
+            <div class="swiper-slide">
+              <a class="art" href="https://online.flipbuilder.com/arthub/glan/">
+                  <div class="art-img">
+                  <img src="image/artist7.PNG" alt="작가 포트폴리오">
+                </div>
+                <span>작가 강수지 <em>20 페이지</em></span>
+                </a>
             </div>
-            <span>작가 김호 <p>50 페이지</p></span>
-            </a>
-          </li>
-          <li class="art">
-            <a href="https://online.flipbuilder.com/arthub/glan/">
-              <div class="art-img">
-              <img src="image/artist7.PNG" alt="">
-            </div>
-            <span>작가 강수지 <p>20 페이지</p></span>
-            </a>
-          </li>
-        </ul>
-        <div class="ban_btn">
-        <a class="ban_left" href="#none"><i class="bi bi-arrow-left-circle-fill"></i></a>
-        <a class="ban_right" href="#none"><i class="bi bi-arrow-right-circle-fill"></i></a>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-        <a href="#none" class="artist-btn">더 많은 포트폴리오</a>
+        <a href="artist.html" class="artist-btn">더 많은 포트폴리오</a>
       </div>
-    </div>
-  </section>
-
-
-
-  <section class="news">
-    <div class="rel">
-      <div class="main-wrap">
-        <div class="section-tit">
-          <h2>아트허브 소식</h2>
-          <h4>예술의 흐름을 한번에!</h4>
-        </div>
-        <div class="news-contents">
-          <div class="news-tit">
-            <h3>아트뉴스</h3>
-            <a href="#">더보기</a>
+    </section>
+  
+    <!-- 아트허브 소식 -->
+    <section class="news fade-up">
+      <div class="rel">
+        <div class="main-wrap">
+          <div class="section-tit">
+            <h2>아트허브 소식</h2>
+            <h4>예술의 흐름을 한번에!</h4>
+          </div>
+          <div class="news-contents">
+            <div class="sec4-title">
+              <h3>아트뉴스</h3>
+              <a href="https://arthub.co.kr/sub06/board01_list.htm?Sub_No=2">
+                <i class="bi bi-plus"></i>
+                더보기
+              </a>
+            </div>
+            <div class="news-wrap">
+              <a href="https://www.joongang.co.kr/article/25340680" class="news-item">
+                <div class="news-tit">
+                  '이건희 컬렉션 첫 해외전시' 스미스소니언 관장 "K문화 열풍 실감" 
+                </div>
+                <div class="news-decs">
+                  미국 워싱턴 D.C.의 스미스소니언 재단에는 자연사박물관ㆍ항공우주박물관 등 21개 미술관ㆍ박물관이 모여 있다. 연간 3000만 가까운 관람객이 이곳을 찾는다.
+                </div>
+                <div class="news-date">
+                  <p>25.06.02</p>
+                  <p>중앙일보</p>
+                </div>
+              </a>
+              <a href="https://www.chosun.com/culture-life/culture_general/2025/06/02/ZQBEGFPUHBHHFMG7C3YQ7QPFH4/" class="news-item">
+                <div class="news-tit">
+                국내외 예술인들 평창동에 모인다
+                </div>
+                <div class="news-decs">
+                  서울 평창동에 국내외 예술인들이 입주하는 레지던시가 조성된다. 사단법인 자문밖문화포럼은 서울 평창동 일대에 들어설 ‘자문밖 국제 아트 레지던시’ 건축 설계안 공모를 통해 건축가 하태석 스케일 아키텍처 대표의 설계안이 최종 당선작으로 선정됐다고 밝혔다. 2025년 착공돼 내년 하반기 1단계 개관이 목표다.
+                </div>
+                <div class="news-date">
+                  <p>25.06.02</p>
+                  <p>조선일보</p>
+                </div>
+              </a>
+              <a href="https://www.yna.co.kr/view/AKR20250602014600005?section=culture/scholarship" class="news-item">
+                <div class="news-tit">
+                  왕의 장수 기원하던 돌 문…창덕궁 불로문, 이제 못 지나간다 
+                </div>
+                <div class="news-decs">
+                  국가유산청 궁능유적본부, 불로문 출입 통제키로…"국가유산 보호" 관람객 손길·상단부 균열 등 보존 상태 우려…후원 관람 동선 변경
+                </div>
+                <div class="news-date">
+                  <p>25.06.02</p>
+                  <p>연합뉴스</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="news-contents">
+            <div class="sec4-title">
+              <h3>지원사업</h3>
+              <a href="https://arthub.co.kr/sub044/board01_list.htm?sType1=1&sType2=2&sType3=3&sType4=4">
+                <i class="bi bi-plus"></i>
+                더보기
+              </a>
+            </div>
+            <div class="center-wrap">
+              <a href="https://arthub.co.kr/sub044/board01_view.htm?No=5501&sType1=1&sType2=2&sType3=3" class="news-item">
+                <div class="center-tit">
+                  예술경영지원센터 2025 국내 화랑 해외진출 역량강화 지원 공모
+                </div>
+                <div class="center-date">
+                  25.05.19 ~ 25.06.26
+                </div>
+                <div class="center-name">
+                  지원센터
+                </div>
+              </a>
+              <a href="https://arthub.co.kr/sub044/board01_view.htm?No=5516&sType1=1&sType2=2&sType3=3" class="news-item">
+                <div class="center-tit">
+                  한국예술인복지재단 2025년 6월 생활안정자금대출 사업 안내
+                </div>
+                <div class="center-date">
+                  25.06.01 ~ 25.06.10
+                </div>
+                <div class="center-name">
+                  한국예술인복지재단
+                </div>
+              </a>
+              <a href="https://arthub.co.kr/sub044/board01_view.htm?No=5365&sType1=1&sType2=2&sType3=3" class="news-item">
+                <div class="center-tit">
+                  한국예술인복지재단 2025년 개인 심리상담 신청
+                </div>
+                <div class="center-date">
+                  25.02.21 ~ 25.10.31
+                </div>
+                <div class="center-name">
+                  한국예술인복지재단
+                </div>
+              </a>
+            </div>
           </div>
         </div>
+        
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="footer-inner">
+      <a class="footer-no-pc" href="index.html">
+        <img src="image/logo-white.png" alt="아트허브 로고">
+      </a>
+      <div class="footer-item">
+        <div class="footer-tit">
+          <a href="index.html">예술과 아카이브</a>
+        </div>
+        <div class="footer-info">
+          <a href="#"><span>개인정보취급방침</span></a>
+          <span>사업자 등록번호 : 314-20-75752 </span>
+        </div>
+        <div class="footer-contact">
+          <span>Contact</span>
+          <p>02-2654-7138</p>
+          <p>arthub2@naver.com</p>
+        </div>
+      </div>
+      <div class="footer-sns">
+        <a href="instagram.com/arthub_vap/">
+          <img src="image/icon-sns1.png" alt="인스타그램">
+        </a>
+        <a href="https://blog.naver.com/venice87">
+          <img src="image/icon-sns2.png" alt="블로그">
+        </a>
+        <a href="https://www.facebook.com/arthub02">
+          <img src="image/icon-sns3.png" alt="페이스북">
+        </a>
       </div>
     </div>
-  </section>
+    <address>
+      Copyright ARTHUB. All Rights Reserved
+    </address>
+  </footer>
 
 
 
 
+  <!-- JQury -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <footer></footer>
 
+  <!-- 비주얼 -->
+  <script>
+    const swiper1 = new Swiper(".mySwiper1", {
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 5000,    
+        disableOnInteraction: false
+      },
+    });
+  </script>
 
+  <!-- 작가 포트폴리오 -->
+  <script>
+  const swiper2 = new Swiper(".mySwiper2", {
+    slidesPerView: 3, // 한 번에 3개 보임
+    slidesPerGroup: 1,
+    spaceBetween: 20,
+    loop: true,
+    centeredSlides: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+      delay: 3000,    
+      disableOnInteraction: false
+    },
+    breakpoints: {
+      1400: {
+        slidesPerView:3,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      540: {
+        slidesPerView: 1,
+      },
+    }
+  });
+</script>
 
-
-  <script src="js/jquery-3.2.1.slim.min.js"></script>
   <script src="js/exhibit.js"></script>
+  <script src="js/header.js"></script>
+
 
 </body>
 </html>

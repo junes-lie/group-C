@@ -20,7 +20,7 @@ $(document).ready(function(){
 
 
   //헤더 변경
-  const exceptionPages = ["login.html", "join.html"];
+  const exceptionPages = ["login.html", "join.html", "mypage.html"];
   const currentPage = window.location.pathname.split("/").pop();
 
   if (exceptionPages.includes(currentPage)) {
