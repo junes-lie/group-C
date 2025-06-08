@@ -6,6 +6,7 @@
 @import url(control.css);
 @import url(header.css);
 @import url(footer.css);
+@import url(index-media.css);
 
 @import url(index.css);  /* 인트로 */
 @import url(present.css);  /* 현재 전시 */
