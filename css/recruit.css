@@ -219,6 +219,7 @@
 }
 
 
+
 #recruit #second_cardsbox #recruit_box1 .recruit_wrap .second_cards .card1 a img {
   border-radius: 1rem;
 }
@@ -306,23 +307,25 @@ flex-direction: column;
 }
 
 #recruit .second_cards img{
-  width: 100%;
+  width: 29rem;
+  height: 44rem;
 }
 
 #recruit .second_cards .card1 p:nth-child(2) {
-  font-size: var(--font-sm);
+  font-size: var(--font-base);
+  font-weight: bold;
 }
 #recruit .second_cards .card1 p:nth-child(3) {
-  font-size: var(--font-xxs);
+  font-size: 1.5rem;
 }
 #recruit .second_cards .card1 p:nth-child(4) {
-  font-size: var(--font-xxs);
+  font-size: 1.5rem;
 }
 #recruit .second_cards .card1 p:nth-child(5) {
-  font-size: var(--font-xxs);
+  font-size: 1.5rem;
 }
 #recruit .second_cards .card1 p:nth-child(6) {
-  font-size: var(--font-xxs);
+  font-size: 1.5rem;
 }
 
 #recruit .second_cards .card2 a img{
@@ -331,53 +334,56 @@ flex-direction: column;
 }
 
 #recruit .second_cards .card2 p:nth-child(2) {
-  font-size: var(--font-sm);
+  font-size: var(--font-base);
+  font-weight: bold;
 }
 #recruit .second_cards .card2 p:nth-child(3) {
-  font-size: var(--font-xxs);
+  font-size: 1.5rem;
 }
 #recruit .second_cards .card2 p:nth-child(4) {
-  font-size: var(--font-xxs);
+  font-size: 1.5rem;
 }
 #recruit .second_cards .card2 p:nth-child(5) {
-  font-size: var(--font-xxs);
+  font-size: 1.5rem;
 }
 #recruit .second_cards .card2 p:nth-child(6) {
-  font-size: var(--font-xxs);
+  font-size: 1.5rem;
 }
 
 
 #recruit .second_cards .card3 p:nth-child(2) {
-  font-size: var(--font-sm);
+  font-size: var(--font-base);
+  font-weight: bold;
 }
 #recruit .second_cards .card3 p:nth-child(3) {
-  font-size: var(--font-xxs);
+  font-size: 1.5rem;
 }
 #recruit .second_cards .card3 p:nth-child(4) {
-  font-size: var(--font-xxs);
+  font-size: 1.5rem;
 }
 #recruit .second_cards .card3 p:nth-child(5) {
-  font-size: var(--font-xxs);
+  font-size: 1.5rem;
 }
 #recruit .second_cards .card3 p:nth-child(6) {
-  font-size: var(--font-xxs);
+  font-size: 1.5rem;
 }
 
 
 #recruit .second_cards .card4 p:nth-child(2) {
-  font-size: var(--font-sm);
+  font-size: var(--font-base);
+  font-weight: bold;
 }
 #recruit .second_cards .card4 p:nth-child(3) {
-  font-size: var(--font-xxs);
+  font-size: 1.5rem;
 }
 #recruit .second_cards .card4 p:nth-child(4) {
-  font-size: var(--font-xxs);
+  font-size: 1.5rem;
 }
 #recruit .second_cards .card4 p:nth-child(5) {
-  font-size: var(--font-xxs);
+  font-size: 1.5rem;
 }
 #recruit .second_cards .card4 p:nth-child(6) {
-  font-size: var(--font-xxs);
+  font-size: 1.5rem;
 }
 
 /* 두번째 줄 */
@@ -621,19 +627,40 @@ flex-direction: column;
 
     #recruit .second_cards .card1 {
       width:100%;
+      height:auto;
     }
     #recruit .second_cards .card2 {
       width:100%;
+      height:auto;
     }
     #recruit .second_cards .card3 {
       width:100%;
+      height:auto;
     }
 
     #recruit .second_cards .card4 {
       width:100%;
+      height:auto;
+    }
+    #recruit .second_cards .card1 img {
+       width: 29rem;
+       height: 44rem;
+    }
+    #recruit .second_cards .card2 img{
+       width: 29rem;
+       height: 44rem;
+    }
+    #recruit .second_cards .card3 img{
+       width: 29rem;
+       height: 44rem;
     }
 
+    #recruit .second_cards .card4 img{
+       width: 29rem;
+       height: 44rem;
+    }
 
+ 
     
     #recruit_footer .footer_texts{
     text-align:center;
