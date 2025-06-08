@@ -328,11 +328,6 @@ flex-direction: column;
   font-size: 1.5rem;
 }
 
-#recruit .second_cards .card2 a img{
-  width: 100%;
-
-}
-
 #recruit .second_cards .card2 p:nth-child(2) {
   font-size: var(--font-base);
   font-weight: bold;
