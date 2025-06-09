@@ -5,14 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Art hub</title>
   <link rel="shortcut icon" href="image/favicon.png">
-  <link rel="stylesheet" href="css/style.css">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!-- Script Source -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
-    <script src="js/header.js" defer></script> 
-    <script src="js/more.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+  <script src="js/header.js" defer></script> 
+  <script src="js/more.js" defer></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body id="present">
 
@@ -24,10 +22,10 @@
         </a>
       </div>
       <ul class="site-group">  
-        <li><a href="present.html" class="site_name" style="color: var(--primaryColor);">현재전시</a></li>
-        <li><a href="expect.html" class="site_name">예정전시</a></li>
-        <li><a href="past.html" class="site_name">지난전시</a></li>
-        <li><a href="artist.html" class="site_name">작가 포트폴리오</a></li>
+        <li><a href="present.html" style="color: var(--primaryColor);">현재전시</a></li>
+        <li><a href="expect.html">예정전시</a></li>
+        <li><a href="past.html">지난전시</a></li>
+        <li><a href="artist.html">작가 포트폴리오</a></li>
       </ul>
       <div class="header-right">
         <div class="search-box">
@@ -35,7 +33,7 @@
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <div class="user-icon">
-          <a href="mypage.html"><i class="fa-solid fa-user"></i></a>
+          <a href="mypage.html?from=ver-exhibit"><i class="fa-solid fa-user"></i></a>
         </div>
         <div class="login-icon">
           <a href="login.html?from=ver-exhibit"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
@@ -55,12 +53,12 @@
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
           <ul class="site-group">  
-            <li><a href="present.html" class="site_name">현재전시</a></li>
-            <li><a href="expect.html" class="site_name">예정전시</a></li>
-            <li><a href="past.html" class="site_name">지난전시</a></li>
-            <li><a href="artist.html" class="site_name">작가 포트폴리오</a></li>
-            <li><a href="mypage.html" class="site_name">마이페이지</a></li>
-            <li><a href="contest.html" class="site_name">공모페이지 바로가기</a></li>
+            <li><a href="present.html">현재전시</a></li>
+            <li><a href="expect.html">예정전시</a></li>
+            <li><a href="past.html">지난전시</a></li>
+            <li><a href="artist.html">작가 포트폴리오</a></li>
+            <li class="mypage"><a href="mypage.html?from=ver-exhibit">마이페이지</a></li>
+            <li class="direct"><a href="contest.html">공모페이지 바로가기</a></li>
             <li>
               <div class="sns">
                 <a href="https://www.facebook.com/arthub02"><img src="image/facebook-white.png" class="facebook"alt="facebook"></a>
@@ -83,6 +81,9 @@
     </a>
     <a class="control-main" href="contest.html">
       <i class="bi bi-arrow-bar-right"></i>공모 페이지
+    </a>
+    <a class="control-intro" href="index.html">
+      <i class="bi bi-house-door-fill"></i>
     </a>
     <a class="control-top" href="#">
       <i class="bi bi-chevron-double-up"></i>
@@ -120,7 +121,7 @@
   <section class="poster-wrap">
     <div class="poster-grid">
       <div class="poster">
-        <a href="detail.html">
+        <a href="ex-detail.html">
           <div class="image-box">
               <img src="image/Exhibition/present/img1.png">
           </div>
@@ -475,13 +476,13 @@
       </div>
       <div class="footer-sns">
         <a href="instagram.com/arthub_vap/">
-          <img src="/image/icon-sns1.png" alt="인스타그램">
+          <img src="image/icon-sns1.png" alt="인스타그램">
         </a>
         <a href="https://blog.naver.com/venice87">
-          <img src="/image/icon-sns2.png" alt="블로그">
+          <img src="image/icon-sns2.png" alt="블로그">
         </a>
         <a href="https://www.facebook.com/arthub02">
-          <img src="/image/icon-sns3.png" alt="페이스북">
+          <img src="image/icon-sns3.png" alt="페이스북">
         </a>
       </div>
     </div>
@@ -489,6 +490,7 @@
       Copyright ARTHUB. All Rights Reserved
     </address>
   </footer>
+
 
 </body>
 </html>
