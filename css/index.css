@@ -107,7 +107,7 @@
 }
 
 #intro .menu .ex,
-#intro .menu .re {
+.menu .re {
   position: relative; 
   text-align: center;
 }
@@ -131,24 +131,28 @@
 
 
 
+
+/* Tablet */
 @media screen and (max-width:1400px){
+  /* 인트로 */
   #intro .topimg, #intro .bottomimg{
     display: none;
   }
-
-  #intro .title {
-    margin: -70px 0 50px;
+  #intro .title{
+    padding-top: 35px;
+    margin-bottom: 50px;
   }
-  #intro .title-txt img{
+  #intro  .title-txt img{
     width: 378px;
   }
-  
+
+
   #intro .menu {
     margin-top: -25px;
     flex-direction: column;
   }
   #intro .menu .ex img,
-  #intro .menu .re img{
+  .menu .re img{
     width: 70%;
   }
   #intro .menu h2 {
@@ -158,38 +162,40 @@
 
   #intro .leftimg {
     animation: none !important;
-    transform: none !important;
-    bottom: -150% !important;
-    left: -25% !important;
-    width: 80% !important;
-    height: auto;
+    position: absolute;
+    top: 13%;
+    left: -22%;
+    width: 80%;
   }
   #intro .rightimg {
     animation: none !important;
-    transform: none !important;
-    top: 30% !important;
-    right: -40% !important;
-    width: 80% !important;
+    position: absolute;
+    top: 40%;
+    right: -40%;
+    width: 80%;
   }
 }
 
 
 
 
+/* Mobile */
 @media screen and (max-width:768px){
   
-
+  /* 인트로 */
+  #intro .title {
+    width: 258px;
+    height: 113px;
+    margin: 100px auto;
+  }
   #intro .topimg, #intro .bottomimg{
     display: none;
   }
   #intro .title>img{
     display: none;
   }
-  #intro .title {
-    width: 258px;
-    height: 113px;
-    margin: auto;
-    margin-top: -10px;
+  #intro .topimg, #intro .bottomimg{
+    display: none;
   }
   
   #intro .menu {
@@ -197,7 +203,7 @@
     flex-direction: column;
   }
   #intro .menu .ex img,
-  #intro .menu .re img{
+  .menu .re img{
     width: 70%;
   }
   #intro .menu h2 {
@@ -206,23 +212,19 @@
 
   #intro .leftimg {
     animation: none !important;
-    transform: none !important;
-    bottom: -185% !important;
-    left: -25% !important;
-    width: 85% !important;
-    height: auto;
+    position: absolute;
+    top: 25%;
+    left: -22%;
+    width: 80%;
   }
   #intro .rightimg {
     animation: none !important;
-    transform: none !important;
-    top: 70% !important;
-    right: -40% !important;
-    width: 90% !important;
+    position: absolute;
+    top: 50%;
+    right: -40%;
+    width: 80%;
   }
-
 }
-
-
 
 
 

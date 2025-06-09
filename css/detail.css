@@ -120,10 +120,12 @@
   flex-direction: column;
   justify-content: space-between;
 }
-#ex-detail img.sns{
+#ex-detail img.sns,
+#con-detail img.sns{
   transition: 0.2s ease;
 }
-#ex-detail img.sns:hover{
+#ex-detail img.sns:hover,
+#con-detail img.sns:hover{
   transform: translateY(0.2rem);
 }
 

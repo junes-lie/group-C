@@ -9,13 +9,25 @@
   background-size: cover;
   display: flex;
   align-items: center;
+  position: relative;
+}
+#expect .banner::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
 }
 #expect .banner .title{
   margin: auto;
   flex-direction: column; 
   text-align: center;
   color: white;
+  position: relative;
 }
+
 
 
 
