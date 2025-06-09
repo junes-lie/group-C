@@ -139,7 +139,7 @@
     display: none;
   }
   #intro .title{
-    padding-top: 35px;
+    padding-top: 1rem;
     margin-bottom: 50px;
   }
   #intro  .title-txt img{
@@ -199,15 +199,18 @@
   }
   
   #intro .menu {
-    margin-top: 90px;
+    margin-top: 40px;
     flex-direction: column;
   }
   #intro .menu .ex img,
-  .menu .re img{
-    width: 70%;
+  #intro .menu .re img{
+    min-width: 60%;
   }
   #intro .menu h2 {
     font-size: var(--font-xl);
+  }
+  #intro .menu .re{
+    margin-top: -4rem;
   }
 
   #intro .leftimg {
