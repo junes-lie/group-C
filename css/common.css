@@ -30,9 +30,8 @@ body{
 }
 section{
   position: relative;
-  max-width: 140rem; /* 1400px */
-  margin: 0 auto;
-  padding: 15rem 0;
+  max-width: 130rem;
+  margin: 15rem auto;
   z-index: 0;
 }
 section.full{ /* 배경 전체로 넣을 경우 */
@@ -92,7 +91,6 @@ h6{ /* 본문 */
   height: 6rem;
   font-size: 2rem;
   font-weight: 600;
-  /* margin-top: 10rem; */
   margin: 10rem auto 0;
   display: flex;
   justify-content: center;
@@ -166,10 +164,11 @@ h6{ /* 본문 */
   body{
     font-size: var(--font-sm);
   }
-  .rel{
-    max-width: 140rem;
-    margin: 0 auto;
+  section{
+    margin: 10rem auto;
+    padding: 0 4rem;
   }
+
   h2{ /* 메인타이틀 */
     font-size: var(--font-xl);
   }
@@ -202,10 +201,12 @@ h6{ /* 본문 */
   body{
     font-size: var(--font-xs);
   }
-  .rel{
+  section{
     max-width: 76.8rem;
-    margin: 0 auto;
+    margin: 5rem auto;
+    padding: 0 2rem;
   }
+
   h2{ /* 메인타이틀 */
     font-size: var(--font-lg);
   }

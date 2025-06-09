@@ -4,6 +4,7 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 15rem;
 }
 
 footer address{
@@ -78,6 +79,8 @@ footer .footer-sns a:hover{
 
 /* 타블렛 */
 @media screen and (max-width: 1400px) {
+  footer{    margin-top: 10rem;  }
+  
   footer .footer-no-pc{display: block;}
   footer .footer-inner{
     width: 76.8rem;
@@ -98,6 +101,7 @@ footer .footer-sns a:hover{
 
 /* 모바일 */
 @media screen and (max-width: 768px) {
+  footer{    margin-top: 5rem;  }
   footer .footer-no-pc{display: block;}
   footer .footer-inner{
     width: 37.5rem;
