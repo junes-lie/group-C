@@ -307,9 +307,10 @@ flex-direction: column;
 }
 
 #recruit .second_cards img{
-  width: 29rem;
-  height: 44rem;
+  width: 23rem;
+  height: 32.5rem;
 }
+
 
 #recruit .second_cards .card1 p:nth-child(2) {
   font-size: var(--font-base);
@@ -395,7 +396,7 @@ flex-direction: column;
 /* 세번째 줄 */
 
 #recruit .cardrow3{
- 
+
   display:flex;
   flex-direction: row;
   
@@ -557,24 +558,24 @@ flex-direction: column;
       height:auto;
     }
     #recruit .second_cards .card1 img {
-       width: 29rem;
-       height: 44rem;
+      width: 29rem;
+      height: 44rem;
     }
     #recruit .second_cards .card2 img{
-       width: 29rem;
-       height: 44rem;
+      width: 29rem;
+      height: 44rem;
     }
     #recruit .second_cards .card3 img{
-       width: 29rem;
-       height: 44rem;
+      width: 29rem;
+      height: 44rem;
     }
 
     #recruit .second_cards .card4 img{
-       width: 29rem;
-       height: 44rem;
+      width: 29rem;
+      height: 44rem;
     }
 
- 
+
     
     #recruit_footer .footer_texts{
     text-align:center;
