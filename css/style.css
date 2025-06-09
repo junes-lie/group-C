@@ -8,7 +8,6 @@
 @import url(footer.css);
 
 @import url(index.css);  /* 인트로 */
-@import url(index-media.css);  
 @import url(present.css);  /* 현재 전시 */
 @import url(past.css);  /* 지난 전시 */
 @import url(expect.css);  /* 예정 전시 */
