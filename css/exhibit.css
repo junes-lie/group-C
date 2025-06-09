@@ -1,30 +1,11 @@
-#exhibit main {
+@charset "utf-8"; 
+#exhibit main{
   width: 100%;
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
-#exhibit main > section {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 #exhibit section:nth-child(1) {
   margin-top: 9rem;
-}
-
-#exhibit .rel {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 140rem;
 }
 
 #exhibit .main-wrap {
@@ -40,7 +21,6 @@
   justify-content: center;
   align-items: center;
 }
-
 
 /* 스크롤애니메이션 */
 #exhibit .fade-up {
@@ -76,7 +56,7 @@
 }
 /* 타이틀 */
 #exhibit .visu-tit {
-  width: 140rem;
+  width: 100%;
   padding: 3rem 10rem;
   text-align: center;
   /* border: 3px solid green; */
@@ -89,7 +69,7 @@
   left: 0;
   width: 100%;
   height: 70rem;
-  z-index: 0;
+  z-index: 1;
 }
 /* 글래스모피즘 필터 */
 #exhibit .glass-bg {
@@ -149,7 +129,7 @@
 /* 콘텐츠 영역 */
 #exhibit .visual-item {
   /* border: 1px solid yellow; */
-  z-index: 2;
+  z-index: 5;
   width: max-content;
   height: max-content;
   display: flex;
@@ -223,11 +203,16 @@
 
 
 /* 현재전시, 예정전시 ______________*/
-#exhibit .nowpost{
-  padding: 5rem 0;
+#exhibit .nowpost .nowpost-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #exhibit .nowpost .tab-header .tab{
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #exhibit .nowpost .tab-header .tab li{
   font-size: 2rem;
@@ -263,15 +248,17 @@
   display:block
 }
 
-#exhibit .visual-item .mob-btn{display: none;}
+#exhibit .mob-btn{display: none;}
 
 
 
 /* 오늘의 전시________________ */
+#exhibit .today{
+  width: 100%;
+}
 #exhibit .today .today-wrap {
   margin-top: 5rem;
   justify-content: center;
-  /* width: 140rem; */
   width: 100%;
   display: flex;
   gap: 2rem;
@@ -280,7 +267,7 @@
   border: 1px solid #ddd;
   border-radius: 2rem;
   padding: 3rem;
-  width: 79rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -290,7 +277,7 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #d5d5d5;
-  width: 72rem;
+  width: 100%;
   padding: 2rem;
 }
 #exhibit .today .today-item:last-child {
@@ -342,7 +329,7 @@
 #exhibit .today .calendar {
   border: 1px solid #ddd;
   border-radius: 2rem;
-  width: 50rem;
+  width: 50%;
   height: 45rem;
   padding: 2rem;
 }
@@ -437,6 +424,9 @@
   width: 100%;
   padding: 10rem 0;
 }
+#exhibit .artist .section-tit{
+  padding-bottom: 5rem;
+}
 
 #exhibit .swiper-button-next,
 #exhibit .swiper-button-prev {
@@ -448,10 +438,6 @@
 }
 
 #exhibit .art {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
   border-radius: 2rem;
   width: 35rem;
@@ -464,9 +450,7 @@
   height: 36rem;
   transition: ease-in-out .3s;
 }
-#exhibit .art:hover .art-img{
-  transform: scale(1.1);
-}
+
 #exhibit .art-img > img {
   width: 35rem;
   height: 36rem;
@@ -492,32 +476,12 @@
   font-style: normal;
 }
 
-#exhibit .today .artist-btn,
-#exhibit .artist .artist-btn {
-  display: block;
-  width: 25rem;
-  height: 6rem;
-  border-radius: 5rem;
-  background-color: var(--primaryColor);
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 600;
-  text-align: center;
-  line-height: 6rem;
-  margin-top: 5rem;
-  transition: 0.3s;
-}
-#exhibit .today .artist-btn:hover,
-#exhibit .artist .artist-btn:hover {
-  opacity: 0.8;
-}
-
 
 
 /* 아트허브 소식_______________ */
 #exhibit .news .sec4-title {
   border-bottom: 1px solid #ccc;
-  width: 126rem;
+  width: 100%;
   padding: 1rem 0;
   display: flex;
   justify-content: space-between;
@@ -549,6 +513,7 @@
 /* 아트뉴스 */
 #exhibit .news-contents {
   padding: 5rem 0;
+  width: 100%;
 }
 #exhibit .news .news-wrap,
 #exhibit .news .center-wrap {
@@ -560,17 +525,20 @@
 
 #exhibit .news .news-wrap a:hover,
 #exhibit .news .center-wrap a:hover {
-  background-color: rgba(127, 168, 86, 0.1);
+  background-color: var(--primaryColor);
+  color: #fff;
 }
 
 #exhibit .news .news-item {
-  width: 40rem;
-  border: 1px solid var(--primaryColor);
+  width: 42rem;
+  background-color: #fff;
+  box-shadow: 0 0 0.5rem rgba(0,0,0,0.2);
   padding: 2rem 3rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   border-radius: 2rem;
+  transition: 0.3s ease-out;
 }
 #exhibit .news .news-item .news-tit {
   font-size: 2rem;
@@ -608,86 +576,66 @@
 
 
 
+
 /* 태블릿______________________________ */
 @media screen and (max-width: 1400px) {
-  /* 타이틀 */
-  #exhibit .visu-tit{
-    max-width: 75rem;
-  }
-  #exhibit 
-  #exhibit .visual-item {
-  gap: 5rem;
-}
 
-/* 현재전시, 예정전시 ______________*/
+/* 현재전시, 예정전시 */
   #exhibit .visual-item .mob-btn{display: none;}
 
-
-  /* 오늘의 전시________________ */
+  /* 오늘의 전시 */
   #exhibit .today .today-wrap {
     justify-content: space-between;
-    width: 70rem;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
   }
   #exhibit .today .today-wrap .calendar,
   #exhibit .today .today-list {
-    width: 70rem;
+    width: 100%;
   }
   #exhibit .today .today-item {
-    width: 62rem;
+    width: 100%;
   }
 
   /* 아트허브 소식__________ */
   #exhibit .news .news-contents {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
   }
   #exhibit .news .sec4-title {
-    width: 70rem;
+    width: 100%;
   }
   #exhibit .news .news-wrap,
   #exhibit .news .center-wrap {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 76.8rem;
+    width: 100%;
     gap: 1.5rem;
   }
-
   #exhibit .news .news-item {
-    width: 70rem;
+    width: 100%;
   }
 }
 
 
 
-
-
-
 /* 모바일______________________________ */
 @media screen and (max-width: 768px) {
-  #exhibit section{
-    padding: 5rem 0;
-  }
   #exhibit section:nth-child(1) {
     margin-top: 5rem;
   }
-
+  #exhibit .btn{
+    margin-top: 5rem;
+  }
   /* visual_________ */
   #exhibit .main-visual .swiper,
   #exhibit .main-visual .swiper-slide .visual-bg,
   #exhibit .main-visual .swiper-slide .glass-bg{
     height: 70rem;
   }
-  /* 타이틀 */
-  #exhibit .visu-tit{
-    max-width: 36rem;
-    text-align: center;
-  }
+
   #exhibit .main-visual{
     height: max-content;
     position: relative;
@@ -712,7 +660,7 @@
     display: block;
     background-color: var(--primaryColor);
     border-radius: 5rem;
-    width: 28rem;
+    width: 25rem;
     height: 5rem;
     font-size: 1.6rem;
     font-weight: bold;
@@ -763,18 +711,21 @@
 
 
   /* 현재전시, 예정전시 ______________*/
-  #exhibit .nowpost{
+  #exhibit .nowpost-item{
     padding: 5rem 0;
   }
-  #exhibit .nowpost .tab-header{
-    /* width: 36.2rem; */
+  #exhibit .nowpost .tab-header .tab{
     width: 100%;
+  }
+  #exhibit .nowpost .tab-header .tab li{
+    width: 20rem;
+    height: 7rem;
   }
 
   /* 오늘의 전시________________ */
   #exhibit .today .today-wrap {
     justify-content: space-between;
-    width: 36rem;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
@@ -785,14 +736,14 @@
   }
   #exhibit .today .today-wrap .calendar,
   #exhibit .today .today-list {
-    width: 36rem;
+    width: 100%;
     padding: 1rem;
   }
   #exhibit .today .calendar ul li {
     font-size: 1.6rem;
   }
   #exhibit .today .today-item {
-    width: 36rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -833,18 +784,15 @@
     justify-content: center;
   }
   #exhibit .news .sec4-title {
-    width: 36.2rem;
+    width: 100%;
   }
   #exhibit .news .news-wrap,
   #exhibit .news .center-wrap {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 35rem;
+    width: 100%;
   }
 
   #exhibit .news .news-item {
-    width: 36.2rem;
+    width: 100%;
     border-radius: 1rem;
     gap: 1rem;
   }

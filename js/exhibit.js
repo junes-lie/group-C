@@ -16,6 +16,11 @@ $(".tab li").on("click", function () {
   }, 300);
 });
 
+$(document).ready(function () {
+  $(".tab li:first-child").trigger("click");
+});
+
+
 
 
 // 스크롤 애니메이션

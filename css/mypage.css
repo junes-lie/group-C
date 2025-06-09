@@ -1,31 +1,5 @@
 @charset "utf-8"; 
-
-#mypage main{
-  max-width: 140rem;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#mypage{
-  background-color: #F7F4F3;
-}
-#mypage section{
-  width: 100%;
-  background-size: cover;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 0;
-}
-#mypage section.control{
-  display: block;
-}
-#mypage section:nth-child(1){margin-top: 18rem;}
+#mypage{background-color: #F7F4F3;}
 
 /* 스크롤애니메이션 */
 #mypage .fade-up {
@@ -33,7 +7,6 @@
   transform: translateY(-50px);
   transition: all 0.8s ease;
 }
-
 #mypage .fade-up.active {
   opacity: 1;
   transform: translateY(0);
@@ -53,7 +26,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 110rem;
+  width: 130rem;
   height: 34rem;
   border-radius: 3rem;
   background-color: #fff;
@@ -105,7 +78,6 @@
   text-align: left;
 }
 
-
 #mypage .profile-btn{
   display: flex;
   flex-direction: column;
@@ -141,7 +113,7 @@
 
 /* sub-btn */
 #mypage .sub-btn{
-  width: 110rem;
+  width: 130rem;
   padding-right: 2.5rem;
   text-align: right;
   margin-top: 3rem;
@@ -179,7 +151,7 @@
 /* 마이페이지 공통 */
 #mypage .mypage-secTit{
   border-bottom: 1px solid #ccc;
-  width: 110rem;
+  width: 130rem;
   height: 9rem;
   display: flex;
   align-items: center;
@@ -238,7 +210,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 110rem;
+  width: 130rem;
   height: 23rem;
   background-color: #fff;
   padding-right: 2rem;
@@ -326,7 +298,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 110rem;
+  width: 130rem;
   height: 8rem;
   background-color: #fff;
   border-radius: 50px;
@@ -353,18 +325,8 @@
 
 /* 태블릿______________________________ */
 @media screen and (max-width:1400px){ 
-  #mypage main{
-  max-width: 76.8rem;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  }
-  #mypage section{
-    width: 76.8rem; 
-  }
-  #mypage section:nth-child(1){margin-top: 18rem;}
+
+  #mypage section:nth-child(1){margin-top: 15rem;}
 
   /* 내 프로필 */
   #mypage .my-title img{
@@ -372,7 +334,7 @@
   }
   #mypage .pc-only{display: none;}
   #mypage .profile-box{
-    max-width: 68rem;
+    width: 100%;
     height: 22rem;
     display: flex;
     align-items: center;
@@ -393,7 +355,7 @@
   }
 
   #mypage .btn-box{
-    max-width: 68rem;
+    width: 100%;
     height: 20rem;
     border: 1px solid var(--primaryColor);
     border-radius: 3rem;
@@ -433,14 +395,14 @@
     color: var(--primaryColor);
   }
   #mypage .sub-btn{
-    width: 68rem;
+    width: 100%;
     padding-right: 0.1rem;
   }
 
 
   /* 내 게시물 */
   #mypage .coment-box{
-    max-width: 68rem;
+    width: 100%;
     padding: 2rem;
   }
   #mypage .coment-box .mypage-icon{
@@ -461,7 +423,7 @@
     margin: 0 2rem;
   }
   #mypage .mypage-secTit{
-    max-width: 68rem;
+    max-width: 100%;
     height: 5.5rem;
   }
   #mypage .mypage-secTit h1{
@@ -478,18 +440,19 @@
     width: 50rem;
   }
   #mypage .list .list-box{
-    max-width: 68rem;
+    width: 100%;
     height: 13.5rem;
     border-radius: 2rem;
   }
+
   #mypage .list .list-box .list-txt .pc-none{
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
-    #mypage .list .list-box .list-txt .pc-none h5{
-      width: 20rem;
-    }
+  #mypage .list .list-box .list-txt .pc-none h5{
+    width: 20rem;
+  }
   #mypage .list .list-box .list-txt .pc-none h6{
     color: #666;
   }
@@ -513,19 +476,8 @@
 
 /* 모바일______________________________ */
 @media screen and (max-width:768px){
-  #mypage main{
-  max-width: 37.5rem;
-  margin: auto;
-  }
-    #mypage section:nth-child(1){margin-top: 5rem;}
-  #mypage main > section{
-    width: 37.5rem; 
-    padding: 2rem 0 5rem 0;
-  }
-  #mypage .rel{
-    width: 36.2rem;
-    margin: auto;
-  }
+  #mypage section:nth-child(1){margin-top: 2rem;}
+
   #mypage .my-title{
     margin: 2rem 0;
   }
@@ -533,7 +485,7 @@
     font-size: 3rem;
   }
   #mypage .profile-box{
-    max-width: 15rem;
+    width: 100%;
     height: max-content;
     background-color: transparent;
     border: none;
@@ -569,7 +521,7 @@
   }
 
   #mypage .btn-box{
-    width: 36.2rem;
+    width: 100%;
     height: 10rem;
     gap: 0;
     display: flex;
@@ -601,7 +553,7 @@
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    width: 36.2rem;
+    width: 100%;
   }
   #mypage .sub-btn button{
     width: 8rem;
@@ -623,7 +575,7 @@
   /* 내 게시물 */
   #mypage .mob-none{display: none;}
   #mypage .mypage-secTit{
-    max-width: 36.2rem;
+    width: 100%;
     border: none;
     margin-bottom: 0;
     padding: 1rem;
@@ -646,26 +598,38 @@
     gap: 0.5rem;
   }
 
-  #mypage .non-mob{display: none;}
-  #mypage .coment-box,
   #mypage .list .list-box{
-    max-width: 36.2rem;
+    width: 100%;
     height: 10rem;
     border-radius: 1rem;
-    padding: 0;
+  }
+  #mypage .coment-box{
+    width: 100%;
+    height: 10rem;
+    border-radius: 1rem;
+    justify-content: space-between;
   }
 
   #mypage .coment-box .coment-txt{
-    margin: 0;
-    gap: 0;
     height: 8rem;
-    width: 25rem;
+    margin: 0;
+    width: 100%;
+    min-width: 3rem;
   }
   #mypage .coment-box .coment-txt h5{
     font-size: 1.6rem;
     display: -webkit-box;            
-  -webkit-box-orient: vertical;  
-  -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;  
+    -webkit-line-clamp: 2; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #mypage .visited .coment-box .coment-txt h5,
+  #mypage .mycoment .coment-box .coment-txt h5{
+    font-size: 1.6rem;
+    display: -webkit-box;            
+    -webkit-box-orient: vertical;  
+    -webkit-line-clamp: 1; 
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -674,9 +638,13 @@
   #mypage .coment-box h6{
     font-size: 1.2rem;
     color: #999;
-    white-space: nowrap;
+    display: -webkit-box;            
+    -webkit-box-orient: vertical;  
+    -webkit-line-clamp: 1; 
+    white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis;
+    word-break: break-all;
   }
 
   #mypage .coment .coment-box .coment-icon:nth-child(1){
@@ -686,24 +654,31 @@
     width: 2.5rem;
     height: 2.5rem;
     font-size: 1.3rem;
-  }
-
-  #mypage .coment-box .coment-img{
-    width: 1rem;
-    height: 1.2rem;
+    margin-left: 1rem;
   }
 
   #mypage .visited .coment-box{
-    height: 16.5rem;
+    height: max-content;
+    gap: 3rem;
   }
   #mypage .visited .coment-box .coment-txt{
-    width: 19rem;
+    width: 100%;
+    max-width: 35rem;
+    min-width: 10rem;
   }
   #mypage .visited .coment-box .coment-img{
     width: 10rem;
     height: 12rem;
     border-radius: 1rem;
+    display: inline-block;
   }
+  #mypage .visited .coment-box .coment-img img{
+    width: 100%;
+    height: 100%;.
+  }
+    #mypage .mycoment .coment-box .coment-img{
+      display: none;
+    }
 
 
 
@@ -713,23 +688,29 @@
     background-color: #fff;
     border-radius: 1rem;
   }
-    #mypage .list .list-box{
-      margin: 0;
-      border-bottom: 1px solid #eee;
-    }
+  #mypage .list .list-box{
+    margin: 0;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+  }
   #mypage .list .list-box .list-txt{
-    width: max-content;
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
   }
     #mypage .list .list-box .list-txt .pc-none{
     display: flex;
     flex-direction: column-reverse;
     gap: 0.3rem;
+    width: 100%;
   }
   #mypage .list .list-box .list-txt h5{
     font-size: 1.3rem;
     color: #666;
-    width: max-content;
+    width: 100%;
   }
+
   #mypage .list .list-box .list-txt .pc-none h6{
     font-size: 1.6rem;
     color: #333;
@@ -739,7 +720,7 @@
   #mypage .list .list-box .list-txt .pc-none p{
     font-size: 1.6rem;
     font-weight: 800;
-    width: 10rem;
+    width: 100%;
   }
   #mypage .list .list-box .list-txt .pc-none h6:nth-child(2){
     text-align: left;
