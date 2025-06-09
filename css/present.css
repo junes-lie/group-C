@@ -146,13 +146,12 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 6rem;
-  margin: 0 2rem;
+  /* margin: 0 2rem; */
 }
 #present .poster-grid .poster{
   cursor: pointer;
 }
 #present .poster-grid .poster .image-box img{
-  width: 30rem;
   transition: 0.3s ease;
 }
 #present .poster-grid .poster .image-box:hover img{
@@ -228,7 +227,7 @@
     display: flex;
     justify-items: center;
     align-items: center;
-    padding: 0 5rem;
+    padding: 0 2rem;
   }
   #present .poster-grid{
     display: grid;
@@ -292,19 +291,16 @@
   #present .ex-search-box{ 
     position: relative;
     display: flex;
-    max-width: 40rem;
-    min-width: 30rem;
+    width: 100%;
   }
 
 
   #present .poster-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 3.1rem;
   }
   #present .poster-grid .poster{
-    width: 20rem;
-    min-width: 14rem;
+    width: 100%;
   }
   #present .poster-grid .txt-box strong{
     font-weight: 600;
