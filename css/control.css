@@ -36,12 +36,14 @@
   border-radius: 5rem;
   margin-bottom: 1rem;
 }
-.control .control-top{
+.control .control-top,
+.control .control-intro{
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 50%;
   text-align: center;
   line-height: 4.5rem;
+  margin-bottom: 1rem;
 }
 
 
