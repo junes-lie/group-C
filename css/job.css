@@ -99,6 +99,11 @@
   
 }
 
+#job .second_textbox .card6_text li{
+  display: flex;
+  border: 1px solid #000;
+}
+
 
 #job .second_textbox .second_title {
   display:flex;
