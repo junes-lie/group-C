@@ -74,7 +74,7 @@
 /* 타이틀 */
 #contest .visu-tit {
   width: 140rem;
-  padding: 2rem 10rem;
+  padding: 3rem 10rem;
   text-align: center;
   /* border: 3px solid green; */
 }
@@ -439,9 +439,10 @@
   }
 
   #contest .nowpost .tab-contents .now-list {
-    max-width: 76.8rem;
+    width: 100%;
     height: max-content;
     margin-top: 3rem;
+    border: 1px solid #000;
   }
 
   #contest .nowpost .tab-contents .post-list {

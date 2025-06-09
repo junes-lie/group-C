@@ -295,6 +295,7 @@
 #exhibit .nowpost .tab-contents .post-text h3{
   font-size: 2.4rem;
   font-weight: bold;
+  height: 6rem;
   margin: 3rem 0;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -322,7 +323,8 @@
 #exhibit .today .today-wrap {
   margin-top: 5rem;
   justify-content: center;
-  width: 140rem;
+  /* width: 140rem; */
+  width: 100%;
   display: flex;
   gap: 2rem;
 }
@@ -470,7 +472,7 @@
   align-items: center;
   justify-content: center;
   padding: 0 3rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 #exhibit .swiper-slide{
@@ -566,7 +568,7 @@
 
 /* 아트허브 소식_______________ */
 #exhibit .news .sec4-title {
-  border-bottom: 1px solid var(--primaryColor);
+  border-bottom: 1px solid #999;
   width: 126rem;
   padding: 1rem 0;
   display: flex;
@@ -578,11 +580,12 @@
 }
 #exhibit .news .sec4-title a {
   position: relative;
-  color: var(--primaryColor);
+  color: #333;
   text-align: right;
   transition: 0.3s;
   line-height: 4rem;
   font-size: 2rem;
+  font-weight: bold;
 }
 #exhibit .news .sec4-title .bi-plus {
   transition: 0.3s;
@@ -597,7 +600,7 @@
 
 /* 아트뉴스 */
 #exhibit .news-contents {
-  padding: 3rem 0;
+  padding: 5rem 0;
 }
 #exhibit .news .news-wrap,
 #exhibit .news .center-wrap {
@@ -834,12 +837,12 @@
     padding: 5rem 0;
   }
   #exhibit .nowpost .tab-header{
-    width: 36.2rem;
+    /* width: 36.2rem; */
+    width: 100%;
   }
 
   #exhibit .nowpost .tab-contents .now-list{
-    min-width: 36.2rem;
-    max-width: 36.2rem;
+    width: 100%;
     height: max-content;
     margin-top: 3rem;
     gap: 3rem;
