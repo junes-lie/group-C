@@ -51,7 +51,7 @@
   .control-main{display: none;}
   .control a{background-color: #fff;}
   .control{
-    top: 95%;
+    top: 90%;
     right: 1rem;
   }
 }
