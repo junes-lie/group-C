@@ -29,61 +29,11 @@
 }
 
 
-
 #recruit .top-image{
   filter: brightness(40%);
   width: 100%;
   margin: 0 auto;
 }
-
-/* 햄버거메뉴 관련 시작 */
-.mobile_btn {
-  display:none;
-}
-
-
-#recruit .search-box-ham { 
-  width:100%;
-  height: auto;
-  border-radius: 2rem;
-  color: var(--primaryColor);
-  margin: 0 auto;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-#recruit .search-box-ham input {
-
-  margin: 3rem;
-  border: solid 2px var(--primaryColor);
-  border-radius: 1rem;
-  background: transparent;
-  outline: none;
-  font-size: 2rem;
-
-}
-
-
-#recruit .search-box-ham .searchimage i{
-  
-  font-size: 1.8rem;
-  pointer-events: none;
-  color: var(--textColor);
-  
-}
-
-#recruit .search-box-ham .searchimage i:hover{
-  
-  font-size: 1.8rem;
-  pointer-events: none;
-  color: var(--primaryColor);
-  
-}
-
-/* 햄버거메뉴 관련 끝 */
-
 
 
 /* 첫번째 섹션 */
@@ -184,6 +134,53 @@
   align-items: center;
   gap: 2rem;
 }
+#recruit .search-box2 input {
+  border: solid 2px var(--primaryColor);
+  border-radius: 5rem;
+  background: transparent;
+  outline: none;
+  font-size: 1.8rem;
+  padding: 2rem;
+  width: 50rem;
+  margin: 3rem;
+}
+#recruit .search-box2 a{
+  font-size: 3rem;
+  color: var(--primaryColor);
+  border: 2px solid var(--primaryColor);
+  border-radius: 5rem;
+  width: 6rem;
+  height: 6rem;
+  text-align: center;
+  line-height: 5.5rem;
+  transition: 0.3s;
+}
+#recruit .search-box2 a:hover{
+  background-color: var(--primaryColor);
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* #recruit .search-box2 { 
+  width:100%;
+  height: auto;
+  border-radius: 2rem;
+  color: var(--primaryColor);
+  margin: 0 auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
 
 #recruit .search-box2 input {
 
@@ -204,7 +201,7 @@
   color: var(--primaryColor);
   
 
-}
+} */
 
 
 /* 두번째 섹션 */
@@ -299,9 +296,19 @@
   gap: 2rem;
 }
 
-#recruit .card1{display: flex;
-flex-direction: column;
+#recruit .second_cards .card1{
+  width: 24rem;
 }
+#recruit .second_cards .card2{
+  width: 24rem;
+}
+#recruit .second_cards .card3{
+  width: 24rem;
+}
+#recruit .second_cards .card4{
+  width: 24rem;
+}
+
 #recruit .second_cards{
   width: 23%;
 }
@@ -315,6 +322,7 @@ flex-direction: column;
 #recruit .second_cards .card1 p:nth-child(2) {
   font-size: var(--font-base);
   font-weight: bold;
+  padding-top: 3rem;
 }
 #recruit .second_cards .card1 p:nth-child(3) {
   font-size: 1.5rem;
@@ -332,6 +340,7 @@ flex-direction: column;
 #recruit .second_cards .card2 p:nth-child(2) {
   font-size: var(--font-base);
   font-weight: bold;
+  padding-top: 3rem;
 }
 #recruit .second_cards .card2 p:nth-child(3) {
   font-size: 1.5rem;
@@ -350,6 +359,7 @@ flex-direction: column;
 #recruit .second_cards .card3 p:nth-child(2) {
   font-size: var(--font-base);
   font-weight: bold;
+  padding-top: 3rem;
 }
 #recruit .second_cards .card3 p:nth-child(3) {
   font-size: 1.5rem;
@@ -368,6 +378,7 @@ flex-direction: column;
 #recruit .second_cards .card4 p:nth-child(2) {
   font-size: var(--font-base);
   font-weight: bold;
+  padding-top: 3rem;
 }
 #recruit .second_cards .card4 p:nth-child(3) {
   font-size: 1.5rem;

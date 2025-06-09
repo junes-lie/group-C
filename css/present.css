@@ -53,7 +53,7 @@
   align-items: center;
   align-content: center;
   border-radius: 3.125rem;
-  border: 2px solid #7FA856;
+  border: 1px solid #7FA856;
   overflow: hidden;
 }
 #present .ex-search-box>input{
@@ -70,8 +70,8 @@
   top: -2px;
   left: -2px;
   width: 18rem;
-  height: 4rem;
-  border: 2px solid #7FA856;
+  height: 4.1rem;
+  border: 1px solid #7FA856;
   padding: 1rem 2rem;
   border-radius: 3.125rem;
   margin: 0;
@@ -122,7 +122,7 @@
   border-radius: var(--radiusInfinite);
   color: var(--primaryColor);
   transition: 0.3s;
-  border: 2px solid var(--primaryColor);
+  border: 1px solid var(--primaryColor);
   margin: 6.7rem 0.5rem;
 }
 #present .cate li:first-child{
@@ -146,13 +146,12 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 6rem;
-  margin: 0 2rem;
+  /* margin: 0 2rem; */
 }
 #present .poster-grid .poster{
   cursor: pointer;
 }
 #present .poster-grid .poster .image-box img{
-  width: 30rem;
   transition: 0.3s ease;
 }
 #present .poster-grid .poster .image-box:hover img{
@@ -190,8 +189,6 @@
 }
 #present .poster-wrap .more{
   display: flex;
-  padding-bottom: 10rem;
-  margin: -8rem auto 1rem;
 }
 
 
@@ -230,7 +227,7 @@
     display: flex;
     justify-items: center;
     align-items: center;
-    padding: 0 5rem;
+    padding: 0 2rem;
   }
   #present .poster-grid{
     display: grid;
@@ -294,19 +291,16 @@
   #present .ex-search-box{ 
     position: relative;
     display: flex;
-    max-width: 40rem;
-    min-width: 30rem;
+    width: 100%;
   }
 
 
   #present .poster-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 3.1rem;
   }
   #present .poster-grid .poster{
-    width: 20rem;
-    min-width: 14rem;
+    width: 100%;
   }
   #present .poster-grid .txt-box strong{
     font-weight: 600;
