@@ -91,39 +91,29 @@
   
 }
 
-/* 두번째 섹션 */
+/* 두번째 섹션 게시판 */
 
-#job #second_cardsbox { 
-  background-image: var(--F7F4F3);
-  padding: 5rem;
-  
+#job table {
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 2rem 5rem;
 }
 
-#job .second_textbox .card6_text li{
-  display: flex;
-  border: 1px solid #000;
+#job table tr .center {
+  text-align: center;
+  font-size: 2rem;
 }
 
-
-#job .second_textbox .second_title {
-  display:flex;
-}
-
-#job .second_textbox .second_title h1:nth-child(2){
-  margin-left: 20rem;
-}
-#job .second_textbox .second_title h1:nth-child(3){
-  margin-left: 30rem;
-}
-#job .second_textbox .second_title h1:nth-child(4){
-  margin-left: 30rem;
-}
-
-#job .second_textbox .card ul a{
-  display:flex;
-  gap:2rem;
+#job table tr .left{
+  font-size: 2.2rem;
 
 }
+
+#job table tr .date{
+  font-size: 1.6rem;
+
+}
+
 
 #job .button {
   display: flex;
@@ -132,88 +122,6 @@
   margin-bottom: 5rem;
   color:var(--mainBg)
 }
-
-/* 푸터 */
-
-#recruit_footer{
-  width: 100%;
-  height: auto;
-}
-#recruit_footer .footer_background {
-  background-color: var(--textColor);
-  z-index: -10;
-}
-
-
-#recruit_footer p:nth-child(2) {
-  color:var(--mainBg);
-  
-}
-
-#recruit_footer p:nth-child(3) {
-  color:var(--mainBg);
-  font-size: var(--font-xxxxs);
-
-}
-#recruit_footer p:nth-child(5) {
-  color:var(--mainBg);
-  font-size: var(--font-xxs);
-
-
-}
-#recruit_footer p:nth-child(7) {
-  font-size: var(--font-xxs);
-  color: var(--mainBg);
-  
-}
-
-#recruit_footer p:nth-child(8) {
-  font-size: var(--font-xxs);
-  font-weight:900;
-  color: var(--mainBg);
- 
-}
-#recruit_footer p:nth-child(9) {
-  font-size:var(--font-xxs);
-  color: var(--mainBg);
- 
-}
-
-#recruit_footer p:nth-child(10) {
-  font-size:var(--font-xxs);
-  color: var(--mainBg);
-  
-}
-#recruit_footer p:nth-child(11) {
-  font-size:var(--font-xxs);
-  color: var(--mainBg);
-
-}
-#recruit_footer p:nth-child(12) {
-  font-size:var(--font-xxs);
-  color: var(--mainBg);
-
-}
-#recruit_footer p:nth-child(13) {
-  font-size:var(--font-xxs);
-  color: var(--mainBg);
-}
-
-
-
-
-#recruit_footer .footer_background .rel .footer_icons{
-  color:var(--mainBg);
-  text-align: right;
-
-}
-
-
-/* #recruit_footer .rel{
-    width: 140rem;
-    margin: 5rem auto;
-    }
-     */
 
 
 @media (max-width:1400px)  {
