@@ -255,15 +255,7 @@
   transition: left 0.3s ease;
 }
 
-#exhibit .nowpost .tab-contents .now-list{
-  max-width: 140rem;
-  height: 50rem;
-  margin-top: 5rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 5rem;
-}
+
 #exhibit .nowpost .tab-contents > div{
   display: none;
 }
@@ -271,51 +263,7 @@
   display:block
 }
 
-#exhibit .nowpost .tab-contents .post-list{
-  width: 23rem;
-  border-radius: 1rem;
-}
-#exhibit .nowpost .tab-contents .post-list:hover .post-img{
-  transform: scale(1.1);
-}
-#exhibit .nowpost .tab-contents .post-list .post-img{
-  width:100%;
-  height: 32.5rem;
-  object-fit: cover;
-  display: block;
-  border: 1px solid #eee;
-  border-radius: 1rem;
-  transition: 0.3s ease-in-out;
-}
 #exhibit .visual-item .mob-btn{display: none;}
-
-#exhibit .nowpost .tab-contents .post-text{
-  padding: 0.1rem;
-}
-#exhibit .nowpost .tab-contents .post-text h3{
-  font-size: 2.4rem;
-  font-weight: bold;
-  height: 6rem;
-  margin: 3rem 0;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-#exhibit .nowpost .tab-contents .post-text h5{
-  font-size: 1.5rem;
-  color: #666;
-  margin-bottom: 1.5rem;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-#exhibit .nowpost .tab-contents .post-text h6{
-  font-size: 1.5rem;
-}
 
 
 
@@ -568,7 +516,7 @@
 
 /* 아트허브 소식_______________ */
 #exhibit .news .sec4-title {
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #ccc;
   width: 126rem;
   padding: 1rem 0;
   display: flex;
@@ -672,28 +620,7 @@
 }
 
 /* 현재전시, 예정전시 ______________*/
-  #exhibit
-  #exhibit .nowpost{
-    width: 76.8rem;
-    padding: 5rem 0;
-  }
-
-  #exhibit .nowpost .tab-contents .now-list{
-    max-width: 76.8rem;
-    height: max-content;
-    margin-top: 3rem;
-  }
-
   #exhibit .visual-item .mob-btn{display: none;}
-  #exhibit .nowpost .tab-contents .post-list{
-    width: 20rem;
-    margin-top: 3rem;
-    border-radius: 1rem;
-  }
-  #exhibit .nowpost .tab-contents .post-list .post-img{
-    width:100%;
-    height: 28rem;
-  }
 
 
   /* 오늘의 전시________________ */
@@ -745,6 +672,9 @@
 @media screen and (max-width: 768px) {
   #exhibit section{
     padding: 5rem 0;
+  }
+  #exhibit section:nth-child(1) {
+    margin-top: 5rem;
   }
 
   /* visual_________ */
@@ -840,39 +770,6 @@
     /* width: 36.2rem; */
     width: 100%;
   }
-
-  #exhibit .nowpost .tab-contents .now-list{
-    width: 100%;
-    height: max-content;
-    margin-top: 3rem;
-    gap: 3rem;
-    padding: 1rem;
-  }
-
-  #exhibit .nowpost .tab-contents .post-list{
-    max-width: 15rem;
-    margin: 0 0 1rem 0;
-    border-radius: 1rem;
-  }
-  #exhibit .nowpost .tab-contents .post-list .post-img{
-    width:100%;
-    height: 20rem;
-  }
-
-  #exhibit .nowpost .tab-contents .post-text h3{
-    font-size: 1.6rem;
-    margin: 2rem 0;
-  }
-  #exhibit .nowpost .tab-contents .post-text h5{
-    font-size: 1.4rem;
-    color: #666;
-    margin-bottom: 1.2rem;
-
-  }
-  #exhibit .nowpost .tab-contents .post-text h6{
-    font-size: 1.4rem;
-  }
-
 
   /* 오늘의 전시________________ */
   #exhibit .today .today-wrap {

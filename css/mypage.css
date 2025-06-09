@@ -178,7 +178,7 @@
 
 /* 마이페이지 공통 */
 #mypage .mypage-secTit{
-  border-bottom: 1px solid var(--primaryColor);
+  border-bottom: 1px solid #ccc;
   width: 110rem;
   height: 9rem;
   display: flex;
@@ -300,7 +300,6 @@
 
 /* 결제이력 */
 #mypage .list h5{
-  font-size: 3rem;
   width: 20rem;
   text-align: left;
 }
@@ -316,6 +315,7 @@
 }
 #mypage .list p{
   font-size: 3.2rem;
+  font-weight: bold;
   color: var(--primaryColor);
   width: 20rem;
   text-align: right;

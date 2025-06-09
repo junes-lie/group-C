@@ -118,7 +118,7 @@ h6{ /* 본문 */
   flex-wrap: wrap;
   justify-content: center;
   gap: 5rem;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 .post-item{
   width: 24rem;
