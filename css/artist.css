@@ -32,44 +32,48 @@
   color: var(--mainBg);
 }
 
-#artist .card-wrap{
+#artist .portfolio-wrap{ /* post-list */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 5rem;
   row-gap: 5rem;
 }
-#artist .card{
+#artist .portfolio{ /* post-item */
+  max-width: 40rem;
+  margin: auto;
+  aspect-ratio: 4/3;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: auto;
 }
-#artist .card img{
+#artist .portfolio img{ /* post-img */
   width: 100%;
   object-fit: cover;
   aspect-ratio: 16/9;
   border-radius: var(--radius-sm) var(--radius-sm) 0 0;
 }
-#artist .card .name{
-  background-color: #fff;
-  padding: 3rem;
+#artist .portfolio .name{ 
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  background-color: #fff;
   border-radius: 0 0 var(--radius-sm) var(--radius-sm);
 }
 
 #artist .btn{
   margin: 10rem auto;
-
 }
+
 
 /* Tablet */
 @media screen and (max-width:1400px){
-  #artist .card-wrap{
+  #artist .portfolio-wrap{
     grid-template-columns: repeat(2, 1fr);
-    margin: 0 5rem;
+    margin: 0 auto;
+    width: fit-content;
   }
 }
-
 
 /* Mobile */
 @media screen and (max-width:768px){
@@ -79,9 +83,12 @@
   #artist main .main-image .title{
     margin: 0 3rem;
   }
-  #artist .card-wrap{
+  #artist .portfolio-wrap{
     grid-template-columns: repeat(1, 1fr);
-    margin: 0 3rem;
+    margin: 0 auto;
+  }
+  #artist .portfolio{ 
+    max-width: 30rem;
   }
 
 }
