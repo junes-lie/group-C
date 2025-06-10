@@ -235,6 +235,11 @@
   transition: left 0.3s ease;
 }
 
+#contest .nowpost .tab-contents{
+  height: 55rem;
+  overflow: hidden;
+}
+
 #contest .nowpost .tab-contents > div {
   display: none;
 }
@@ -367,7 +372,9 @@
 @media screen and (max-width: 1400px) {
 /* 현재전시, 예정전시 */  
   #contest .visual-item .mob-btn{display: none;}
-
+  #contest .nowpost .tab-contents{
+    min-height: 45rem;
+  }
   /* 아트허브 소식__________ */
   #contest .news .news-contents {
     width: 100%;
@@ -394,7 +401,10 @@
   #contest section:nth-child(1) {
     margin-top: 5rem;
   }
-  #exhibit .btn{
+  #contest main{
+    min-width: 37rem;
+  }
+  #contest .btn{
     margin-top: 5rem;
   }
 
@@ -479,6 +489,9 @@
   }
 
   /* 현재전시, 예정전시 ______________*/
+  #contest .nowpost .tab-contents{
+    height: 50rem;
+  }
   #contest .nowpost-item {
     padding: 5rem 0;
   }

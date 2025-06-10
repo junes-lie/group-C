@@ -476,7 +476,7 @@
 
 /* 모바일______________________________ */
 @media screen and (max-width:768px){
-  #mypage section:nth-child(1){margin-top: 2rem;}
+  #mypage section:nth-child(1){margin-top: 10rem;}
 
   #mypage .my-title{
     margin: 2rem 0;
@@ -668,17 +668,17 @@
   }
   #mypage .visited .coment-box .coment-img{
     width: 10rem;
-    height: 12rem;
+    height: 10rem;
     border-radius: 1rem;
     display: inline-block;
   }
   #mypage .visited .coment-box .coment-img img{
     width: 100%;
-    height: 100%;.
+    height: 100%;
   }
-    #mypage .mycoment .coment-box .coment-img{
-      display: none;
-    }
+  #mypage .mycoment .coment-box .coment-img{
+    display: none;
+  }
 
 
 

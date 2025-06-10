@@ -108,8 +108,7 @@ h6{ /* 본문 */
 
 /* 이미지카드 */
 .post-list{
-  /* max-width: 140rem; */
-  width: 140rem;
+  width: 130rem;
   height: 50rem;
   margin-top: 5rem;
   display: flex;
@@ -189,7 +188,7 @@ h6{ /* 본문 */
   }
 
   .post-list{
-    width: 100%;;
+    width: 100%;
     height: max-content;
     margin-top: 3rem;
   }

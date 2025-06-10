@@ -1,8 +1,4 @@
 @charset "utf-8"; 
-#exhibit main{
-  width: 100%;
-  margin: auto;
-}
 
 #exhibit section:nth-child(1) {
   margin-top: 9rem;
@@ -240,7 +236,10 @@
   transition: left 0.3s ease;
 }
 
-
+#exhibit .nowpost .tab-contents{
+  height: 55rem;
+  overflow: hidden;
+}
 #exhibit .nowpost .tab-contents > div{
   display: none;
 }
@@ -582,7 +581,9 @@
 
 /* 현재전시, 예정전시 */
   #exhibit .visual-item .mob-btn{display: none;}
-
+  #exhibit .nowpost .tab-contents{
+    min-height: 45rem;
+  }
   /* 오늘의 전시 */
   #exhibit .today .today-wrap {
     justify-content: space-between;
@@ -595,6 +596,7 @@
   #exhibit .today .today-list {
     width: 100%;
   }
+
   #exhibit .today .today-item {
     width: 100%;
   }
@@ -625,6 +627,9 @@
 @media screen and (max-width: 768px) {
   #exhibit section:nth-child(1) {
     margin-top: 5rem;
+  }
+  #exhibit main{
+    min-width: 37rem;
   }
   #exhibit .btn{
     margin-top: 5rem;
@@ -720,6 +725,9 @@
   #exhibit .nowpost .tab-header .tab li{
     width: 20rem;
     height: 7rem;
+  }
+  #exhibit .nowpost .tab-contents{
+    height: 50rem;
   }
 
   /* 오늘의 전시________________ */
