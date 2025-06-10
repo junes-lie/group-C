@@ -41,7 +41,7 @@
 #ex-detail main .des,
 #con-detail main .des{
   /* border: 1px solid red; */
-  width: 140rem;
+  width: 130rem;
   margin: 5rem auto;
   text-align: right;
   color: #fff;
@@ -63,7 +63,7 @@
 }
 #ex-detail main .tags.state,
 #con-detail main .tags.state{
-  width: 140rem;
+  width: 130rem;
   margin: 3rem auto;
   text-align: right;
 }
@@ -231,37 +231,14 @@
   color: var(--textColor);
 }
 
-/* #ex-detail #preview .cards::before,
-#ex-detail #preview .cards::after,
-#ex-detail #artist .cards::before,
-#ex-detail #artist .cards::after{
-  position: absolute;
-  font-family: fontawesome;
-  font-size: 8rem;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-}
-#ex-detail #preview .cards::before,
-#ex-detail #artist .cards::before{
-  content: '\f053';
-  left: 0;
-}
-#ex-detail #preview .cards::after,
-#ex-detail #artist .cards::after{
-  content: '\f054';
-  right: 0;
-} */
-
 #ex-detail #preview .swiper.mySwiper1,
 #ex-detail #artist .swiper.mySwiper2{
-  /* border: 1px solid #000; */
   padding: 1rem;
   width: 90%;
 }
+/* 
 #ex-detail #preview .card,
 #ex-detail #artist .card{
-  /* border: 1px solid #000; */
   display: flex;
   flex-direction: column;
   height: auto;
@@ -284,7 +261,6 @@
   flex-direction: column;
   gap: 1rem;
   border-radius: 0 0 var(--radius-sm) var(--radius-sm);
-  /* box-shadow: none; */
 }
   
 #ex-detail #preview .cards .container h5,
@@ -296,7 +272,56 @@
 #ex-detail #preview .cards .container .meta{
   font-size: var(--font-xxs);
   color: var(--textColorSub);
+} */
+
+#ex-detail #preview .swiper{
+  border: 1px solid #000;
+  /* max-width: 100%; */
+  /* width: fit-content; */
+  /* margin: 0 auto; */
 }
+
+#ex-detail #preview .swiper-wrapper{
+  /* border: 1px solid blue; */
+  /* margin: 0 auto; */
+  /* width: fit-content; */
+}
+#ex-detail #preview .post-item{
+  /* max-width: 24rem; */
+  /* width: auto; */
+  /* width: 24rem; */
+  height: auto;
+  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#ex-detail #preview .post-item a{
+  border: 1px solid red;
+  background-color: red;
+  /* width: 100%; */
+  /* height: 100%; */
+  max-width: 24rem;
+  
+}
+#ex-detail #preview .post-img{
+  border-radius: var(--radiusInfinite) var(--radiusInfinite) 0 0;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  /* max-width: 24rem; */
+}
+#ex-detail #preview .post-text{
+  /* max-width: 24rem; */
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+}
+#ex-detail #preview .post-text h3{
+  margin-top: 0;
+}
+
+
 
 
 /* 감상평 */
@@ -393,7 +418,7 @@
 
 /* 공모 상세페이지의 상세내용 */
 #con-detail #info img{
-  width: 140rem;
+  width: 130rem;
   margin: auto;
 }
 #con-detail #info .btn{
