@@ -122,6 +122,7 @@ h6{ /* 본문 */
 .post-item{
   width: 24rem;
   height: 50rem;
+  margin: auto;
 }
 .post-list .post-img{
   width:100%;
@@ -238,6 +239,21 @@ h6{ /* 본문 */
     gap: 3rem;
     padding: 1rem;
   }
+
+  .post-list{
+    width: 100%;
+    height: max-content;
+    margin-top: 0;
+    gap: 5rem;
+    row-gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+  }
+  .post-item{
+    width: 24rem;
+    height: 50rem;
+    margin: auto;
+  }
   .post-text h3{
     font-size: 1.6rem;
     margin: 2rem 0;
@@ -247,16 +263,10 @@ h6{ /* 본문 */
     font-size: 1.4rem;
     color: #666;
     margin-bottom: 1.2rem;
-
   }
   .post-text h6{
     font-size: 1.4rem;
   }
-  .post-list{
-    width: 100%;
-    height: max-content;
-    margin-top: 3rem;
-    display: grid;grid-template-columns: repeat(1, 1fr); 
-  }
+  
 
 }

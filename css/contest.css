@@ -451,6 +451,9 @@
     line-height: 5rem;
     margin-top: 2rem;
   }
+  #contest .visual-item .mob-btn:hover{
+    background-color: rgb(127 168 86/ 80%);
+  }
 
   /* info */
   #contest .visual-info {
@@ -494,6 +497,7 @@
   /* 현재전시, 예정전시 ______________*/
   #contest .nowpost .tab-contents{
     height: 50rem;
+    margin-top: 3rem;
   }
   #contest .nowpost-item {
     padding: 5rem 0;

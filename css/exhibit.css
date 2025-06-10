@@ -678,6 +678,9 @@
     line-height: 5rem;
     margin-top: 2rem;
   }
+  #exhibit .visual-item .mob-btn:hover{
+    background-color: rgb(127 168 86/ 80%);
+  }
 
   /* info */
   #exhibit .visual-info {
@@ -785,6 +788,9 @@
   #exhibit .swiper-slide{
     height: 50rem;
   }
+  #exhibit .artist .section-tit{
+    padding-bottom: 0;
+} 
 
 
   /* 아트허브소식 */
