@@ -477,7 +477,6 @@
 /* 모바일______________________________ */
 @media screen and (max-width:768px){
   #mypage section:nth-child(1){margin-top: 10rem;}
-
   #mypage .my-title{
     margin: 2rem 0;
   }

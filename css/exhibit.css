@@ -205,6 +205,10 @@
   justify-content: center;
   align-items: center;
 }
+#exhibit .nowpost .tab-header{
+  width: 100%;
+}
+
 #exhibit .nowpost .tab-header .tab{
   display: flex;
   align-items: center;

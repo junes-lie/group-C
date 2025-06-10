@@ -204,6 +204,9 @@
   justify-content: center;
   align-items: center;
 }
+#contest .nowpost .tab-header{
+  width: 100%;
+}
 #contest .nowpost .tab-header .tab {
   display: flex;
   align-items: center;
