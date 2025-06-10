@@ -12,6 +12,14 @@
   <!-- <link rel="stylesheet" href="css/recruit.css"> -->
   <script src="js/card.js"></script>
   <script src="js/header.js" defer></script> 
+  <script>
+    $(function() {
+        $(".button1").on("click", function() {
+            $("#postlist1").toggle("show");
+        })
+    })
+</script>
+
 </head>
 
 <body id="recruit">
@@ -125,7 +133,7 @@
   </section>
 
  
-    <ul id="post-list1" class="post-list1">
+    <ul id="post-list1" class="post-list">
         <li class="post-item">   
             <a href="con-detail.html">
               <img src="image/1.png" class="post-img" alt="card1">
@@ -249,7 +257,7 @@
         </li>
     </ul>
 
-    <ul id="post-list2" class="post-list2">
+    <ul id="post-list2" class="post-list">
         <li class="post-item">   
             <a href="con-detail.html">
               <img src="image/13.png" class="post-img" alt="card13">
@@ -374,7 +382,7 @@
     </ul>
 
 
-    <ul id="post-list3" class="post-list3">
+    <ul id="post-list3" class="post-list">
         <li class="post-item">   
             <a href="con-detail.html">
               <img src="image/25.png" class="post-img" alt="card25">
