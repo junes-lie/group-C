@@ -58,70 +58,6 @@
   margin-top: 0rem;
 }
 
-#recruit .buttons{
-  display:flex;
-  flex-direction: row;
-  gap: 3rem;
-  justify-content: center;
-  cursor: pointer;
-}
-
-
-#recruit .button1{
-  display: inline-block;
-  width: 18rem;
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0.1rem solid var(--primaryColor);
-  color: var(--primaryColor);
-  border-radius: 2rem;
-  transition: 0.3s;
-
-}
-#recruit .button1:hover{
-  color: var(--secondaryColor);
-  border: 0.1rem solid var(--secondaryColor);
-}
-
-#recruit .button2{
-  display: inline-block;
-  width: 18rem;
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0.1rem solid var(--primaryColor);
-  color: var(--primaryColor);
-  border-radius: 2rem;
-  transition: 0.3s;
-  
-}
-#recruit .button2:hover{
-  color: var(--secondaryColor);
-  border: 0.1rem solid var(--secondaryColor);
-}
-
-#recruit .button3{
-  display: inline-block;
-  width: 18rem;
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0.1rem solid var(--primaryColor);
-  color: var(--primaryColor);
-  border-radius: 2rem;
-  transition: 0.3s;
-
-}
-#recruit .button3:hover{
-  color: var(--secondaryColor);
-  border: 0.1rem solid var(--secondaryColor);
-}
-
-
 
 /* 검색창----------------- */
 
@@ -197,6 +133,28 @@
   color: #ccc;
 }
 
+    /* 카테고리 */
+#recruit .cate{
+  display: flex;
+}
+#recruit .cate li{
+  height: 4.6rem;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 6.7rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: var(--radiusInfinite);
+  color: var(--primaryColor);
+  transition: 0.3s;
+  border: 1px solid var(--primaryColor);
+  margin: 6.7rem 0.5rem;
+}
+#recruit .search .cate li:hover{
+  background-color: var(--primaryColor);
+  color: white;
+}
+
 
 /* 검색창 끝 */
 
@@ -221,6 +179,10 @@
   flex-wrap: wrap;  
   justify-content: center;
   align-items: center;
+  max-width: 130rem;
+  width: 100%;
+  height: 115rem;
+  margin: 5rem;
 }
 
 #recruit .post-item {
@@ -253,9 +215,7 @@
     font-size: 2rem;
   }
 
-  #recruit .buttons {
-    gap:2rem;
-  }
+  
 
 }
 
@@ -281,9 +241,14 @@
     display: flex;
     width: 100%;
   }
-    #recruit .buttons {
-    gap:1rem;
-  }
+
+    #recruit .cate{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    }
+    #recruit .cate li{
+    margin: 2rem 1rem 0 0;
+    }
 
 
   }

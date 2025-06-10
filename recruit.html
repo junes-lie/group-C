@@ -94,14 +94,10 @@
       <h2>종합공모</h2>
       <h3>모든 공고들을 모아놓았어요</h3>
     </div> 
-      <section id="first_cards">
-        <div class="title">
-          <p>현재 공모중인 작품을 확인해보세요</p>
-        </div>
-      </section>
-
  <!-- 검색창 -->
+
   <section class="search">
+      <h5>현재 공모중인 작품을 확인해보세요</h5>
       <div class="ex-search-box">
         <div class="month-wrapper">
           <input type="month" id="monthInput" />
@@ -110,20 +106,25 @@
         <input type="text" placeholder="전시 검색..." />
         <i class="fa fa-search"></i>
       </div>
+      <ul class="cate">
+        <li>
+          <div class="button1" onclick="showContent('post-list1')">
+          예정된 공모
+          </div>
+        </li>
+        <li>
+          <div class="button2" onclick="showContent('post-list2')">
+          진행중 공모
+          </div></li>
+        <li>
+          <div class="button3" onclick="showContent('post-list3')">
+          마감된 공모
+          </div>
+        </li>
+      </ul>
   </section>
 
-    <div class="buttons">
-      <div class="button1" onclick="showContent('post-list1')">
-        예정된 공모
-      </div>
-      <div class="button2" onclick="showContent('post-list2')">
-        진행중 공모
-      </div>
-      <div class="button3" onclick="showContent('post-list3')">
-        마감된 공모
-      </div>
-    </div>
-
+ 
     <ul id="post-list1" class="post-list1">
         <li class="post-item">   
             <a href="con-detail.html">
