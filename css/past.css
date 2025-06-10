@@ -1,5 +1,6 @@
 #past{margin:auto;}
 
+
 /* 배너----------------- */
 #past .banner{
   margin-top: 9rem; /* 헤더높이 */
@@ -18,7 +19,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
 }
 #past .banner .title{
   margin: auto;
@@ -52,7 +53,7 @@
   align-items: center;
   align-content: center;
   border-radius: 3.125rem;
-  border: 1px solid #7FA856;
+  border: 1px solid #ccc;
   overflow: hidden;
 }
 #past .ex-search-box>input{
@@ -70,14 +71,14 @@
   left: -2px;
   width: 18rem;
   height: 4.1rem;
-  border: 1px solid #7FA856;
+  border: 1px solid #ccc;
   padding: 1rem 2rem;
   border-radius: 3.125rem;
   margin: 0;
   font-family: 'SUIT', sans-serif;
   font-size: 1.8rem;
   background: transparent;
-  color: #7FA856;
+  color: #858585;
 }
     /* 달력 인풋 기본 아이콘 숨기기 */
 #past .month-wrapper input[type="month"]::-webkit-calendar-picker-indicator{
@@ -95,7 +96,7 @@
   top: 50%;
   transform: translateY(-50%);
   font-size: 1.5rem;
-  color: #7FA856; 
+  color: #ccc; 
   pointer-events: none;
 }
 #past .ex-search-box>i{
@@ -104,7 +105,7 @@
   top: 50%;
   transform: translateY(-50%);
   font-size: 2.5rem;
-  color: #7FA856;
+  color: #ccc;
 }
 
     /* 카테고리 */
@@ -134,63 +135,14 @@
 }
 
 
-/* 전시 포스터 목록 */
-#past section:nth-child(4){
-  padding: 6.5rem 0 0 0;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-}
-#past .poster-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 6rem;
-  margin: 0 2rem;
-}
-#past .poster-grid .poster{
-  cursor: pointer;
-}
-#present .poster-grid .poster .image-box img{
-  width: 30rem;
-  transition: 0.3s ease;
-}
-#past .poster-grid .poster .image-box:hover img{
+#past .post-item:hover .post-img{
   filter: brightness(70%);
 }
-#past .poster-grid .txt-box{
-  margin-bottom:5rem;
-  padding-left: 0.5rem;
-}
-#past .poster-grid .txt-box strong{
-  color: #333;
-  font-size: 2.4rem;
-  font-weight: 600;
-  display: block; 
-  padding: 5rem 0 3rem;
-}
-#past .poster-grid .txt-box .artist{
-  color: #666;
-  font-weight: 500;
-  font-size: 1.5rem;
-  padding-bottom: 0.5rem;
-}
-#past .poster-grid .txt-box .date{
-  color: #333;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-
 /* 더보기 버튼 */
-#past .poster-wrap{
+#past .more {
   display: flex;
-  flex-direction: column;
-  padding: 5rem;
+  justify-content: center;
 }
-#past .poster-wrap .more{
-  display: flex;
-}
-
 
 
 
@@ -198,21 +150,15 @@
 /* Tablet */
 @media screen and (max-width:1400px){
   /* 배너 */
-  
   #past .banner{
     display: flex;
     justify-content: center; 
     align-items: center; 
-    height: 20rem;
+    height: 30rem;
     position: relative; 
+    margin-top: 9rem; 
   }
-  #past .banner .title{
-    margin-top: -2rem;
-  }
-
-  #past section:nth-child(2){
-    height: 20rem;
-  }
+  
   #past .search h5{
     margin:0;
     font-weight: 500;
@@ -221,40 +167,6 @@
     font-size: 2rem;
   }
   
-
-
-  #past .poster-wrap{
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    padding: 0 5rem;
-  }
-  #past .poster-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 4rem;
-  }
-  #past .poster-grid .poster .image-box img{
-    width: 28rem;
-  }
-  #past .poster-grid .txt-box{
-    margin-bottom:5rem;
-    padding-left: 0.5rem;
-  }
-  #past .poster-grid .txt-box strong{
-    font-weight: 600;
-    font-size: var(--font-xs);
-    padding: 2rem 0 0.5rem;
-  }
-  #past .poster-grid .txt-box .artist{
-    color: #666;
-    font-weight: 500;
-    font-size: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-  #past .poster-grid .txt-box .date{
-    display: none;
-  }
 }
 
 
@@ -274,7 +186,6 @@
     margin: 0;
   }
 
-
   #past .search{
     margin-bottom: 3rem;
   }
@@ -286,39 +197,10 @@
     margin: 2rem 1rem 0 0;
   }
 
-
   #past .ex-search-box{ 
     position: relative;
     display: flex;
-    max-width: 40rem;
-    min-width: 30rem;
-  }
-
-
-  #past .poster-grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 3.1rem;
-  }
-  #past .poster-grid .poster{
-    width: 20rem;
-    min-width: 14rem;
-  }
-  #past .poster-grid .txt-box strong{
-    font-weight: 600;
-    font-size: var(--font-xxs);
-    padding: 2rem 0 0.5rem;
-  }
-  #past .poster-grid .txt-box .artist{
-    color: #666;
-    font-weight: 500;
-    font-size: 1.4rem;
-    padding-bottom: 1.5rem;
-    overflow: hidden;
-  }
-
-  #past .control{
-    align-items: start;
+    width: 100%;
   }
 
 }

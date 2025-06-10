@@ -2,8 +2,8 @@
 /* 더보기 버튼 ---------------------------- */
 
 document.addEventListener("DOMContentLoaded", function () {
-    const posterGrid = document.querySelector(".poster-grid");
-    const posters = Array.from(posterGrid.children).filter(child => child.classList.contains('poster'));
+    const posterGrid = document.querySelector(".post-list");
+    const posters = Array.from(posterGrid.children).filter(child => child.classList.contains('post-item'));
     const moreBtn = document.querySelector(".more button");
 
     let currentIndex = 0;       // 현재까지 보여준 포스터의 개수 (다음 보여줄 시작점)
@@ -54,21 +54,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // "더보기" 버튼 클릭 시 추가 포스터를 로드하는 함수
     function loadMorePosters() {
-        const postersPerRow = getPostersPerRow(); // 현재 화면 크기에 맞는 한 줄당 포스터 수
-        const postersToShowThisClick = postersPerRow * rowsPerClick; // 이번 클릭으로 보여줄 포스터 수
-        
-        const nextBatchEndIndex = currentIndex + postersToShowThisClick;
+    const postersPerRow = getPostersPerRow();
+    const postersToShowThisClick = postersPerRow * rowsPerClick;
+    const nextBatchEndIndex = currentIndex + postersToShowThisClick;
 
-        for (let i = currentIndex; i < nextBatchEndIndex && i < posters.length; i++) {
-            posters[i].style.display = "block";
-        }
-        currentIndex = Math.min(nextBatchEndIndex, posters.length);
+    let firstNewPoster = null;
 
-        // 모든 포스터를 보여줬다면 "더보기" 버튼 숨김
-        if (currentIndex >= posters.length) {
-            moreBtn.style.display = "none";
-        }
+    for (let i = currentIndex; i < nextBatchEndIndex && i < posters.length; i++) {
+        posters[i].style.display = "block";
+        setTimeout(() => posters[i].classList.add("show"), 10);
+        if (!firstNewPoster) firstNewPoster = posters[i];
     }
+
+    currentIndex = Math.min(nextBatchEndIndex, posters.length);
+
+    if (currentIndex >= posters.length) {
+        moreBtn.style.display = "none";
+    }
+
+    // 새로 열린 첫 포스터 쪽으로 부드럽게 스크롤 이동
+    if (firstNewPoster) {
+        firstNewPoster.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+}
 
     // --- 이벤트 리스너 및 초기 실행 ---
 
