@@ -230,94 +230,56 @@
   top: 0;
   color: var(--textColor);
 }
+#ex-detail #preview .swiper-button-prev:after,
+#ex-detail #artist .swiper-button-prev:after{
+  margin-right: 5rem;
+}
+#ex-detail #preview .swiper-button-next:after,
+#ex-detail #artist .swiper-button-next:after{
+  margin-left: 5rem;
+}
 
 #ex-detail #preview .swiper.mySwiper1,
 #ex-detail #artist .swiper.mySwiper2{
+  /* border: 1px solid #000; */
   padding: 1rem;
   width: 90%;
 }
-/* 
-#ex-detail #preview .card,
-#ex-detail #artist .card{
-  display: flex;
-  flex-direction: column;
-  height: auto;
-}
-#ex-detail #preview .cards img,
-#ex-detail #artist .cards img{
-  object-fit: cover;
-  aspect-ratio: 3/4;
-  border-radius: var(--radiusInfinite) var(--radiusInfinite) 0 0;
-  box-shadow: var(--boxShadow);
-}
-#ex-detail #artist .cards img:first-child{
-  object-position: bottom;
-}
-#ex-detail #preview .cards .container,
-#ex-detail #artist .cards .container{
-  flex: 1;
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
-}
-  
-#ex-detail #preview .cards .container h5,
-#ex-detail #artist .cards .container h5{
-  flex: 1;
-  font-weight: 500;
-}
-#ex-detail #preview .cards .container .creation,
-#ex-detail #preview .cards .container .meta{
-  font-size: var(--font-xxs);
-  color: var(--textColorSub);
-} */
 
-#ex-detail #preview .swiper{
-  border: 1px solid #000;
-  /* max-width: 100%; */
-  /* width: fit-content; */
-  /* margin: 0 auto; */
-}
-
-#ex-detail #preview .swiper-wrapper{
-  /* border: 1px solid blue; */
-  /* margin: 0 auto; */
-  /* width: fit-content; */
-}
-#ex-detail #preview .post-item{
-  /* max-width: 24rem; */
-  /* width: auto; */
-  /* width: 24rem; */
+#ex-detail #preview .post-item,
+#ex-detail #artist .post-item{
   height: auto;
-  /* margin: auto; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#ex-detail #preview .post-item a{
-  border: 1px solid red;
-  background-color: red;
-  /* width: 100%; */
-  /* height: 100%; */
+
+
+#ex-detail #preview .post-item a,
+#ex-detail #artist .post-item a{
   max-width: 24rem;
-  
 }
-#ex-detail #preview .post-img{
+#ex-detail #preview .post-img,
+#ex-detail #artist .post-img{
   border-radius: var(--radiusInfinite) var(--radiusInfinite) 0 0;
   aspect-ratio: 3/4;
   object-fit: cover;
-  /* max-width: 24rem; */
 }
-#ex-detail #preview .post-text{
-  /* max-width: 24rem; */
+#ex-detail #artist .post-img:first-of-type{
+  object-position: bottom;
+}
+#ex-detail #preview .post-text,
+#ex-detail #artist .post-text{
   background-color: #fff;
   padding: 2rem;
   border-radius: 0 0 var(--radius-sm) var(--radius-sm);
 }
-#ex-detail #preview .post-text h3{
+#ex-detail #artist .post-text{
+  height: 10rem;
+}
+#ex-detail #preview .post-text h3,
+#ex-detail #artist .post-text h3{
   margin-top: 0;
 }
 
@@ -478,6 +440,17 @@
     gap: 2rem;
   }
 
+  #ex-detail #preview .swiper-all,
+  #ex-detail #artist .swiper-all{
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+  #ex-detail #preview .mySwiper1,
+  #ex-detail #artist .mySwiper2{
+    max-width: 85rem;
+    margin: 0 auto;
+  }
+
   #ex-detail #comment .person{
     gap: 5rem;
   }
@@ -529,14 +502,12 @@
     left: 10rem;
   }
 
-  #ex-detail #preview .swiper.mySwiper1,
-  #ex-detail #artist .swiper.mySwiper2{
-    width: 80%;
+  #ex-detail #preview .swiper-all,
+  #ex-detail #artist .swiper-all{
+    max-width: 35rem;
+    margin: 0 auto;
   }
-  #ex-detail #preview .card .creation,
-  #ex-detail #preview .card .meta{
-    display: none;
-  }
+
 
 
   #ex-detail #overview .info p,
