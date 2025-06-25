@@ -249,6 +249,10 @@
     margin: 0;
   }
 
+  #login .right{
+    padding: 5rem 0 0;
+  }
+
   #join dl{
     font-size: var(--font-xxs);
   }
