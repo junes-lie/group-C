@@ -168,21 +168,20 @@
   gap: 1rem;
 }
 
-/* #post-list1, #post-list2, #post-list3 {
-  display: none;}  */
 
-
-/* #recruit .post-list1,#recruit .post-list2,#recruit .post-list3
-{ 
+#recruit .post-list
+{
   display: flex;
   flex-wrap: wrap;  
-  justify-content: center;
   align-items: center;
-  width: 100%;
-  max-width: 160rem;
-  height:115rem;
-  
-} */
+  width: 130rem;
+  margin-top: 5rem;
+  justify-content: center;
+  gap: 5rem;
+  row-gap: 15rem;
+  margin: 0 auto;
+  display: grid;grid-template-columns: repeat(4, 1fr); 
+}
 
 
 #recruit .button {
@@ -198,8 +197,8 @@
 
    /* 카드들 */
 
-    #recruit .post-item {
-      width:32%;
+    #recruit .post-list {
+      width:100%;
     }
 
     #recruit .search h5{
