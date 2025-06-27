@@ -130,6 +130,7 @@
   height: 0.1rem;
   top: 50%;
   background-color: #999;
+  display: none;
 }
 #login .right .or-text::before{  left: 100%;}
 #login .right .or-text::after{  right: 100%;}
@@ -215,6 +216,11 @@
   }
   #login .right .btn.join{
     display: flex;
+  }
+
+  #login .right .or-text::before,
+  #login .right .or-text::after{
+    display: inline-block;
   }
 
   #join dl div:not(:last-of-type){
