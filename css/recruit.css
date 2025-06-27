@@ -183,6 +183,10 @@
   display: grid;grid-template-columns: repeat(4, 1fr); 
 }
 
+#recruit .post-img:hover {
+  filter: brightness(70%);
+}
+
 
 #recruit .button {
   display: flex;
