@@ -235,5 +235,11 @@
     grid-template-columns: 12rem auto;
   }
 
+<<<<<<< HEAD
+=======
+  #join dl{
+    font-size: var(--font-xxs);
+  }
+>>>>>>> parent of 421d65d (0625 지선 로그인 수정완)
 
 }
