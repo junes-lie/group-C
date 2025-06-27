@@ -42,7 +42,7 @@
 #con-detail main .des{
   /* border: 1px solid red; */
   width: 130rem;
-  margin: 5rem auto;
+  margin: 4rem auto;
   text-align: right;
   color: #fff;
   position: relative;
@@ -274,7 +274,7 @@
 #ex-detail #artist .post-text{
   background-color: #fff;
   padding: 2rem;
-  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+  border-radius: 0 0 1rem 1rem;
 }
 #ex-detail #artist .post-text{
   height: 10rem;
@@ -364,7 +364,7 @@
   justify-content: space-between;
   padding-bottom: 0.5rem;
   border-bottom: 0.1rem solid var(--textColorSub);
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
 }
 #ex-detail #artist .left{
   /* border: 1px solid #000; */
@@ -430,7 +430,7 @@
   } */
   #ex-detail main .des,
   #con-detail main .des{
-    margin: 5rem;
+    margin: 4rem;
   }
   #ex-detail main .tags.state,
   #con-detail main .tags.state{
@@ -445,7 +445,7 @@
   #con-detail section{
     width: 100%;
     /* margin: 0 3rem; */
-    padding: 10rem 5rem;
+    /* padding: 10rem 5rem; */
   }
 
   #ex-detail #overview .container-wrap,
@@ -503,7 +503,7 @@
   }
   #ex-detail main .des,
   #con-detail main .des{
-    margin: 3rem;
+    margin: 2rem;
   }
 
   #ex-detail main .tags.state .tag.accent,
@@ -514,7 +514,7 @@
   #ex-detail section,
   #con-detail section{
     width: 100%;
-    padding: 5rem 3rem;
+    /* padding: 5rem 3rem; */
   }
   #ex-detail section h2,
   #con-detail section h2{
