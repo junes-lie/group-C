@@ -99,9 +99,8 @@
 /* 전시 개요 & 작가 */
 #ex-detail #overview .container-wrap,
 #ex-detail #artist .container-wrap{
+  display: flex;
   gap: 3rem;
-  display: grid;
-  grid-template-columns: 5fr 7fr;
 }
 #ex-detail #overview .info,
 #ex-detail #artist .profile{
@@ -296,64 +295,41 @@
 #ex-detail #comment .comment-input{
   /* border: 1px solid #000; */
   display: flex;
-  align-items: center;
-  margin-bottom: 3rem;
-  padding: 3rem;
-  position: relative;
-}
-#ex-detail #comment .comment-input::after{
-  content: '';
-  position: absolute;
-  /* inset: 0; */
-  bottom: -3rem;
-  left: 0;
-  width: 100%;
-
+  justify-content: space-between;
+  gap: 3rem;
+  height: 13rem;
   border-bottom: 0.1rem solid var(--textColorSub);
+  padding-bottom: 3rem;
+  /* position: relative; */
 }
 #ex-detail #comment .comment-input textarea{
+  display: inline-block;
   flex: 1;
   border: 0.1rem solid var(--primaryColor);
   border-radius: 1rem;
-  padding: 1rem;
-  margin: 1rem 0;
-  height: 6rem;
-  margin-right: 2rem;
+  padding: 3rem;
 }
 #ex-detail #comment .comment-input textarea:focus{
   border: 0.2rem solid var(--primaryColor);
 }
 #ex-detail #comment .comment-input .btn{
-  margin: 1rem 0;
+  height: 100%;
+  margin-top: 0;
   border-radius: 1rem;
 }
-#ex-detail #comment .comment-wrap img{
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
-  margin-right: 5rem;
-}
-
-#ex-detail #comment .person-wrap{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-}
-
 #ex-detail #comment .person{
   display: flex;
+  gap: 10rem;
   align-items: center;
   padding: 3rem;
 }
-#ex-detail #comment .person5{
-  display: none;
+#ex-detail #comment .person img{
+  width: 10rem;
 }
-
 #ex-detail #comment .person .right{
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding: 1rem 0;
+  gap: 3rem;
 }
 
 /* 작가 */
@@ -475,18 +451,10 @@
     margin: 0 auto;
   }
 
-  #ex-detail #comment .person-wrap{
-    grid-template-columns: 1fr;
+  #ex-detail #comment .person{
+    gap: 5rem;
   }
 
-  #ex-detail #comment .comment-input .btn{
-    flex-direction: column;
-    width: 15rem;
-    height: 7rem;
-  }
-  #ex-detail #comment .comment-input textarea{
-    height: 7rem;
-  }
 }
 
 /* Mobile */
@@ -560,22 +528,35 @@
   #con-detail #overview .info dd{
     margin: 0.5rem 0;
   }
-  #ex-detail #artist .title span{
-    display: none;
+
+  #ex-detail #artist .title{
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
   }
-  
+  #ex-detail #artist .title .right{
+    /* border: 1px solid #000; */
+    width: 100%;
+    text-align: right;
+    margin-top: 0.5rem;
+  }
+  #ex-detail #comment .comment-input{
+    gap: 1rem;
+    height: 10rem;
+    padding-bottom: 2rem;
+  }
   #ex-detail #comment .comment-input textarea{
-    margin: 0 1rem 0 0;
+    padding: 1rem;
   }
   #ex-detail #comment .comment-input .btn{
     width: 8rem;
     padding: 2rem;
-    margin: 0;
   }
   #ex-detail #comment .comment-wrap{
     gap: 2rem;
   }
-#ex-detail #comment .comment-wrap img{
+  #ex-detail #comment .person img{
+    /* flex-direction: column; */
+    /* gap: 3rem; */
     display: none;
   }
 
