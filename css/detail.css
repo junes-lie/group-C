@@ -79,9 +79,8 @@
 #ex-detail main .tags.state .tag .icon,
 #con-detail main .tags.state .tag .icon{
   position: relative;
-  display: inline-block;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 2.4rem;
+  height: 2.4rem;
   margin-right: 0.5rem;
 }
 #ex-detail main .tags.state .tag .icon i,
@@ -458,6 +457,11 @@
     width: 100%;
     margin: 3rem 0;
   }
+  #ex-detail main .tags.state .tag .icon,
+  #con-detail main .tags.state .tag .icon{
+    width: 2.0rem;
+    height: 2.0rem;
+  }
   #ex-detail main .tags.state .tag.accent,
   #con-detail main .tags.state .tag.accent{
     margin-right: 5rem;
@@ -526,7 +530,11 @@
   #con-detail main .des{
     margin: 2rem;
   }
-
+  #ex-detail main .tags.state .tag .icon,
+  #con-detail main .tags.state .tag .icon{
+    width: 1.8rem;
+    height: 1.8rem;
+  }
   #ex-detail main .tags.state .tag.accent,
   #con-detail main .tags.state .tag.accent{
     margin-right: 3rem;
