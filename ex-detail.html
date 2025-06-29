@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>전시 상세페이지</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
   <script src="fslightbox/fslightbox.js" defer></script>
   <link rel="shortcut icon" href="image/favicon.png">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/header.js" defer></script>
+  <script src="js/tag.js" defer></script>
 </head>
 <body id="ex-detail">
   
@@ -104,8 +106,18 @@
         </div>
       </div>
       <div class="tags state">
-        <span class="tag primary"><i class="fa-solid fa-check"></i> 다녀간 전시</span>
-        <span class="tag accent"><i class="fa-solid fa-heart"></i> 찜한 전시</span>
+        <span class="tag primary active">
+          <span class="icon">
+            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-regular fa-circle-check"></i>
+          </span>
+          다녀간 전시</span>
+        <span class="tag accent active">
+          <span class="icon">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-regular fa-heart"></i>
+          </span>
+          찜한 전시</span>
       </div>
     </div>
   </main>
@@ -431,15 +443,12 @@
     </address>
   </footer>
 
+  
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     var swiper1 = new Swiper(".mySwiper1", {
-      // loop: true,
       spaceBetween: 50,
-      // slidesOffsetBefore: 50,
-      // slidesOffsetAfter: 50,
       slidesPerView:1,
-      // slidesPerView : "auto",
       navigation: {
         prevEl: ".swiper1-prev",
         nextEl: ".swiper1-next",

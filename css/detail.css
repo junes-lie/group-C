@@ -71,7 +71,28 @@
 #con-detail main .tags.state .tag{
   border-width: 0.2rem;
   font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
 }
+
+#ex-detail main .tags.state .tag .icon,
+#con-detail main .tags.state .tag .icon{
+  position: relative;
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: 0.5rem;
+}
+#ex-detail main .tags.state .tag .icon i,
+#con-detail main .tags.state .tag .icon i{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+
 
 /* 페이지 공통 */
 #ex-detail section h2,

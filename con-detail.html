@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>공모 상세페이지</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
   <script src="fslightbox/fslightbox.js" defer></script>
   <link rel="shortcut icon" href="image/favicon.png">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/header.js" defer></script>
   <script src="js/open.js" defer></script>
+  <script src="js/tag.js" defer></script>
 </head>
 <body id="con-detail">
 
@@ -99,7 +101,12 @@
         </div>
       </div>
       <div class="tags state">
-        <span class="tag accent"><i class="fa-solid fa-heart"></i> 찜한 공모</span>
+        <span class="tag accent active">
+          <span class="icon">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-regular fa-heart"></i>
+          </span>
+          찜한 공모</span>
       </div>
     </div>
   </main>
