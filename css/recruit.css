@@ -58,8 +58,13 @@
   margin-top: 0rem;
 }
 
+#recruit .search h5{
+    margin: 0rem 0 1rem;
+  }
+
 
 /* 검색창----------------- */
+
 
 #recruit .search{
   display: flex;
@@ -202,7 +207,7 @@
     }
 
     #recruit .search h5{
-    margin:0;
+    margin: 0;
     font-weight: 500;
   }
   #recruit .cate li{
@@ -227,7 +232,7 @@
     }
 
     #recruit .search{
-    margin-bottom: 3rem;
+    row-gap: 1.5rem;
   }
 
     #recruit .ex-search-box{ 
@@ -238,7 +243,7 @@
 
     #recruit .cate{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     }
     #recruit .cate li{
     margin: 2rem 1rem 0 0;

@@ -27,42 +27,108 @@
   margin-top: 10rem;
 }
 
-/* 중앙 검색창 */
-#job .search-box2 { 
-  width:100%;
-  height: auto;
-  border-radius: 2rem;
-  color: var(--primaryColor);
-  margin: 0 auto;
-  display:flex;
+
+/* 검색창----------------- */
+
+#job .search{
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-}
-#job .search-box2 input {
-  border: solid 2px var(--primaryColor);
-  border-radius: 5rem;
-  background: transparent;
-  outline: none;
-  font-size: 1.8rem;
-  padding: 2rem;
-  width: 50rem;
-}
-#job .search-box2 a{
-  font-size: 3rem;
-  color: var(--primaryColor);
-  border: 2px solid var(--primaryColor);
-  border-radius: 5rem;
-  width: 6rem;
-  height: 6rem;
+  flex-direction: column;
   text-align: center;
-  line-height: 5.5rem;
+  row-gap: 1.5rem;
+}
+#job .ex-search-box{ 
+  position: relative;
+  display: flex;
+  width: 47rem;
+  height: 4rem;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  border-radius: 3.125rem;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#job .ex-search-box>input{
+  position: absolute;
+  width: 22rem;
+  left: 190px;
+  background: transparent;
+  font-family: 'SUIT', sans-serif;
+  font-size: 1.5rem;
+}
+    /* 달력인풋 스타일 */
+#job .month-wrapper input[type="month"]{
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 18rem;
+  height: 4.1rem;
+  border: 1px solid #ccc;
+  padding: 1rem 2rem;
+  border-radius: 3.125rem;
+  margin: 0;
+  font-family: 'SUIT', sans-serif;
+  font-size: 1.8rem;
+  background: transparent;
+  color: #858585;
+}
+    /* 달력 인풋 기본 아이콘 숨기기 */
+#job .month-wrapper input[type="month"]::-webkit-calendar-picker-indicator{
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+    /* 커스텀 아이콘 */
+#job .month-wrapper .custom-icon{
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #ccc; 
+  pointer-events: none;
+}
+#job .ex-search-box>i{
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: #ccc;
+}
+
+    /* 카테고리 */
+#job .cate{
+  display: flex;
+}
+#job .cate li{
+  height: 4.6rem;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 6.7rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: var(--radiusInfinite);
+  color: var(--primaryColor);
   transition: 0.3s;
+  border: 1px solid var(--primaryColor);
+  margin: 6.7rem 0.5rem;
 }
-#job .search-box2 a:hover{
+#job .search .cate li:hover{
   background-color: var(--primaryColor);
-  color: #fff;
+  color: white;
 }
+
+
+/* 검색창 끝 */
+
+
 
 /* 두번째 섹션 게시판 */
 #job table tr td.left:hover{
