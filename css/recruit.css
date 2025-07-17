@@ -249,6 +249,21 @@
     margin: 2rem 1rem 0 0;
     }
 
-
+     div.ex-search-box label,
+  div.ex-search-box input,
+  div.ex-search-box button {
+    font-size: 1rem !important;
   }
+ 
+  #recruit div.button1{
+  font-size: 1.2rem !important;
+}
+  #recruit div.button2{
+  font-size: 1.2rem !important;
+}
+  #recruit div.button3{
+  font-size: 1.2rem !important;
+  }
+
+}
     

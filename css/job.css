@@ -209,12 +209,10 @@
     line-height: 4.5rem;
   }
 
-  #job table {
-    border-spacing: 3rem 4rem;
-  }
   #job table tr .center {
     font-size: 1.6rem;
   }
+
   #job table tr .left,
   #job table tr .date{
     font-size: 1.5rem;
@@ -223,10 +221,46 @@
   #job #second_cardsbox { 
     margin-top: 5rem;
     padding:0rem;
-    min-width: 36rem;
+    min-width: 32rem;
   }
 
   #job .button {
     margin-bottom: 10rem;
   }
+
+  #job .ex-search-box {
+    width:32rem;
+  }
+
+ #job #second_cardsbox .second_cards table {
+    width: 32rem !important;
+    margin: 0 auto;
+    table-layout: fixed;
+    border-spacing: 3rem 4rem;
+  }
+
+  #job table td {
+    word-break: break-word;
+  }
+
+  #job table th:nth-child(3),
+  #job table td:nth-child(3) {
+    display: none;
+  }
+
+
+  #job table th:nth-child(4),
+  #job table td:nth-child(4) {
+    display: none;
+  }
+
+
+  div.ex-search-box label,
+  div.ex-search-box input,
+  div.ex-search-box button {
+    font-size: 1rem !important;
+  }
+ 
+
 }
+
